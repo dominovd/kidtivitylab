@@ -30,6 +30,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
+    <meta name="google-site-verification" content="la5QfdRsv0QrtKYl0egVI6--Ri6ITCdFqnzC0vgltSQ" />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -50,6 +51,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       rel="stylesheet"
     />
     {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    {/* Vercel Web Analytics (script only exists on Vercel; harmless 404 in local dev) */}
+    <script is:inline>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
     <Header />
