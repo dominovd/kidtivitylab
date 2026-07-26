@@ -1,0 +1,54 @@
+---
+import ListingPage from '../../../components/ListingPage.astro';
+import { AGE_GROUPS, SITUATIONS, matchesAge } from '../../../lib/taxonomy';
+import { allActivities, toActivity, MIN_ACTIVITIES_PER_PAGE } from '../../../lib/activities';
+
+/**
+ * Age × situation pages — the core programmatic matrix.
+ * A page is only generated when it clears MIN_ACTIVITIES_PER_PAGE (thin-content guard).
+ */
+export async function getStaticPaths() {
+  const entries = (await allActivities()).map(toActivity);
+  const paths = [];
+  for (const g of AGE_GROUPS) {
+    for (const s of SITUATIONS) {
+      const n = entries.filter((a) => matchesAge(a, g) && a.situations.includes(s.slug)).length;
+      if (n >= MIN_ACTIVITIES_PER_PAGE) {
+        paths.push({ params: { age: g.slug, situation: s.slug } });
+      }
+    }
+  }
+  return paths;
+}
+
+const { age, situation } = Astro.params;
+const group = AGE_GROUPS.find((g) => g.slug === age)!;
+const sit = SITUATIONS.find((s) => s.slug === situation)!;
+const activities = (await allActivities())
+  .map(toActivity)
+  .filter((a) => matchesAge(a, group) && a.situations.includes(sit.slug));
+
+const related = [
+  { label: `All activities for ${group.title}`, href: `/age/${group.slug}/` },
+  { label: sit.title, href: `/situations/${sit.slug}/` },
+];
+
+const metaTitle = `${activities.length} ${sit.title} for ${group.title} — Kidtivity Lab`;
+const description = `${sit.title} that actually work for ${group.title.toLowerCase()}: realistic setup, short attention spans welcome, most need things you already have.`;
+---
+
+<ListingPage
+  title={`${sit.title} for ${group.title}`}
+  metaTitle={metaTitle}
+  description={description}
+  intro={sit.intro}
+  activities={activities}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: group.title, href: `/age/${group.slug}/` },
+    { label: sit.title },
+  ]}
+  related={related}
+  finderQuery={`age=${group.slug}`}
+  indexable={false}
+/>

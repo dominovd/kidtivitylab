@@ -1,0 +1,551 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ActivityCard from '../../components/ActivityCard.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import { render } from 'astro:content';
+import { allActivities, toActivity, timeLabel, materialsLabel, ageLabel } from '../../lib/activities';
+
+export async function getStaticPaths() {
+  const entries = await allActivities();
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const a = toActivity(entry);
+const { Content } = await render(entry);
+
+// "Try next": share an age overlap and at least one goal/situation
+const all = (await allActivities()).map(toActivity).filter((x) => x.id !== a.id);
+const related = all
+  .map((x) => ({
+    x,
+    score:
+      (x.age_min <= a.age_max && x.age_max >= a.age_min ? 2 : 0) +
+      x.goals.filter((g) => a.goals.includes(g)).length +
+      x.situations.filter((s) => a.situations.includes(s)).length,
+  }))
+  .sort((p, q) => q.score - p.score)
+  .slice(0, 3)
+  .map((p) => p.x);
+
+const title = `${a.title} — Kidtivity Lab`;
+const description = a.hook;
+const schemaSteps = entry.body
+  .split('\n')
+  .map((line) => line.match(/^\d+\.\s+\*\*(.+?)\*\*\s*(.*)$/))
+  .filter(Boolean)
+  .map((match, index) => ({
+    '@type': 'HowToStep',
+    position: index + 1,
+    name: match![1].replace(/[.:]$/, ''),
+    text: `${match![1]} ${match![2]}`.trim(),
+  }));
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: a.title,
+  description: a.hook,
+  ...(a.image ? { image: new URL(a.image, Astro.site).toString() } : {}),
+  totalTime: `PT${a.time_minutes === '45' ? 45 : a.time_minutes}M`,
+  supply: a.materials_list.map((m) => ({ '@type': 'HowToSupply', name: m })),
+  step: schemaSteps,
+};
+---
+
+<Base title={title} description={description} schema={[howToSchema]} ogImage={a.image}>
+  <div class="container">
+    <Breadcrumbs
+      crumbs={[
+        { label: 'Home', href: '/' },
+        { label: 'Activities', href: '/#finder' },
+        { label: a.title },
+      ]}
+    />
+
+    <article class="activity">
+      <header class="activity-header">
+        <p class="activity-kicker">An activity you can start today</p>
+        <h1>{a.title}</h1>
+        <p class="hook muted">{a.hook}</p>
+        <div class="badges-row">
+          <span class="badge badge-age">👶 {ageLabel(a.age_min, a.age_max)}</span>
+          <span class="badge badge-time">⏱ {timeLabel(a.time_minutes)}</span>
+          <span class="badge badge-materials">🏠 {materialsLabel(a.materials)}</span>
+          <span class="badge badge-goal">
+            {a.involvement === 'together' ? '👪 Play together' : '🧒 Independent play'}
+          </span>
+        </div>
+      </header>
+
+      <div class="activity-layout">
+        <div class="activity-main">
+          {a.image ? (
+            <img
+              class="hero-img"
+              src={a.image}
+              alt={a.image_alt ?? a.title}
+              width="1200"
+              height="800"
+            />
+          ) : (
+            <div class="activity-hero-placeholder" aria-hidden="true">✦</div>
+          )}
+
+          {(a.setup_minutes !== undefined ||
+            a.cleanup_minutes !== undefined ||
+            a.mess_level ||
+            a.energy_level ||
+            a.adult_help) && (
+            <section class="quick-facts card" aria-labelledby="quick-facts-heading">
+              <div class="quick-facts-heading">
+                <p class="activity-kicker">Know before you start</p>
+                <h2 id="quick-facts-heading">At a glance</h2>
+              </div>
+              <dl>
+                {a.setup_minutes !== undefined && (
+                  <div><dt>Setup</dt><dd>{a.setup_minutes} min</dd></div>
+                )}
+                {a.cleanup_minutes !== undefined && (
+                  <div><dt>Cleanup</dt><dd>{a.cleanup_minutes} min</dd></div>
+                )}
+                {a.mess_level && (
+                  <div><dt>Mess</dt><dd class="capitalize">{a.mess_level}</dd></div>
+                )}
+                {a.energy_level && (
+                  <div><dt>Energy</dt><dd class="capitalize">{a.energy_level}</dd></div>
+                )}
+                {a.adult_help && (
+                  <div><dt>Adult help</dt><dd class="capitalize">{a.adult_help}</dd></div>
+                )}
+              </dl>
+            </section>
+          )}
+
+          {a.before_you_start.length > 0 && (
+            <section class="before-start">
+              <h2>Before you start</h2>
+              <ul class="check-list">
+                {a.before_you_start.map((item) => <li>{item}</li>)}
+              </ul>
+            </section>
+          )}
+
+          <section class="lets-play flow">
+            <p class="activity-kicker">Step by step</p>
+            <h2>Let’s play</h2>
+            <Content />
+          </section>
+        </div>
+
+        <aside class="activity-sidebar no-print">
+          {a.materials_list.length > 0 && (
+            <section class="card youll-need">
+              <h2>You’ll need</h2>
+              <ul>
+                {a.materials_list.map((m) => (
+                  <li><span aria-hidden="true">✓</span>{m}</li>
+                ))}
+              </ul>
+              {/* Affiliate links live here when relevant — see docs/requirements-v1.md §10 */}
+              <button class="btn btn-outline print-btn" onclick="window.print()">🖨 Print this activity</button>
+            </section>
+          )}
+
+          {a.safety_note && (
+            <section class="callout callout-safety sidebar-callout">
+              <span class="callout-icon" aria-hidden="true">🛡</span>
+              <div>
+                <strong>Safety first</strong>
+                <p>{a.safety_note}</p>
+              </div>
+            </section>
+          )}
+
+          {a.tips && (
+            <section class="callout callout-tip sidebar-callout">
+              <span class="callout-icon" aria-hidden="true">💡</span>
+              <div>
+                <strong>Make it easier</strong>
+                <p>{a.tips}</p>
+              </div>
+            </section>
+          )}
+        </aside>
+      </div>
+
+      {a.why_kids_love_it && (
+        <section class="value-block card">
+          <div class="value-icon" aria-hidden="true">♥</div>
+          <div>
+            <p class="activity-kicker">The child’s-eye view</p>
+            <h2>Why kids love it</h2>
+            <p>{a.why_kids_love_it}</p>
+          </div>
+        </section>
+      )}
+
+      {(a.learning_details.length > 0 || a.skills_developed.length > 0) && (
+        <section class="card learning">
+          <div class="learning-heading">
+            <p class="activity-kicker">Built into the fun</p>
+            <h2>What they’re learning</h2>
+          </div>
+          <div class="learning-grid">
+            {a.learning_details.length > 0
+              ? a.learning_details.map((item, index) => (
+                  <div class="learning-item learning-item-detailed">
+                    <span aria-hidden="true">{['✋', '⚙', '♥'][index] ?? '✦'}</span>
+                    <div>
+                      <strong>{item.skill}</strong>
+                      <p>{item.detail}</p>
+                    </div>
+                  </div>
+                ))
+              : a.skills_developed.map((s, index) => (
+                  <div class="learning-item">
+                    <span aria-hidden="true">{['✋', '⚙', '♥'][index] ?? '✦'}</span>
+                    <strong>{s}</strong>
+                  </div>
+                ))}
+          </div>
+        </section>
+      )}
+
+      {a.variations.length > 0 && (
+        <section class="activity-section">
+          <p class="activity-kicker">Make it fit your child</p>
+          <h2>Ways to change the game</h2>
+          <div class="variation-grid">
+            {a.variations.map((variation) => (
+              <article class="card mini-card">
+                <h3>{variation.title}</h3>
+                <p>{variation.detail}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {a.common_problems.length > 0 && (
+        <section class="activity-section troubleshooting">
+          <p class="activity-kicker">Real-life fixes</p>
+          <h2>If it’s not going to plan</h2>
+          <div class="problem-list">
+            {a.common_problems.map((item) => (
+              <div>
+                <h3>{item.problem}</h3>
+                <p>{item.solution}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {a.faqs.length > 0 && (
+        <section class="activity-section faq">
+          <p class="activity-kicker">Good to know</p>
+          <h2>Frequently asked questions</h2>
+          <div class="faq-list">
+            {a.faqs.map((item) => (
+              <details>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {a.last_updated && (
+        <p class="editorial-note">
+          Kidtivity Lab activity guide · Last updated{' '}
+          <time datetime={a.last_updated}>
+            {new Date(`${a.last_updated}T00:00:00`).toLocaleDateString('en-US', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric',
+            })}
+          </time>
+        </p>
+      )}
+
+      <EmailCapture heading="Want more no-prep ideas?" />
+
+      {related.length > 0 && (
+        <section class="try-next section">
+          <h2>Try next</h2>
+          <div class="card-grid">
+            {related.map((r) => (
+              <ActivityCard activity={r} />
+            ))}
+          </div>
+        </section>
+      )}
+    </article>
+  </div>
+</Base>
+
+<style>
+  .activity { max-width: 1180px; margin-inline: auto; }
+  .activity-header { max-width: 850px; margin-bottom: 1.3rem; }
+  .activity-header h1 {
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+  }
+  .activity-kicker {
+    color: var(--primary);
+    font: 800 0.76rem/1 var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    margin-bottom: 0.45rem;
+  }
+  .hook { font-size: 1.18rem; margin-bottom: 0.8rem; max-width: 760px; }
+  .activity-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 330px;
+    align-items: start;
+    gap: 1.4rem;
+  }
+  .hero-img {
+    border-radius: 20px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  .activity-hero-placeholder {
+    aspect-ratio: 16 / 9;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--accent-soft), var(--warn-bg));
+    color: var(--accent);
+    font-size: 4rem;
+  }
+  .quick-facts {
+    margin-top: 1rem;
+    padding: 1.15rem 1.25rem;
+  }
+  .quick-facts-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.85rem;
+  }
+  .quick-facts-heading h2 { margin: 0; font-size: 1.45rem; }
+  .quick-facts-heading .activity-kicker { margin: 0; }
+  .quick-facts dl {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    margin: 0;
+  }
+  .quick-facts dl > div {
+    padding: 0 0.85rem;
+    border-left: 1px solid var(--border);
+  }
+  .quick-facts dl > div:first-child { padding-left: 0; border-left: 0; }
+  .quick-facts dt {
+    color: var(--text-soft);
+    font-size: 0.76rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .quick-facts dd { margin: 0.15rem 0 0; font-weight: 800; }
+  .capitalize { text-transform: capitalize; }
+  .before-start { margin-top: 1.75rem; }
+  .before-start h2 { font-size: 1.65rem; }
+  .check-list { list-style: none; padding: 0; }
+  .check-list li { position: relative; padding: 0.35rem 0 0.35rem 1.8rem; }
+  .check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 900;
+  }
+  .activity-sidebar {
+    position: sticky;
+    top: 96px;
+    display: grid;
+    gap: 0.85rem;
+  }
+  .youll-need { padding: 1.25rem; }
+  .youll-need h2 { color: var(--accent); font-size: 1.5rem; }
+  .youll-need ul { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .youll-need li {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    margin-bottom: 0.55rem;
+    font-size: 0.94rem;
+  }
+  .youll-need li span {
+    display: grid;
+    place-items: center;
+    width: 21px;
+    height: 21px;
+    flex: 0 0 21px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 900;
+  }
+  .print-btn { width: 100%; border-radius: 10px; }
+  .sidebar-callout {
+    display: flex;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  .sidebar-callout p { margin: 0.25rem 0 0; font-size: 0.88rem; line-height: 1.45; }
+  .callout-icon { font-size: 1.55rem; line-height: 1; }
+  .lets-play { margin-block: 1.5rem 2.2rem; }
+  .lets-play h2 { font-size: 2rem; margin-bottom: 0.4rem; }
+  .lets-play :global(ol) { counter-reset: step; list-style: none; padding: 0; margin: 0; }
+  .lets-play :global(ol li) {
+    counter-increment: step;
+    position: relative;
+    padding: 1rem 0 1rem 3.3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .lets-play :global(ol li)::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.75rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-family: var(--font-head);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .learning {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.35rem 1.5rem;
+    margin-block: 1.5rem;
+    background: var(--accent-soft);
+  }
+  .learning-heading h2 { margin: 0; font-size: 1.55rem; }
+  .learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+  .learning-item {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.8rem;
+    border-radius: 12px;
+    background: rgba(255,255,255,.67);
+  }
+  .learning-item-detailed { align-items: flex-start; }
+  .learning-item-detailed p {
+    margin: 0.2rem 0 0;
+    color: var(--text-soft);
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+  .learning-item > span {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: white;
+    color: var(--accent);
+  }
+  .value-block {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.4rem 1.5rem;
+    margin-block: 1.6rem;
+    background: var(--warn-bg);
+  }
+  .value-block h2 { margin-bottom: 0.25rem; }
+  .value-block p:last-child { margin: 0; max-width: 850px; }
+  .value-icon {
+    display: grid;
+    place-items: center;
+    flex: 0 0 54px;
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+    background: white;
+    color: var(--primary);
+    font-size: 1.5rem;
+  }
+  .activity-section { margin-block: 2.4rem; }
+  .activity-section > h2 { font-size: clamp(1.8rem, 3vw, 2.35rem); }
+  .variation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .mini-card { padding: 1.15rem; }
+  .mini-card h3 { color: var(--accent); font-size: 1.1rem; }
+  .mini-card p { margin: 0; color: var(--text-soft); }
+  .problem-list {
+    border-top: 1px solid var(--border);
+  }
+  .problem-list > div {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.75fr) 1.5fr;
+    gap: 1.5rem;
+    padding-block: 1.1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .problem-list h3, .problem-list p { margin: 0; }
+  .problem-list p { color: var(--text-soft); }
+  .faq-list { display: grid; gap: 0.65rem; }
+  .faq-list details {
+    padding: 1rem 1.15rem;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+  }
+  .faq-list summary {
+    cursor: pointer;
+    font-family: var(--font-head);
+    font-weight: 800;
+  }
+  .faq-list p { margin: 0.7rem 0 0; color: var(--text-soft); }
+  .editorial-note {
+    color: var(--text-soft);
+    font-size: 0.82rem;
+    text-align: center;
+    margin-block: 2rem;
+  }
+  @media (max-width: 900px) {
+    .activity-layout { grid-template-columns: 1fr; }
+    .activity-sidebar { position: static; grid-row: auto; grid-template-columns: repeat(2, 1fr); }
+    .youll-need { grid-row: span 2; }
+    .learning { grid-template-columns: 1fr; }
+    .quick-facts dl { grid-template-columns: repeat(3, 1fr); gap: 1rem 0; }
+    .variation-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 620px) {
+    .activity-sidebar { grid-template-columns: 1fr; }
+    .learning-grid { grid-template-columns: 1fr; }
+    .activity-header h1 { font-size: 2.5rem; }
+    .quick-facts-heading { display: block; }
+    .quick-facts dl { grid-template-columns: repeat(2, 1fr); }
+    .quick-facts dl > div:nth-child(odd) { padding-left: 0; border-left: 0; }
+    .problem-list > div { grid-template-columns: 1fr; gap: 0.35rem; }
+    .value-block { align-items: flex-start; }
+  }
+</style>

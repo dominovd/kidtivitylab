@@ -1,0 +1,60 @@
+---
+import ListingPage from '../../../components/ListingPage.astro';
+import { AGE_GROUPS, SITUATIONS, matchesAge } from '../../../lib/taxonomy';
+import { allActivities, toActivity, MIN_ACTIVITIES_PER_PAGE } from '../../../lib/activities';
+import { AGE_EDITORIAL } from '../../../lib/editorial';
+
+export async function getStaticPaths() {
+  const entries = (await allActivities()).map(toActivity);
+  return AGE_GROUPS.filter(
+    (g) => entries.filter((a) => matchesAge(a, g)).length >= MIN_ACTIVITIES_PER_PAGE
+  ).map((g) => ({ params: { age: g.slug } }));
+}
+
+const { age } = Astro.params;
+const group = AGE_GROUPS.find((g) => g.slug === age)!;
+const editorial = AGE_EDITORIAL[group.slug] ?? {};
+const activities = (await allActivities()).map(toActivity).filter((a) => matchesAge(a, group));
+
+// Sibling situation pages that exist for this age (≥ threshold)
+const related = SITUATIONS.filter(
+  (s) =>
+    activities.filter((a) => a.situations.includes(s.slug)).length >= MIN_ACTIVITIES_PER_PAGE
+).map((s) => ({
+  label: `${s.title} for ${group.title}`,
+  href: `/age/${group.slug}/${s.slug}/`,
+}));
+// Neighboring ages — only when the neighbor's hub actually exists (same guard)
+const entriesAll = (await allActivities()).map(toActivity);
+const idx = AGE_GROUPS.indexOf(group);
+for (const n of [AGE_GROUPS[idx - 1], AGE_GROUPS[idx + 1]].filter(Boolean)) {
+  if (entriesAll.filter((a) => matchesAge(a, n)).length >= MIN_ACTIVITIES_PER_PAGE) {
+    related.push({ label: `Activities for ${n.title}`, href: `/age/${n.slug}/` });
+  }
+}
+
+const metaTitle = `${activities.length} Activities for ${group.title} — Kidtivity Lab`;
+const description = `Easy, practical activities and games for ${group.title.toLowerCase()}: quick to set up, fun to play, and matched to what your child can do right now.`;
+---
+
+<ListingPage
+  title={`Activities for ${group.title}`}
+  metaTitle={metaTitle}
+  description={description}
+  intro={editorial.intro ?? `Every idea below fits what ${group.title.toLowerCase()} can actually do — grabbing, sorting, big movements, first words, or full pretend worlds. Pick one and start in minutes.`}
+  activities={activities}
+  crumbs={[{ label: 'Home', href: '/' }, { label: 'By age' }, { label: group.title }]}
+  related={related}
+  finderQuery={`age=${group.slug}`}
+  quickPicks={editorial.quickPicks}
+  quickPicksHeading={editorial.quickPicksHeading}
+  quickPicksIntro={editorial.quickPicksIntro}
+  allActivitiesHeading={editorial.allActivitiesHeading}
+  guideHeading={editorial.guideHeading}
+  guideIntro={editorial.guideIntro}
+  guideKicker={editorial.guideKicker}
+  guideTips={editorial.guideTips}
+  faqs={editorial.faqs}
+  faqHeading={editorial.faqHeading}
+  faqKicker={editorial.faqKicker}
+/>

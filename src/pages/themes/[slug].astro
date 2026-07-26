@@ -1,0 +1,46 @@
+---
+import ListingPage from '../../components/ListingPage.astro';
+import { THEMES } from '../../lib/taxonomy';
+import { allActivities, toActivity, MIN_ACTIVITIES_PER_PAGE } from '../../lib/activities';
+import { THEME_EDITORIAL } from '../../lib/editorial';
+
+export async function getStaticPaths() {
+  const entries = (await allActivities()).map(toActivity);
+  return THEMES.filter((t) => entries.filter(t.match).length >= MIN_ACTIVITIES_PER_PAGE).map(
+    (t) => ({ params: { slug: t.slug } })
+  );
+}
+
+const { slug } = Astro.params;
+const theme = THEMES.find((t) => t.slug === slug)!;
+const editorial = THEME_EDITORIAL[theme.slug] ?? {};
+const activities = (await allActivities()).map(toActivity).filter(theme.match);
+
+const related = THEMES.filter((t) => t.slug !== theme.slug).map((t) => ({
+  label: t.title,
+  href: `/themes/${t.slug}/`,
+}));
+
+const metaTitle = `${activities.length} ${theme.title} Ideas for Kids — Kidtivity Lab`;
+---
+
+<ListingPage
+  title={theme.title}
+  metaTitle={metaTitle}
+  description={`${theme.intro} Practical ${theme.title.toLowerCase()} ideas organized by age.`}
+  intro={editorial.intro ?? theme.intro}
+  activities={activities}
+  crumbs={[{ label: 'Home', href: '/' }, { label: 'Themes' }, { label: theme.title }]}
+  related={related}
+  quickPicks={editorial.quickPicks}
+  quickPicksHeading={editorial.quickPicksHeading}
+  quickPicksIntro={editorial.quickPicksIntro}
+  allActivitiesHeading={editorial.allActivitiesHeading}
+  guideHeading={editorial.guideHeading}
+  guideIntro={editorial.guideIntro}
+  guideKicker={editorial.guideKicker}
+  guideTips={editorial.guideTips}
+  faqs={editorial.faqs}
+  faqHeading={editorial.faqHeading}
+  faqKicker={editorial.faqKicker}
+/>

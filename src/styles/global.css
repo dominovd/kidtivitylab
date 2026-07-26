@@ -1,0 +1,310 @@
+/* ============================================================
+   Kidtivity Lab — design tokens & base styles
+   Palette follows design/mockup-*.png; all text/bg pairs pass WCAG AA.
+   ============================================================ */
+
+:root {
+  /* Color tokens */
+  --bg: #faf7f2;
+  --surface: #ffffff;
+  --text: #2d2a26; /* 13.4:1 on --bg */
+  --text-soft: #5c564e;
+  --primary: #c94a2b; /* coral, 4.7:1 with white text — AA */
+  --primary-soft: #fdeee8;
+  --accent: #177e6e; /* teal, 4.9:1 with white text — AA */
+  --accent-soft: #e3f2ef;
+  --warn-bg: #fdf6dd;
+  --warn-border: #e5c95c;
+  --star: #f2b134;
+  --border: #eae4da;
+  --shadow: 0 2px 8px rgba(45, 42, 38, 0.07);
+  --shadow-lg: 0 14px 38px rgba(72, 58, 40, 0.12);
+
+  /* Type */
+  --font-head: 'Nunito', 'Avenir Next', system-ui, sans-serif;
+  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Layout */
+  --maxw: 1240px;
+  --radius: 14px;
+  --radius-sm: 9px;
+  --tap: 44px; /* minimum touch target */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-head);
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); font-weight: 800; }
+h2 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); font-weight: 800; }
+h3 { font-size: 1.15rem; font-weight: 700; }
+
+p { margin: 0 0 1em; }
+
+a { color: var(--accent); }
+a:hover { text-decoration-thickness: 2px; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+.container {
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5ch;
+  min-height: var(--tap);
+  padding: 0.6em 1.4em;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.06s ease, background 0.15s ease;
+}
+.btn:active { transform: scale(0.97); }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: #b8431f; }
+.btn-outline { background: var(--surface); color: var(--primary); border-color: var(--primary); }
+.btn-outline:hover { background: var(--primary-soft); }
+
+/* ---------- Chips (Finder facets) ---------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap);
+  min-width: var(--tap);
+  padding: 0.35em 0.82em;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+.chip:hover { border-color: var(--accent); }
+.chip[aria-pressed='true'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.chip[aria-pressed='true']::after {
+  content: ' ✓';
+}
+.chip-age[aria-pressed='true'] {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.card a { color: inherit; text-decoration: none; }
+.card:hover { border-color: var(--accent); }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.activity-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.activity-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.activity-image,
+.activity-art {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.activity-art {
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  background:
+    radial-gradient(circle at 25% 25%, rgba(255,255,255,.82) 0 8%, transparent 9%),
+    linear-gradient(135deg, var(--accent-soft), #f7e9c7);
+}
+.activity-art span {
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 24px;
+  background: rgba(255,255,255,.72);
+  font: 800 2.2rem/1 var(--font-head);
+  transform: rotate(-6deg);
+}
+.activity-art.art-energy { background: linear-gradient(135deg, #e4f1ee, #f8dfd5); color: var(--primary); }
+.activity-art.art-calm { background: linear-gradient(135deg, #e7eef8, #f7e9c7); color: #4f73a7; }
+.activity-art.art-creative { background: linear-gradient(135deg, #f9e0d7, #f4e8bd); color: var(--primary); }
+.activity-art.art-stem { background: linear-gradient(135deg, #dcefeb, #e6e9f6); color: var(--accent); }
+.activity-card-body { padding: 1rem 1.05rem 1.15rem; }
+.activity-card-body h3 { margin-bottom: 0.25rem; }
+.activity-hook {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-bottom: 0.7rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ---------- Badges ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4ch;
+  padding: 0.15em 0.7em;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: var(--font-head);
+}
+.badge-time { background: #e8f1fa; color: #1d5c96; }
+.badge-materials { background: var(--warn-bg); color: #7a5d0e; }
+.badge-age { background: var(--primary-soft); color: #9c3517; }
+.badge-goal { background: var(--accent-soft); color: #115e52; }
+
+/* ---------- Callouts ---------- */
+.callout {
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+.callout-safety { background: var(--warn-bg); border: 1.5px solid var(--warn-border); }
+.callout-tip { background: var(--accent-soft); }
+
+/* ---------- Steps ---------- */
+.steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 0.75rem 0 0.75rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Email capture ---------- */
+.email-capture {
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.email-capture form { display: flex; flex-wrap: wrap; gap: 0.5rem; flex: 1 1 320px; }
+.email-capture input[type='email'] {
+  flex: 1 1 180px;
+  min-height: var(--tap);
+  padding: 0 1em;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+/* ---------- Ad slots (reserved heights → zero CLS when ads arrive) ---------- */
+.ad-slot {
+  display: none; /* enable when an ad network is integrated */
+  min-height: 280px;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+/* ---------- Utility ---------- */
+.section { padding-block: 2.5rem; }
+.muted { color: var(--text-soft); }
+.flow > * + * { margin-top: 1rem; }
+.badges-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .container { padding-inline: 1rem; }
+  .card-grid { grid-template-columns: 1fr; }
+  .section { padding-block: 2rem; }
+}
+
+/* ---------- Print (parents print activity pages) ---------- */
+@media print {
+  header, footer, .email-capture, .try-next, .no-print, .btn { display: none !important; }
+  body { background: #fff; font-size: 12pt; }
+  .steps li { border: none; padding-block: 0.35rem; }
+  a { color: inherit; text-decoration: none; }
+}

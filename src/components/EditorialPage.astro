@@ -1,0 +1,153 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  lede: string;
+  currentLabel: string;
+  updated?: string;
+  wide?: boolean;
+}
+
+const { eyebrow, title, lede, currentLabel, updated, wide = false } = Astro.props;
+---
+
+<div class:list={['container', 'editorial-shell', { wide }]}>
+  <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: currentLabel }]} />
+
+  <header class="editorial-hero">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    <p class="lede">{lede}</p>
+    {updated && <p class="updated">Last updated: {updated}</p>}
+  </header>
+
+  <main class="editorial-content">
+    <slot />
+  </main>
+</div>
+
+<style>
+  .editorial-shell {
+    max-width: 920px;
+    padding-bottom: 2rem;
+  }
+  .editorial-shell.wide { max-width: 1120px; }
+  .editorial-hero {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(2rem, 6vw, 4.2rem);
+    margin: 0.5rem 0 2.4rem;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background:
+      radial-gradient(circle at 90% 15%, rgba(242, 177, 52, 0.2), transparent 23%),
+      radial-gradient(circle at 78% 80%, rgba(23, 126, 110, 0.13), transparent 26%),
+      linear-gradient(135deg, #fffdf9, var(--primary-soft));
+  }
+  .editorial-hero::after {
+    content: '✦';
+    position: absolute;
+    right: clamp(1.5rem, 5vw, 4rem);
+    top: 50%;
+    color: var(--star);
+    font-size: clamp(2rem, 5vw, 4rem);
+    transform: translateY(-50%) rotate(8deg);
+    opacity: 0.75;
+  }
+  .eyebrow {
+    margin: 0 0 0.6rem;
+    color: var(--accent);
+    font: 800 0.78rem/1 var(--font-head);
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+  h1 {
+    max-width: 760px;
+    margin-bottom: 0.75rem;
+    font-size: clamp(2.5rem, 6vw, 4.4rem);
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+  }
+  .lede {
+    max-width: 720px;
+    margin: 0;
+    color: var(--text-soft);
+    font-size: clamp(1.05rem, 2vw, 1.22rem);
+    line-height: 1.6;
+  }
+  .updated {
+    margin: 1.25rem 0 0;
+    color: var(--text-soft);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .editorial-content {
+    font-size: 1.02rem;
+    line-height: 1.72;
+  }
+  .editorial-content :global(.content-section) {
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .editorial-content :global(.content-section:last-child) { border-bottom: 0; }
+  .editorial-content :global(.content-section h2) {
+    margin-bottom: 0.6rem;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+  }
+  .editorial-content :global(.content-section h3) { margin-bottom: 0.35rem; }
+  .editorial-content :global(.content-section p:last-child),
+  .editorial-content :global(.content-section ul:last-child) { margin-bottom: 0; }
+  .editorial-content :global(.content-section li + li) { margin-top: 0.45rem; }
+  .editorial-content :global(.card-grid-copy) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .editorial-content :global(.copy-card) {
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+  .editorial-content :global(.copy-card-icon) {
+    display: grid;
+    place-items: center;
+    width: 43px;
+    height: 43px;
+    margin-bottom: 0.75rem;
+    border-radius: 13px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font: 800 1.25rem var(--font-head);
+  }
+  .editorial-content :global(.copy-card:nth-child(2) .copy-card-icon) {
+    background: var(--warn-bg);
+    color: #8a650e;
+  }
+  .editorial-content :global(.copy-card:nth-child(3) .copy-card-icon) {
+    background: var(--primary-soft);
+    color: var(--primary);
+  }
+  .editorial-content :global(.note-box) {
+    padding: 1.25rem 1.4rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 14px 14px 0;
+    background: var(--accent-soft);
+  }
+  .editorial-content :global(.contact-grid) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  @media (max-width: 720px) {
+    .editorial-hero::after { display: none; }
+    .editorial-content :global(.card-grid-copy),
+    .editorial-content :global(.contact-grid) { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,222 @@
+---
+import Base from '../layouts/Base.astro';
+import Finder from '../components/Finder.astro';
+import EmailCapture from '../components/EmailCapture.astro';
+import SituationIcon from '../components/SituationIcon.astro';
+import { SITUATIONS } from '../lib/taxonomy';
+
+const title = 'Kidtivity Lab — Fun Activities & Games for Kids by Age';
+const description =
+  'Find something fun to do together. Pick your child’s age and a few details — get a practical activity you can start right now. Ages 1–10, most need zero prep.';
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Kidtivity Lab',
+    url: 'https://kidtivitylab.com/',
+  },
+];
+---
+
+<Base title={title} description={description} schema={schema}>
+  <div class="container home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="tagline">Simple ideas. Big moments.</p>
+        <h1>Find something fun<br />to do together</h1>
+        <p class="muted sub">
+          Choose your child’s age and a few details. Get an activity you can start right now.
+        </p>
+        <div class="trust-row" aria-label="Why parents use Kidtivity Lab">
+          <span><i aria-hidden="true">✓</i> No-prep ideas</span>
+          <span><i aria-hidden="true">♡</i> Parent-friendly</span>
+          <span><i aria-hidden="true">✦</i> Ages 1–10</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img
+          src="/images/hero-tape-road.webp"
+          alt="A parent and child making a road from painter’s tape"
+          width="1440"
+          height="960"
+          fetchpriority="high"
+        />
+      </div>
+    </section>
+
+    <Finder />
+
+    <section class="section browse" aria-label="Browse by situation">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Start with the moment</p>
+          <h2>Browse by what today looks like</h2>
+        </div>
+        <p class="muted">Ideas for rainy afternoons, restless energy, quiet time, and everything in between.</p>
+      </div>
+      <div class="situation-grid">
+        {SITUATIONS.map((s, index) => (
+          <a class={`situation-card situation-${index + 1}`} href={`/situations/${s.slug}/`}>
+            <span class="situation-icon" aria-hidden="true">
+              <SituationIcon slug={s.slug} />
+            </span>
+            <span class="situation-copy">
+              <strong>{s.title.replace(' Activities', '')}</strong>
+              <small>Explore activities</small>
+            </span>
+            <span aria-hidden="true">→</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <EmailCapture />
+  </div>
+</Base>
+
+<style>
+  .home { overflow: hidden; }
+  .hero {
+    min-height: 430px;
+    display: grid;
+    grid-template-columns: 0.88fr 1.12fr;
+    align-items: center;
+    gap: 1.5rem;
+    padding-block: 2.3rem 1.2rem;
+  }
+  .hero-copy { position: relative; z-index: 2; padding-left: 0.25rem; }
+  .tagline {
+    color: var(--accent);
+    font-family: var(--font-head);
+    font-weight: 800;
+    margin-bottom: 0.45rem;
+    letter-spacing: 0.01em;
+  }
+  .hero h1 {
+    font-size: clamp(2.7rem, 4.4vw, 4.65rem);
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    margin-bottom: 1rem;
+  }
+  .sub { font-size: 1.08rem; max-width: 500px; line-height: 1.55; }
+  .trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.35rem;
+    margin-top: 1.4rem;
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+  .trust-row span { display: inline-flex; align-items: center; gap: 0.45rem; }
+  .trust-row i {
+    width: 25px;
+    height: 25px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-style: normal;
+  }
+  .trust-row span:nth-child(2) i { background: var(--primary-soft); color: var(--primary); }
+  .trust-row span:nth-child(3) i { background: var(--warn-bg); color: #9a6b00; }
+  .hero-art {
+    align-self: stretch;
+    margin-right: calc((100vw - min(100vw, var(--maxw))) / -2);
+    min-width: 0;
+    position: relative;
+  }
+  .hero-art img {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    object-fit: cover;
+    object-position: 64% center;
+    border-radius: 0 0 0 44px;
+    mask-image: linear-gradient(to right, transparent 0%, black 14%, black 100%);
+  }
+  .section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  .section-heading > p { max-width: 500px; margin: 0; }
+  .eyebrow {
+    margin: 0 0 0.2rem;
+    color: var(--primary);
+    font: 800 0.85rem/1 var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .situation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9rem;
+  }
+  .situation-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.85rem;
+    min-height: 104px;
+    padding: 1rem 1.15rem;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface);
+    font-family: var(--font-head);
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  }
+  .situation-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+  }
+  .situation-icon {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 1.65rem;
+  }
+  .situation-2 .situation-icon,
+  .situation-5 .situation-icon { background: var(--warn-bg); color: #8a650e; }
+  .situation-3 .situation-icon,
+  .situation-6 .situation-icon { background: var(--primary-soft); color: var(--primary); }
+  .situation-copy { display: grid; }
+  .situation-copy strong { font-size: 1.02rem; }
+  .situation-copy small {
+    margin-top: 0.15rem;
+    color: var(--text-soft);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+  }
+  @media (max-width: 920px) {
+    .hero { grid-template-columns: 1fr; padding-top: 2.3rem; }
+    .hero-copy { text-align: center; }
+    .hero-copy .sub { margin-inline: auto; }
+    .trust-row { justify-content: center; }
+    .hero-art { margin: 0 -1rem; max-height: 390px; }
+    .hero-art img {
+      min-height: 330px;
+      border-radius: 24px;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 100%);
+    }
+  }
+  @media (max-width: 720px) {
+    .hero h1 { font-size: clamp(2.35rem, 12vw, 3.5rem); }
+    .hero { min-height: auto; }
+    .hero-art { max-height: 320px; }
+    .hero-art img { min-height: 290px; }
+    .section-heading { display: block; }
+    .section-heading > p { margin-top: 0.75rem; }
+    .situation-grid { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,299 @@
+---
+/** Shared shell for programmatic listing pages (age hubs, situations, themes). */
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ActivityCard from '../components/ActivityCard.astro';
+import EmailCapture from '../components/EmailCapture.astro';
+import type { Activity } from '../lib/taxonomy';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+interface Related {
+  label: string;
+  href: string;
+}
+interface QuickPick {
+  label: string;
+  activityId: string;
+  reason: string;
+}
+interface GuideTip {
+  title: string;
+  text: string;
+}
+interface FAQ {
+  question: string;
+  answer: string;
+}
+interface Props {
+  title: string;
+  metaTitle: string;
+  description: string;
+  intro: string;
+  activities: Activity[];
+  crumbs: Crumb[];
+  related?: Related[];
+  finderQuery?: string;
+  quickPicks?: QuickPick[];
+  quickPicksHeading?: string;
+  quickPicksIntro?: string;
+  allActivitiesHeading?: string;
+  guideHeading?: string;
+  guideIntro?: string;
+  guideKicker?: string;
+  guideTips?: GuideTip[];
+  faqs?: FAQ[];
+  faqHeading?: string;
+  faqKicker?: string;
+  indexable?: boolean;
+}
+
+const {
+  title,
+  metaTitle,
+  description,
+  intro,
+  activities,
+  crumbs,
+  related = [],
+  finderQuery,
+  quickPicks = [],
+  quickPicksHeading = 'Our quick picks',
+  quickPicksIntro = 'Choose by the kind of day you are having, not by scrolling through every idea.',
+  allActivitiesHeading,
+  guideHeading,
+  guideIntro,
+  guideKicker = 'A calmer game plan',
+  guideTips = [],
+  faqs = [],
+  faqHeading = 'Frequently asked questions',
+  faqKicker = 'Helpful answers',
+  indexable = true,
+} = Astro.props;
+const featuredActivities = quickPicks
+  .map((pick) => ({ ...pick, activity: activities.find((a) => a.id === pick.activityId) }))
+  .filter((pick) => pick.activity);
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: metaTitle,
+  numberOfItems: activities.length,
+  itemListElement: activities.map((a, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: a.title,
+    url: new URL(`/activities/${a.id}/`, Astro.site).toString(),
+  })),
+};
+---
+
+<Base
+  title={metaTitle}
+  description={description}
+  schema={[itemListSchema]}
+  robots={indexable ? undefined : 'noindex,follow'}
+>
+  <div class="container">
+    <Breadcrumbs crumbs={crumbs} />
+    <header class="listing-header">
+      <h1>{title}</h1>
+      <p class="intro">{intro}</p>
+      {finderQuery && (
+        <a class="btn btn-outline no-print" href={`/?${finderQuery}#finder`}>
+          🎛 Fine-tune in the Activity Finder
+        </a>
+      )}
+    </header>
+
+    {featuredActivities.length > 0 && (
+      <section class="quick-picks section" aria-labelledby="quick-picks-heading">
+        <div class="section-heading">
+          <p class="listing-kicker">Start here</p>
+          <h2 id="quick-picks-heading">{quickPicksHeading}</h2>
+          <p>{quickPicksIntro}</p>
+        </div>
+        <div class="pick-grid">
+          {featuredActivities.map((pick) => (
+            <div class="pick">
+              <p class="pick-label">{pick.label}</p>
+              <ActivityCard activity={pick.activity!} />
+              <p class="pick-reason">{pick.reason}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="section" aria-labelledby="all-activities-heading">
+      <div class="section-heading list-heading">
+        <p class="listing-kicker">Browse the collection</p>
+        <h2 id="all-activities-heading">{allActivitiesHeading ?? `All ${title.toLowerCase()}`}</h2>
+      </div>
+      <div class="card-grid">
+        {activities.map((a) => (
+          <ActivityCard activity={a} />
+        ))}
+      </div>
+    </section>
+
+    {(guideHeading || guideTips.length > 0) && (
+      <section class="category-guide section" aria-labelledby="category-guide-heading">
+        <div class="guide-intro">
+          <p class="listing-kicker">{guideKicker}</p>
+          <h2 id="category-guide-heading">{guideHeading}</h2>
+          {guideIntro && <p>{guideIntro}</p>}
+        </div>
+        <div class="guide-grid">
+          {guideTips.map((tip, index) => (
+            <article>
+              <span aria-hidden="true">{index + 1}</span>
+              <div>
+                <h3>{tip.title}</h3>
+                <p>{tip.text}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {faqs.length > 0 && (
+      <section class="listing-faq section" aria-labelledby="listing-faq-heading">
+        <div class="section-heading">
+          <p class="listing-kicker">{faqKicker}</p>
+          <h2 id="listing-faq-heading">{faqHeading}</h2>
+        </div>
+        <div class="faq-list">
+          {faqs.map((item) => (
+            <details>
+              <summary>{item.question}</summary>
+              <p>{item.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <EmailCapture />
+
+    {related.length > 0 && (
+      <nav class="related section" aria-label="Related pages">
+        <h2>Also see</h2>
+        <ul>
+          {related.map((r) => (
+            <li><a href={r.href}>{r.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+    )}
+  </div>
+</Base>
+
+<style>
+  .listing-header { max-width: 720px; padding-block: 0.5rem 1rem; }
+  .intro { font-size: 1.1rem; color: var(--text-soft); }
+  .listing-kicker {
+    color: var(--primary);
+    font: 800 0.76rem/1 var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    margin-bottom: 0.45rem;
+  }
+  .section-heading { max-width: 700px; margin-bottom: 1.1rem; }
+  .section-heading h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 0.25rem; }
+  .section-heading > p:last-child { color: var(--text-soft); margin: 0; }
+  .list-heading { margin-bottom: 1.25rem; }
+  .pick-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .pick { position: relative; }
+  .pick-label {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    top: 0.8rem;
+    left: 0.8rem;
+    margin: 0;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+    background: var(--primary);
+    color: white;
+    font: 800 0.78rem/1 var(--font-head);
+    box-shadow: 0 4px 12px rgba(86, 50, 32, 0.16);
+  }
+  .pick-reason {
+    margin: 0.7rem 0 0;
+    padding-inline: 0.4rem;
+    color: var(--text-soft);
+    font-size: 0.9rem;
+  }
+  .category-guide {
+    display: grid;
+    grid-template-columns: minmax(250px, 0.8fr) 1.5fr;
+    gap: 2.5rem;
+    padding: clamp(1.4rem, 4vw, 2.4rem);
+    border-radius: 22px;
+    background: var(--accent-soft);
+  }
+  .guide-intro h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+  .guide-intro > p:last-child { color: var(--text-soft); }
+  .guide-grid { display: grid; gap: 0.75rem; }
+  .guide-grid article {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem;
+    border-radius: 14px;
+    background: rgba(255,255,255,.72);
+  }
+  .guide-grid article > span {
+    display: grid;
+    place-items: center;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: white;
+    font-weight: 900;
+  }
+  .guide-grid h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+  .guide-grid p { margin: 0; color: var(--text-soft); font-size: 0.92rem; }
+  .faq-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+  .faq-list details {
+    align-self: start;
+    padding: 1rem 1.15rem;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+  }
+  .faq-list summary { cursor: pointer; font-family: var(--font-head); font-weight: 800; }
+  .faq-list p { margin: 0.7rem 0 0; color: var(--text-soft); }
+  .related ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .related a {
+    display: inline-block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.4em 1em;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .related a:hover { border-color: var(--accent); }
+  @media (max-width: 800px) {
+    .pick-grid { grid-template-columns: 1fr; }
+    .category-guide { grid-template-columns: 1fr; gap: 1rem; }
+  }
+  @media (max-width: 620px) {
+    .faq-list { grid-template-columns: 1fr; }
+  }
+</style>

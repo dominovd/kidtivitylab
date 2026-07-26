@@ -1,0 +1,115 @@
+---
+import ListingPage from '../../components/ListingPage.astro';
+import { AGE_GROUPS, SITUATIONS, matchesAge } from '../../lib/taxonomy';
+import { allActivities, toActivity, MIN_ACTIVITIES_PER_PAGE } from '../../lib/activities';
+import { SITUATION_EDITORIAL } from '../../lib/editorial';
+
+export async function getStaticPaths() {
+  const entries = (await allActivities()).map(toActivity);
+  return SITUATIONS.filter(
+    (s) =>
+      entries.filter((a) => a.situations.includes(s.slug)).length >= MIN_ACTIVITIES_PER_PAGE
+  ).map((s) => ({ params: { slug: s.slug } }));
+}
+
+const { slug } = Astro.params;
+const sit = SITUATIONS.find((s) => s.slug === slug)!;
+const activities = (await allActivities())
+  .map(toActivity)
+  .filter((a) => a.situations.includes(sit.slug));
+
+const related = AGE_GROUPS.filter(
+  (g) =>
+    activities.filter((a) => matchesAge(a, g)).length >= MIN_ACTIVITIES_PER_PAGE
+).map((g) => ({
+  label: `${sit.title} for ${g.title}`,
+  href: `/age/${g.slug}/${sit.slug}/`,
+}));
+
+const metaTitle = `${activities.length} ${sit.title} for Kids — Kidtivity Lab`;
+const description = `${sit.intro} Practical ideas sorted by age, time, and materials.`;
+const isRainyDay = sit.slug === 'rainy-day';
+const editorial = SITUATION_EDITORIAL[sit.slug] ?? {};
+const rainyDayQuickPicks = [
+  {
+    label: 'Best for burning energy',
+    activityId: 'masking-tape-shape-jump',
+    reason: 'Big jumps and simple instructions turn a small patch of floor into an active game.',
+  },
+  {
+    label: 'Best calm-down activity',
+    activityId: 'blanket-fort-reading-den',
+    reason: 'A familiar book feels new again when children help build the place where you read it.',
+  },
+  {
+    label: 'Best with no preparation',
+    activityId: 'shadow-puppet-theater',
+    reason: 'All you need is a light, a blank wall, and a few minutes of shared imagination.',
+  },
+];
+const rainyDayGuideTips = [
+  {
+    title: 'Start with the energy level',
+    text: 'If your child is bouncing off the furniture, begin with movement. Save the fort, story, or sensory activity for the natural slowdown afterward.',
+  },
+  {
+    title: 'Choose the smallest setup',
+    text: 'A ten-minute game that starts now is usually more useful than an elaborate activity that needs an hour of preparation.',
+  },
+  {
+    title: 'Give the play a clear ending',
+    text: 'Use a timer, a final round, or one last rescue. Children handle transitions better when they know what “finished” will look like.',
+  },
+  {
+    title: 'Expect repetition',
+    text: 'Young children often want the same jump, song, or rescue again. Repeating it is how they practise control, language, and prediction.',
+  },
+];
+const rainyDayFaqs = [
+  {
+    question: 'How do I keep kids active indoors without damaging the house?',
+    answer:
+      'Clear one small area, move sharp-edged furniture, and choose controlled movements such as animal walks, taped floor shapes, or sock tossing. Avoid running games on slippery floors.',
+  },
+  {
+    question: 'What is a good rainy day activity with no supplies?',
+    answer:
+      'Try I Spy, a story chain, an animal walk race, or shadow puppets. Each can begin with objects and spaces already around you.',
+  },
+  {
+    question: 'How long should an indoor activity last?',
+    answer:
+      'Follow the child rather than the clock. Ten focused minutes can be a complete activity for a toddler; preschoolers may return to a favorite setup several times.',
+  },
+  {
+    question: 'How can I balance active play and quiet time?',
+    answer:
+      'Pair one movement activity with one calmer choice. For example, follow Shape Jump with a blanket-fort story or Rainbow Ice Rescue at the table.',
+  },
+];
+---
+
+<ListingPage
+  title={sit.title}
+  metaTitle={metaTitle}
+  description={description}
+  intro={editorial.intro ?? sit.intro}
+  activities={activities}
+  crumbs={[{ label: 'Home', href: '/' }, { label: 'Situations' }, { label: sit.title }]}
+  related={related}
+  quickPicks={isRainyDay ? rainyDayQuickPicks : editorial.quickPicks}
+  quickPicksHeading={editorial.quickPicksHeading}
+  quickPicksIntro={editorial.quickPicksIntro}
+  allActivitiesHeading={editorial.allActivitiesHeading}
+  guideHeading={isRainyDay ? 'How to plan an easier day indoors' : editorial.guideHeading}
+  guideIntro={
+    isRainyDay
+      ? 'You do not need to fill every minute. One active game, one slower invitation, and some unstructured play is a realistic rhythm for a long day inside.'
+      : editorial.guideIntro
+  }
+  guideKicker={editorial.guideKicker}
+  guideTips={isRainyDay ? rainyDayGuideTips : editorial.guideTips}
+  faqs={isRainyDay ? rainyDayFaqs : editorial.faqs}
+  faqHeading={isRainyDay ? 'Rainy day activity FAQ' : editorial.faqHeading}
+  faqKicker={editorial.faqKicker}
+/>

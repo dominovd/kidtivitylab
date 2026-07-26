@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import EditorialPage from '../components/EditorialPage.astro';
+---
+
+<Base
+  title="Contact Kidtivity Lab"
+  description="Contact Kidtivity Lab about activity ideas, corrections, partnerships, privacy, or general questions."
+>
+  <EditorialPage
+    eyebrow="Get in touch"
+    title="We’d love to hear from you"
+    lede="Questions, corrections, partnership ideas, or a family activity we should add? Send us a note and point us in the right direction."
+    currentLabel="Contact"
+    wide
+  >
+    <section class="content-section">
+      <h2>The simplest way to reach us</h2>
+      <p>
+        Email <a href="mailto:info@kidtivitylab.com"><strong>info@kidtivitylab.com</strong></a>.
+        We usually aim to reply within 3–5 business days.
+      </p>
+
+      <div class="contact-grid">
+        <article class="copy-card">
+          <span class="copy-card-icon" aria-hidden="true">✎</span>
+          <h3>Suggest an activity</h3>
+          <p>Tell us the age, materials, setup time, and what makes the activity work for your family.</p>
+        </article>
+        <article class="copy-card">
+          <span class="copy-card-icon" aria-hidden="true">✓</span>
+          <h3>Report a correction</h3>
+          <p>Include the page URL and the detail that needs attention so we can find it quickly.</p>
+        </article>
+        <article class="copy-card">
+          <span class="copy-card-icon" aria-hidden="true">↗</span>
+          <h3>Partnerships and press</h3>
+          <p>Share your organization, audience, proposed collaboration, and expected timeline.</p>
+        </article>
+        <article class="copy-card">
+          <span class="copy-card-icon" aria-hidden="true">○</span>
+          <h3>Privacy requests</h3>
+          <p>Use the subject “Privacy Request” and describe the right you would like to exercise.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Before sending an activity idea</h2>
+      <p>The most useful submissions include:</p>
+      <ul>
+        <li>the child age or age range;</li>
+        <li>everything needed to start;</li>
+        <li>clear, numbered steps;</li>
+        <li>any safety considerations or messy parts;</li>
+        <li>what you would change for younger or older children.</li>
+      </ul>
+      <p>
+        Please do not send photographs, names, or other identifying information about children.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2>A quick note about advice</h2>
+      <p>
+        We can help with the site and its content, but we cannot provide individual medical,
+        developmental, legal, or emergency advice. For urgent safety concerns, contact the
+        appropriate local professional or emergency service.
+      </p>
+    </section>
+  </EditorialPage>
+</Base>

@@ -1,0 +1,175 @@
+---
+/**
+ * Activity Finder — the core interactive island.
+ * Live results: no submit button; the list below updates on every tap
+ * and filter state is mirrored into the URL query string.
+ */
+import { AGE_GROUPS, PLACES, TIMES, MATERIALS } from '../lib/taxonomy';
+---
+
+<section id="finder" class="finder card no-print" aria-label="Activity Finder">
+  <div class="finder-inner">
+    <div class="finder-age">
+      <p class="finder-kicker">Activity Finder</p>
+      <h2>What works for today?</h2>
+      <fieldset>
+        <legend>Choose an age</legend>
+        <div class="chip-row age-row" data-facet="age" role="group">
+          {AGE_GROUPS.map((g) => (
+            <button type="button" class="chip chip-age" data-value={g.slug} aria-pressed="false">
+              {g.label}
+            </button>
+          ))}
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="finder-filters">
+      <fieldset>
+        <legend>Place</legend>
+        <div class="chip-row" data-facet="place" role="group">
+          {PLACES.map((p) => (
+            <button type="button" class="chip" data-value={p.slug} aria-pressed="false">{p.label}</button>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Time</legend>
+        <div class="chip-row" data-facet="time" role="group">
+          {TIMES.map((t) => (
+            <button type="button" class="chip" data-value={t.slug} aria-pressed="false">{t.label}</button>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Materials</legend>
+        <div class="chip-row" data-facet="materials" role="group">
+          {MATERIALS.map((m) => (
+            <button type="button" class="chip" data-value={m.slug} aria-pressed="false">{m.label}</button>
+          ))}
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="finder-actions">
+      <span class="sparkle" aria-hidden="true">✦</span>
+      <p class="match-count" data-count aria-live="polite"></p>
+      <a class="btn btn-primary" href="#results">Show activities <span aria-hidden="true">→</span></a>
+      <button type="button" class="surprise-link" data-surprise>Surprise me ✨</button>
+    </div>
+  </div>
+</section>
+
+<section id="results" class="section results-section" aria-label="Matching activities">
+  <div class="results-heading">
+    <div>
+      <p class="finder-kicker">Hand-picked ideas</p>
+      <h2 data-results-heading>Ideas for today</h2>
+    </div>
+    <p class="muted">Quick to understand. Easy to start. Designed for real family life.</p>
+  </div>
+  <p class="muted" data-relaxed hidden></p>
+  <div class="card-grid" data-results></div>
+</section>
+
+<style>
+  .finder {
+    padding: 0;
+    position: relative;
+    z-index: 4;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+  }
+  .finder-inner {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(430px, 1.35fr) minmax(190px, 0.62fr);
+    align-items: stretch;
+  }
+  .finder-age,
+  .finder-filters,
+  .finder-actions { padding: 1.35rem 1.5rem; }
+  .finder-age,
+  .finder-filters { border-right: 1px solid var(--border); }
+  .finder-kicker {
+    color: var(--primary);
+    font: 800 0.75rem/1 var(--font-head);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+  }
+  .finder h2 { font-size: 1.35rem; margin-bottom: 0.8rem; }
+  fieldset {
+    display: grid;
+    grid-template-columns: 78px 1fr;
+    align-items: center;
+    gap: 0.55rem;
+    border: none;
+    margin: 0 0 0.55rem;
+    padding: 0;
+  }
+  .finder-filters .chip-row { grid-column: 2; min-width: 0; }
+  .finder-age fieldset { display: block; margin: 0; }
+  legend {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.78rem;
+    color: var(--text-soft);
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .finder-age legend { margin-bottom: 0.4rem; }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .age-row { gap: 0.32rem; }
+  .finder-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.55rem;
+  }
+  .sparkle { color: var(--star); font-size: 1.8rem; line-height: 1; }
+  .match-count { margin: 0; font-family: var(--font-head); font-weight: 800; font-size: 1.2rem; }
+  .finder-actions .btn { width: 100%; border-radius: 10px; }
+  .surprise-link {
+    border: 0;
+    background: transparent;
+    color: var(--primary);
+    font: 800 0.85rem var(--font-head);
+    cursor: pointer;
+  }
+  .results-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  .results-heading h2 { margin-bottom: 0; }
+  .results-heading > p { max-width: 420px; margin: 0; font-size: 0.95rem; }
+  @media (max-width: 1040px) {
+    .finder-inner { grid-template-columns: 1fr 1.35fr; }
+    .finder-filters { border-right: 0; }
+    .finder-actions {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      border-top: 1px solid var(--border);
+    }
+    .finder-actions .btn { width: auto; }
+  }
+  @media (max-width: 720px) {
+    .finder-inner { display: block; }
+    .finder-age,
+    .finder-filters { border-right: 0; border-bottom: 1px solid var(--border); }
+    fieldset { display: block; margin-bottom: 1rem; }
+    legend { margin-bottom: 0.4rem; }
+    .finder-actions { flex-direction: column; }
+    .finder-actions .btn { width: 100%; }
+    .results-heading { display: block; }
+    .results-heading > p { margin-top: 0.7rem; }
+  }
+</style>
+
+<script src="../scripts/finder.js"></script>
