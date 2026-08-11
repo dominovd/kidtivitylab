@@ -8,7 +8,7 @@ time_minutes: "10"
 materials: none
 goals: [energy]
 involvement: together
-situations: [indoor, rainy-day, outdoor]
+situations: [indoor, rainy-day, outdoor, birthday-party]
 skills_developed: ["Gross motor", "Balance", "Following instructions"]
 tips: "Call out slow animals (turtle! sloth!) when you need the energy to come DOWN a notch before dinner."
 image: "/images/activities/animal-walk-race.webp"

@@ -23,7 +23,7 @@ const activities = defineCollection({
       involvement: z.enum(['together', 'independent']),
       situations: z
         .array(
-          z.enum(['rainy-day', 'indoor', 'outdoor', 'road-trip', 'sick-day', 'quiet-time'])
+          z.enum(['rainy-day', 'indoor', 'outdoor', 'road-trip', 'sick-day', 'quiet-time', 'birthday-party'])
         )
         .default([]),
       seasons: z

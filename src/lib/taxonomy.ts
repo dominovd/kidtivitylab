@@ -114,6 +114,12 @@ export const SITUATIONS = [
     intro:
       'Wind-down activities for before naps, before bed, or whenever the volume needs to come down a notch.',
   },
+  {
+    slug: 'birthday-party',
+    title: 'Birthday Party Games',
+    intro:
+      'Party games that actually work with a living room full of excited kids: quick to explain, fair to play, and easy to run without special equipment.',
+  },
 ] as const;
 
 /** Theme landing pages. Membership comes from goals / materials. */
@@ -142,6 +148,13 @@ export const THEMES = [
     title: 'Active Games',
     match: (a: Activity) => a.goals.includes('energy'),
     intro: 'For the days when the wiggles must come out. Big movement, small space, no equipment.',
+  },
+  {
+    slug: 'calm-down',
+    title: 'Calm Down Activities',
+    match: (a: Activity) => a.goals.includes('calm'),
+    intro:
+      'Gentle, regulating activities for overstimulated moments: before naps, after meltdowns, or when the whole day needs a softer gear.',
   },
 ] as const;
 

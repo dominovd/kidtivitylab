@@ -9,7 +9,7 @@ materials: household
 materials_list: ["6–10 pairs of rolled-up socks", "A laundry basket or box"]
 goals: [energy]
 involvement: together
-situations: [indoor, rainy-day]
+situations: [indoor, rainy-day, birthday-party]
 seasons: [winter]
 skills_developed: ["Gross motor", "Aim & coordination", "Turn-taking"]
 tips: "Make it easier by moving the basket closer; make it harder with a points system — couch is 1 point, basket is 3."

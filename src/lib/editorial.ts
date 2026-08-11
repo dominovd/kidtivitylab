@@ -97,6 +97,29 @@ export const SITUATION_EDITORIAL: Record<string, ListingEditorial> = {
       { question: 'Should I encourage play when my child is ill?', answer: 'Offer rather than insist. Rest, fluids, comfort, and medical guidance take priority; quiet play is useful only when the child wants it.' },
     ],
   },
+  'birthday-party': {
+    quickPicksHeading: 'Pick by the moment in the party',
+    quickPicksIntro: 'Every party has three phases: arrivals, the energy peak, and the wind-down before cake. Plan one game for each.',
+    quickPicks: [
+      { label: 'While guests arrive', activityId: 'picture-clue-treasure-hunt', reason: 'Early arrivals join the hunt one by one — nobody waits awkwardly for the party to start.' },
+      { label: 'For the energy peak', activityId: 'freeze-dance', reason: 'Everyone plays at once, nobody is eliminated for long, and the adult controls the volume with the pause button.' },
+      { label: 'To calm the room before cake', activityId: 'sleeping-lions', reason: 'The whole group lies still on purpose — the only party game where quiet is the goal.' },
+    ],
+    guideKicker: 'Party survival',
+    guideHeading: 'Running games for a room full of excited kids',
+    guideIntro: 'Party games fail for predictable reasons: rules explained too long, eliminated kids with nothing to do, and prizes that matter more than playing.',
+    guideTips: [
+      { title: 'Demonstrate, don’t explain', text: 'Play one fast example round yourself. Thirty seconds of showing beats three minutes of telling a crowd of five-year-olds.' },
+      { title: 'Avoid true elimination', text: 'Kids who are "out" should re-enter within a round — collecting points, judging, or doing a silly task — or the game ends with most guests bored.' },
+      { title: 'Plan more games than you need', text: 'Have five ready, expect to use three. Cut a game the moment energy dips instead of pushing it to the planned end.' },
+    ],
+    faqHeading: 'Birthday party game questions',
+    faqs: [
+      { question: 'How many games do I need for a 2-hour birthday party?', answer: 'Three to four organized games of 10–15 minutes each is usually enough, spaced between free play, food, and cake. Keep one or two backups ready in case a game ends early.' },
+      { question: 'What party games work for mixed ages?', answer: 'Choose games where each child performs at their own level rather than competing head-to-head: freeze dance, treasure hunts with picture clues, cooperative balloon games, and Sleeping Lions all scale across ages.' },
+      { question: 'Do party games need prizes?', answer: 'No — and skipping individual prizes avoids most party tears. If you want rewards, give the same small favor to everyone at the end, tied to the whole set of games rather than winning one.' },
+    ],
+  },
   'quiet-time': {
     quickPicksHeading: 'Different kinds of quiet',
     quickPicksIntro: 'Quiet time may mean focused hands, a soothing visual, or a shared story—not complete silence.',
@@ -273,6 +296,22 @@ export const THEME_EDITORIAL: Record<string, ListingEditorial> = {
     faqs: [
       { question: 'How do I know if my child is learning during play?', answer: 'Look for comparing, repeating with a change, explaining, predicting, remembering a rule, or using a new word—not just a correct final answer.' },
       { question: 'Should I quiz children while they play?', answer: 'Occasional genuine questions can extend thinking, but constant testing may interrupt concentration. Describe and wonder alongside the child instead.' },
+    ],
+  },
+  'calm-down': {
+    intro: 'Calming activities give a wound-up child something concrete to do with their attention: watch, breathe, sort, squeeze, or listen. They work best offered as an invitation, not a correction.',
+    guideKicker: 'Regulation, not punishment',
+    guideHeading: 'Helping a child actually settle',
+    guideIntro: 'A calm-down activity is not a time-out. It works when the child feels the adult is on their side and the activity itself is genuinely interesting.',
+    guideTips: [
+      { title: 'Catch the ramp, not the peak', text: 'These activities help most in the wind-up phase or after the storm has passed. Mid-meltdown, presence and safety come first; save the activity for a few minutes later.' },
+      { title: 'Lower your own volume first', text: 'Children borrow regulation from adults. A slower voice and slower movements do half the work before the activity starts.' },
+      { title: 'Keep a calm kit ready', text: 'A sensory bottle, a favorite book, and one quiet sorting task in a known spot beat improvising while a child is already upset.' },
+    ],
+    faqHeading: 'Calm-down activity questions',
+    faqs: [
+      { question: 'What activities help a child calm down?', answer: 'Slow visual tasks (a glitter bottle, watching clouds), rhythmic hands-on work (sorting, squeezing dough), heavy-work movement (carrying cushions, wall pushes), and shared low-voice activities like stories all give the nervous system something steady to settle around.' },
+      { question: 'Why won’t my child use calm-down activities during a tantrum?', answer: 'During a full meltdown the thinking brain is mostly offline — no activity will land. Stay close, keep everyone safe, and offer the activity as the storm passes, when the child can accept input again.' },
     ],
   },
   'active-games': {
