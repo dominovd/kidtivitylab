@@ -13,6 +13,8 @@ situations: [indoor, rainy-day, birthday-party]
 seasons: []
 skills_developed: ["Gross motor", "Self-control & inhibition", "Listening", "Rhythm"]
 tips: "For toddlers, freeze in silly poses yourself and let them copy you — the freezing matters less than the joy of stopping together."
+image: "/images/activities/freeze-dance.webp"
+image_alt: "Children frozen in funny dance poses when the birthday party music stops"
 setup_minutes: 1
 cleanup_minutes: 0
 mess_level: low

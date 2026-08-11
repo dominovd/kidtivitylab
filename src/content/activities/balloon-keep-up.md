@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Hand-eye coordination", "Teamwork", "Counting", "Tracking moving objects"]
 safety_note: "Burst or deflated balloon pieces are a serious choking hazard. Pick up fragments immediately and keep uninflated balloons away from children under 8."
 tips: "A balloon falls slowly enough that even a preschooler can get under it — that built-in slow motion is what makes the game work for mixed ages."
+image: "/images/activities/balloon-keep-up.webp"
+image_alt: "Four children cooperatively batting a coral balloon upward at an indoor birthday party"
 setup_minutes: 2
 cleanup_minutes: 1
 mess_level: low

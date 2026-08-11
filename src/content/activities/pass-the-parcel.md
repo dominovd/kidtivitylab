@@ -13,6 +13,8 @@ situations: [indoor, birthday-party]
 seasons: []
 skills_developed: ["Turn-taking", "Fine motor", "Patience & waiting", "Handling anticipation"]
 tips: "Rig it shamelessly: count layers to match players, and pause the music so every child unwraps exactly once. The kids never notice; the parents always do."
+image: "/images/activities/pass-the-parcel.webp"
+image_alt: "Children sitting in a circle and opening one layer of a shared birthday parcel"
 setup_minutes: 15
 cleanup_minutes: 5
 mess_level: medium

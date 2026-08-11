@@ -13,6 +13,8 @@ situations: [indoor, birthday-party, quiet-time]
 seasons: []
 skills_developed: ["Self-control & inhibition", "Body awareness", "Emotional regulation"]
 tips: "Play it right before cake or story time — it converts a shrieking room into a quiet one in under three minutes, and the kids think it was their idea."
+image: "/images/activities/sleeping-lions.webp"
+image_alt: "Children lying still like sleeping lions while one child tiptoes between them"
 setup_minutes: 0
 cleanup_minutes: 0
 mess_level: low

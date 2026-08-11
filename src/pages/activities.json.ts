@@ -21,6 +21,7 @@ export const GET: APIRoute = async () => {
       goals: a.goals,
       situations: a.situations,
       image: a.image ?? null,
+      image_alt: a.image_alt ?? a.title,
     };
   });
   return new Response(JSON.stringify(index), {

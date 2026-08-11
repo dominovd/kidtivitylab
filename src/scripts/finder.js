@@ -68,7 +68,7 @@ function cardHTML(a) {
   const goal = a.goals?.[0] || 'play';
   const art = goal === 'energy' ? '↗' : goal === 'calm' ? '☁' : goal === 'stem' ? '✦' : goal === 'creative' ? '✎' : '♡';
   const img = a.image
-    ? `<img class="activity-image" src="${a.image}" alt="${a.title}" width="640" height="400" loading="lazy">`
+    ? `<img class="activity-image" src="${a.image}" alt="${a.image_alt || a.title}" width="640" height="400" loading="lazy">`
     : `<div class="activity-art art-${goal}" aria-hidden="true"><span>${art}</span></div>`;
   return `<article class="card activity-card">
     <a href="/activities/${a.id}/">

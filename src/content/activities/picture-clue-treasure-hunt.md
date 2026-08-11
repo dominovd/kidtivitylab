@@ -13,6 +13,8 @@ situations: [indoor, rainy-day, birthday-party]
 seasons: []
 skills_developed: ["Logical reasoning", "Symbol reading", "Spatial vocabulary", "Persistence"]
 tips: "Draw the clues, don't write them — a sketch of the bathtub works for readers and non-readers alike, and your bad drawing becomes part of the fun."
+image: "/images/activities/picture-clue-treasure-hunt.webp"
+image_alt: "Children following hand-drawn picture clues through the house toward a treasure"
 setup_minutes: 10
 cleanup_minutes: 2
 mess_level: low

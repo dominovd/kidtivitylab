@@ -13,6 +13,8 @@ situations: [indoor, sick-day, quiet-time]
 seasons: []
 skills_developed: ["Auditory discrimination", "Vocabulary", "Focused attention", "Memory"]
 tips: "Perfect from a couch or sickbed: the guesser doesn't move at all, and the sound-maker only needs whatever's on the nightstand."
+image: "/images/activities/guess-the-sound.webp"
+image_alt: "A child listening with eyes closed while a parent makes a sound with keys"
 setup_minutes: 1
 cleanup_minutes: 0
 mess_level: low

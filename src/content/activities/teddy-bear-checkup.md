@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Empathy", "Pretend play", "Body vocabulary", "Sequencing"]
 safety_note: "Use fabric strips and big props only — skip buttons, pills-sized beads, or anything small enough to swallow when playing with children under 3."
 tips: "On a sick day, flip the script: the child is the doctor and the teddies have the child's own symptoms. Treating a bear's sore throat gives kids words and control over what's happening in their own body."
+image: "/images/activities/teddy-bear-checkup.webp"
+image_alt: "A preschool doctor gently checking a teddy bear with safe pretend medical tools"
 setup_minutes: 3
 cleanup_minutes: 3
 mess_level: low

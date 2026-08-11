@@ -13,6 +13,8 @@ situations: [indoor, birthday-party, rainy-day]
 seasons: []
 skills_developed: ["Listening", "Gross motor", "Cooperation", "Reaction speed"]
 tips: "The cooperative twist — removing cushions but never players — is the entire trick. The game ends with a giggling pile of kids sharing two cushions instead of one winner and five sulkers."
+image: "/images/activities/musical-cushions.webp"
+image_alt: "Children cooperatively sharing colorful floor cushions when the music stops"
 setup_minutes: 3
 cleanup_minutes: 2
 mess_level: low
