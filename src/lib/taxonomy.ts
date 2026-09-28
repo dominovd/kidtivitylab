@@ -33,6 +33,13 @@ export interface Activity {
   common_problems: { problem: string; solution: string }[];
   faqs: { question: string; answer: string }[];
   last_updated?: string;
+  source_video?: {
+    youtube_id: string;
+    title: string;
+    channel: string;
+    upload_date: string;
+    start_seconds: number;
+  };
 }
 
 /** Age groups shown as chips. min/max in months (inclusive overlap test). */

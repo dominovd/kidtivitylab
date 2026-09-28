@@ -54,6 +54,15 @@ const activities = defineCollection({
         .array(z.object({ question: z.string(), answer: z.string() }))
         .default([]),
       last_updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+      source_video: z
+        .object({
+          youtube_id: z.string().length(11),
+          title: z.string(),
+          channel: z.string(),
+          upload_date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+          start_seconds: z.number().int().min(0).default(0),
+        })
+        .optional(),
       affiliate_products: z
         .array(z.object({ name: z.string(), url: z.string().url() }))
         .default([]),

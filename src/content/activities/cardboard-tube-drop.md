@@ -48,6 +48,12 @@ faqs:
     answer: "From about 12 months, when deliberate release develops, up to around 3 years. Younger toddlers need wide tubes and big balls; older ones enjoy building and rerouting the track."
   - question: "What can I use instead of pom-poms?"
     answer: "Anything round that fits: ping-pong balls, large wooden beads, rolled-up sock balls, or crumpled paper balls — the larger the safer for young toddlers."
+source_video:
+  youtube_id: "BcDuq8-YiwM"
+  title: "40 Easy DIY Toddler Activities for Busy Parents"
+  channel: "Lily b Coco"
+  upload_date: "2022-06-15"
+  start_seconds: 303
 last_updated: "2026-09-28"
 ---
 

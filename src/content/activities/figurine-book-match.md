@@ -48,6 +48,12 @@ faqs:
     answer: "Most toddlers begin matching real objects to realistic pictures between 18 and 24 months, and it solidifies through age 3. Start with identical-looking matches and widen the gap as they grow."
   - question: "Why does 2D to 3D matching matter?"
     answer: "It's a measurable cognitive milestone: connecting representations to real things underpins reading, math symbols and drawing. Pediatric checklists include finding named pictures in books at around age two."
+source_video:
+  youtube_id: "m5rhaqrD2EA"
+  title: "Fun & Easy Activities for 18-24 Months"
+  channel: "Pocketful of Parenting"
+  upload_date: "2021-06-01"
+  start_seconds: 923
 last_updated: "2026-09-28"
 ---
 

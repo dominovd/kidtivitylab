@@ -48,6 +48,12 @@ faqs:
     answer: "Roughly 8 to 24 months: from confident sitting, through the peak wipes-pulling phase, until posting games take over. The restuffing variation extends it well into the twos."
   - question: "What can I use instead of scarves?"
     answer: "Bandanas, cloth napkins, cut-up old t-shirts, or ribbons with a knot at each end. Anything soft that slides with slight resistance works."
+source_video:
+  youtube_id: "BcDuq8-YiwM"
+  title: "40 Easy DIY Toddler Activities for Busy Parents"
+  channel: "Lily b Coco"
+  upload_date: "2022-06-15"
+  start_seconds: 1390
 last_updated: "2026-09-28"
 ---
 

@@ -48,6 +48,12 @@ faqs:
     answer: "From about 6 months, once they can press with hands during tummy time or sit at a tray. There's no upper limit — toddlers use it for finger-drawing letters and shapes."
   - question: "Can I keep the picture afterwards?"
     answer: "Yes — that's why the paper goes inside. Open the bag when they're done, let the sheet dry, and you have a dated piece of abstract art with zero brushes washed."
+source_video:
+  youtube_id: "7e7QzOVKl-Y"
+  title: "10 Simple Sensory Activities for Babies"
+  channel: "The Hidden Gem"
+  upload_date: "2018-02-22"
+  start_seconds: 31
 last_updated: "2026-09-28"
 ---
 

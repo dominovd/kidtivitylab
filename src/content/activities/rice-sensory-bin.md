@@ -48,6 +48,12 @@ faqs:
     answer: "From around 18 months with close supervision, once mouthing has mostly stopped. For younger toddlers, use an edible base like crushed cereal instead of rice."
   - question: "How do I store a rice bin between sessions?"
     answer: "Pour the rice into a zip bag or lidded box — it keeps for months and one batch survives dozens of sessions. Toss it if it ever gets wet."
+source_video:
+  youtube_id: "BcDuq8-YiwM"
+  title: "40 Easy DIY Toddler Activities for Busy Parents"
+  channel: "Lily b Coco"
+  upload_date: "2022-06-15"
+  start_seconds: 467
 last_updated: "2026-09-28"
 ---
 

@@ -48,6 +48,12 @@ faqs:
     answer: "Most can pull off a loose cap around 12–15 months, twist off around 18 months, and twist on reliably closer to 2.5–3 years. The station grows with them for over a year."
   - question: "Is this actually a Montessori activity?"
     answer: "Opening and closing containers is a classic Montessori practical-life exercise. The home version with recycled jars delivers the same skill work as the boutique wooden sets."
+source_video:
+  youtube_id: "fiHU7MF4icA"
+  title: "20 Simple and Fun Games for 12-18 Month Old Baby"
+  channel: "Yanyi"
+  upload_date: "2024-10-24"
+  start_seconds: 106
 last_updated: "2026-09-28"
 ---
 

@@ -48,6 +48,12 @@ faqs:
     answer: "Roughly 12 months to 3.5 years. Around age one, children can peel loosely attached tape with a lifted corner; twos and threes handle firmly pressed, multi-strip rescues and enjoy sorting the rescued toys afterwards."
   - question: "Will painter's tape damage walls or furniture?"
     answer: "Painter's tape is designed to peel off cleanly, which is exactly why it beats regular or packing tape here. Test one strip on wallpaper first, and avoid freshly painted surfaces."
+source_video:
+  youtube_id: "BcDuq8-YiwM"
+  title: "40 Easy DIY Toddler Activities for Busy Parents"
+  channel: "Lily b Coco"
+  upload_date: "2022-06-15"
+  start_seconds: 384
 last_updated: "2026-09-28"
 ---
 

@@ -48,6 +48,12 @@ faqs:
     answer: "From around 18 months IF your child no longer puts hands in their mouth mid-play, always supervised. For younger toddlers, whipped cream or yogurt on the tray gives the same experience in edible form."
   - question: "Does shaving cream stain clothes or tables?"
     answer: "No — it's essentially airy soap. It wipes off surfaces with a damp cloth and washes out of clothes normally. Food coloring added to it, however, can tint fabric, so smock up for the colored version."
+source_video:
+  youtube_id: "m5rhaqrD2EA"
+  title: "Fun & Easy Activities for 18-24 Months"
+  channel: "Pocketful of Parenting"
+  upload_date: "2021-06-01"
+  start_seconds: 998
 last_updated: "2026-09-28"
 ---
 

@@ -48,6 +48,12 @@ faqs:
     answer: "Prime time is 12 months to 3 years. Start with big slots and chunky objects, then narrow the slot and shrink the objects as precision grows."
   - question: "Why do toddlers love posting things so much?"
     answer: "Developmental psychologists call it a containment schema: toddlers are driven to explore how things go in and out of other things. A posting box channels that drive away from your DVD player and toilet."
+source_video:
+  youtube_id: "BcDuq8-YiwM"
+  title: "40 Easy DIY Toddler Activities for Busy Parents"
+  channel: "Lily b Coco"
+  upload_date: "2022-06-15"
+  start_seconds: 239
 last_updated: "2026-09-28"
 ---
 

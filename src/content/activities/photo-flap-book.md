@@ -48,6 +48,12 @@ faqs:
     answer: "Peak use is 12–30 months: first for pointing and peekaboo, then naming, then answering questions. Many children keep 'reading' their own book long after."
   - question: "Do I need to print photos or laminate anything?"
     answer: "No. Post-its over any existing picture book work immediately, and phone-printed photos glued to folded construction paper survive plenty of reads. Fancy versions can come later if the book becomes a favorite."
+source_video:
+  youtube_id: "m5rhaqrD2EA"
+  title: "Fun & Easy Activities for 18-24 Months"
+  channel: "Pocketful of Parenting"
+  upload_date: "2021-06-01"
+  start_seconds: 159
 last_updated: "2026-09-28"
 ---
 
