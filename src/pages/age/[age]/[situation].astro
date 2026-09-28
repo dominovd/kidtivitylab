@@ -1,20 +1,21 @@
 ---
 import ListingPage from '../../../components/ListingPage.astro';
-import { AGE_GROUPS, SITUATIONS, matchesAge } from '../../../lib/taxonomy';
+import { AGE_GROUPS, TOPICS, matchesAge, topicMatches } from '../../../lib/taxonomy';
 import { allActivities, toActivity, MIN_ACTIVITIES_PER_PAGE } from '../../../lib/activities';
 
 /**
- * Age × situation pages — the core programmatic matrix.
+ * Age × situation AND age × season pages — the core programmatic matrix.
+ * Both taxonomies share this route: /age/3-year-olds/rainy-day/, /age/3-year-olds/christmas/.
  * A page is only generated when it clears MIN_ACTIVITIES_PER_PAGE (thin-content guard).
  */
 export async function getStaticPaths() {
   const entries = (await allActivities()).map(toActivity);
   const paths = [];
   for (const g of AGE_GROUPS) {
-    for (const s of SITUATIONS) {
-      const n = entries.filter((a) => matchesAge(a, g) && a.situations.includes(s.slug)).length;
+    for (const t of TOPICS) {
+      const n = entries.filter((a) => matchesAge(a, g) && topicMatches(a, t)).length;
       if (n >= MIN_ACTIVITIES_PER_PAGE) {
-        paths.push({ params: { age: g.slug, situation: s.slug } });
+        paths.push({ params: { age: g.slug, situation: t.slug } });
       }
     }
   }
@@ -23,30 +24,32 @@ export async function getStaticPaths() {
 
 const { age, situation } = Astro.params;
 const group = AGE_GROUPS.find((g) => g.slug === age)!;
-const sit = SITUATIONS.find((s) => s.slug === situation)!;
+const topic = TOPICS.find((t) => t.slug === situation)!;
 const activities = (await allActivities())
   .map(toActivity)
-  .filter((a) => matchesAge(a, group) && a.situations.includes(sit.slug));
+  .filter((a) => matchesAge(a, group) && topicMatches(a, topic));
 
+const hubHref =
+  topic.kind === 'situation' ? `/situations/${topic.slug}/` : `/seasonal/${topic.slug}/`;
 const related = [
   { label: `All activities for ${group.title}`, href: `/age/${group.slug}/` },
-  { label: sit.title, href: `/situations/${sit.slug}/` },
+  { label: topic.title, href: hubHref },
 ];
 
-const metaTitle = `${activities.length} ${sit.title} for ${group.title} — Kidtivity Lab`;
-const description = `${sit.title} that actually work for ${group.title.toLowerCase()}: realistic setup, short attention spans welcome, most need things you already have.`;
+const metaTitle = `${activities.length} ${topic.title} for ${group.title} — Kidtivity Lab`;
+const description = `${topic.title} that actually work for ${group.title.toLowerCase()}: realistic setup, short attention spans welcome, most need things you already have.`;
 ---
 
 <ListingPage
-  title={`${sit.title} for ${group.title}`}
+  title={`${topic.title} for ${group.title}`}
   metaTitle={metaTitle}
   description={description}
-  intro={sit.intro}
+  intro={topic.intro}
   activities={activities}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: group.title, href: `/age/${group.slug}/` },
-    { label: sit.title },
+    { label: topic.title },
   ]}
   related={related}
   finderQuery={`age=${group.slug}`}

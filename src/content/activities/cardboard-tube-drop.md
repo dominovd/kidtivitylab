@@ -13,9 +13,9 @@ situations: [indoor, rainy-day]
 seasons: []
 skills_developed: ["Hand-eye coordination", "Cause and effect", "Object permanence", "Aiming"]
 safety_note: "Pom-poms are a choking hazard for mouthing toddlers — use jumbo pom-poms or balls for under-2s and stay close."
-tips: "Set it up on the kitchen wall at toddler height and you've bought yourself fifteen minutes of cooking time with the child happily in view."
+tips: "A cabinet near the kitchen can keep the activity within sight while you prepare food, but stay close enough to notice mouthing or a loose tube."
 image: "/images/activities/cardboard-tube-drop.webp"
-image_alt: "A toddler dropping a pom-pom into cardboard tubes taped to the wall"
+image_alt: "A toddler dropping a large soft ball into a zigzag cardboard tube run taped to a cabinet"
 setup_minutes: 5
 cleanup_minutes: 2
 mess_level: low
@@ -28,18 +28,18 @@ before_you_start:
   - "Tape tubes at chest height for your child, not yours."
 learning_details:
   - skill: "Object permanence"
-    detail: "The ball disappears and reappears lower down — live proof that hidden things keep existing, the concept peekaboo teaches, now self-serve."
+    detail: "The ball disappears briefly and returns below, giving toddlers a simple prediction to watch again and again."
   - skill: "Precision release"
     detail: "Fitting a pom-pom into a tube opening and letting go at the right moment refines the grasp-release control toddlers are actively building."
   - skill: "Early physics"
-    detail: "Steeper tube, faster ball. Toddlers run this experiment dozens of times, which is exactly how intuition about gravity is built."
+    detail: "Changing the tube angle lets children notice that a steeper path usually makes the ball travel faster."
 variations:
   - title: "Tube highway"
     detail: "Connect several tubes into a zigzag track across the wall — for 2-3 year olds, let them decide where the next tube goes."
   - title: "Color delivery"
     detail: "Two tubes, two baskets, sort red pom-poms into one and blue into the other."
   - title: "Sound swap"
-    detail: "Drop different objects — a wooden bead, a crumpled foil ball — and compare the sounds they make on the way down."
+    detail: "Try a ping-pong ball, a rolled sock, or a firmly crumpled paper ball and compare how each one moves and sounds."
 common_problems:
   - problem: "The child posts things that jam the tube"
     solution: "That's research. Keep a wooden spoon nearby as the official unjamming tool and let them help push the blockage through."
@@ -62,5 +62,5 @@ last_updated: "2026-09-28"
 1. **Tape the tubes.** Fix 2–4 cardboard tubes to the wall or a cabinet door with painter's tape, angled like a marble run.
 2. **Set the catch basket.** Under the lowest exit.
 3. **Demonstrate one drop.** Slow and theatrical: in it goes... where is it... THERE it is!
-4. **Hand over the ammunition.** A cup of pom-poms or balls, and the factory starts running.
+4. **Offer the balls.** Put a small collection beside the child and let the dropping and collecting begin.
 5. **Rebuild together.** When attention dips, re-angle a tube or add a new one — a fresh track restarts the game.

@@ -1,6 +1,6 @@
 ---
 title: "Laundry Basket Pull"
-hook: "Thread scarves through a laundry basket and let your baby yank them free, one glorious pull at a time."
+hook: "Thread short scarves through a laundry basket and give your baby a safe place to pull, tug, and try again."
 age_min: 8
 age_max: 24
 place: [home]
@@ -13,24 +13,24 @@ situations: [indoor, quiet-time, sick-day]
 seasons: []
 skills_developed: ["Pulling strength", "Pincer grasp", "Cause and effect", "Bilateral coordination"]
 safety_note: "Use scarves shorter than 60 cm and stay present — long fabric and babies need supervision. Check that the basket has no cracked, sharp holes."
-tips: "This is the legal version of pulling all the wipes out of the pack. Tie two scarves together for a longer, more dramatic pull, and weigh the basket down with a book if it slides."
+tips: "Use short pieces of light fabric and leave a generous end to grab. If the basket slides, hold it with one hand rather than adding a hidden weight."
 image: "/images/activities/laundry-basket-pull.webp"
-image_alt: "A baby pulling colorful scarves through the holes of a laundry basket"
+image_alt: "A seated baby pulls a short coral scarf through a hole in a laundry basket steadied by a parent"
 setup_minutes: 3
 cleanup_minutes: 1
 mess_level: low
 energy_level: calm
 adult_help: nearby
-why_kids_love_it: "Babies are wired to pull things out of containers, and this one resists just enough: the scarf slides, catches, then suddenly comes free with a flourish — a tiny victory they can repeat ten times in a row."
+why_kids_love_it: "The scarf moves as soon as the baby pulls, then slips free with a visible result. Different fabrics add just enough variety to make repeating the action interesting."
 before_you_start:
   - "Thread scarves through different holes at different heights, leaving a good tail to grab."
   - "Seat the baby stable against the basket, or lay it on its side for tummy-time pulling."
   - "Stuff a few scarves loosely and a few snugly so pulls vary in difficulty."
 learning_details:
   - skill: "Graded pulling force"
-    detail: "Some scarves give easily, some resist — the baby calibrates muscle effort against feedback, a foundation of controlled movement."
+    detail: "Loosely and snugly threaded fabrics require different amounts of force, so the baby can adjust the next pull."
   - skill: "Pincer and fist grasp"
-    detail: "Thin fabric invites finger-grip, bunched fabric a full fist; one basket trains both grasps."
+    detail: "A flat fabric edge can be held with the fingers, while a bunched end invites a whole-hand grasp."
   - skill: "Cause and effect"
     detail: "Pull here, fabric moves there, and the basket wobbles: every action prints an immediate, visible result."
 variations:
@@ -47,7 +47,7 @@ common_problems:
     solution: "That's a successful round, not a failure. Restuff while they watch — anticipation is half the game — or hand them the restuffing job."
 faqs:
   - question: "What age is the laundry basket pull for?"
-    answer: "Roughly 8 to 24 months: from confident sitting, through the peak wipes-pulling phase, until posting games take over. The restuffing variation extends it well into the twos."
+    answer: "It suits babies who can sit steadily and grasp fabric on purpose, with an adult beside them. Older toddlers can reverse the task and push the scarves back through the holes."
   - question: "What can I use instead of scarves?"
     answer: "Bandanas, cloth napkins, cut-up old t-shirts, or ribbons with a knot at each end. Anything soft that slides with slight resistance works."
 source_video:
@@ -60,7 +60,7 @@ last_updated: "2026-09-28"
 ---
 
 1. **Thread the basket.** Poke scarves through the holes at various heights, tails hanging out.
-2. **Park the baby.** Sitting beside it, or on the tummy facing a tipped-over basket.
+2. **Settle the baby nearby.** Sit them beside the basket, or place the basket on its side for supervised tummy-time play.
 3. **Pull one, theatrically.** Slow tug, sudden release, big reaction.
-4. **Let the harvest begin.** Every scarf out is a win; narrate colors and "all gone!"
-5. **Restuff and rerun.** The reload is entertainment too — and from 18 months, it's their job.
+4. **Let them pull.** Name colors or say "all gone" as each scarf comes free.
+5. **Thread them again.** Reload while the baby watches; older toddlers may want to help push the fabric back through.

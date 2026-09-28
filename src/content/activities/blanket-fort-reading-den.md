@@ -10,6 +10,7 @@ materials_list: ["Blankets or sheets", "Chairs or a couch", "Pillows", "Flashlig
 goals: [calm, creative]
 involvement: together
 situations: [indoor, rainy-day, sick-day, quiet-time]
+seasons: [fall, winter]
 skills_developed: ["Imagination", "Early literacy", "Emotional regulation"]
 safety_note: "Anchor blankets so nothing heavy can be pulled down; keep the den opening clear for airflow."
 tips: "For toddlers, keep the fort low and open. School-age kids can engineer the whole thing themselves — resist the urge to fix their sagging roof."

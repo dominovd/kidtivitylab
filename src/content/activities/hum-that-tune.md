@@ -14,20 +14,20 @@ seasons: []
 skills_developed: ["Auditory memory", "Melody recognition", "Pitch awareness", "Turn-taking"]
 tips: "Start with the child's daily soundtrack: nursery rhymes, their shows' theme songs, the clean-up song from daycare. Recognition speed on familiar tunes is what makes them want the humming seat."
 image: "/images/activities/hum-that-tune.webp"
-image_alt: "A child humming a tune while two others lean in to guess the song"
+image_alt: "A child humming a mystery tune while a sibling and parent try to guess around the kitchen table"
 setup_minutes: 0
 cleanup_minutes: 0
 mess_level: low
 energy_level: calm
 adult_help: minimal
-why_kids_love_it: "Knowing a song from three hummed notes feels like mind-reading, and being the hummer is a tiny concert where everyone stares at YOU. It also produces the world's best wrong answers, which are half the entertainment."
+why_kids_love_it: "Recognizing a familiar song from a few notes feels clever, and humming gives each player a short turn in charge. Wrong guesses often make the round funnier without stopping the game."
 before_you_start:
   - "Agree the songbook out loud: 'songs we all know' — daycare hits, family car playlist, birthday classics."
-  - "Rule one: hummers pick songs the guessers actually know. Obscure picks kill the game."
+  - "Ask hummers to choose songs the group is likely to know; save obscure favorites for a hint round."
   - "Set a gentle guess flow — shout freely in the car, take turns at the table."
 learning_details:
   - skill: "Auditory memory"
-    detail: "Matching a hummed contour to a stored melody is pattern retrieval from sound alone — the same discrimination ear that supports phonics."
+    detail: "Guessers listen for the melody's rises, falls, and rhythm, then compare that pattern with songs they remember."
   - skill: "Pitch and rhythm production"
     detail: "Humming a recognizable tune forces control of pitch direction and note lengths — singing practice with the training wheels of no lyrics."
   - skill: "Musical vocabulary"
@@ -36,19 +36,19 @@ variations:
   - title: "One-note reveal"
     detail: "Hum the song one phrase at a time, pausing between: fewer phrases needed to guess, more points earned."
   - title: "Knock that tune"
-    detail: "Hardcore mode for 8+: tap only the RHYTHM on the table, no melody at all."
+    detail: "For older players, tap only the rhythm on the table and offer the song category as a hint."
   - title: "Sick-day serenade"
-    detail: "A perfect under-blanket game: the patient hums from the pillow, the family guesses from the doorway. Zero energy required, full participation achieved."
+    detail: "For a low-energy day, let the resting child hum from the pillow while family members guess nearby. Keep rounds short if their throat feels sore."
 common_problems:
   - problem: "The hummer sings the words by accident"
-    solution: "It happens constantly and is officially funny. The round restarts with a new song, and 'lips closed, mmmm only' becomes the game's catchphrase."
+    solution: "Laugh it off and restart the phrase with closed lips. Young players can hum alongside an adult until the rule feels natural."
   - problem: "Guessers can't get it and frustration builds"
     solution: "After two failed phrases, the hummer adds gestures; after three, sings one word. Scaffolded clues keep every round ending in a win."
 faqs:
   - question: "What age is Hum That Tune for?"
     answer: "Guessing works from about 4 with well-worn nursery rhymes; humming recognizably usually clicks around 5–6. Families can play mixed: little ones guess, big ones hum."
   - question: "Why is this game good for the car?"
-    answer: "No parts, no screens, no looking down — motion-sickness proof — and unlike I Spy it doesn't need scenery, so it works in traffic, tunnels and the dark on the way home."
+    answer: "It needs no parts or screens, and players do not need to look down. It also works when there is little scenery to see, such as in traffic or after dark."
 last_updated: "2026-09-28"
 ---
 
@@ -56,4 +56,4 @@ last_updated: "2026-09-28"
 2. **First hummer hums.** Lips closed, one phrase of the tune, dramatic pause.
 3. **Guesses fly.** More phrases on request — gestures unlock after two misses.
 4. **Name it, claim it.** The correct guesser takes the humming seat.
-5. **Escalate to expert mode.** Shorter clips, rhythm-only knocking, or two-song mashups for the pros in the front seat.
+5. **Try a harder round.** Use a shorter clip, rhythm-only tapping, or a two-song mashup for older players.

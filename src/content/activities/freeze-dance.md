@@ -10,7 +10,7 @@ materials_list: ["Any music source with a pause button"]
 goals: [energy]
 involvement: together
 situations: [indoor, rainy-day, birthday-party]
-seasons: []
+seasons: [christmas, winter]
 skills_developed: ["Gross motor", "Self-control & inhibition", "Listening", "Rhythm"]
 tips: "For toddlers, freeze in silly poses yourself and let them copy you — the freezing matters less than the joy of stopping together."
 image: "/images/activities/freeze-dance.webp"
@@ -33,6 +33,8 @@ learning_details:
   - skill: "Balance"
     detail: "Holding whatever position the freeze caught them in strengthens core stability and body awareness."
 variations:
+  - title: "Jingle bell freeze"
+    detail: "December mode: ring a jingle bell instead of pausing music, dance to Christmas songs, and freeze as candy canes, reindeer or presents."
   - title: "Statue themes"
     detail: "Call a theme before each round — freeze as an animal, a superhero, or a letter shape."
   - title: "Slow-motion round"

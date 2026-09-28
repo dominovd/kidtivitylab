@@ -12,26 +12,26 @@ involvement: together
 situations: [indoor, birthday-party, rainy-day]
 seasons: []
 skills_developed: ["Decision making", "Listening", "Counting", "Probability intuition"]
-tips: "The trivia variation is the sleeper hit: assign answers to corners ('what's my favorite pizza topping?') and the game doubles as a get-to-know-you machine at parties."
+tips: "For a get-to-know-you version, make each corner an answer to a simple question, such as a favorite pizza topping or preferred pet."
 image: "/images/activities/four-corners.webp"
-image_alt: "Kids running toward colored paper markers in the corners of a room"
+image_alt: "Children choosing colored corners while a caller covers his eyes in the middle of a bright room"
 setup_minutes: 3
 cleanup_minutes: 1
 mess_level: low
 energy_level: active
 adult_help: hands-on
-why_kids_love_it: "Every round is a bet: pick a corner, hold your breath, hope the caller says a different one. The mix of luck, sprinting and near-misses produces casino-level excitement with zero stakes."
+why_kids_love_it: "Every round combines a quick choice with a moment of suspense. Because luck matters more than speed or skill, younger players can surprise the older ones."
 before_you_start:
   - "Mark corners clearly: colored paper taped to the floor beats pointing at vague walls."
-  - "Walk the route once — corners chosen with running kids in mind, away from furniture edges."
+  - "Walk the route once and clear furniture, bags, and rugs from the paths between corners."
   - "Decide the elimination rule by group: called corner sits one round only, or joins the caller team."
 learning_details:
   - skill: "Decision under uncertainty"
-    detail: "Corner choice is a real probability decision: stay with the crowd or gamble on the empty corner? Kids develop strategies and argue about them — that's statistical intuition forming."
+    detail: "Players decide whether to follow the group or choose an empty corner, then see that neither strategy guarantees a safe round."
   - skill: "Auditory attention"
     detail: "Moving quietly while listening for the count to end, then freezing on the call, exercises the same listen-then-act control classrooms depend on."
   - skill: "Graceful losing"
-    detail: "Getting called out is frequent, random and brief — low-stakes practice at being out that inoculates against bigger-game meltdowns."
+    detail: "A one-round break keeps disappointment brief and gives children another chance quickly. Use the no-elimination version if sitting out is not fun for the group."
 variations:
   - title: "Trivia corners"
     detail: "Corners become answers to a question about the caller. Guess right to stay in — suddenly it's a friendship quiz."
@@ -41,7 +41,7 @@ variations:
     detail: "Each round sets a travel style — hop, crab-walk, tiptoe — turning the sneaking phase into a movement workout."
 common_problems:
   - problem: "Kids hover between corners to cheat the call"
-    solution: "Rule: when counting stops, feet must be ON a paper. Anyone in no-man's-land counts as called — one enforcement round fixes it forever."
+    solution: "Set one clear rule: when counting stops, both feet must be on a marker. Practice a no-elimination round first so everyone understands."
   - problem: "Eliminated kids get bored"
     solution: "Called players join the caller as advisors, whispering which corner to pick. Being out becomes a promotion to the deciding side."
 faqs:
@@ -53,7 +53,7 @@ last_updated: "2026-09-28"
 ---
 
 1. **Mark the map.** Tape a different colored sheet in each corner of the room.
-2. **Blind the caller.** Eyes closed in the center, counting to ten out loud.
+2. **Position the caller.** The caller stands still in the center or at the edge, closes their eyes, and counts to ten out loud.
 3. **Sneak and commit.** Players tiptoe to a corner before the count ends — then freeze.
 4. **Call the corner.** Eyes still closed: "Blue!" Everyone on blue is called — one round out, or joins the caller's advisory team.
 5. **Rotate and rerun.** Last survivor becomes the next caller; rounds take a minute, so everyone calls before the cake comes out.

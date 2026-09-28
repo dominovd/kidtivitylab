@@ -1,5 +1,5 @@
 ---
-import { AGE_GROUPS, SITUATIONS, matchesAge } from '../lib/taxonomy';
+import { AGE_GROUPS, SITUATIONS, SEASONS, matchesAge } from '../lib/taxonomy';
 import { allActivities, toActivity, MIN_ACTIVITIES_PER_PAGE } from '../lib/activities';
 
 // Only link pages that actually exist (same thin-content guard as page generation) —
@@ -10,6 +10,9 @@ const ageLinks = AGE_GROUPS.filter(
 );
 const situationLinks = SITUATIONS.filter(
   (s) => acts.filter((a) => a.situations.includes(s.slug)).length >= MIN_ACTIVITIES_PER_PAGE
+);
+const seasonLinks = SEASONS.filter(
+  (s) => acts.filter((a) => a.seasons.includes(s.slug)).length >= MIN_ACTIVITIES_PER_PAGE
 );
 const year = new Date().getFullYear();
 ---
@@ -39,6 +42,16 @@ const year = new Date().getFullYear();
         ))}
       </ul>
     </nav>
+    {seasonLinks.length > 0 && (
+      <nav aria-label="Seasonal">
+        <h3>Seasonal</h3>
+        <ul>
+          {seasonLinks.map((s) => (
+            <li><a href={`/seasonal/${s.slug}/`}>{s.title}</a></li>
+          ))}
+        </ul>
+      </nav>
+    )}
     <nav aria-label="Kidtivity Lab">
       <h3>Kidtivity Lab</h3>
       <ul>

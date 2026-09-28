@@ -15,7 +15,7 @@ skills_developed: ["Pincer grasp", "Hand strength", "Problem solving", "Persiste
 safety_note: "Use toys too large to swallow for children under 3, and supervise so peeled-off tape doesn't go in the mouth."
 tips: "Difficulty is one variable: how hard you press the tape. Leave a lifted corner for beginners; press it flat and double-tape for pros. Works on a wall, a high chair tray, or the side of the bathtub."
 image: "/images/activities/tape-toy-rescue.webp"
-image_alt: "A toddler peeling painter's tape to rescue toy animals taped to the wall"
+image_alt: "A toddler peels blue painter's tape to rescue chunky toy animals from a wall"
 setup_minutes: 3
 cleanup_minutes: 2
 mess_level: low
@@ -23,33 +23,33 @@ energy_level: moderate
 adult_help: nearby
 why_kids_love_it: "Their own toys are trapped and only they can free them. Every rescue is a tiny drama with a happy ending, and the ripping sound of the tape is half the reward."
 before_you_start:
-  - "Use painter's tape, not packing tape: it peels easily and won't mark the wall."
+  - "Use low-tack painter's tape rather than packing tape, and test it on a hidden spot before placing it on paint or wallpaper."
   - "Tape toys at your child's chest height so they can work standing without reaching up."
   - "Put the rescue basket right below, so 'done' has an obvious place to go."
 learning_details:
   - skill: "Pincer grasp and hand strength"
-    detail: "Gripping a tape edge and peeling against resistance is concentrated finger-strength work, the same muscles later used for pencils and buttons."
+    detail: "Gripping a tape edge and peeling it back asks the fingers to pinch, pull, and maintain their hold against light resistance."
   - skill: "Two-step problem solving"
     detail: "The child must hold the toy AND unstick it at the same time, sequencing two actions toward one goal."
   - skill: "Persistence"
-    detail: "Tape that doesn't give up on the first pull teaches trying again — a rep of frustration tolerance in a safe, winnable setting."
+    detail: "A tape edge that takes two or three attempts gives the child a manageable reason to change grip and try again."
 variations:
   - title: "Rescue and sort"
     detail: "For 2–3 year olds, add labeled bins: rescued sea animals swim to the blue bowl, land animals go to the green one. One activity becomes two."
   - title: "Travel version"
-    detail: "Stick strips of tape across a board book or the high chair tray on a car trip or flight — a zero-parts busy activity."
+    detail: "For supervised travel, place a few short strips on a washable tray and collect each strip as soon as it is peeled off."
   - title: "Tape only"
-    detail: "No toys needed at all: a few strips of tape stuck to the tray or wall, and peeling them off IS the game for a 1-year-old."
+    detail: "For a younger toddler, a few short strips with folded-over tabs may be enough. Stay beside them and remove every loose strip."
 common_problems:
   - problem: "The child pulls the toy and the tape rips the toy free instantly"
-    solution: "Use two crossed strips per toy and press them down firmly — the fight is the fun."
+    solution: "Use a second strip or press the center more firmly, but keep one corner lifted so the task stays possible."
   - problem: "They lose interest after two rescues"
-    solution: "Narrate a story: the dinosaurs are stuck in the ice, the ducks miss their pond. A reason to rescue doubles the mission time."
+    solution: "Add a simple story: the dinosaurs are stuck in ice, or the ducks need to return to their pond. Stop when the child is ready to move on."
 faqs:
   - question: "What age is Tape Toy Rescue for?"
-    answer: "Roughly 12 months to 3.5 years. Around age one, children can peel loosely attached tape with a lifted corner; twos and threes handle firmly pressed, multi-strip rescues and enjoy sorting the rescued toys afterwards."
+    answer: "It can work once a toddler deliberately grasps and pulls, often sometime after the first birthday. Begin with a large lifted tab and one easy toy; add firmer tape or sorting later."
   - question: "Will painter's tape damage walls or furniture?"
-    answer: "Painter's tape is designed to peel off cleanly, which is exactly why it beats regular or packing tape here. Test one strip on wallpaper first, and avoid freshly painted surfaces."
+    answer: "Low-tack painter's tape is usually easier to remove than packing tape, but no tape is safe for every finish. Test a hidden spot first and avoid fresh paint, delicate wallpaper, and flaking surfaces."
 source_video:
   youtube_id: "BcDuq8-YiwM"
   title: "40 Easy DIY Toddler Activities for Busy Parents"

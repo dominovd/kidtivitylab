@@ -13,41 +13,41 @@ situations: [indoor, quiet-time, sick-day]
 seasons: []
 skills_developed: ["Wrist rotation", "Bilateral coordination", "Size matching", "Persistence"]
 safety_note: "Use caps bigger than a choking-test tube (over 4.5 cm) for under-3s, and skip glass containers for young toddlers."
-tips: "This is pure Montessori practical life with zero shopping: raid the recycling bin. Toddlers sense the difference between a toy and the real thing, and real jars win every time."
+tips: "Clean containers from the recycling bin work well, so there is no special set to buy. Choose lightweight plastic pieces and check every edge before play."
 image: "/images/activities/bottle-cap-twist.webp"
-image_alt: "A toddler twisting caps onto a tray of jars and bottles"
+image_alt: "A toddler concentrating as he twists a large colorful lid onto a plastic jar at a low table"
 setup_minutes: 2
 cleanup_minutes: 1
 mess_level: low
 energy_level: calm
 adult_help: minimal
-why_kids_love_it: "Twisting a cap is a grown-up move they see daily and are usually denied. Getting a lid to catch the thread and spin closed is a real achievement with a real click of success — no praise required, the cap itself says 'you did it'."
+why_kids_love_it: "Toddlers see adults open containers all day and enjoy trying the same useful job. A lid that finally catches the thread gives clear feedback that their hands found the right movement."
 before_you_start:
   - "Start caps loosely threaded so early attempts succeed; tighten the challenge later."
   - "Mix sizes: a wide pasta jar lid, a medium juice cap, a small water bottle cap."
   - "Do one slow demonstration with exaggerated wrist turns, then hands off."
 learning_details:
   - skill: "Wrist rotation"
-    detail: "The twisting motion is one of the harder fine motor patterns to develop and is the same movement used for doorknobs, taps and screwdrivers."
+    detail: "Turning a lid practices the wrist and finger movement also used for taps, knobs, and other everyday objects."
   - skill: "Two-handed coordination"
-    detail: "One hand must hold the jar still while the other turns — asymmetric bilateral work that midline-crossing skills are built on."
+    detail: "One hand steadies the container while the other turns the lid, giving both hands different jobs that must work together."
   - skill: "Size discrimination"
     detail: "With caps shuffled, finding which lid fits which jar is a matching puzzle with built-in feedback: the wrong cap simply won't bite."
 variations:
   - title: "Cap shuffle"
     detail: "Remove all caps, mix them in a bowl, and let the child restore order — the matching becomes the main puzzle."
   - title: "Hidden treasure"
-    detail: "Put a pom-pom or small toy inside each jar; opening becomes a surprise hunt, closing locks the treasure safe."
+    detail: "For children who no longer mouth objects, place one large felt ball or chunky toy inside a container and stay beside them during the reveal."
   - title: "Sound shakers"
-    detail: "Half-fill closed bottles with rice or beans — after twisting practice, the station doubles as a percussion set."
+    detail: "An adult can securely seal a separate bottle with rice or beans to make a shaker. Check the seal before every use and do not include it in the opening station."
 common_problems:
   - problem: "The child only takes caps off, never puts them on"
-    solution: "Off is a full year easier than on — that's fine. Model closing occasionally and celebrate the first successful catch of the thread whenever it comes."
+    solution: "Removing a lid is usually easier than lining it up again. Start the lid on the thread for them, then let the child finish the turn."
   - problem: "Frustration when the thread won't catch"
     solution: "Prop the jar in your hands so it can't wobble, and let them do only the turning. Splitting the job halves the difficulty."
 faqs:
   - question: "What age can toddlers twist caps?"
-    answer: "Most can pull off a loose cap around 12–15 months, twist off around 18 months, and twist on reliably closer to 2.5–3 years. The station grows with them for over a year."
+    answer: "There is a wide range. Begin with a loose, oversized lid once your child can sit and handle objects deliberately; matching and screwing lids back on usually comes later. Supervise throughout."
   - question: "Is this actually a Montessori activity?"
     answer: "Opening and closing containers is a classic Montessori practical-life exercise. The home version with recycled jars delivers the same skill work as the boutique wooden sets."
 source_video:

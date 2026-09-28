@@ -1,6 +1,6 @@
 ---
 title: "Posting Box"
-hook: "A box, a slot, a pile of cards to feed through — the toddler equivalent of a slot machine."
+hook: "Cut a slot in a box and toddlers can post, listen for the drop, empty it, and begin again."
 age_min: 12
 age_max: 36
 place: [home, table, road]
@@ -15,20 +15,20 @@ skills_developed: ["Precision grasp", "Wrist rotation", "Concentration", "Shape 
 safety_note: "Choose posting objects too large to swallow for under-3s — jumbo craft sticks and jar lids beat coins and buttons."
 tips: "The slot width is your difficulty dial: cut it generous for a one-year-old, snug for a two-year-old. One box with different slots on each side serves a whole age range."
 image: "/images/activities/posting-box.webp"
-image_alt: "A toddler sliding a card into the slot of a decorated shoebox"
+image_alt: "A toddler slides a large wooden card into the smooth slot of a homemade posting box"
 setup_minutes: 5
 cleanup_minutes: 1
 mess_level: low
 energy_level: calm
 adult_help: minimal
-why_kids_love_it: "Putting things into other things is arguably the core toddler obsession, and a posting box is that urge in its purest form: the object slides in, disappears with a satisfying clack, and the box slowly fills with treasure they can dump out and start again."
+why_kids_love_it: "The action has a clear beginning and end: line up the piece, push it through, hear it land, then open the box and find everything again."
 before_you_start:
   - "Cut the slot slightly bigger than feels right — early success hooks them; you can tape it narrower later."
   - "Smooth any rough cut edges with tape."
   - "Keep the posting pieces in their own cup so restarting is one gesture."
 learning_details:
   - skill: "Precision grasp and release"
-    detail: "Aligning a flat card with a narrow slot demands exact finger positioning and a timed release — occupational therapists use posting for exactly this."
+    detail: "Aligning a flat card with a slot asks the child to adjust the angle, hold it steady, and let go at the right moment."
   - skill: "Wrist rotation"
     detail: "A horizontal slot forces the wrist to turn the card flat, the same rotation used later for spoons, keys and door handles."
   - skill: "Working memory"
@@ -39,7 +39,7 @@ variations:
   - title: "Color slots"
     detail: "Color the rim of several slots and matching colored sticks for early sorting."
   - title: "Travel tin"
-    detail: "A wipes lid stuck on a small container plus a stack of cards is a glovebox-sized version for restaurants and flights."
+    detail: "A small lidded container and several oversized cards make a compact version for a restaurant table or supervised travel."
 common_problems:
   - problem: "The child forces objects that don't fit"
     solution: "Leave one wrong-sized object in the mix on purpose: discovering that the duck will NOT go through the card slot is honest scientific work. Offer the right object after the experiment."
@@ -47,9 +47,9 @@ common_problems:
     solution: "Dump-and-refill is the same skill loop. Make opening the box the official round ending: post everything, shake, open, dump, repeat."
 faqs:
   - question: "What age are posting boxes for?"
-    answer: "Prime time is 12 months to 3 years. Start with big slots and chunky objects, then narrow the slot and shrink the objects as precision grows."
+    answer: "Many children enjoy posting once they can sit steadily and release objects on purpose. Start with a wide slot and pieces too large to swallow; increase precision by changing the slot angle, not by using choking-size pieces."
   - question: "Why do toddlers love posting things so much?"
-    answer: "Developmental psychologists call it a containment schema: toddlers are driven to explore how things go in and out of other things. A posting box channels that drive away from your DVD player and toilet."
+    answer: "Putting objects in, taking them out, and repeating the sequence gives toddlers a result they can control. A posting box offers a safe place for that everyday experiment."
 source_video:
   youtube_id: "BcDuq8-YiwM"
   title: "40 Easy DIY Toddler Activities for Busy Parents"
@@ -60,7 +60,7 @@ last_updated: "2026-09-28"
 ---
 
 1. **Cut the slot.** One slot in the box lid, sized generously for your child's objects.
-2. **Stack the ammo.** Cards, lids or sticks in a cup beside the box.
+2. **Set out the pieces.** Put oversized cards, lids, or sticks in a cup beside the box.
 3. **Post one, slowly.** Line it up, slide it through, react to the clack.
-4. **Hand it over.** Resist correcting their grip — fumbling is the workout.
+4. **Let them try.** Give them time to rotate and reposition a piece before offering help.
 5. **Open, dump, repeat.** The grand reopening is the reward, and the game resets itself.

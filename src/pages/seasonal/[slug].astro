@@ -1,0 +1,55 @@
+---
+import ListingPage from '../../components/ListingPage.astro';
+import { AGE_GROUPS, SEASONS, matchesAge } from '../../lib/taxonomy';
+import { allActivities, toActivity, MIN_ACTIVITIES_PER_PAGE } from '../../lib/activities';
+import { SEASON_EDITORIAL } from '../../lib/editorial';
+
+/**
+ * Seasonal hub pages (/seasonal/christmas/ etc.).
+ * Only generated when the season clears the thin-content guard.
+ */
+export async function getStaticPaths() {
+  const entries = (await allActivities()).map(toActivity);
+  return SEASONS.filter(
+    (s) => entries.filter((a) => a.seasons.includes(s.slug)).length >= MIN_ACTIVITIES_PER_PAGE
+  ).map((s) => ({ params: { slug: s.slug } }));
+}
+
+const { slug } = Astro.params;
+const season = SEASONS.find((s) => s.slug === slug)!;
+const activities = (await allActivities())
+  .map(toActivity)
+  .filter((a) => a.seasons.includes(season.slug));
+
+const related = AGE_GROUPS.filter(
+  (g) => activities.filter((a) => matchesAge(a, g)).length >= MIN_ACTIVITIES_PER_PAGE
+).map((g) => ({
+  label: `${season.title} for ${g.title}`,
+  href: `/age/${g.slug}/${season.slug}/`,
+}));
+
+const metaTitle = `${activities.length} ${season.title} for Kids — Kidtivity Lab`;
+const description = `${season.intro} Practical ideas sorted by age, time, and materials.`;
+const editorial = SEASON_EDITORIAL[season.slug] ?? {};
+---
+
+<ListingPage
+  title={season.title}
+  metaTitle={metaTitle}
+  description={description}
+  intro={editorial.intro ?? season.intro}
+  activities={activities}
+  crumbs={[{ label: 'Home', href: '/' }, { label: 'Seasonal' }, { label: season.title }]}
+  related={related}
+  quickPicks={editorial.quickPicks}
+  quickPicksHeading={editorial.quickPicksHeading}
+  quickPicksIntro={editorial.quickPicksIntro}
+  allActivitiesHeading={editorial.allActivitiesHeading}
+  guideHeading={editorial.guideHeading}
+  guideIntro={editorial.guideIntro}
+  guideKicker={editorial.guideKicker}
+  guideTips={editorial.guideTips}
+  faqs={editorial.faqs}
+  faqHeading={editorial.faqHeading}
+  faqKicker={editorial.faqKicker}
+/>

@@ -252,6 +252,83 @@ export const AGE_EDITORIAL: Record<string, ListingEditorial> = {
   },
 };
 
+export const SEASON_EDITORIAL: Record<string, ListingEditorial> = {
+  christmas: {
+    quickPicksHeading: 'Three ways into the Christmas spirit',
+    quickPicksIntro: 'A craft for the fridge door, a game for the wiggles, and a quiet one for the evening.',
+    quickPicks: [
+      { label: 'For a keepable craft', activityId: 'sponge-paint-christmas-tree', reason: 'Sponge-stamped trees look great even when toddler-made, and decorating them stretches one craft across two sessions.' },
+      { label: 'For burning energy', activityId: 'santa-says', reason: 'The Simon Says twist every child already half-knows — zero setup, instant participation.' },
+      { label: 'For a calm moment', activityId: 'mystery-stocking', reason: 'Reaching into the stocking and guessing by touch is quiet, focused, and endlessly refillable.' },
+    ],
+    guideKicker: 'Keeping December sane',
+    guideHeading: 'Christmas activities without the Pinterest pressure',
+    guideIntro: 'The season is already overstimulating. The best Christmas activities are short, repeatable, and use the decorations you already own.',
+    guideTips: [
+      { title: 'Make it revisitable', text: 'Leave setups like the tree color sort standing all season — a returning activity beats a new one every day.' },
+      { title: 'Expect glitter opinions', text: 'Decide your glitter policy before the craft starts, not during. Sequins and stickers give the sparkle with none of the vacuuming.' },
+      { title: 'Schedule calm on purpose', text: 'Between parties and sugar, children need decompression. A sensory bin or stocking guessing game is holiday-themed AND regulating.' },
+    ],
+    faqHeading: 'Christmas activity questions',
+    faqs: [
+      { question: 'What Christmas activities work for toddlers who can’t craft yet?', answer: 'Skip scissors-and-glue projects and go for process play: dropping cotton balls into a snowman bottle, posting balls through a cardboard tree, exploring a bin of bells and bows. The theme comes from the materials, not the skill level.' },
+      { question: 'How do I keep kids busy in the run-up to Christmas?', answer: 'Rotate three stations rather than inventing daily: one standing setup (tree color sort), one active game (Santa Says, freeze dance to Christmas songs), and one table activity (crafts, sensory bag). Familiar repeats lower the daily effort for everyone.' },
+    ],
+  },
+  halloween: {
+    quickPicksHeading: 'Spooky, not scary',
+    quickPicksIntro: 'Halloween for the under-6 crowd works best silly: friendly monsters, fizzy potions, giggling ghosts.',
+    quickPicks: [
+      { label: 'For craft time', activityId: 'play-dough-spiders', reason: 'Googly eyes turn any dough blob into a pet spider — thirty seconds of setup, an hour of pretend play.' },
+      { label: 'For color learning', activityId: 'feed-the-monsters', reason: 'Paper-bag monsters that eat matching pom-poms: sorting practice disguised as feeding pets.' },
+      { label: 'For wow-factor science', activityId: 'fizzy-pumpkin-potions', reason: 'Baking-soda pumpkins plus vinegar equals a cauldron that actually bubbles — STEM with a witch hat on.' },
+    ],
+    guideKicker: 'October playbook',
+    guideHeading: 'Getting the most out of Halloween month',
+    guideIntro: 'Halloween is the rare holiday that hands you a full month of themed play material: pumpkins, spiders, ghosts, and permission to be silly.',
+    guideTips: [
+      { title: 'Read the fear meter', text: 'Keep monsters friendly and let the child control the spooky parts — being the witch beats meeting one at this age.' },
+      { title: 'Use the real pumpkin', text: 'One pumpkin is a week of activities: wash it, hammer golf tees into it, scoop it, then carve it. Buy two.' },
+      { title: 'Costume test-drives', text: 'Wear costumes during play before the big night — trick-or-treating goes smoother when the costume is already a friend.' },
+    ],
+    faqHeading: 'Halloween activity questions',
+    faqs: [
+      { question: 'What Halloween activities are good for toddlers who scare easily?', answer: 'Stay on the cute end: feeding smiling paper-bag monsters, making play dough spiders with googly eyes, washing mini pumpkins. Let the child be the one who controls any spooky element, and skip masks entirely — they unsettle toddlers more than any decoration.' },
+      { question: 'What can kids do with pumpkins besides carving?', answer: 'Wash them, hammer golf tees into them, use them as water-scoop targets, paint them, roll them down ramps, and sort minis by size. Carving is the finale, not the whole show.' },
+    ],
+  },
+  fall: {
+    guideKicker: 'The season is the toy',
+    guideHeading: 'Let autumn supply the materials',
+    guideIntro: 'Fall play barely needs a shopping list: leaves, pinecones, corn, and pumpkins do the work that craft kits do the rest of the year.',
+    guideTips: [
+      { title: 'Collect first, play later', text: 'A basket walk collecting leaves and pinecones IS the first activity — everything gathered becomes material for three more.' },
+      { title: 'Bring practical life outside-in', text: 'Husking corn, washing pumpkins, and arranging flowers are real jobs toddlers treat with more respect than any toy.' },
+      { title: 'Embrace the mess window', text: 'Leaf play and pumpkin scooping are outdoor-mess activities — do them before the weather closes that window for winter.' },
+    ],
+    faqHeading: 'Fall activity questions',
+    faqs: [
+      { question: 'What are easy fall activities for toddlers?', answer: 'Nature-walk collecting, corn husking, pumpkin washing, leaf sorting by color, and pinecone one-to-one games need almost no prep and use what the season drops for free.' },
+      { question: 'What fall activities work indoors on cold days?', answer: 'Bring the outside in: a corn-husk sensory bin, fall flower arranging, leaf collages, and pumpkin hammering all work at the kitchen table.' },
+    ],
+  },
+  winter: {
+    guideKicker: 'The long indoor season',
+    guideHeading: 'Winter is a marathon — pace the activities',
+    guideIntro: 'Months of early darkness and closed windows demand a rotation: movement games, cozy rituals, and the occasional snow (real or sock-based).',
+    guideTips: [
+      { title: 'Move every day', text: 'Indoor energy-burners like sock snowball fights and freeze dance are not optional in January — schedule them like meals.' },
+      { title: 'Build cozy anchors', text: 'A blanket fort with hot cocoa after outdoor play turns cold days into rituals kids remember for decades.' },
+      { title: 'Save novelty for February', text: 'Deep winter is when boredom peaks — hold a few new activities in reserve instead of spending them all in December.' },
+    ],
+    faqHeading: 'Winter activity questions',
+    faqs: [
+      { question: 'How do kids burn energy in winter without going outside?', answer: 'Indoor snowball fights with rolled socks, freeze dance, animal walk races, and cushion games deliver real exercise in a living room. One active game before lunch and one before dinner keeps the wiggles manageable.' },
+      { question: 'What can kids do on a snow day besides sledding?', answer: 'Bring snow inside in a tray for mitten-free play, freeze toys into ice for a rescue mission, make bird feeders, or build the fort indoors when fingers get cold.' },
+    ],
+  },
+};
+
 export const THEME_EDITORIAL: Record<string, ListingEditorial> = {
   sensory: {
     intro: 'Sensory play invites children to notice pressure, texture, movement, temperature, and resistance while their hands solve a concrete problem.',

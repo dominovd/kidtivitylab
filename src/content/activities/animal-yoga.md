@@ -12,31 +12,31 @@ involvement: together
 situations: [indoor, quiet-time, rainy-day]
 seasons: []
 skills_developed: ["Balance", "Body awareness", "Breath control", "Following sequences"]
-tips: "Sequence matters: start with big active animals (frog jumps, bear walks) and drift toward slow ones (cat stretch, sleeping swan). You're steering the energy downward without anyone noticing."
+tips: "The order changes the feel of the activity. Start with frog jumps and bear walks, then move toward cat stretches and a resting pose when you want a calmer finish."
 image: "/images/activities/animal-yoga.webp"
-image_alt: "A parent and children doing animal yoga poses on a rug"
+image_alt: "A parent and two children practicing flamingo, lion and cat-inspired yoga poses on mats"
 setup_minutes: 1
 cleanup_minutes: 0
 mess_level: low
 energy_level: calm
 adult_help: hands-on
-why_kids_love_it: "Nobody has to hold still and breathe — they get to BE a wobbling flamingo and a roaring lion. The animal story smuggles in the balancing, stretching and slow breathing that plain instructions never could."
+why_kids_love_it: "Animal names make unfamiliar poses easy to picture. Children can wobble like a flamingo, stretch like a cat, and roar out a long breath without worrying about doing formal yoga perfectly."
 before_you_start:
   - "Clear falling room around each player — wobbling is part of the plan."
   - "Bare feet grip best; socks slide."
   - "Do every pose yourself, imperfectly — your wobble gives them permission to wobble."
 learning_details:
   - skill: "Balance and core strength"
-    detail: "One-legged flamingo and tilting airplane poses train the vestibular system and deep core muscles that desk-sitting childhoods underuse."
+    detail: "One-legged poses ask children to steady their trunk, adjust their feet, and recover when they wobble."
   - skill: "Interoception"
-    detail: "Noticing a stretch, a wobble, a slowing breath builds the internal body-map that underlies self-regulation."
+    detail: "Naming what the body feels — stretched, wobbly, fast-breathing, or calm — helps children notice physical cues they can describe later."
   - skill: "Breath as a tool"
-    detail: "Lion's breath (huge inhale, roaring exhale) and bee hum teach exhale-lengthening — the physiological calm-down switch — as a game."
+    detail: "Lion breaths and bee hums make a slower, longer exhale concrete and playful. Stop if a child feels dizzy or uncomfortable."
 variations:
   - title: "Yoga safari story"
-    detail: "Link poses into a narrative: wake like a cat, hop through the pond as a frog, fly as an eagle, sleep as a swan. A story sequence holds attention triple the time."
+    detail: "Link poses into a short story: wake like a cat, hop through the pond as a frog, fly as an eagle, then rest as a swan."
   - title: "Pose challenge"
-    detail: "For 6+, add hold-counts and eyes-closed rounds — who can flamingo for ten seconds blind?"
+    detail: "For older children, add short hold-counts or try a stable seated pose with eyes closed. Keep one-legged balances eyes-open and near a clear wall."
   - title: "Bedtime three"
     detail: "Pick the three slowest poses plus bee-hum breathing as a fixed pre-sleep ritual — same order every night."
 common_problems:
@@ -48,7 +48,7 @@ faqs:
   - question: "What age can kids do yoga?"
     answer: "Animal-pose yoga works from about 3, when children can imitate held positions. Real alignment doesn't matter at all — the wobble, the story and the breathing are the whole point."
   - question: "Does yoga actually calm children down?"
-    answer: "Slow poses paired with long exhales activate the body's relaxation response, and short daily sessions are associated with better attention and emotion regulation in young children. As a wind-down before naps or bed, the effect is often visible the first week."
+    answer: "Some children settle when the sequence moves from active poses to slower stretches and easy breathing. Others stay playful, so treat it as a gentle wind-down option rather than a guaranteed sleep trick."
 last_updated: "2026-09-28"
 ---
 

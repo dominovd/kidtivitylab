@@ -129,6 +129,52 @@ export const SITUATIONS = [
   },
 ] as const;
 
+/** Seasonal landing pages. Membership comes from explicit `seasons` frontmatter tags. */
+export const SEASONS = [
+  {
+    slug: 'christmas',
+    title: 'Christmas Activities',
+    intro:
+      'Festive, low-prep Christmas activities for little hands: crafts, games, and sensory play that stretch the magic beyond decorating the tree.',
+  },
+  {
+    slug: 'halloween',
+    title: 'Halloween Activities',
+    intro:
+      'Spooky-but-friendly Halloween fun for toddlers and kids: monsters that get fed, pumpkins that get hammered, and potions that actually fizz.',
+  },
+  {
+    slug: 'fall',
+    title: 'Fall Activities',
+    intro:
+      'Crunchy leaves, pumpkins, and pinecones: hands-on autumn activities that turn the season itself into the play material.',
+  },
+  {
+    slug: 'winter',
+    title: 'Winter Activities',
+    intro:
+      'Cozy indoor games and snowy-day ideas for the long cold months — no snowsuit required for most of them.',
+  },
+  {
+    slug: 'summer',
+    title: 'Summer Activities',
+    intro:
+      'Water, sunshine, and sidewalk chalk: easy outdoor ideas for hot days, plus ways to cool down when the sun wins.',
+  },
+  {
+    slug: 'spring',
+    title: 'Spring Activities',
+    intro:
+      'Everything is waking up — flowers, bugs, and puddles included. Fresh-air activities for the first warm days.',
+  },
+  {
+    slug: 'easter',
+    title: 'Easter Activities',
+    intro:
+      'Egg hunts, spring crafts, and bunny-approved games for Easter week.',
+  },
+] as const;
+
 /** Theme landing pages. Membership comes from goals / materials. */
 export const THEMES = [
   {
@@ -164,6 +210,23 @@ export const THEMES = [
       'Gentle, regulating activities for overstimulated moments: before naps, after meltdowns, or when the whole day needs a softer gear.',
   },
 ] as const;
+
+/** Unified situation + season topics for the age × topic programmatic matrix. */
+export interface Topic {
+  slug: string;
+  title: string;
+  intro: string;
+  kind: 'situation' | 'season';
+}
+
+export const TOPICS: Topic[] = [
+  ...SITUATIONS.map((s) => ({ slug: s.slug, title: s.title, intro: s.intro, kind: 'situation' as const })),
+  ...SEASONS.map((s) => ({ slug: s.slug, title: s.title, intro: s.intro, kind: 'season' as const })),
+];
+
+export function topicMatches(a: Activity, t: Topic): boolean {
+  return t.kind === 'situation' ? a.situations.includes(t.slug) : a.seasons.includes(t.slug);
+}
 
 export function ageGroupBySlug(slug: string) {
   return AGE_GROUPS.find((g) => g.slug === slug);
