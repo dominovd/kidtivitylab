@@ -13,6 +13,8 @@ situations: [indoor, quiet-time, rainy-day]
 seasons: []
 skills_developed: ["Balance", "Body awareness", "Breath control", "Following sequences"]
 tips: "Sequence matters: start with big active animals (frog jumps, bear walks) and drift toward slow ones (cat stretch, sleeping swan). You're steering the energy downward without anyone noticing."
+image: "/images/activities/animal-yoga.webp"
+image_alt: "A parent and children doing animal yoga poses on a rug"
 setup_minutes: 1
 cleanup_minutes: 0
 mess_level: low

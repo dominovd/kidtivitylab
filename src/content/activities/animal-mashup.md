@@ -13,6 +13,8 @@ situations: [indoor, rainy-day, birthday-party]
 seasons: []
 skills_developed: ["Gross motor", "Divided attention", "Animal knowledge", "Improvisation"]
 tips: "The comedy is in the clash: pick animals that move and sound nothing alike. Penguin that barks like a dog beats two similar animals every time."
+image: "/images/activities/animal-mashup.webp"
+image_alt: "Children moving like one animal while making another animal's sound in the living room"
 setup_minutes: 0
 cleanup_minutes: 0
 mess_level: low

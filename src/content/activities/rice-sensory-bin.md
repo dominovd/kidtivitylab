@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Tactile exploration", "Scooping & pouring", "Focused attention", "Hand strength"]
 safety_note: "Dry rice is a choking risk for children who still mouth objects — supervise closely and choose buried toys too big to swallow."
 tips: "Contain the blast radius: put the bin inside a bigger tray, on a bedsheet, or in an inflatable pool. Cleanup becomes a shake of the sheet, and the rice goes back in a zip bag for next month."
+image: "/images/activities/rice-sensory-bin.webp"
+image_alt: "A toddler digging hands into a tray of dry rice with cups and a toy dinosaur"
 setup_minutes: 3
 cleanup_minutes: 5
 mess_level: medium

@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Precision grasp", "Wrist rotation", "Concentration", "Shape awareness"]
 safety_note: "Choose posting objects too large to swallow for under-3s — jumbo craft sticks and jar lids beat coins and buttons."
 tips: "The slot width is your difficulty dial: cut it generous for a one-year-old, snug for a two-year-old. One box with different slots on each side serves a whole age range."
+image: "/images/activities/posting-box.webp"
+image_alt: "A toddler sliding a card into the slot of a decorated shoebox"
 setup_minutes: 5
 cleanup_minutes: 1
 mess_level: low

@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Pincer grasp", "Hand strength", "Problem solving", "Persistence"]
 safety_note: "Use toys too large to swallow for children under 3, and supervise so peeled-off tape doesn't go in the mouth."
 tips: "Difficulty is one variable: how hard you press the tape. Leave a lifted corner for beginners; press it flat and double-tape for pros. Works on a wall, a high chair tray, or the side of the bathtub."
+image: "/images/activities/tape-toy-rescue.webp"
+image_alt: "A toddler peeling painter's tape to rescue toy animals taped to the wall"
 setup_minutes: 3
 cleanup_minutes: 2
 mess_level: low

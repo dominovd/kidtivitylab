@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Pulling strength", "Pincer grasp", "Cause and effect", "Bilateral coordination"]
 safety_note: "Use scarves shorter than 60 cm and stay present — long fabric and babies need supervision. Check that the basket has no cracked, sharp holes."
 tips: "This is the legal version of pulling all the wipes out of the pack. Tie two scarves together for a longer, more dramatic pull, and weigh the basket down with a book if it slides."
+image: "/images/activities/laundry-basket-pull.webp"
+image_alt: "A baby pulling colorful scarves through the holes of a laundry basket"
 setup_minutes: 3
 cleanup_minutes: 1
 mess_level: low

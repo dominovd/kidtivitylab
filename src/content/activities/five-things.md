@@ -13,6 +13,8 @@ situations: [road-trip, indoor, sick-day]
 seasons: []
 skills_developed: ["Category thinking", "Word retrieval", "Working memory", "Turn-taking"]
 tips: "The category is the difficulty dial: 'five animals' suits a four-year-old, 'five things colder than this car' will stump a ten-year-old. One game, every passenger."
+image: "/images/activities/five-things.webp"
+image_alt: "Two kids in the back seat counting answers on their fingers during a road trip"
 setup_minutes: 0
 cleanup_minutes: 0
 mess_level: low

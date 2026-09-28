@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["2D-3D matching", "Categorization", "Vocabulary", "Visual discrimination"]
 safety_note: "Standard figurines are small — supervise toddlers who still mouth toys, or use chunky one-piece animals for the youngest players."
 tips: "This connects two worlds toddlers usually keep separate: the flat pictures in books and the solid toys in the bin. Watching a child grasp that both mean 'elephant' is watching abstraction being born."
+image: "/images/activities/figurine-book-match.webp"
+image_alt: "A toddler matching a toy elephant figurine to its picture in an open book"
 setup_minutes: 3
 cleanup_minutes: 1
 mess_level: low

@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Finger strength", "Color mixing", "Cause and effect", "Visual tracking"]
 safety_note: "Seal the bag completely and reinforce all edges with tape — babies will chew the corners. Stay close and swap the bag out if a seam starts to give."
 tips: "Tape the bag to the floor for tummy time, to the high chair tray for sitters, or to a window — backlit paint mixing looks like magic."
+image: "/images/activities/no-mess-paint-bag.webp"
+image_alt: "A baby squishing bright paint inside a sealed plastic bag taped to the floor"
 setup_minutes: 5
 cleanup_minutes: 1
 mess_level: low

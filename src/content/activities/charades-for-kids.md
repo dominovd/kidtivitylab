@@ -13,6 +13,8 @@ situations: [indoor, rainy-day, birthday-party]
 seasons: []
 skills_developed: ["Non-verbal expression", "Symbolic thinking", "Turn-taking", "Vocabulary"]
 tips: "Kids' charades lives or dies by the word list. Animals and everyday actions (brushing teeth, driving) work from five; movies and book titles start landing around eight."
+image: "/images/activities/charades-for-kids.webp"
+image_alt: "A child acting out an elephant while the family guesses from the couch"
 setup_minutes: 1
 cleanup_minutes: 0
 mess_level: low

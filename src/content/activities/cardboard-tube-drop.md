@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Hand-eye coordination", "Cause and effect", "Object permanence", "Aiming"]
 safety_note: "Pom-poms are a choking hazard for mouthing toddlers — use jumbo pom-poms or balls for under-2s and stay close."
 tips: "Set it up on the kitchen wall at toddler height and you've bought yourself fifteen minutes of cooking time with the child happily in view."
+image: "/images/activities/cardboard-tube-drop.webp"
+image_alt: "A toddler dropping a pom-pom into cardboard tubes taped to the wall"
 setup_minutes: 5
 cleanup_minutes: 2
 mess_level: low

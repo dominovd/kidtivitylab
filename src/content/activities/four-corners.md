@@ -13,6 +13,8 @@ situations: [indoor, birthday-party, rainy-day]
 seasons: []
 skills_developed: ["Decision making", "Listening", "Counting", "Probability intuition"]
 tips: "The trivia variation is the sleeper hit: assign answers to corners ('what's my favorite pizza topping?') and the game doubles as a get-to-know-you machine at parties."
+image: "/images/activities/four-corners.webp"
+image_alt: "Kids running toward colored paper markers in the corners of a room"
 setup_minutes: 3
 cleanup_minutes: 1
 mess_level: low

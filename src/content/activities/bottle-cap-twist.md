@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Wrist rotation", "Bilateral coordination", "Size matching", "Persistence"]
 safety_note: "Use caps bigger than a choking-test tube (over 4.5 cm) for under-3s, and skip glass containers for young toddlers."
 tips: "This is pure Montessori practical life with zero shopping: raid the recycling bin. Toddlers sense the difference between a toy and the real thing, and real jars win every time."
+image: "/images/activities/bottle-cap-twist.webp"
+image_alt: "A toddler twisting caps onto a tray of jars and bottles"
 setup_minutes: 2
 cleanup_minutes: 1
 mess_level: low

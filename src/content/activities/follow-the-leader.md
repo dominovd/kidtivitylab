@@ -13,6 +13,8 @@ situations: [indoor, outdoor, rainy-day, birthday-party]
 seasons: []
 skills_developed: ["Imitation", "Gross motor variety", "Attention", "Leadership confidence"]
 tips: "The parade format is the secret for toddlers: moving in a line through rooms feels like an expedition, and the changing scenery keeps the game fresh far longer than standing in one spot."
+image: "/images/activities/follow-the-leader.webp"
+image_alt: "A parent leading a marching line of children copying arms-up poses"
 setup_minutes: 0
 cleanup_minutes: 0
 mess_level: low

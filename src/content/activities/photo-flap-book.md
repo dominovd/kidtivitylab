@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Vocabulary", "Naming familiar people", "Page turning", "Object permanence"]
 safety_note: "Glue the photos yourself and supervise young toddlers with sticky notes — small paper pieces can end up in mouths."
 tips: "Instant no-print version: stick post-its over the pictures in any first-words book you already own. The lift-the-flap magic works the same."
+image: "/images/activities/photo-flap-book.webp"
+image_alt: "A parent and toddler lifting sticky-note flaps in a homemade photo book"
 setup_minutes: 10
 cleanup_minutes: 1
 mess_level: low

@@ -13,6 +13,8 @@ situations: [road-trip, indoor, sick-day, quiet-time]
 seasons: []
 skills_developed: ["Auditory memory", "Melody recognition", "Pitch awareness", "Turn-taking"]
 tips: "Start with the child's daily soundtrack: nursery rhymes, their shows' theme songs, the clean-up song from daycare. Recognition speed on familiar tunes is what makes them want the humming seat."
+image: "/images/activities/hum-that-tune.webp"
+image_alt: "A child humming a tune while two others lean in to guess the song"
 setup_minutes: 0
 cleanup_minutes: 0
 mess_level: low

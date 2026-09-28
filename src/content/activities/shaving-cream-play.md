@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Tactile exploration", "Pre-writing strokes", "Sensory tolerance", "Imagination"]
 safety_note: "Shaving cream is not edible — this one is for children past the mouthing stage, with an adult beside them. Keep foam away from eyes and choose a plain, non-menthol foam."
 tips: "The cleanup secret: foam dissolves with a wet cloth in seconds and leaves the table cleaner than before. For maximum containment, play in the empty bathtub right before bath time."
+image: "/images/activities/shaving-cream-play.webp"
+image_alt: "A toddler in a smock squishing fluffy white foam on a high chair tray"
 setup_minutes: 2
 cleanup_minutes: 3
 mess_level: high
