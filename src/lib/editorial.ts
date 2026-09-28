@@ -327,6 +327,36 @@ export const SEASON_EDITORIAL: Record<string, ListingEditorial> = {
       { question: 'What can kids do on a snow day besides sledding?', answer: 'Bring snow inside in a tray for mitten-free play, freeze toys into ice for a rescue mission, make bird feeders, or build the fort indoors when fingers get cold.' },
     ],
   },
+  spring: {
+    guideKicker: 'Everything is waking up',
+    guideHeading: 'Use the season of firsts',
+    guideIntro: 'Spring hands children a stream of visible changes: first buds, first bugs, first warm puddles. The best spring activities simply give that curiosity a job.',
+    guideTips: [
+      { title: 'Dress for puddles, not against them', text: 'Rain boots and a change of clothes turn wet weather from a cancellation into the main event.' },
+      { title: 'Follow the small creatures', text: 'Worms, snails and ants come back before the flowers do. A magnifying glass and unhurried time beat any planned craft in April.' },
+      { title: 'Plant one visible thing', text: 'A bean in a clear cup shows roots and shoots within days, spring science at toddler pace.' },
+    ],
+    faqHeading: 'Spring activity questions',
+    faqs: [
+      { question: 'What are good outdoor activities for spring with toddlers?', answer: 'Puddle jumping in boots, nature scavenger hunts for signs of spring, water painting on dry pavement, chalk courses, and bug watching all use the season itself as the material.' },
+      { question: 'What can kids do on a rainy spring day?', answer: 'Split the difference: short boots-on puddle sessions outside, then indoor standbys like sensory bins, taped courses, and window-watching the rain with a hot drink.' },
+    ],
+  },
+  summer: {
+    guideKicker: 'The long outdoor season',
+    guideHeading: 'Water, shade, and low-prep wins',
+    guideIntro: 'Summer play barely needs equipment: a bucket of water and a patch of shade cover most of the season. The real planning is around sun and the hottest hours.',
+    guideTips: [
+      { title: 'Schedule around the sun', text: 'Big active play belongs to mornings and late afternoons; save water play and quiet indoor resets for the midday peak.' },
+      { title: 'Water is the whole toolbox', text: 'Painting pavement with plain water, pouring stations, ice rescues and sprinkler runs deliver hours from a single tap.' },
+      { title: 'Keep an indoor plan for heat waves', text: 'Too-hot days are winter days in disguise, the same indoor rotation of movement games and table play applies.' },
+    ],
+    faqHeading: 'Summer activity questions',
+    faqs: [
+      { question: 'What are easy summer activities that keep kids cool?', answer: 'Water painting on pavement, frozen toy rescues, sponge and pouring stations, shaded sensory bins, and early-morning chalk courses all beat the heat without a pool.' },
+      { question: 'What can kids do when it is too hot to play outside?', answer: 'Treat it like a rainy day: indoor movement games like freeze dance and sock toss, calm table activities, and a cool bath with floating toys as the finale.' },
+    ],
+  },
 };
 
 export const THEME_EDITORIAL: Record<string, ListingEditorial> = {

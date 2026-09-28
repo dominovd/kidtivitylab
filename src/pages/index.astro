@@ -3,7 +3,24 @@ import Base from '../layouts/Base.astro';
 import Finder from '../components/Finder.astro';
 import EmailCapture from '../components/EmailCapture.astro';
 import SituationIcon from '../components/SituationIcon.astro';
+import ActivityCard from '../components/ActivityCard.astro';
 import { SITUATIONS } from '../lib/taxonomy';
+import { allActivities, toActivity } from '../lib/activities';
+
+// Server-rendered picks so the homepage links directly into the activity library
+// (the Finder results grid is client-side and invisible to crawlers).
+const FEATURED_IDS = [
+  'tape-toy-rescue',
+  'freeze-dance',
+  'rice-sensory-bin',
+  'picture-clue-treasure-hunt',
+  'sleeping-lions',
+  'no-mess-paint-bag',
+  'five-things',
+  'blanket-fort-reading-den',
+];
+const byId = new Map((await allActivities()).map((e) => [e.id, toActivity(e)]));
+const featured = FEATURED_IDS.map((id) => byId.get(id)).filter(Boolean);
 
 const title = 'Kidtivity Lab — Fun Activities & Games for Kids by Age';
 const description =
@@ -67,6 +84,21 @@ const schema = [
             </span>
             <span aria-hidden="true">→</span>
           </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="section" aria-label="Popular activities">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Parent favorites</p>
+          <h2>Popular activities to start with</h2>
+        </div>
+        <p class="muted">A few reliable hits across ages — tap any card for the full step-by-step.</p>
+      </div>
+      <div class="card-grid">
+        {featured.map((a) => (
+          <ActivityCard activity={a} />
         ))}
       </div>
     </section>

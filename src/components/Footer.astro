@@ -1,5 +1,5 @@
 ---
-import { AGE_GROUPS, SITUATIONS, SEASONS, matchesAge } from '../lib/taxonomy';
+import { AGE_GROUPS, SITUATIONS, SEASONS, THEMES, matchesAge } from '../lib/taxonomy';
 import { allActivities, toActivity, MIN_ACTIVITIES_PER_PAGE } from '../lib/activities';
 
 // Only link pages that actually exist (same thin-content guard as page generation) —
@@ -13,6 +13,9 @@ const situationLinks = SITUATIONS.filter(
 );
 const seasonLinks = SEASONS.filter(
   (s) => acts.filter((a) => a.seasons.includes(s.slug)).length >= MIN_ACTIVITIES_PER_PAGE
+);
+const themeLinks = THEMES.filter(
+  (t) => acts.filter((a) => t.match(a)).length >= MIN_ACTIVITIES_PER_PAGE
 );
 const year = new Date().getFullYear();
 ---
@@ -41,6 +44,16 @@ const year = new Date().getFullYear();
           <li><a href={`/situations/${s.slug}/`}>{s.title}</a></li>
         ))}
       </ul>
+      {themeLinks.length > 0 && (
+        <>
+          <h3 class="footer-subheading">Themes</h3>
+          <ul>
+            {themeLinks.map((t) => (
+              <li><a href={`/themes/${t.slug}/`}>{t.title}</a></li>
+            ))}
+          </ul>
+        </>
+      )}
     </nav>
     {seasonLinks.length > 0 && (
       <nav aria-label="Seasonal">
@@ -94,6 +107,7 @@ const year = new Date().getFullYear();
   .footer-logo img { width: 44px; height: 44px; }
   .footer-logo em { color: var(--accent); font-style: normal; }
   h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+  .footer-subheading { margin-top: 1.1rem; }
   ul { list-style: none; margin: 0; padding: 0; }
   li { margin-bottom: 0.35rem; }
   a { color: var(--text-soft); text-decoration: none; font-size: 0.95rem; }

@@ -1,21 +1,30 @@
 ---
+/**
+ * EmailCapture — DISABLED until an email provider is connected.
+ * The markup below is kept for instant re-enable: set ENABLED to true and
+ * point the form action at the provider endpoint (ConvertKit / MailerLite).
+ * Rendering a form that submits nowhere is a broken promise to the visitor,
+ * so while disabled this component renders nothing.
+ */
 interface Props {
   heading?: string;
 }
 const { heading = 'Fresh ideas for your inbox' } = Astro.props;
+const ENABLED = false;
 ---
 
-<aside class="email-capture no-print" aria-label="Newsletter signup">
-  <div>
-    <h3>{heading}</h3>
-    <p class="muted" style="margin:0; font-size:0.92rem;">
-      Weekly activities, seasonal fun, and simple parenting wins.
-    </p>
-  </div>
-  {/* TODO: point action at your email provider (ConvertKit / MailerLite form endpoint) */}
-  <form action="#" method="post" data-newsletter>
-    <label class="visually-hidden" for="email">Email address</label>
-    <input id="email" type="email" name="email" placeholder="Enter your email" required />
-    <button type="submit" class="btn btn-primary">Send me ideas</button>
-  </form>
-</aside>
+{ENABLED && (
+  <aside class="email-capture no-print" aria-label="Newsletter signup">
+    <div>
+      <h3>{heading}</h3>
+      <p class="muted" style="margin:0; font-size:0.92rem;">
+        Weekly activities, seasonal fun, and simple parenting wins.
+      </p>
+    </div>
+    <form action="#" method="post" data-newsletter>
+      <label class="visually-hidden" for="email">Email address</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn btn-primary">Send me ideas</button>
+    </form>
+  </aside>
+)}
