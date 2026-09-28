@@ -1,6 +1,8 @@
 ---
 title: "Santa Says"
-hook: "Simon took December off — Santa's giving the orders now. Ho ho hop on one leg!"
+hook: "Give Simon Says a Christmas twist with reindeer hops, elf steps, and plenty of listening."
+image: "/images/activities/santa-says.webp"
+image_alt: "Four children balance and copy the child leader during a cheerful game of Santa Says"
 age_min: 36
 age_max: 108
 place: [home]
@@ -12,34 +14,34 @@ involvement: together
 situations: [indoor, rainy-day, birthday-party]
 seasons: [christmas]
 skills_developed: ["Listening & inhibition", "Following directions", "Gross motor", "Leadership"]
-tips: "The hat is worth having: passing the Santa hat makes turn-taking visible, and wearing it turns the shyest kid into a commanding Claus."
+tips: "Pass a Santa hat when the leader changes so everyone can see whose turn it is. For younger players, skip trick commands and simply move together."
 setup_minutes: 0
 cleanup_minutes: 0
 mess_level: low
 energy_level: active
 adult_help: nearby
-why_kids_love_it: "It's the listening game they already know, wearing a Santa suit: silly commands ('Santa says waddle like a penguin!'), the thrill of catching others moving when Santa DIDN'T say, and the power trip of being Santa themselves."
+why_kids_love_it: "The commands invite big, silly movements, and every player eventually gets to lead. Because no one needs to be eliminated, mistakes can become part of the fun."
 before_you_start:
   - "Refresh the one rule: only obey commands that start with 'Santa says'."
-  - "For 3-4 year olds, drop the catch-you-out part entirely — just follow fun commands together."
+  - "For 3-4 year olds, drop the catch-you-out part entirely, just follow fun commands together."
   - "Stock a few themed commands: ho-ho-ho, fly like a reindeer, sneak like an elf, wrap a present."
 learning_details:
   - skill: "Inhibitory control"
-    detail: "Freezing on a command WITHOUT the magic words is a classic executive-function test — this game is literally used in child development research."
+    detail: "Waiting for the words 'Santa says' asks players to pause an automatic response and listen before moving."
   - skill: "Auditory attention"
-    detail: "Players must parse every command's opening before moving — sustained careful listening disguised as chaos."
+    detail: "Players must parse every command's opening before moving, sustained careful listening disguised as chaos."
   - skill: "Expressive leadership"
-    detail: "Being Santa means inventing commands, projecting your voice, and watching the group respond — public speaking training in a red hat."
+    detail: "Taking the leader role gives children practice choosing clear directions and speaking loudly enough for the group to hear."
 variations:
   - title: "No-elimination mode"
     detail: "Under 5s: nobody is ever out; a caught move just earns a group 'ho ho ho' and the game rolls on."
   - title: "Elf says / Reindeer says"
-    detail: "Rotate characters with matching voices — squeaky elf commands, snorty reindeer commands."
+    detail: "Rotate characters with matching voices, squeaky elf commands, snorty reindeer commands."
   - title: "Freeze finale"
-    detail: "End with 'Santa says sleep until Christmas' — the whole room drops and holds still, conveniently right before dinner."
+    detail: "End with 'Santa says sleep until Christmas', the whole room drops and holds still, conveniently right before dinner."
 common_problems:
   - problem: "Young players move on every command regardless"
-    solution: "That's developmentally expected before ~4. Play the follow-along version and add the catch rule next Christmas — the game grows with them."
+    solution: "That's developmentally expected before ~4. Play the follow-along version and add the catch rule next Christmas, the game grows with them."
   - problem: "Getting caught causes tears"
     solution: "Make being caught a promotion: caught players become Santa's helpers who invent the next command together with Santa."
 faqs:
@@ -51,7 +53,7 @@ last_updated: "2026-09-28"
 ---
 
 1. **Crown Santa.** One player gets the hat and the command power.
-2. **Commands fly.** "Santa says stomp like a snowman!" — everyone stomps. "Ho ho hop!" — nobody moves (it didn't start with Santa says!).
-3. **Catch the movers.** Moving on a trick command earns a laugh — and in gentle mode, nothing else.
+2. **Commands fly.** "Santa says stomp like a snowman!", everyone stomps. "Ho ho hop!", nobody moves (it didn't start with Santa says!).
+3. **Catch the movers.** Moving on a trick command earns a laugh, and in gentle mode, nothing else.
 4. **Pass the hat.** Every player gets a turn running the North Pole.
 5. **Sleep till Christmas.** Final command lands everyone flat on the rug, miraculously quiet.

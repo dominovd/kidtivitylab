@@ -135,25 +135,25 @@ export const SEASONS = [
     slug: 'christmas',
     title: 'Christmas Activities',
     intro:
-      'Festive, low-prep Christmas activities for little hands: crafts, games, and sensory play that stretch the magic beyond decorating the tree.',
+      'Low-prep Christmas crafts, movement games, and sensory activities for toddlers and children, with clear age and safety guidance.',
   },
   {
     slug: 'halloween',
     title: 'Halloween Activities',
     intro:
-      'Spooky-but-friendly Halloween fun for toddlers and kids: monsters that get fed, pumpkins that get hammered, and potions that actually fizz.',
+      'Friendly Halloween activities for toddlers and children, including pumpkin play, simple crafts, movement games, and supervised fizzy science.',
   },
   {
     slug: 'fall',
     title: 'Fall Activities',
     intro:
-      'Crunchy leaves, pumpkins, and pinecones: hands-on autumn activities that turn the season itself into the play material.',
+      'Hands-on fall activities using leaves, pumpkins, corn, flowers, and other seasonal materials for art, movement, and practical play.',
   },
   {
     slug: 'winter',
     title: 'Winter Activities',
     intro:
-      'Cozy indoor games and snowy-day ideas for the long cold months — no snowsuit required for most of them.',
+      'Indoor winter games, quiet table activities, and snowy-day ideas sorted by age, time, and materials.',
   },
   {
     slug: 'summer',
