@@ -7,6 +7,11 @@ export default defineConfig({
   site: 'https://kidtivitylab.com',
   integrations: [
     sitemap({
+      // /learn is a separate Next.js app served through a Vercel rewrite (see vercel.json)
+      customPages: [
+        'https://kidtivitylab.com/learn/',
+        'https://kidtivitylab.com/learn/how-it-works/',
+      ],
       // Age × situation pages remain useful for navigation, but the current
       // library is too small to make each combination a distinct search page.
       filter: (page) => {
