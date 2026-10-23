@@ -7,6 +7,7 @@ import Ico from "./Ico";
 import HeroPic from "./HeroPic";
 import Avatar from "./Avatar";
 import Setup from "./Setup";
+import SkillPic from "./SkillPic";
 import { HEROES, RARITY, nextHero, unlockedHeroes } from "@/lib/heroes";
 import { t } from "@/lib/i18n";
 import type { SubjectId } from "@/lib/engine";
@@ -14,7 +15,7 @@ import { SUBJECTS, ROUND_SIZE, TRACKS, getSkill, skillsFor } from "@/lib/skills"
 import { focusSkills } from "@/lib/assessment";
 import { applyRound, setLevels, streak, today, useProgress, type ProfileId, type RoundResult } from "@/lib/progress";
 import { primeAudioOnFirstGesture, sfx, speak } from "@/lib/speech";
-import { applyFeel, FEEL_EMOJI, type Feel } from "@/lib/feel";
+import { applyFeel, type Feel } from "@/lib/feel";
 import { speechLang } from "@/lib/engine";
 
 type Screen =
@@ -112,7 +113,7 @@ export default function App() {
   const nextHeroBar = (pid: ProfileId) => {
     const coins = progress.coins[pid] ?? 0;
     const nh = nextHero(coins);
-    if (!nh) return <p className="muted">🏆 {t("allHeroes", lang)}</p>;
+    if (!nh) return <p className="muted with-ico"><Ico name="trophy" size={28} /> {t("allHeroes", lang)}</p>;
     const prevCost = [...HEROES].reverse().find((x) => x.cost <= coins)?.cost ?? 0;
     const pct = Math.round(((coins - prevCost) / (nh.cost - prevCost)) * 100);
     return (
@@ -139,7 +140,9 @@ export default function App() {
         <span>🌈</span> {t("appName", lang)}
       </button>
       <div className="topbar-right">
-        <button className="icon-btn" onClick={toggleSound} aria-label="sound">{sound ? "🔊" : "🔇"}</button>
+        <button className="icon-btn" onClick={toggleSound} aria-label={sound ? "Sound on" : "Sound off"}>
+          <Ico name={sound ? "sound-on" : "sound-off"} size={28} />
+        </button>
       </div>
     </header>
   );
@@ -235,15 +238,15 @@ export default function App() {
       <main className="app">
         {header}
         <section className="result card">
-          <Ico name="idea-lightbulb" size={96} className="result-ico" />
+          <Ico name="level-check" size={96} className="result-ico" />
           <h1>{t("placementDone", lang)}</h1>
           <ul className="level-list" style={{ "--c": subject.color } as React.CSSProperties}>
             {Object.entries(screen.levels).map(([id, lvl]) => {
               const sk = getSkill(id)!;
               return (
                 <li key={id}>
-                  <span>
-                    {sk.icon} {sk.title[lang]}
+                  <span className="with-ico">
+                    <SkillPic skill={sk} size={32} /> {sk.title[lang]}
                   </span>
                   <span className="level">
                     {[1, 2, 3, 4, 5].map((i) => (
@@ -270,7 +273,7 @@ export default function App() {
       <main className="app">
         {header}
         <section className="result card">
-          <div className="result-icon">{skill.icon}</div>
+          <SkillPic skill={skill} size={110} className="result-pic" />
           <h1>{msg}</h1>
           <div className="big-stars" aria-label={`${res.stars} ${t("stars", lang)}`}>
             {[1, 2, 3].map((i) => (
@@ -300,7 +303,7 @@ export default function App() {
                         if (sound) speak(say, speechLang[lang], { rate: 1 });
                       }}
                     >
-                      <span className="feel-emoji">{FEEL_EMOJI[f]}</span>
+                      <Ico name={f === "easy" ? "feel-easy" : f === "ok" ? "feel-ok" : "feel-hard"} size={52} />
                       {t(f === "easy" ? "feelEasy" : f === "ok" ? "feelOk" : "feelHard", lang)}
                     </button>
                   ))}
@@ -308,7 +311,7 @@ export default function App() {
               </>
             ) : (
               <p className="feel-done">
-                {FEEL_EMOJI[feelDone.feel]}{" "}
+                <Ico name={feelDone.feel === "easy" ? "feel-easy" : feelDone.feel === "ok" ? "feel-ok" : "feel-hard"} size={28} />{" "}
                 {feelDone.delta > 0
                   ? t("feelUp", lang)
                   : feelDone.delta < 0
@@ -401,7 +404,7 @@ export default function App() {
         <div className="kid-bar">
           <button className="icon-btn" onClick={() => setScreen({ name: "map", pid: p.id })} aria-label={t("back", lang)}>←</button>
           <b>
-            🦸 {t("heroes", lang)} {unlockedHeroes(coins).length}/{HEROES.length}
+            <Ico name="heroes" size={28} /> {t("heroes", lang)} {unlockedHeroes(coins).length}/{HEROES.length}
           </b>
           <span className="pill"><Ico name="reward-coin" size={18} /> {coins}</span>
         </div>
@@ -440,7 +443,7 @@ export default function App() {
                   <>
                     <span className="rarity" style={{ "--r": RARITY[hero.rarity].color } as React.CSSProperties}>{RARITY[hero.rarity].name[lang]}</span>
                     <span className="hero-cost">
-                      🔒 <Ico name="reward-coin" size={16} /> {hero.cost}
+                      <Ico name="lock" size={16} /> <Ico name="reward-coin" size={16} /> {hero.cost}
                     </span>
                   </>
                 )}
@@ -485,13 +488,13 @@ export default function App() {
           <button className="icon-btn" onClick={() => setScreen({ name: "home" })} aria-label={t("back", lang)}>←</button>
           <Avatar value={p.avatar} size={44} className="kid-avatar" />
           <b>{p.name}</b>
-          <span className="pill">🔥 {streak(progress.days[p.id])}</span>
+          <span className="pill"><Ico name="streak-flame" size={18} /> {streak(progress.days[p.id])}</span>
           <span className="pill"><Ico name="reward-coin" size={18} /> {progress.coins[p.id] ?? 0}</span>
           <button className="btn small track-btn" onClick={() => setScreen({ name: "setup", pid: p.id, start: "track" })} title="Change where to start">
             🧭 {TRACKS.find((x) => x.id === (p.track ?? "mix"))!.title}
           </button>
           <button className="btn small heroes-btn" onClick={() => setScreen({ name: "heroes", pid: p.id })}>
-            {companionOf(p.id) ? <HeroPic hero={companionOf(p.id)!} size={26} /> : "🦸"} {t("heroes", lang)}{" "}
+            {companionOf(p.id) ? <HeroPic hero={companionOf(p.id)!} size={26} /> : <Ico name="heroes" size={22} />} {t("heroes", lang)}{" "}
             {unlockedHeroes(progress.coins[p.id] ?? 0).length}/{HEROES.length}
           </button>
         </div>
@@ -526,7 +529,7 @@ export default function App() {
               <Ico name={s.img} size={22} /> {s.short[lang]}
             </a>
           ))}
-          <button onClick={() => setScreen({ name: "heroes", pid: p.id })}>🦸 {t("heroes", lang)}</button>
+          <button onClick={() => setScreen({ name: "heroes", pid: p.id })}><Ico name="heroes" size={22} /> {t("heroes", lang)}</button>
         </nav>
 
         {picks.length > 0 && (
@@ -551,8 +554,8 @@ export default function App() {
                       <Ico name="reward-coin" size={14} /> ×2
                     </span>
                     {untouched(sk.id) && <span className="badge new">{t("newBadge", lang)}</span>}
-                    <Ico name={subject.img} size={44} className="skill-ico" />
-                    <span className="skill-title">{sk.icon} {sk.title[lang]}</span>
+                    <SkillPic skill={sk} size={52} className="skill-ico" />
+                    <span className="skill-title">{sk.title[lang]}</span>
                     <span className="skill-sub">{subject.title[lang]}</span>
                     <span className="play">▶</span>
                   </button>
@@ -575,7 +578,7 @@ export default function App() {
                   title={t("placementHint", lang)}
                   onClick={() => setScreen({ name: "placement", pid: p.id, subject: s.id, key: Date.now() })}
                 >
-                  <Ico name="idea-lightbulb" size={20} /> {t("placement", lang)}
+                  <Ico name="level-check" size={20} /> {t("placement", lang)}
                   {placed ? " ✓" : ""}
                 </button>
               </div>
@@ -585,9 +588,9 @@ export default function App() {
                   const level = st?.level ?? 1;
                   return (
                     <button key={sk.id} className="skill" onClick={() => startRound(p.id, sk.id)}>
-                      {focus.has(sk.id) && <span className="badge">🎯 {t("focus", lang)}</span>}
+                      {focus.has(sk.id) && <span className="badge focus"><Ico name="focus" size={14} /> {t("focus", lang)}</span>}
                       {untouched(sk.id) && <span className="badge new">{t("newBadge", lang)}</span>}
-                      <span className="skill-icon">{sk.icon}</span>
+                      <SkillPic skill={sk} size={56} className="skill-icon" />
                       <span className="skill-title">{sk.title[lang]}</span>
                       <span className="stars">
                         {[1, 2, 3].map((i) => (
@@ -644,7 +647,7 @@ export default function App() {
                 <span className="profile-name">{p.name}</span>
                 <span className="profile-age">🧭 {TRACKS.find((x) => x.id === (p.track ?? "mix"))!.title}</span>
                 <span className="row small">
-                  <span className="pill">🔥 {streak(progress.days[p.id])}</span>
+                  <span className="pill"><Ico name="streak-flame" size={18} /> {streak(progress.days[p.id])}</span>
                   <span className="pill"><Ico name="reward-coin" size={18} /> {progress.coins[p.id] ?? 0}</span>
                 </span>
               </button>
@@ -660,7 +663,7 @@ export default function App() {
         </>
       )}
       <button className="parent-link" onClick={() => setScreen({ name: "parent" })}>
-        👨‍👩‍👧 {t("parent", lang)}
+        <Ico name="parents" size={24} /> {t("parent", lang)}
       </button>
       <footer className="app-footer">
         <a href="/learn/how-it-works/">How it works</a>

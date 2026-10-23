@@ -565,3 +565,19 @@ h2 { font-size: 20px; }
 .track-examples { display: flex; flex-wrap: wrap; gap: 6px; }
 .track-examples i { font-style: normal; font-weight: 800; font-size: 14px; padding: 4px 10px; border-radius: 10px; background: color-mix(in srgb, var(--c) 14%, var(--surface)); }
 .track-btn { white-space: nowrap; }
+
+/* ---------- illustrated skill pictures and UI icons ---------- */
+.skill-pic { display: block; object-fit: contain; filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.06)); transition: transform 0.2s; }
+.skill:hover .skill-pic { transform: rotate(-5deg) scale(1.06); }
+.skill-emoji { display: inline-grid; place-items: center; line-height: 1; }
+.skill-icon.skill-pic { width: 56px; height: 56px; }
+.young .skill-icon.skill-pic { width: 64px; height: 64px; }
+.result-pic { margin: 0 auto 4px; }
+.parent-link { display: inline-flex; align-items: center; gap: 8px; }
+.home > .parent-link, .app > .parent-link { margin-left: auto; margin-right: auto; }
+.icon-btn { display: inline-grid; place-items: center; }
+.badge.focus { display: inline-flex; align-items: center; gap: 3px; }
+.next-hero + .muted, p.muted.with-ico { justify-content: center; }
+.feel-btn .ico { margin-bottom: 2px; }
+.level-list .with-ico { gap: 8px; }
+.hero-cost .ico + .ico { margin-left: -2px; }

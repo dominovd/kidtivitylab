@@ -9,6 +9,7 @@ import Survey from "./Survey";
 import { unlockedHeroes } from "@/lib/heroes";
 import { FEEL_EMOJI, feelSignals } from "@/lib/feel";
 import Avatar from "./Avatar";
+import Ico from "./Ico";
 import { speakSeq, voicesFor } from "@/lib/speech";
 
 const AVATARS = ["🐣", "🦊", "🐼", "🐯", "🐸", "🦄", "🐙", "🐻", "🐰", "🦁", "🐧", "🐨"];
@@ -53,7 +54,7 @@ export default function Parent({ lang, onBack, initialPid, initialView = "overvi
   if (!open) {
     return (
       <section className="card gate">
-        <h1>👨‍👩‍👧 {t("parent", lang)}</h1>
+        <h1 className="with-ico"><Ico name="parents" size={40} /> {t("parent", lang)}</h1>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -108,7 +109,7 @@ export default function Parent({ lang, onBack, initialPid, initialView = "overvi
       ) : (
       <>
       <div className="kpis">
-        <div className="card kpi"><b>🔥 {streak(progress.days[pid])}</b><span>{t("streak", lang)}</span></div>
+        <div className="card kpi"><b className="with-ico"><Ico name="streak-flame" size={26} /> {streak(progress.days[pid])}</b><span>{t("streak", lang)}</span></div>
         <div className="card kpi"><b>{history.length}</b><span>{t("rounds", lang)}</span></div>
         <div className="card kpi"><b>{acc(7)}</b><span>{t("accuracy", lang)} · 7d</span></div>
         <div className="card kpi"><b>{acc(30)}</b><span>{t("accuracy", lang)} · 30d</span></div>

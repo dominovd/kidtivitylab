@@ -7,10 +7,10 @@ import { logicSkills } from "./content/logic";
 import { extraSkills } from "./content/extra";
 import { plusSkills } from "./content/plus";
 
-export const SUBJECTS: { id: SubjectId; title: L; short: L; icon: string; img: "math-blocks" | "reading-book" | "english-globe" | "logic-puzzle" | "idea-lightbulb"; color: string; advanced?: boolean }[] = [
+export const SUBJECTS: { id: SubjectId; title: L; short: L; icon: string; img: "math-blocks" | "reading-book" | "words-abc" | "logic-puzzle" | "idea-lightbulb"; color: string; advanced?: boolean }[] = [
   { id: "math", title: l("Математика", "Математика", "Math"), short: l("Математика", "Математика", "Math"), icon: "🔢", img: "math-blocks", color: "var(--math)" },
   { id: "lang", title: l("Мова і читання", "Язык и чтение", "Reading"), short: l("Мова", "Язык", "Reading"), icon: "📖", img: "reading-book", color: "var(--lang)" },
-  { id: "english", title: l("Англійська", "Английский", "Words & sounds"), short: l("Англійська", "Английский", "Words"), icon: "💬", img: "english-globe", color: "var(--english)" },
+  { id: "english", title: l("Англійська", "Английский", "Words & sounds"), short: l("Англійська", "Английский", "Words"), icon: "💬", img: "words-abc", color: "var(--english)" },
   { id: "logic", title: l("Логіка і пам'ять", "Логика и память", "Logic & memory"), short: l("Логіка", "Логика", "Logic"), icon: "🧩", img: "logic-puzzle", color: "var(--logic)" },
   {
     id: "plus",
