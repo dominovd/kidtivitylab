@@ -8,6 +8,8 @@
  * - repeated identical requests within a short window (React dev double effects) are ignored.
  */
 
+import { loadVoice, planLine, playLines, stopVoice } from "./voice";
+
 type Part = { text: string; lang: string; rate?: number };
 
 const supported = () => typeof window !== "undefined" && "speechSynthesis" in window;
@@ -51,7 +53,7 @@ function utter({ text, lang, rate }: Part) {
 
 /** Speaks the parts in order, replacing whatever is being said now. */
 export function speakSeq(parts: Part[]) {
-  if (!supported()) return;
+  if (typeof window === "undefined") return;
   const list = parts.filter((p) => p.text && p.text.trim());
   if (!list.length) return;
   const key = list.map((p) => p.lang + p.text).join("|");
@@ -60,6 +62,22 @@ export function speakSeq(parts: Part[]) {
   lastKey = key;
   lastAt = now;
 
+  // the recorded voice first, when every line has clips
+  const plans = list.map((p) => (p.lang.toLowerCase().startsWith("en") ? planLine(p.text) : null));
+  const audio = getCtx();
+  if (audio && plans.every(Boolean)) {
+    if (supported()) window.speechSynthesis.cancel();
+    void playLines(audio, plans as string[][]).then((ok) => {
+      if (!ok) speakBrowser(list);
+    });
+    return;
+  }
+  stopVoice();
+  speakBrowser(list);
+}
+
+function speakBrowser(list: Part[]) {
+  if (!supported()) return;
   const synth = window.speechSynthesis;
   if (timer) clearTimeout(timer);
   const run = () => {
@@ -106,6 +124,7 @@ export function speak(text: string, lang: string, opts: { rate?: number } = {}) 
 }
 
 export function stopSpeech() {
+  stopVoice();
   if (!supported()) return;
   if (timer) clearTimeout(timer);
   window.speechSynthesis.cancel();
@@ -125,9 +144,19 @@ export function primeAudioOnFirstGesture() {
   window.addEventListener("pointerdown", prime, { once: true });
   window.addEventListener("keydown", prime, { once: true });
   if (supported()) window.speechSynthesis.getVoices();
+  void loadVoice();
 }
 
 let ctx: AudioContext | null = null;
+
+function getCtx(): AudioContext | null {
+  try {
+    ctx ??= new AudioContext();
+    return ctx;
+  } catch {
+    return null;
+  }
+}
 
 /** Short synthesized sound effects, no audio files. */
 export function sfx(kind: "good" | "oops" | "win") {

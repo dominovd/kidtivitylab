@@ -1,0 +1,4738 @@
+[
+ {
+  "key": "n:0:end",
+  "text": "0.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:0:mid",
+  "text": "0",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:1:00:end",
+  "text": "1:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:1:00:mid",
+  "text": "1:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:1:15:end",
+  "text": "1:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:1:15:mid",
+  "text": "1:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:1:30:end",
+  "text": "1:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:1:30:mid",
+  "text": "1:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:1:45:end",
+  "text": "1:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:1:45:mid",
+  "text": "1:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:1:end",
+  "text": "1.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:1:mid",
+  "text": "1",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:10:00:end",
+  "text": "10:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:10:00:mid",
+  "text": "10:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:10:15:end",
+  "text": "10:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:10:15:mid",
+  "text": "10:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:10:30:end",
+  "text": "10:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:10:30:mid",
+  "text": "10:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:10:45:end",
+  "text": "10:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:10:45:mid",
+  "text": "10:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:10:end",
+  "text": "10.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:10:mid",
+  "text": "10",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:100:end",
+  "text": "100.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:100:mid",
+  "text": "100",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:1000:end",
+  "text": "1000.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:1000:mid",
+  "text": "1000",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:101:end",
+  "text": "101.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:101:mid",
+  "text": "101",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:102:end",
+  "text": "102.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:102:mid",
+  "text": "102",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:103:end",
+  "text": "103.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:103:mid",
+  "text": "103",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:104:end",
+  "text": "104.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:104:mid",
+  "text": "104",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:105:end",
+  "text": "105.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:105:mid",
+  "text": "105",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:106:end",
+  "text": "106.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:106:mid",
+  "text": "106",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:107:end",
+  "text": "107.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:107:mid",
+  "text": "107",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:108:end",
+  "text": "108.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:108:mid",
+  "text": "108",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:109:end",
+  "text": "109.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:109:mid",
+  "text": "109",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:11:00:end",
+  "text": "11:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:11:00:mid",
+  "text": "11:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:11:15:end",
+  "text": "11:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:11:15:mid",
+  "text": "11:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:11:30:end",
+  "text": "11:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:11:30:mid",
+  "text": "11:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:11:45:end",
+  "text": "11:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:11:45:mid",
+  "text": "11:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:11:end",
+  "text": "11.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:11:mid",
+  "text": "11",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:110:end",
+  "text": "110.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:110:mid",
+  "text": "110",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:111:end",
+  "text": "111.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:111:mid",
+  "text": "111",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:112:end",
+  "text": "112.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:112:mid",
+  "text": "112",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:113:end",
+  "text": "113.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:113:mid",
+  "text": "113",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:114:end",
+  "text": "114.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:114:mid",
+  "text": "114",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:115:end",
+  "text": "115.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:115:mid",
+  "text": "115",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:116:end",
+  "text": "116.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:116:mid",
+  "text": "116",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:117:end",
+  "text": "117.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:117:mid",
+  "text": "117",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:118:end",
+  "text": "118.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:118:mid",
+  "text": "118",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:119:end",
+  "text": "119.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:119:mid",
+  "text": "119",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:12:00:end",
+  "text": "12:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:12:00:mid",
+  "text": "12:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:12:15:end",
+  "text": "12:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:12:15:mid",
+  "text": "12:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:12:30:end",
+  "text": "12:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:12:30:mid",
+  "text": "12:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:12:45:end",
+  "text": "12:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:12:45:mid",
+  "text": "12:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:12:end",
+  "text": "12.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:12:mid",
+  "text": "12",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:120:end",
+  "text": "120.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:120:mid",
+  "text": "120",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:125:end",
+  "text": "125.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:125:mid",
+  "text": "125",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:13:end",
+  "text": "13.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:13:mid",
+  "text": "13",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:130:end",
+  "text": "130.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:130:mid",
+  "text": "130",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:135:end",
+  "text": "135.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:135:mid",
+  "text": "135",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:14:end",
+  "text": "14.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:14:mid",
+  "text": "14",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:140:end",
+  "text": "140.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:140:mid",
+  "text": "140",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:145:end",
+  "text": "145.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:145:mid",
+  "text": "145",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:15:end",
+  "text": "15.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:15:mid",
+  "text": "15",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:150:end",
+  "text": "150.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:150:mid",
+  "text": "150",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:155:end",
+  "text": "155.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:155:mid",
+  "text": "155",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:16:end",
+  "text": "16.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:16:mid",
+  "text": "16",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:160:end",
+  "text": "160.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:160:mid",
+  "text": "160",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:165:end",
+  "text": "165.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:165:mid",
+  "text": "165",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:17:end",
+  "text": "17.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:17:mid",
+  "text": "17",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:170:end",
+  "text": "170.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:170:mid",
+  "text": "170",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:175:end",
+  "text": "175.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:175:mid",
+  "text": "175",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:18:end",
+  "text": "18.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:18:mid",
+  "text": "18",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:180:end",
+  "text": "180.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:180:mid",
+  "text": "180",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:185:end",
+  "text": "185.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:185:mid",
+  "text": "185",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:19:end",
+  "text": "19.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:19:mid",
+  "text": "19",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:190:end",
+  "text": "190.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:190:mid",
+  "text": "190",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:195:end",
+  "text": "195.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:195:mid",
+  "text": "195",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:2:00:end",
+  "text": "2:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:2:00:mid",
+  "text": "2:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:2:15:end",
+  "text": "2:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:2:15:mid",
+  "text": "2:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:2:30:end",
+  "text": "2:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:2:30:mid",
+  "text": "2:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:2:45:end",
+  "text": "2:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:2:45:mid",
+  "text": "2:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:2:end",
+  "text": "2.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:2:mid",
+  "text": "2",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:20:end",
+  "text": "20.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:20:mid",
+  "text": "20",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:200:end",
+  "text": "200.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:200:mid",
+  "text": "200",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:205:end",
+  "text": "205.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:205:mid",
+  "text": "205",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:21:end",
+  "text": "21.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:21:mid",
+  "text": "21",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:210:end",
+  "text": "210.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:210:mid",
+  "text": "210",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:215:end",
+  "text": "215.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:215:mid",
+  "text": "215",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:22:end",
+  "text": "22.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:22:mid",
+  "text": "22",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:220:end",
+  "text": "220.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:220:mid",
+  "text": "220",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:225:end",
+  "text": "225.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:225:mid",
+  "text": "225",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:23:end",
+  "text": "23.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:23:mid",
+  "text": "23",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:230:end",
+  "text": "230.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:230:mid",
+  "text": "230",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:235:end",
+  "text": "235.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:235:mid",
+  "text": "235",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:24:end",
+  "text": "24.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:24:mid",
+  "text": "24",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:240:end",
+  "text": "240.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:240:mid",
+  "text": "240",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:245:end",
+  "text": "245.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:245:mid",
+  "text": "245",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:25:end",
+  "text": "25.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:25:mid",
+  "text": "25",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:250:end",
+  "text": "250.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:250:mid",
+  "text": "250",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:255:end",
+  "text": "255.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:255:mid",
+  "text": "255",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:26:end",
+  "text": "26.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:26:mid",
+  "text": "26",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:260:end",
+  "text": "260.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:260:mid",
+  "text": "260",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:265:end",
+  "text": "265.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:265:mid",
+  "text": "265",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:27:end",
+  "text": "27.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:27:mid",
+  "text": "27",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:270:end",
+  "text": "270.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:270:mid",
+  "text": "270",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:275:end",
+  "text": "275.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:275:mid",
+  "text": "275",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:28:end",
+  "text": "28.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:28:mid",
+  "text": "28",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:280:end",
+  "text": "280.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:280:mid",
+  "text": "280",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:285:end",
+  "text": "285.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:285:mid",
+  "text": "285",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:29:end",
+  "text": "29.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:29:mid",
+  "text": "29",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:290:end",
+  "text": "290.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:290:mid",
+  "text": "290",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:295:end",
+  "text": "295.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:295:mid",
+  "text": "295",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:3:00:end",
+  "text": "3:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:3:00:mid",
+  "text": "3:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:3:15:end",
+  "text": "3:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:3:15:mid",
+  "text": "3:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:3:30:end",
+  "text": "3:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:3:30:mid",
+  "text": "3:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:3:45:end",
+  "text": "3:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:3:45:mid",
+  "text": "3:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:3:end",
+  "text": "3.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:3:mid",
+  "text": "3",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:30:end",
+  "text": "30.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:30:mid",
+  "text": "30",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:300:end",
+  "text": "300.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:300:mid",
+  "text": "300",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:305:end",
+  "text": "305.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:305:mid",
+  "text": "305",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:31:end",
+  "text": "31.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:31:mid",
+  "text": "31",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:310:end",
+  "text": "310.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:310:mid",
+  "text": "310",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:315:end",
+  "text": "315.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:315:mid",
+  "text": "315",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:32:end",
+  "text": "32.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:32:mid",
+  "text": "32",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:320:end",
+  "text": "320.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:320:mid",
+  "text": "320",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:325:end",
+  "text": "325.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:325:mid",
+  "text": "325",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:33:end",
+  "text": "33.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:33:mid",
+  "text": "33",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:330:end",
+  "text": "330.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:330:mid",
+  "text": "330",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:335:end",
+  "text": "335.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:335:mid",
+  "text": "335",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:34:end",
+  "text": "34.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:34:mid",
+  "text": "34",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:340:end",
+  "text": "340.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:340:mid",
+  "text": "340",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:345:end",
+  "text": "345.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:345:mid",
+  "text": "345",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:35:end",
+  "text": "35.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:35:mid",
+  "text": "35",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:350:end",
+  "text": "350.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:350:mid",
+  "text": "350",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:355:end",
+  "text": "355.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:355:mid",
+  "text": "355",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:36:end",
+  "text": "36.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:36:mid",
+  "text": "36",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:360:end",
+  "text": "360.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:360:mid",
+  "text": "360",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:365:end",
+  "text": "365.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:365:mid",
+  "text": "365",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:37:end",
+  "text": "37.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:37:mid",
+  "text": "37",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:370:end",
+  "text": "370.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:370:mid",
+  "text": "370",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:375:end",
+  "text": "375.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:375:mid",
+  "text": "375",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:38:end",
+  "text": "38.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:38:mid",
+  "text": "38",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:380:end",
+  "text": "380.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:380:mid",
+  "text": "380",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:385:end",
+  "text": "385.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:385:mid",
+  "text": "385",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:39:end",
+  "text": "39.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:39:mid",
+  "text": "39",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:390:end",
+  "text": "390.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:390:mid",
+  "text": "390",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:395:end",
+  "text": "395.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:395:mid",
+  "text": "395",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:4:00:end",
+  "text": "4:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:4:00:mid",
+  "text": "4:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:4:15:end",
+  "text": "4:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:4:15:mid",
+  "text": "4:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:4:30:end",
+  "text": "4:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:4:30:mid",
+  "text": "4:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:4:45:end",
+  "text": "4:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:4:45:mid",
+  "text": "4:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:4:end",
+  "text": "4.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:4:mid",
+  "text": "4",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:40:end",
+  "text": "40.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:40:mid",
+  "text": "40",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:400:end",
+  "text": "400.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:400:mid",
+  "text": "400",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:405:end",
+  "text": "405.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:405:mid",
+  "text": "405",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:41:end",
+  "text": "41.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:41:mid",
+  "text": "41",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:410:end",
+  "text": "410.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:410:mid",
+  "text": "410",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:415:end",
+  "text": "415.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:415:mid",
+  "text": "415",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:42:end",
+  "text": "42.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:42:mid",
+  "text": "42",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:420:end",
+  "text": "420.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:420:mid",
+  "text": "420",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:425:end",
+  "text": "425.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:425:mid",
+  "text": "425",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:43:end",
+  "text": "43.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:43:mid",
+  "text": "43",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:430:end",
+  "text": "430.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:430:mid",
+  "text": "430",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:435:end",
+  "text": "435.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:435:mid",
+  "text": "435",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:44:end",
+  "text": "44.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:44:mid",
+  "text": "44",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:440:end",
+  "text": "440.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:440:mid",
+  "text": "440",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:445:end",
+  "text": "445.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:445:mid",
+  "text": "445",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:45:end",
+  "text": "45.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:45:mid",
+  "text": "45",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:450:end",
+  "text": "450.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:450:mid",
+  "text": "450",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:455:end",
+  "text": "455.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:455:mid",
+  "text": "455",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:46:end",
+  "text": "46.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:46:mid",
+  "text": "46",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:460:end",
+  "text": "460.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:460:mid",
+  "text": "460",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:465:end",
+  "text": "465.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:465:mid",
+  "text": "465",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:47:end",
+  "text": "47.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:47:mid",
+  "text": "47",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:470:end",
+  "text": "470.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:470:mid",
+  "text": "470",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:475:end",
+  "text": "475.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:475:mid",
+  "text": "475",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:48:end",
+  "text": "48.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:48:mid",
+  "text": "48",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:480:end",
+  "text": "480.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:480:mid",
+  "text": "480",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:485:end",
+  "text": "485.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:485:mid",
+  "text": "485",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:49:end",
+  "text": "49.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:49:mid",
+  "text": "49",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:490:end",
+  "text": "490.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:490:mid",
+  "text": "490",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:495:end",
+  "text": "495.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:495:mid",
+  "text": "495",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:5:00:end",
+  "text": "5:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:5:00:mid",
+  "text": "5:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:5:15:end",
+  "text": "5:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:5:15:mid",
+  "text": "5:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:5:30:end",
+  "text": "5:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:5:30:mid",
+  "text": "5:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:5:45:end",
+  "text": "5:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:5:45:mid",
+  "text": "5:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:5:end",
+  "text": "5.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:5:mid",
+  "text": "5",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:50:end",
+  "text": "50.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:50:mid",
+  "text": "50",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:500:end",
+  "text": "500.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:500:mid",
+  "text": "500",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:51:end",
+  "text": "51.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:51:mid",
+  "text": "51",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:510:end",
+  "text": "510.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:510:mid",
+  "text": "510",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:52:end",
+  "text": "52.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:52:mid",
+  "text": "52",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:520:end",
+  "text": "520.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:520:mid",
+  "text": "520",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:53:end",
+  "text": "53.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:53:mid",
+  "text": "53",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:530:end",
+  "text": "530.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:530:mid",
+  "text": "530",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:54:end",
+  "text": "54.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:54:mid",
+  "text": "54",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:540:end",
+  "text": "540.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:540:mid",
+  "text": "540",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:55:end",
+  "text": "55.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:55:mid",
+  "text": "55",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:550:end",
+  "text": "550.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:550:mid",
+  "text": "550",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:56:end",
+  "text": "56.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:56:mid",
+  "text": "56",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:560:end",
+  "text": "560.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:560:mid",
+  "text": "560",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:57:end",
+  "text": "57.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:57:mid",
+  "text": "57",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:570:end",
+  "text": "570.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:570:mid",
+  "text": "570",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:58:end",
+  "text": "58.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:58:mid",
+  "text": "58",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:580:end",
+  "text": "580.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:580:mid",
+  "text": "580",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:59:end",
+  "text": "59.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:59:mid",
+  "text": "59",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:590:end",
+  "text": "590.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:590:mid",
+  "text": "590",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:6:00:end",
+  "text": "6:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:6:00:mid",
+  "text": "6:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:6:15:end",
+  "text": "6:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:6:15:mid",
+  "text": "6:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:6:30:end",
+  "text": "6:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:6:30:mid",
+  "text": "6:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:6:45:end",
+  "text": "6:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:6:45:mid",
+  "text": "6:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:6:end",
+  "text": "6.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:6:mid",
+  "text": "6",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:60:end",
+  "text": "60.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:60:mid",
+  "text": "60",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:600:end",
+  "text": "600.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:600:mid",
+  "text": "600",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:61:end",
+  "text": "61.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:61:mid",
+  "text": "61",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:610:end",
+  "text": "610.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:610:mid",
+  "text": "610",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:62:end",
+  "text": "62.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:62:mid",
+  "text": "62",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:620:end",
+  "text": "620.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:620:mid",
+  "text": "620",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:63:end",
+  "text": "63.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:63:mid",
+  "text": "63",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:630:end",
+  "text": "630.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:630:mid",
+  "text": "630",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:64:end",
+  "text": "64.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:64:mid",
+  "text": "64",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:640:end",
+  "text": "640.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:640:mid",
+  "text": "640",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:65:end",
+  "text": "65.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:65:mid",
+  "text": "65",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:650:end",
+  "text": "650.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:650:mid",
+  "text": "650",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:66:end",
+  "text": "66.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:66:mid",
+  "text": "66",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:660:end",
+  "text": "660.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:660:mid",
+  "text": "660",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:67:end",
+  "text": "67.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:67:mid",
+  "text": "67",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:670:end",
+  "text": "670.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:670:mid",
+  "text": "670",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:68:end",
+  "text": "68.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:68:mid",
+  "text": "68",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:680:end",
+  "text": "680.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:680:mid",
+  "text": "680",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:69:end",
+  "text": "69.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:69:mid",
+  "text": "69",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:690:end",
+  "text": "690.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:690:mid",
+  "text": "690",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:7:00:end",
+  "text": "7:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:7:00:mid",
+  "text": "7:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:7:15:end",
+  "text": "7:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:7:15:mid",
+  "text": "7:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:7:30:end",
+  "text": "7:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:7:30:mid",
+  "text": "7:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:7:45:end",
+  "text": "7:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:7:45:mid",
+  "text": "7:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:7:end",
+  "text": "7.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:7:mid",
+  "text": "7",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:70:end",
+  "text": "70.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:70:mid",
+  "text": "70",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:700:end",
+  "text": "700.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:700:mid",
+  "text": "700",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:71:end",
+  "text": "71.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:71:mid",
+  "text": "71",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:710:end",
+  "text": "710.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:710:mid",
+  "text": "710",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:72:end",
+  "text": "72.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:72:mid",
+  "text": "72",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:720:end",
+  "text": "720.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:720:mid",
+  "text": "720",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:73:end",
+  "text": "73.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:73:mid",
+  "text": "73",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:730:end",
+  "text": "730.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:730:mid",
+  "text": "730",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:74:end",
+  "text": "74.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:74:mid",
+  "text": "74",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:740:end",
+  "text": "740.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:740:mid",
+  "text": "740",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:75:end",
+  "text": "75.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:75:mid",
+  "text": "75",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:750:end",
+  "text": "750.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:750:mid",
+  "text": "750",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:76:end",
+  "text": "76.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:76:mid",
+  "text": "76",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:760:end",
+  "text": "760.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:760:mid",
+  "text": "760",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:77:end",
+  "text": "77.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:77:mid",
+  "text": "77",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:770:end",
+  "text": "770.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:770:mid",
+  "text": "770",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:78:end",
+  "text": "78.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:78:mid",
+  "text": "78",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:780:end",
+  "text": "780.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:780:mid",
+  "text": "780",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:79:end",
+  "text": "79.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:79:mid",
+  "text": "79",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:790:end",
+  "text": "790.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:790:mid",
+  "text": "790",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:8:00:end",
+  "text": "8:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:8:00:mid",
+  "text": "8:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:8:15:end",
+  "text": "8:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:8:15:mid",
+  "text": "8:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:8:30:end",
+  "text": "8:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:8:30:mid",
+  "text": "8:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:8:45:end",
+  "text": "8:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:8:45:mid",
+  "text": "8:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:8:end",
+  "text": "8.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:8:mid",
+  "text": "8",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:80:end",
+  "text": "80.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:80:mid",
+  "text": "80",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:800:end",
+  "text": "800.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:800:mid",
+  "text": "800",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:81:end",
+  "text": "81.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:81:mid",
+  "text": "81",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:810:end",
+  "text": "810.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:810:mid",
+  "text": "810",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:82:end",
+  "text": "82.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:82:mid",
+  "text": "82",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:820:end",
+  "text": "820.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:820:mid",
+  "text": "820",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:83:end",
+  "text": "83.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:83:mid",
+  "text": "83",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:830:end",
+  "text": "830.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:830:mid",
+  "text": "830",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:84:end",
+  "text": "84.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:84:mid",
+  "text": "84",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:840:end",
+  "text": "840.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:840:mid",
+  "text": "840",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:85:end",
+  "text": "85.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:85:mid",
+  "text": "85",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:850:end",
+  "text": "850.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:850:mid",
+  "text": "850",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:86:end",
+  "text": "86.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:86:mid",
+  "text": "86",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:860:end",
+  "text": "860.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:860:mid",
+  "text": "860",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:87:end",
+  "text": "87.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:87:mid",
+  "text": "87",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:870:end",
+  "text": "870.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:870:mid",
+  "text": "870",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:88:end",
+  "text": "88.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:88:mid",
+  "text": "88",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:880:end",
+  "text": "880.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:880:mid",
+  "text": "880",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:89:end",
+  "text": "89.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:89:mid",
+  "text": "89",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:890:end",
+  "text": "890.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:890:mid",
+  "text": "890",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:9:00:end",
+  "text": "9:00.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:9:00:mid",
+  "text": "9:00",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:9:15:end",
+  "text": "9:15.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:9:15:mid",
+  "text": "9:15",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:9:30:end",
+  "text": "9:30.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:9:30:mid",
+  "text": "9:30",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:9:45:end",
+  "text": "9:45.",
+  "previous_text": "The lesson ended at"
+ },
+ {
+  "key": "n:9:45:mid",
+  "text": "9:45",
+  "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:9:end",
+  "text": "9.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:9:mid",
+  "text": "9",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:90:end",
+  "text": "90.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:90:mid",
+  "text": "90",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:900:end",
+  "text": "900.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:900:mid",
+  "text": "900",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:91:end",
+  "text": "91.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:91:mid",
+  "text": "91",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:910:end",
+  "text": "910.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:910:mid",
+  "text": "910",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:92:end",
+  "text": "92.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:92:mid",
+  "text": "92",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:920:end",
+  "text": "920.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:920:mid",
+  "text": "920",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:93:end",
+  "text": "93.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:93:mid",
+  "text": "93",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:930:end",
+  "text": "930.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:930:mid",
+  "text": "930",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:94:end",
+  "text": "94.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:94:mid",
+  "text": "94",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:940:end",
+  "text": "940.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:940:mid",
+  "text": "940",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:95:end",
+  "text": "95.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:95:mid",
+  "text": "95",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:950:end",
+  "text": "950.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:950:mid",
+  "text": "950",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:96:end",
+  "text": "96.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:96:mid",
+  "text": "96",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:960:end",
+  "text": "960.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:960:mid",
+  "text": "960",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:97:end",
+  "text": "97.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:97:mid",
+  "text": "97",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:970:end",
+  "text": "970.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:970:mid",
+  "text": "970",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:98:end",
+  "text": "98.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:98:mid",
+  "text": "98",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:980:end",
+  "text": "980.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:980:mid",
+  "text": "980",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:99:end",
+  "text": "99.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:99:mid",
+  "text": "99",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:990:end",
+  "text": "990.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:990:mid",
+  "text": "990",
+  "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "p:. How many more toy cars does Leo have?",
+  "text": ". How many more toy cars does Leo have?",
+  "previous_text": "Leo has 7 toy cars and Mia has 4"
+ },
+ {
+  "key": "p:a",
+  "text": "a"
+ },
+ {
+  "key": "p:A",
+  "text": "A"
+ },
+ {
+  "key": "p:Almost! Next time you'll get it",
+  "text": "Almost! Next time you'll get it"
+ },
+ {
+  "key": "p:Amazing!",
+  "text": "Amazing!"
+ },
+ {
+  "key": "p:and",
+  "text": "and",
+  "previous_text": "4",
+  "next_text": "5"
+ },
+ {
+  "key": "p:and lasted",
+  "text": "and lasted",
+  "previous_text": "The lesson started at 2:15",
+  "next_text": "45 minutes. When did it end?"
+ },
+ {
+  "key": "p:apple",
+  "text": "apple"
+ },
+ {
+  "key": "p:apples in the basket. Mom puts in",
+  "text": "apples in the basket. Mom puts in",
+  "previous_text": "There are 4",
+  "next_text": "6 more. How many apples are in the basket now?"
+ },
+ {
+  "key": "p:April: which season is it?",
+  "text": "April: which season is it?"
+ },
+ {
+  "key": "p:August: which season is it?",
+  "text": "August: which season is it?"
+ },
+ {
+  "key": "p:Awesome!",
+  "text": "Awesome!"
+ },
+ {
+  "key": "p:b",
+  "text": "b"
+ },
+ {
+  "key": "p:B",
+  "text": "B"
+ },
+ {
+  "key": "p:ball",
+  "text": "ball"
+ },
+ {
+  "key": "p:balloon",
+  "text": "balloon"
+ },
+ {
+  "key": "p:balloons. Leo has",
+  "text": "balloons. Leo has",
+  "previous_text": "Mia has 3",
+  "next_text": "4 more. How many balloons does Leo have?"
+ },
+ {
+  "key": "p:banana",
+  "text": "banana"
+ },
+ {
+  "key": "p:bear",
+  "text": "bear"
+ },
+ {
+  "key": "p:bee",
+  "text": "bee"
+ },
+ {
+  "key": "p:birds were sitting on a branch. Then",
+  "text": "birds were sitting on a branch. Then",
+  "previous_text": "4",
+  "next_text": "3 of them flew away. How many birds are left?"
+ },
+ {
+  "key": "p:black",
+  "text": "black"
+ },
+ {
+  "key": "p:blue",
+  "text": "blue"
+ },
+ {
+  "key": "p:book",
+  "text": "book"
+ },
+ {
+  "key": "p:box minus",
+  "text": "box minus",
+  "next_text": "39 equals 13"
+ },
+ {
+  "key": "p:box plus",
+  "text": "box plus",
+  "next_text": "14 equals 40"
+ },
+ {
+  "key": "p:bread",
+  "text": "bread"
+ },
+ {
+  "key": "p:Brilliant!",
+  "text": "Brilliant!"
+ },
+ {
+  "key": "p:brown",
+  "text": "brown"
+ },
+ {
+  "key": "p:c",
+  "text": "c"
+ },
+ {
+  "key": "p:C",
+  "text": "C"
+ },
+ {
+  "key": "p:car",
+  "text": "car"
+ },
+ {
+  "key": "p:carrot",
+  "text": "carrot"
+ },
+ {
+  "key": "p:cat",
+  "text": "cat"
+ },
+ {
+  "key": "p:cats have?",
+  "text": "cats have?",
+  "previous_text": "How many legs do 4"
+ },
+ {
+  "key": "p:cheese",
+  "text": "cheese"
+ },
+ {
+  "key": "p:chicks have?",
+  "text": "chicks have?",
+  "previous_text": "How many legs do 2"
+ },
+ {
+  "key": "p:cow",
+  "text": "cow"
+ },
+ {
+  "key": "p:d",
+  "text": "d"
+ },
+ {
+  "key": "p:D",
+  "text": "D"
+ },
+ {
+  "key": "p:days ago?",
+  "text": "days ago?",
+  "previous_text": "Today is Tuesday. What day was it 3"
+ },
+ {
+  "key": "p:days?",
+  "text": "days?",
+  "previous_text": "Today is Thursday. What day will it be in 2"
+ },
+ {
+  "key": "p:December: which season is it?",
+  "text": "December: which season is it?"
+ },
+ {
+  "key": "p:dog",
+  "text": "dog"
+ },
+ {
+  "key": "p:dogs have?",
+  "text": "dogs have?",
+  "previous_text": "How many legs do 4"
+ },
+ {
+  "key": "p:Don't give up!",
+  "text": "Don't give up!"
+ },
+ {
+  "key": "p:duck",
+  "text": "duck"
+ },
+ {
+  "key": "p:e",
+  "text": "e"
+ },
+ {
+  "key": "p:E",
+  "text": "E"
+ },
+ {
+  "key": "p:Each picture appears once in every row and column. What goes in place of the question mark?",
+  "text": "Each picture appears once in every row and column. What goes in place of the question mark?"
+ },
+ {
+  "key": "p:eight",
+  "text": "eight"
+ },
+ {
+  "key": "p:eighteen",
+  "text": "eighteen"
+ },
+ {
+  "key": "p:elephant",
+  "text": "elephant"
+ },
+ {
+  "key": "p:eleven",
+  "text": "eleven"
+ },
+ {
+  "key": "p:equals",
+  "text": "equals",
+  "previous_text": "box plus 14",
+  "next_text": "40"
+ },
+ {
+  "key": "p:equals what",
+  "text": "equals what",
+  "previous_text": "4 plus 1"
+ },
+ {
+  "key": "p:f",
+  "text": "f"
+ },
+ {
+  "key": "p:F",
+  "text": "F"
+ },
+ {
+  "key": "p:February: which season is it?",
+  "text": "February: which season is it?"
+ },
+ {
+  "key": "p:fifteen",
+  "text": "fifteen"
+ },
+ {
+  "key": "p:Find the clock with hands that shows the same time",
+  "text": "Find the clock with hands that shows the same time"
+ },
+ {
+  "key": "p:Find the shape: circle",
+  "text": "Find the shape: circle"
+ },
+ {
+  "key": "p:Find the shape: rhombus",
+  "text": "Find the shape: rhombus"
+ },
+ {
+  "key": "p:Find the shape: square",
+  "text": "Find the shape: square"
+ },
+ {
+  "key": "p:Find the shape: triangle",
+  "text": "Find the shape: triangle"
+ },
+ {
+  "key": "p:Find the small letter: A",
+  "text": "Find the small letter: A"
+ },
+ {
+  "key": "p:Find the small letter: B",
+  "text": "Find the small letter: B"
+ },
+ {
+  "key": "p:Find the small letter: C",
+  "text": "Find the small letter: C"
+ },
+ {
+  "key": "p:Find the small letter: D",
+  "text": "Find the small letter: D"
+ },
+ {
+  "key": "p:Find the small letter: E",
+  "text": "Find the small letter: E"
+ },
+ {
+  "key": "p:Find the small letter: F",
+  "text": "Find the small letter: F"
+ },
+ {
+  "key": "p:Find the small letter: G",
+  "text": "Find the small letter: G"
+ },
+ {
+  "key": "p:Find the small letter: H",
+  "text": "Find the small letter: H"
+ },
+ {
+  "key": "p:Find the small letter: I",
+  "text": "Find the small letter: I"
+ },
+ {
+  "key": "p:Find the small letter: J",
+  "text": "Find the small letter: J"
+ },
+ {
+  "key": "p:Find the small letter: K",
+  "text": "Find the small letter: K"
+ },
+ {
+  "key": "p:Find the small letter: L",
+  "text": "Find the small letter: L"
+ },
+ {
+  "key": "p:Find the small letter: M",
+  "text": "Find the small letter: M"
+ },
+ {
+  "key": "p:Find the small letter: N",
+  "text": "Find the small letter: N"
+ },
+ {
+  "key": "p:Find the small letter: O",
+  "text": "Find the small letter: O"
+ },
+ {
+  "key": "p:Find the small letter: P",
+  "text": "Find the small letter: P"
+ },
+ {
+  "key": "p:Find the small letter: Q",
+  "text": "Find the small letter: Q"
+ },
+ {
+  "key": "p:Find the small letter: R",
+  "text": "Find the small letter: R"
+ },
+ {
+  "key": "p:Find the small letter: S",
+  "text": "Find the small letter: S"
+ },
+ {
+  "key": "p:Find the small letter: T",
+  "text": "Find the small letter: T"
+ },
+ {
+  "key": "p:Find the small letter: U",
+  "text": "Find the small letter: U"
+ },
+ {
+  "key": "p:Find the small letter: V",
+  "text": "Find the small letter: V"
+ },
+ {
+  "key": "p:Find the small letter: W",
+  "text": "Find the small letter: W"
+ },
+ {
+  "key": "p:Find the small letter: X",
+  "text": "Find the small letter: X"
+ },
+ {
+  "key": "p:Find the small letter: Y",
+  "text": "Find the small letter: Y"
+ },
+ {
+  "key": "p:Find the small letter: Z",
+  "text": "Find the small letter: Z"
+ },
+ {
+  "key": "p:Find this color",
+  "text": "Find this color"
+ },
+ {
+  "key": "p:fish",
+  "text": "fish"
+ },
+ {
+  "key": "p:five",
+  "text": "five"
+ },
+ {
+  "key": "p:flower",
+  "text": "flower"
+ },
+ {
+  "key": "p:four",
+  "text": "four"
+ },
+ {
+  "key": "p:fourteen",
+  "text": "fourteen"
+ },
+ {
+  "key": "p:fox",
+  "text": "fox"
+ },
+ {
+  "key": "p:frog",
+  "text": "frog"
+ },
+ {
+  "key": "p:g",
+  "text": "g"
+ },
+ {
+  "key": "p:G",
+  "text": "G"
+ },
+ {
+  "key": "p:giraffe",
+  "text": "giraffe"
+ },
+ {
+  "key": "p:grapes",
+  "text": "grapes"
+ },
+ {
+  "key": "p:Great job!",
+  "text": "Great job!"
+ },
+ {
+  "key": "p:green",
+  "text": "green"
+ },
+ {
+  "key": "p:h",
+  "text": "h"
+ },
+ {
+  "key": "p:H",
+  "text": "H"
+ },
+ {
+  "key": "p:Hello! I can talk. Apple, banana, cat.",
+  "text": "Hello! I can talk. Apple, banana, cat."
+ },
+ {
+  "key": "p:horse",
+  "text": "horse"
+ },
+ {
+  "key": "p:house",
+  "text": "house"
+ },
+ {
+  "key": "p:How did the story end?",
+  "text": "How did the story end?"
+ },
+ {
+  "key": "p:How do you say this number?",
+  "text": "How do you say this number?"
+ },
+ {
+  "key": "p:How many apples did Dad buy?",
+  "text": "How many apples did Dad buy?"
+ },
+ {
+  "key": "p:How many are there?",
+  "text": "How many are there?"
+ },
+ {
+  "key": "p:How many blue circles?",
+  "text": "How many blue circles?"
+ },
+ {
+  "key": "p:How many blue squares?",
+  "text": "How many blue squares?"
+ },
+ {
+  "key": "p:How many circles?",
+  "text": "How many circles?"
+ },
+ {
+  "key": "p:How many corners (vertices) does it have?",
+  "text": "How many corners (vertices) does it have?"
+ },
+ {
+  "key": "p:How many corners does this shape have?",
+  "text": "How many corners does this shape have?"
+ },
+ {
+  "key": "p:How many days are in a week?",
+  "text": "How many days are in a week?"
+ },
+ {
+  "key": "p:How many faces does it have?",
+  "text": "How many faces does it have?"
+ },
+ {
+  "key": "p:How many green circles?",
+  "text": "How many green circles?"
+ },
+ {
+  "key": "p:How many green squares?",
+  "text": "How many green squares?"
+ },
+ {
+  "key": "p:How many in total? Count in groups",
+  "text": "How many in total? Count in groups"
+ },
+ {
+  "key": "p:How many legs do",
+  "text": "How many legs do",
+  "next_text": "4 dogs have?"
+ },
+ {
+  "key": "p:How many months are in a year?",
+  "text": "How many months are in a year?"
+ },
+ {
+  "key": "p:How many ones are in",
+  "text": "How many ones are in",
+  "next_text": "22"
+ },
+ {
+  "key": "p:How many pears did Mom buy?",
+  "text": "How many pears did Mom buy?"
+ },
+ {
+  "key": "p:How many red circles?",
+  "text": "How many red circles?"
+ },
+ {
+  "key": "p:How many red squares?",
+  "text": "How many red squares?"
+ },
+ {
+  "key": "p:How many rhombuses?",
+  "text": "How many rhombuses?"
+ },
+ {
+  "key": "p:How many squares?",
+  "text": "How many squares?"
+ },
+ {
+  "key": "p:How many syllables are in the word?",
+  "text": "How many syllables are in the word?"
+ },
+ {
+  "key": "p:How many tens are in",
+  "text": "How many tens are in",
+  "next_text": "30"
+ },
+ {
+  "key": "p:How many triangles?",
+  "text": "How many triangles?"
+ },
+ {
+  "key": "p:How many yellow circles?",
+  "text": "How many yellow circles?"
+ },
+ {
+  "key": "p:How many yellow squares?",
+  "text": "How many yellow squares?"
+ },
+ {
+  "key": "p:How much is shaded?",
+  "text": "How much is shaded?"
+ },
+ {
+  "key": "p:How was it?",
+  "text": "How was it?"
+ },
+ {
+  "key": "p:i",
+  "text": "i"
+ },
+ {
+  "key": "p:I",
+  "text": "I"
+ },
+ {
+  "key": "p:j",
+  "text": "j"
+ },
+ {
+  "key": "p:J",
+  "text": "J"
+ },
+ {
+  "key": "p:January: which season is it?",
+  "text": "January: which season is it?"
+ },
+ {
+  "key": "p:July: which season is it?",
+  "text": "July: which season is it?"
+ },
+ {
+  "key": "p:June: which season is it?",
+  "text": "June: which season is it?"
+ },
+ {
+  "key": "p:k",
+  "text": "k"
+ },
+ {
+  "key": "p:K",
+  "text": "K"
+ },
+ {
+  "key": "p:Keep it up!",
+  "text": "Keep it up!"
+ },
+ {
+  "key": "p:l",
+  "text": "l"
+ },
+ {
+  "key": "p:L",
+  "text": "L"
+ },
+ {
+  "key": "p:lemon",
+  "text": "lemon"
+ },
+ {
+  "key": "p:Leo has",
+  "text": "Leo has",
+  "next_text": "7 toy cars and Mia has 4 . How many more toy cars does Leo have?"
+ },
+ {
+  "key": "p:Let's practice more at this level",
+  "text": "Let's practice more at this level"
+ },
+ {
+  "key": "p:lion",
+  "text": "lion"
+ },
+ {
+  "key": "p:Listen and find the picture",
+  "text": "Listen and find the picture"
+ },
+ {
+  "key": "p:Look at the scales. How many are needed to balance?",
+  "text": "Look at the scales. How many are needed to balance?"
+ },
+ {
+  "key": "p:m",
+  "text": "m"
+ },
+ {
+  "key": "p:M",
+  "text": "M"
+ },
+ {
+  "key": "p:March: which season is it?",
+  "text": "March: which season is it?"
+ },
+ {
+  "key": "p:May: which season is it?",
+  "text": "May: which season is it?"
+ },
+ {
+  "key": "p:Mia has",
+  "text": "Mia has",
+  "next_text": "3 balloons. Leo has 4 more. How many balloons does Leo have?"
+ },
+ {
+  "key": "p:milk",
+  "text": "milk"
+ },
+ {
+  "key": "p:min. When did it end?",
+  "text": "minutes. When did it end?",
+  "previous_text": "The lesson started at 2:15 and lasted 45"
+ },
+ {
+  "key": "p:minus",
+  "text": "minus",
+  "previous_text": "5",
+  "next_text": "3 equals what"
+ },
+ {
+  "key": "p:minus box equals",
+  "text": "minus box equals",
+  "previous_text": "8",
+  "next_text": "4"
+ },
+ {
+  "key": "p:months after April?",
+  "text": "months after April?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months after August?",
+  "text": "months after August?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months after December?",
+  "text": "months after December?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months after February?",
+  "text": "months after February?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months after January?",
+  "text": "months after January?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months after July?",
+  "text": "months after July?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months after June?",
+  "text": "months after June?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months after March?",
+  "text": "months after March?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months after May?",
+  "text": "months after May?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months after November?",
+  "text": "months after November?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months after October?",
+  "text": "months after October?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months after September?",
+  "text": "months after September?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months before April?",
+  "text": "months before April?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months before August?",
+  "text": "months before August?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months before December?",
+  "text": "months before December?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months before February?",
+  "text": "months before February?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months before January?",
+  "text": "months before January?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months before July?",
+  "text": "months before July?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months before June?",
+  "text": "months before June?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months before March?",
+  "text": "months before March?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months before May?",
+  "text": "months before May?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months before November?",
+  "text": "months before November?",
+  "previous_text": "Which month is 2"
+ },
+ {
+  "key": "p:months before October?",
+  "text": "months before October?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:months before September?",
+  "text": "months before September?",
+  "previous_text": "Which month is 3"
+ },
+ {
+  "key": "p:moon",
+  "text": "moon"
+ },
+ {
+  "key": "p:more. How many apples are in the basket now?",
+  "text": "more. How many apples are in the basket now?",
+  "previous_text": "There are 4 apples in the basket. Mom puts in 6"
+ },
+ {
+  "key": "p:more. How many balloons does Leo have?",
+  "text": "more. How many balloons does Leo have?",
+  "previous_text": "Mia has 3 balloons. Leo has 4"
+ },
+ {
+  "key": "p:mouse",
+  "text": "mouse"
+ },
+ {
+  "key": "p:n",
+  "text": "n"
+ },
+ {
+  "key": "p:N",
+  "text": "N"
+ },
+ {
+  "key": "p:Next time will be a bit easier",
+  "text": "Next time will be a bit easier"
+ },
+ {
+  "key": "p:Next time will be a bit harder",
+  "text": "Next time will be a bit harder"
+ },
+ {
+  "key": "p:nine",
+  "text": "nine"
+ },
+ {
+  "key": "p:nineteen",
+  "text": "nineteen"
+ },
+ {
+  "key": "p:November: which season is it?",
+  "text": "November: which season is it?"
+ },
+ {
+  "key": "p:o",
+  "text": "o"
+ },
+ {
+  "key": "p:O",
+  "text": "O"
+ },
+ {
+  "key": "p:October: which season is it?",
+  "text": "October: which season is it?"
+ },
+ {
+  "key": "p:of them flew away. How many birds are left?",
+  "text": "of them flew away. How many birds are left?",
+  "previous_text": "4 birds were sitting on a branch. Then 3"
+ },
+ {
+  "key": "p:one",
+  "text": "one"
+ },
+ {
+  "key": "p:orange",
+  "text": "orange"
+ },
+ {
+  "key": "p:owl",
+  "text": "owl"
+ },
+ {
+  "key": "p:p",
+  "text": "p"
+ },
+ {
+  "key": "p:P",
+  "text": "P"
+ },
+ {
+  "key": "p:pear",
+  "text": "pear"
+ },
+ {
+  "key": "p:pencil",
+  "text": "pencil"
+ },
+ {
+  "key": "p:penguin",
+  "text": "penguin"
+ },
+ {
+  "key": "p:pig",
+  "text": "pig"
+ },
+ {
+  "key": "p:pink",
+  "text": "pink"
+ },
+ {
+  "key": "p:plus",
+  "text": "plus",
+  "previous_text": "4",
+  "next_text": "1 equals what"
+ },
+ {
+  "key": "p:plus box equals",
+  "text": "plus box equals",
+  "previous_text": "9",
+  "next_text": "10"
+ },
+ {
+  "key": "p:purple",
+  "text": "purple"
+ },
+ {
+  "key": "p:Put the days in order",
+  "text": "Put the days in order"
+ },
+ {
+  "key": "p:Put the months in order",
+  "text": "Put the months in order"
+ },
+ {
+  "key": "p:q",
+  "text": "q"
+ },
+ {
+  "key": "p:Q",
+  "text": "Q"
+ },
+ {
+  "key": "p:r",
+  "text": "r"
+ },
+ {
+  "key": "p:R",
+  "text": "R"
+ },
+ {
+  "key": "p:rabbit",
+  "text": "rabbit"
+ },
+ {
+  "key": "p:Read the word and find the picture",
+  "text": "Read the word and find the picture"
+ },
+ {
+  "key": "p:red",
+  "text": "red"
+ },
+ {
+  "key": "p:Retell the story: put the events in order",
+  "text": "Retell the story: put the events in order"
+ },
+ {
+  "key": "p:rooster",
+  "text": "rooster"
+ },
+ {
+  "key": "p:s",
+  "text": "s"
+ },
+ {
+  "key": "p:S",
+  "text": "S"
+ },
+ {
+  "key": "p:September: which season is it?",
+  "text": "September: which season is it?"
+ },
+ {
+  "key": "p:seven",
+  "text": "seven"
+ },
+ {
+  "key": "p:seventeen",
+  "text": "seventeen"
+ },
+ {
+  "key": "p:six",
+  "text": "six"
+ },
+ {
+  "key": "p:sixteen",
+  "text": "sixteen"
+ },
+ {
+  "key": "p:snake",
+  "text": "snake"
+ },
+ {
+  "key": "p:star",
+  "text": "star"
+ },
+ {
+  "key": "p:sun",
+  "text": "sun"
+ },
+ {
+  "key": "p:Super!",
+  "text": "Super!"
+ },
+ {
+  "key": "p:t",
+  "text": "t"
+ },
+ {
+  "key": "p:T",
+  "text": "T"
+ },
+ {
+  "key": "p:ten",
+  "text": "ten"
+ },
+ {
+  "key": "p:Thanks! I'll remember.",
+  "text": "Thanks! I'll remember."
+ },
+ {
+  "key": "p:That's OK, we're learning!",
+  "text": "That's OK, we're learning!"
+ },
+ {
+  "key": "p:The cartoon started at",
+  "text": "The cartoon started at",
+  "next_text": "10:00 and lasted 30 minutes. When did it end?"
+ },
+ {
+  "key": "p:The electronic clock shows afternoon time. What will the clock with hands show?",
+  "text": "The electronic clock shows afternoon time. What will the clock with hands show?"
+ },
+ {
+  "key": "p:The football match started at",
+  "text": "The football match started at",
+  "next_text": "7:30 and lasted 15 minutes. When did it end?"
+ },
+ {
+  "key": "p:The lesson started at",
+  "text": "The lesson started at",
+  "next_text": "2:15 and lasted 45 minutes. When did it end?"
+ },
+ {
+  "key": "p:There are",
+  "text": "There are",
+  "next_text": "4 apples in the basket. Mom puts in 6 more. How many apples are in the basket now?"
+ },
+ {
+  "key": "p:thirteen",
+  "text": "thirteen"
+ },
+ {
+  "key": "p:three",
+  "text": "three"
+ },
+ {
+  "key": "p:Three in a row! You're on fire!",
+  "text": "Three in a row! You're on fire!"
+ },
+ {
+  "key": "p:tiger",
+  "text": "tiger"
+ },
+ {
+  "key": "p:times",
+  "text": "times",
+  "previous_text": "2",
+  "next_text": "10 equals what"
+ },
+ {
+  "key": "p:Today is Friday. What day is the day after tomorrow?",
+  "text": "Today is Friday. What day is the day after tomorrow?"
+ },
+ {
+  "key": "p:Today is Friday. What day was it",
+  "text": "Today is Friday. What day was it",
+  "next_text": "3 days ago?"
+ },
+ {
+  "key": "p:Today is Friday. What day will it be in",
+  "text": "Today is Friday. What day will it be in",
+  "next_text": "3 days?"
+ },
+ {
+  "key": "p:Today is Monday. What day is the day after tomorrow?",
+  "text": "Today is Monday. What day is the day after tomorrow?"
+ },
+ {
+  "key": "p:Today is Monday. What day was it",
+  "text": "Today is Monday. What day was it",
+  "next_text": "4 days ago?"
+ },
+ {
+  "key": "p:Today is Monday. What day will it be in",
+  "text": "Today is Monday. What day will it be in",
+  "next_text": "4 days?"
+ },
+ {
+  "key": "p:Today is Saturday. What day is the day after tomorrow?",
+  "text": "Today is Saturday. What day is the day after tomorrow?"
+ },
+ {
+  "key": "p:Today is Saturday. What day was it",
+  "text": "Today is Saturday. What day was it",
+  "next_text": "2 days ago?"
+ },
+ {
+  "key": "p:Today is Saturday. What day will it be in",
+  "text": "Today is Saturday. What day will it be in",
+  "next_text": "2 days?"
+ },
+ {
+  "key": "p:Today is Sunday. What day is the day after tomorrow?",
+  "text": "Today is Sunday. What day is the day after tomorrow?"
+ },
+ {
+  "key": "p:Today is Sunday. What day was it",
+  "text": "Today is Sunday. What day was it",
+  "next_text": "2 days ago?"
+ },
+ {
+  "key": "p:Today is Sunday. What day will it be in",
+  "text": "Today is Sunday. What day will it be in",
+  "next_text": "3 days?"
+ },
+ {
+  "key": "p:Today is Thursday. What day is the day after tomorrow?",
+  "text": "Today is Thursday. What day is the day after tomorrow?"
+ },
+ {
+  "key": "p:Today is Thursday. What day was it",
+  "text": "Today is Thursday. What day was it",
+  "next_text": "4 days ago?"
+ },
+ {
+  "key": "p:Today is Thursday. What day will it be in",
+  "text": "Today is Thursday. What day will it be in",
+  "next_text": "2 days?"
+ },
+ {
+  "key": "p:Today is Tuesday. What day is the day after tomorrow?",
+  "text": "Today is Tuesday. What day is the day after tomorrow?"
+ },
+ {
+  "key": "p:Today is Tuesday. What day was it",
+  "text": "Today is Tuesday. What day was it",
+  "next_text": "3 days ago?"
+ },
+ {
+  "key": "p:Today is Tuesday. What day will it be in",
+  "text": "Today is Tuesday. What day will it be in",
+  "next_text": "4 days?"
+ },
+ {
+  "key": "p:Today is Wednesday. What day is the day after tomorrow?",
+  "text": "Today is Wednesday. What day is the day after tomorrow?"
+ },
+ {
+  "key": "p:Today is Wednesday. What day was it",
+  "text": "Today is Wednesday. What day was it",
+  "next_text": "2 days ago?"
+ },
+ {
+  "key": "p:Today is Wednesday. What day will it be in",
+  "text": "Today is Wednesday. What day will it be in",
+  "next_text": "3 days?"
+ },
+ {
+  "key": "p:Tomorrow is Friday. What day was yesterday?",
+  "text": "Tomorrow is Friday. What day was yesterday?"
+ },
+ {
+  "key": "p:Tomorrow is Monday. What day was yesterday?",
+  "text": "Tomorrow is Monday. What day was yesterday?"
+ },
+ {
+  "key": "p:Tomorrow is Saturday. What day was yesterday?",
+  "text": "Tomorrow is Saturday. What day was yesterday?"
+ },
+ {
+  "key": "p:Tomorrow is Sunday. What day was yesterday?",
+  "text": "Tomorrow is Sunday. What day was yesterday?"
+ },
+ {
+  "key": "p:Tomorrow is Thursday. What day was yesterday?",
+  "text": "Tomorrow is Thursday. What day was yesterday?"
+ },
+ {
+  "key": "p:Tomorrow is Tuesday. What day was yesterday?",
+  "text": "Tomorrow is Tuesday. What day was yesterday?"
+ },
+ {
+  "key": "p:Tomorrow is Wednesday. What day was yesterday?",
+  "text": "Tomorrow is Wednesday. What day was yesterday?"
+ },
+ {
+  "key": "p:toy cars and Mia has",
+  "text": "toy cars and Mia has",
+  "previous_text": "Leo has 7",
+  "next_text": "4 . How many more toy cars does Leo have?"
+ },
+ {
+  "key": "p:train",
+  "text": "train"
+ },
+ {
+  "key": "p:tree",
+  "text": "tree"
+ },
+ {
+  "key": "p:Try again!",
+  "text": "Try again!"
+ },
+ {
+  "key": "p:turtle",
+  "text": "turtle"
+ },
+ {
+  "key": "p:twelve",
+  "text": "twelve"
+ },
+ {
+  "key": "p:twenty",
+  "text": "twenty"
+ },
+ {
+  "key": "p:two",
+  "text": "two"
+ },
+ {
+  "key": "p:u",
+  "text": "u"
+ },
+ {
+  "key": "p:U",
+  "text": "U"
+ },
+ {
+  "key": "p:v",
+  "text": "v"
+ },
+ {
+  "key": "p:V",
+  "text": "V"
+ },
+ {
+  "key": "p:w",
+  "text": "w"
+ },
+ {
+  "key": "p:W",
+  "text": "W"
+ },
+ {
+  "key": "p:watermelon",
+  "text": "watermelon"
+ },
+ {
+  "key": "p:Well done!",
+  "text": "Well done!"
+ },
+ {
+  "key": "p:what",
+  "text": "what",
+  "previous_text": "6 7 8 9"
+ },
+ {
+  "key": "p:What appeared in the sky?",
+  "text": "What appeared in the sky?"
+ },
+ {
+  "key": "p:What are the children building?",
+  "text": "What are the children building?"
+ },
+ {
+  "key": "p:What are the children in?",
+  "text": "What are the children in?"
+ },
+ {
+  "key": "p:What color is it?",
+  "text": "What color is it?"
+ },
+ {
+  "key": "p:What color is the balloon?",
+  "text": "What color is the balloon?"
+ },
+ {
+  "key": "p:What color is the chick?",
+  "text": "What color is the chick?"
+ },
+ {
+  "key": "p:What color is this?",
+  "text": "What color is this?"
+ },
+ {
+  "key": "p:What comes next?",
+  "text": "What comes next?"
+ },
+ {
+  "key": "p:What did Bim lose?",
+  "text": "What did Bim lose?"
+ },
+ {
+  "key": "p:What did Grandma bake?",
+  "text": "What did Grandma bake?"
+ },
+ {
+  "key": "p:What did Mia have for breakfast?",
+  "text": "What did Mia have for breakfast?"
+ },
+ {
+  "key": "p:What did Mom bake?",
+  "text": "What did Mom bake?"
+ },
+ {
+  "key": "p:What did Olly plant?",
+  "text": "What did Olly plant?"
+ },
+ {
+  "key": "p:What did Sam catch?",
+  "text": "What did Sam catch?"
+ },
+ {
+  "key": "p:What did the cat find?",
+  "text": "What did the cat find?"
+ },
+ {
+  "key": "p:What did the children build?",
+  "text": "What did the children build?"
+ },
+ {
+  "key": "p:What did the friends give her?",
+  "text": "What did the friends give her?"
+ },
+ {
+  "key": "p:What did the hedgehog collect?",
+  "text": "What did the hedgehog collect?"
+ },
+ {
+  "key": "p:What do we see in fall?",
+  "text": "What do we see in fall?"
+ },
+ {
+  "key": "p:What do we see in spring?",
+  "text": "What do we see in spring?"
+ },
+ {
+  "key": "p:What do we see in summer?",
+  "text": "What do we see in summer?"
+ },
+ {
+  "key": "p:What do we see in winter?",
+  "text": "What do we see in winter?"
+ },
+ {
+  "key": "p:What does the kitten drink?",
+  "text": "What does the kitten drink?"
+ },
+ {
+  "key": "p:What goes with it in the same way?",
+  "text": "What goes with it in the same way?"
+ },
+ {
+  "key": "p:What grew in the clearing?",
+  "text": "What grew in the clearing?"
+ },
+ {
+  "key": "p:What grew?",
+  "text": "What grew?"
+ },
+ {
+  "key": "p:What happened first?",
+  "text": "What happened first?"
+ },
+ {
+  "key": "p:What happened while he was collecting food?",
+  "text": "What happened while he was collecting food?"
+ },
+ {
+  "key": "p:What is flying in the sky?",
+  "text": "What is flying in the sky?"
+ },
+ {
+  "key": "p:What is on the table?",
+  "text": "What is on the table?"
+ },
+ {
+  "key": "p:What is Peter playing?",
+  "text": "What is Peter playing?"
+ },
+ {
+  "key": "p:What is the answer?",
+  "text": "What is the answer?"
+ },
+ {
+  "key": "p:What is the girl eating?",
+  "text": "What is the girl eating?"
+ },
+ {
+  "key": "p:What is the weather like?",
+  "text": "What is the weather like?"
+ },
+ {
+  "key": "p:What is this shape called?",
+  "text": "What is this shape called?"
+ },
+ {
+  "key": "p:What time is it?",
+  "text": "What time is it?"
+ },
+ {
+  "key": "p:What was the weather like?",
+  "text": "What was the weather like?"
+ },
+ {
+  "key": "p:When did Olly make a snowman?",
+  "text": "When did Olly make a snowman?"
+ },
+ {
+  "key": "p:Where did Dad and Sam go?",
+  "text": "Where did Dad and Sam go?"
+ },
+ {
+  "key": "p:Where did Mia go?",
+  "text": "Where did Mia go?"
+ },
+ {
+  "key": "p:Where did the bird sit?",
+  "text": "Where did the bird sit?"
+ },
+ {
+  "key": "p:Where did Whiskers fall asleep?",
+  "text": "Where did Whiskers fall asleep?"
+ },
+ {
+  "key": "p:Where was the ball?",
+  "text": "Where was the ball?"
+ },
+ {
+  "key": "p:Which day comes after Friday?",
+  "text": "Which day comes after Friday?"
+ },
+ {
+  "key": "p:Which day comes after Monday?",
+  "text": "Which day comes after Monday?"
+ },
+ {
+  "key": "p:Which day comes after Saturday?",
+  "text": "Which day comes after Saturday?"
+ },
+ {
+  "key": "p:Which day comes after Sunday?",
+  "text": "Which day comes after Sunday?"
+ },
+ {
+  "key": "p:Which day comes after Thursday?",
+  "text": "Which day comes after Thursday?"
+ },
+ {
+  "key": "p:Which day comes after Tuesday?",
+  "text": "Which day comes after Tuesday?"
+ },
+ {
+  "key": "p:Which day comes after Wednesday?",
+  "text": "Which day comes after Wednesday?"
+ },
+ {
+  "key": "p:Which day comes before Friday?",
+  "text": "Which day comes before Friday?"
+ },
+ {
+  "key": "p:Which day comes before Monday?",
+  "text": "Which day comes before Monday?"
+ },
+ {
+  "key": "p:Which day comes before Saturday?",
+  "text": "Which day comes before Saturday?"
+ },
+ {
+  "key": "p:Which day comes before Sunday?",
+  "text": "Which day comes before Sunday?"
+ },
+ {
+  "key": "p:Which day comes before Thursday?",
+  "text": "Which day comes before Thursday?"
+ },
+ {
+  "key": "p:Which day comes before Tuesday?",
+  "text": "Which day comes before Tuesday?"
+ },
+ {
+  "key": "p:Which day comes before Wednesday?",
+  "text": "Which day comes before Wednesday?"
+ },
+ {
+  "key": "p:Which is the first day of the week?",
+  "text": "Which is the first day of the week?"
+ },
+ {
+  "key": "p:Which is the first month of the year?",
+  "text": "Which is the first month of the year?"
+ },
+ {
+  "key": "p:Which is the last month of the year?",
+  "text": "Which is the last month of the year?"
+ },
+ {
+  "key": "p:Which letter does the word start with?",
+  "text": "Which letter does the word start with?"
+ },
+ {
+  "key": "p:Which letter is missing?",
+  "text": "Which letter is missing?"
+ },
+ {
+  "key": "p:Which month comes after April?",
+  "text": "Which month comes after April?"
+ },
+ {
+  "key": "p:Which month comes after August?",
+  "text": "Which month comes after August?"
+ },
+ {
+  "key": "p:Which month comes after December?",
+  "text": "Which month comes after December?"
+ },
+ {
+  "key": "p:Which month comes after February?",
+  "text": "Which month comes after February?"
+ },
+ {
+  "key": "p:Which month comes after January?",
+  "text": "Which month comes after January?"
+ },
+ {
+  "key": "p:Which month comes after July?",
+  "text": "Which month comes after July?"
+ },
+ {
+  "key": "p:Which month comes after June?",
+  "text": "Which month comes after June?"
+ },
+ {
+  "key": "p:Which month comes after March?",
+  "text": "Which month comes after March?"
+ },
+ {
+  "key": "p:Which month comes after May?",
+  "text": "Which month comes after May?"
+ },
+ {
+  "key": "p:Which month comes after November?",
+  "text": "Which month comes after November?"
+ },
+ {
+  "key": "p:Which month comes after October?",
+  "text": "Which month comes after October?"
+ },
+ {
+  "key": "p:Which month comes after September?",
+  "text": "Which month comes after September?"
+ },
+ {
+  "key": "p:Which month comes before April?",
+  "text": "Which month comes before April?"
+ },
+ {
+  "key": "p:Which month comes before August?",
+  "text": "Which month comes before August?"
+ },
+ {
+  "key": "p:Which month comes before December?",
+  "text": "Which month comes before December?"
+ },
+ {
+  "key": "p:Which month comes before February?",
+  "text": "Which month comes before February?"
+ },
+ {
+  "key": "p:Which month comes before January?",
+  "text": "Which month comes before January?"
+ },
+ {
+  "key": "p:Which month comes before July?",
+  "text": "Which month comes before July?"
+ },
+ {
+  "key": "p:Which month comes before June?",
+  "text": "Which month comes before June?"
+ },
+ {
+  "key": "p:Which month comes before March?",
+  "text": "Which month comes before March?"
+ },
+ {
+  "key": "p:Which month comes before May?",
+  "text": "Which month comes before May?"
+ },
+ {
+  "key": "p:Which month comes before November?",
+  "text": "Which month comes before November?"
+ },
+ {
+  "key": "p:Which month comes before October?",
+  "text": "Which month comes before October?"
+ },
+ {
+  "key": "p:Which month comes before September?",
+  "text": "Which month comes before September?"
+ },
+ {
+  "key": "p:Which month is",
+  "text": "Which month is",
+  "next_text": "2 months after April?"
+ },
+ {
+  "key": "p:Which number comes next?",
+  "text": "Which number comes next?"
+ },
+ {
+  "key": "p:Which number is hiding in the box?",
+  "text": "Which number is hiding in the box?"
+ },
+ {
+  "key": "p:Which number is missing?",
+  "text": "Which number is missing?"
+ },
+ {
+  "key": "p:Which number is this?",
+  "text": "Which number is this?"
+ },
+ {
+  "key": "p:Which one doesn't belong?",
+  "text": "Which one doesn't belong?"
+ },
+ {
+  "key": "p:Which one was in the picture?",
+  "text": "Which one was in the picture?"
+ },
+ {
+  "key": "p:Which season is this?",
+  "text": "Which season is this?"
+ },
+ {
+  "key": "p:Which shape does it look like?",
+  "text": "Which shape does it look like?"
+ },
+ {
+  "key": "p:Which sign goes in the box?",
+  "text": "Which sign goes in the box?"
+ },
+ {
+  "key": "p:Which solid does it look like?",
+  "text": "Which solid does it look like?"
+ },
+ {
+  "key": "p:Which word matches the picture?",
+  "text": "Which word matches the picture?"
+ },
+ {
+  "key": "p:white",
+  "text": "white"
+ },
+ {
+  "key": "p:Who hid?",
+  "text": "Who hid?"
+ },
+ {
+  "key": "p:Who is playing with the ball?",
+  "text": "Who is playing with the ball?"
+ },
+ {
+  "key": "p:Who sleeps all winter?",
+  "text": "Who sleeps all winter?"
+ },
+ {
+  "key": "p:wolf",
+  "text": "wolf"
+ },
+ {
+  "key": "p:Wonderful!",
+  "text": "Wonderful!"
+ },
+ {
+  "key": "p:Wow, what a streak!",
+  "text": "Wow, what a streak!"
+ },
+ {
+  "key": "p:x",
+  "text": "x"
+ },
+ {
+  "key": "p:X",
+  "text": "X"
+ },
+ {
+  "key": "p:y",
+  "text": "y"
+ },
+ {
+  "key": "p:Y",
+  "text": "Y"
+ },
+ {
+  "key": "p:yellow",
+  "text": "yellow"
+ },
+ {
+  "key": "p:You have a new friend: Biscuit!",
+  "text": "You have a new friend: Biscuit!"
+ },
+ {
+  "key": "p:You have a new friend: Bolt!",
+  "text": "You have a new friend: Bolt!"
+ },
+ {
+  "key": "p:You have a new friend: Coco!",
+  "text": "You have a new friend: Coco!"
+ },
+ {
+  "key": "p:You have a new friend: Ember!",
+  "text": "You have a new friend: Ember!"
+ },
+ {
+  "key": "p:You have a new friend: Frost!",
+  "text": "You have a new friend: Frost!"
+ },
+ {
+  "key": "p:You have a new friend: Luna!",
+  "text": "You have a new friend: Luna!"
+ },
+ {
+  "key": "p:You have a new friend: Nova!",
+  "text": "You have a new friend: Nova!"
+ },
+ {
+  "key": "p:You have a new friend: Orion!",
+  "text": "You have a new friend: Orion!"
+ },
+ {
+  "key": "p:You have a new friend: Pip!",
+  "text": "You have a new friend: Pip!"
+ },
+ {
+  "key": "p:You have a new friend: Rex!",
+  "text": "You have a new friend: Rex!"
+ },
+ {
+  "key": "p:You have a new friend: Shadow!",
+  "text": "You have a new friend: Shadow!"
+ },
+ {
+  "key": "p:You have a new friend: Zephyr!",
+  "text": "You have a new friend: Zephyr!"
+ },
+ {
+  "key": "p:You'll get it!",
+  "text": "You'll get it!"
+ },
+ {
+  "key": "p:z",
+  "text": "z"
+ },
+ {
+  "key": "p:Z",
+  "text": "Z"
+ }
+]
