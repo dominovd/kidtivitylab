@@ -6,10 +6,11 @@ import Parent from "./Parent";
 import Ico from "./Ico";
 import HeroPic from "./HeroPic";
 import Avatar from "./Avatar";
+import Setup from "./Setup";
 import { HEROES, RARITY, nextHero, unlockedHeroes } from "@/lib/heroes";
 import { t } from "@/lib/i18n";
 import type { SubjectId } from "@/lib/engine";
-import { SUBJECTS, ROUND_SIZE, AGE_BAND, getSkill, skillsFor } from "@/lib/skills";
+import { SUBJECTS, ROUND_SIZE, TRACKS, getSkill, skillsFor } from "@/lib/skills";
 import { focusSkills } from "@/lib/assessment";
 import { applyRound, setLevels, streak, today, useProgress, type ProfileId, type RoundResult } from "@/lib/progress";
 import { primeAudioOnFirstGesture, sfx, speak } from "@/lib/speech";
@@ -24,7 +25,8 @@ type Screen =
   | { name: "heroes"; pid: ProfileId }
   | { name: "placement"; pid: ProfileId; subject: SubjectId; key: number }
   | { name: "placementResult"; pid: ProfileId; subject: SubjectId; levels: Record<string, number> }
-  | { name: "parent"; pid?: ProfileId; view?: "overview" | "survey" };
+  | { name: "parent"; pid?: ProfileId; view?: "overview" | "survey" }
+  | { name: "setup"; pid: ProfileId; start: "name" | "track" };
 
 /** Two questions per skill: level 3, then level 5 after a right answer or level 1 after a wrong one. */
 const placementLevel = (first: boolean, second: boolean) => (first ? (second ? 5 : 3) : second ? 2 : 1);
@@ -356,6 +358,31 @@ export default function App() {
     );
   }
 
+  if (screen.name === "setup") {
+    const p = profile(screen.pid);
+    return (
+      <main className="app">
+        {header}
+        <Setup
+          start={screen.start}
+          initialName={p.name}
+          initialAvatar={p.avatar}
+          initialTrack={p.track}
+          onCancel={() => setScreen(p.name ? { name: "map", pid: p.id } : { name: "home" })}
+          onDone={({ name, avatar, track }) => {
+            update((pr) => ({
+              ...pr,
+              profiles: pr.profiles.map((x) =>
+                x.id === p.id ? { ...x, name, avatar, track, advanced: track === "plus" ? true : x.advanced } : x,
+              ),
+            }));
+            setScreen({ name: "map", pid: p.id });
+          }}
+        />
+      </main>
+    );
+  }
+
   if (screen.name === "parent") {
     return (
       <main className="app">
@@ -430,18 +457,22 @@ export default function App() {
     const stats = progress.stats[p.id];
     const focus = focusByKid[p.id];
     const surveyDone = !!progress.survey[p.id].savedAt;
-    // the extra-challenge island goes last: the 5–8 track starts with the core islands
+    // the chosen direction goes first; the extra-challenge island goes last otherwise
     const shown = (sk: { id: string }) => !p.hidden?.includes(sk.id);
+    const order = (s: { id: string; advanced?: boolean }) => (s.id === p.track ? 0 : s.advanced ? 2 : 1);
     const visibleSubjects = SUBJECTS.filter((s) => (!s.advanced || p.advanced) && skillsFor(p.age, s.id).some(shown)).sort(
-      (a, b) => Number(!!a.advanced) - Number(!!b.advanced),
+      (a, b) => order(a) - order(b),
     );
     const visible = new Set(visibleSubjects.map((s) => s.id));
     const untouched = (id: string) => !(stats[id]?.rounds ?? 0);
     // Today's picks: untouched focus skills, other untouched skills, focus skills, then the least recently played
-    const rank = (id: string) => (focus.has(id) ? (untouched(id) ? 0 : 2) : untouched(id) ? 1 : 3);
+    const base = (id: string) => (focus.has(id) ? (untouched(id) ? 0 : 2) : untouched(id) ? 1 : 3);
+    // a chosen direction fills Today's picks first, keeping the same order inside it
+    const inTrack = (sk: { subject: string }) => !p.track || p.track === "mix" || sk.subject === p.track;
+    const rank = (sk: { id: string; subject: string }) => base(sk.id) + (inTrack(sk) ? 0 : 10);
     const picks = skillsFor(p.age)
       .filter((sk) => visible.has(sk.subject) && shown(sk))
-      .map((sk) => ({ sk, r: rank(sk.id), last: stats[sk.id]?.lastPlayed || "", today: stats[sk.id]?.lastPlayed === today() }))
+      .map((sk) => ({ sk, r: rank(sk), last: stats[sk.id]?.lastPlayed || "", today: stats[sk.id]?.lastPlayed === today() }))
       .filter((x) => !x.today)
       .sort((a, b) => a.r - b.r || a.last.localeCompare(b.last))
       .slice(0, 3)
@@ -456,6 +487,9 @@ export default function App() {
           <b>{p.name}</b>
           <span className="pill">🔥 {streak(progress.days[p.id])}</span>
           <span className="pill"><Ico name="reward-coin" size={18} /> {progress.coins[p.id] ?? 0}</span>
+          <button className="btn small track-btn" onClick={() => setScreen({ name: "setup", pid: p.id, start: "track" })} title="Change where to start">
+            🧭 {TRACKS.find((x) => x.id === (p.track ?? "mix"))!.title}
+          </button>
           <button className="btn small heroes-btn" onClick={() => setScreen({ name: "heroes", pid: p.id })}>
             {companionOf(p.id) ? <HeroPic hero={companionOf(p.id)!} size={26} /> : "🦸"} {t("heroes", lang)}{" "}
             {unlockedHeroes(progress.coins[p.id] ?? 0).length}/{HEROES.length}
@@ -577,6 +611,8 @@ export default function App() {
   }
 
   // home
+  const learners = progress.profiles.filter((p) => p.name);
+  const freeSlot = progress.profiles.find((p) => !p.name);
   return (
     <main className="app">
       {header}
@@ -586,20 +622,43 @@ export default function App() {
           <img src="/learn/images/hero-1600.webp" alt="" width={1600} height={900} fetchPriority="high" />
         </picture>
       </div>
-      <h1 className="home-title">{t("whoIsPlaying", lang)}</h1>
-      <div className="profiles">
-        {progress.profiles.map((p) => (
-          <button key={p.id} className={`profile card age${p.age}`} onClick={() => setScreen({ name: "map", pid: p.id })}>
-            <Avatar value={p.avatar} size={120} className="profile-avatar" />
-            <span className="profile-name">{p.name}</span>
-            <span className="profile-age">{AGE_BAND[p.age]}</span>
-            <span className="row small">
-              <span className="pill">🔥 {streak(progress.days[p.id])}</span>
-              <span className="pill"><Ico name="reward-coin" size={18} /> {progress.coins[p.id] ?? 0}</span>
-            </span>
+      {learners.length === 0 ? (
+        <section className="card welcome">
+          <h1>Learning games for kids 5–8</h1>
+          <p>
+            Short rounds of math, reading, words and puzzles. The games get easier or harder as your child plays, and every
+            right answer earns coins for new hero friends.
+          </p>
+          <button className="btn primary big" onClick={() => setScreen({ name: "setup", pid: "kid6", start: "name" })}>
+            Let&apos;s start →
           </button>
-        ))}
-      </div>
+          <p className="setup-note">🔒 No account, no ads. Progress stays in this browser.</p>
+        </section>
+      ) : (
+        <>
+          <h1 className="home-title">{t("whoIsPlaying", lang)}</h1>
+          <div className="profiles">
+            {learners.map((p) => (
+              <button key={p.id} className="profile card" onClick={() => setScreen({ name: "map", pid: p.id })}>
+                <Avatar value={p.avatar} size={120} className="profile-avatar" />
+                <span className="profile-name">{p.name}</span>
+                <span className="profile-age">🧭 {TRACKS.find((x) => x.id === (p.track ?? "mix"))!.title}</span>
+                <span className="row small">
+                  <span className="pill">🔥 {streak(progress.days[p.id])}</span>
+                  <span className="pill"><Ico name="reward-coin" size={18} /> {progress.coins[p.id] ?? 0}</span>
+                </span>
+              </button>
+            ))}
+            {freeSlot && (
+              <button className="profile card add-learner" onClick={() => setScreen({ name: "setup", pid: freeSlot.id, start: "name" })}>
+                <span className="add-plus" aria-hidden>＋</span>
+                <span className="profile-name">Add a learner</span>
+                <span className="profile-age">for a brother or sister</span>
+              </button>
+            )}
+          </div>
+        </>
+      )}
       <button className="parent-link" onClick={() => setScreen({ name: "parent" })}>
         👨‍👩‍👧 {t("parent", lang)}
       </button>

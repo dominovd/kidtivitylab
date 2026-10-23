@@ -2,8 +2,9 @@
 
 import { useMemo, useRef, useState } from "react";
 import { t, type Lang } from "@/lib/i18n";
-import { SUBJECTS, AGE_BAND, getSkill, skillsFor } from "@/lib/skills";
-import { streak, today, useProgress, type ProfileId } from "@/lib/progress";
+import { SUBJECTS, getSkill, skillsFor } from "@/lib/skills";
+import { removeLearner, streak, today, useProgress, type ProfileId } from "@/lib/progress";
+import { checkName, NAME_MAX } from "@/lib/names";
 import Survey from "./Survey";
 import { unlockedHeroes } from "@/lib/heroes";
 import { FEEL_EMOJI, feelSignals } from "@/lib/feel";
@@ -14,12 +15,13 @@ const AVATARS = ["🐣", "🦊", "🐼", "🐯", "🐸", "🦄", "🐙", "🐻",
 
 type Props = { lang: Lang; onBack: () => void; initialPid?: ProfileId; initialView?: "overview" | "survey" };
 
-export default function Parent({ lang, onBack, initialPid = "kid6", initialView = "overview" }: Props) {
+export default function Parent({ lang, onBack, initialPid, initialView = "overview" }: Props) {
   const { progress, update, replace } = useProgress();
+  const learners = progress.profiles.filter((p) => p.name);
   const [gate] = useState(() => ({ a: 6 + Math.floor(Math.random() * 4), b: 6 + Math.floor(Math.random() * 4) }));
   const [gateInput, setGateInput] = useState("");
   const [open, setOpen] = useState(false);
-  const [pid, setPid] = useState<ProfileId>(initialPid);
+  const [pid, setPid] = useState<ProfileId>(initialPid ?? learners[0]?.id ?? "kid6");
   const [view, setView] = useState<"overview" | "survey">(initialView);
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -82,10 +84,14 @@ export default function Parent({ lang, onBack, initialPid = "kid6", initialView 
         <span>💾 {t("storageNote", lang)}</span>
       </div>
 
+      {!profile.name ? (
+        <p className="card muted">No learners yet. Add one on the start screen.</p>
+      ) : (
+      <>
       <div className="tabs">
-        {progress.profiles.map((p) => (
+        {learners.map((p) => (
           <button key={p.id} className={`tab ${p.id === pid ? "active" : ""}`} onClick={() => setPid(p.id)}>
-            <Avatar value={p.avatar} size={24} /> {p.name} ({AGE_BAND[p.age]})
+            <Avatar value={p.avatar} size={24} /> {p.name}
           </button>
         ))}
       </div>
@@ -233,16 +239,11 @@ export default function Parent({ lang, onBack, initialPid = "kid6", initialView 
 
       <div className="card">
         <h2>{t("settings", lang)}</h2>
-        <label className="field">
-          {t("childName", lang)}
-          <input
-            value={profile.name}
-            maxLength={24}
-            onChange={(e) =>
-              update((p) => ({ ...p, profiles: p.profiles.map((x) => (x.id === pid ? { ...x, name: e.target.value } : x)) }))
-            }
-          />
-        </label>
+        <NameField
+          key={pid}
+          value={profile.name}
+          onSave={(name) => update((p) => ({ ...p, profiles: p.profiles.map((x) => (x.id === pid ? { ...x, name } : x)) }))}
+        />
         <label className="check">
           <input
             type="checkbox"
@@ -331,8 +332,22 @@ export default function Parent({ lang, onBack, initialPid = "kid6", initialView 
           >
             🗑 {t("resetChild", lang)}
           </button>
+          <button
+            className="btn danger"
+            onClick={() => {
+              if (!confirm(`Remove ${profile.name} and all of their progress from this device?`)) return;
+              const next = learners.find((x) => x.id !== pid);
+              update((p) => removeLearner(p, pid));
+              if (next) setPid(next.id);
+              else onBack();
+            }}
+          >
+            ✖ Remove learner
+          </button>
         </div>
       </div>
+      </>
+      )}
     </section>
   );
 }
@@ -368,5 +383,37 @@ function SoundTest({ lang }: { lang: Lang }) {
         </ul>
       )}
     </div>
+  );
+}
+
+function NameField({ value, onSave }: { value: string; onSave: (name: string) => void }) {
+  const [draft, setDraft] = useState(value);
+  const [error, setError] = useState<string | null>(null);
+  const commit = () => {
+    if (draft === value) return;
+    const c = checkName(draft);
+    if (!c.ok) return setError(c.reason);
+    setError(null);
+    setDraft(c.name);
+    onSave(c.name);
+  };
+  return (
+    <label className="field">
+      Name (first name or nickname)
+      <input
+        value={draft}
+        maxLength={NAME_MAX + 4}
+        autoComplete="off"
+        spellCheck={false}
+        onChange={(e) => {
+          setDraft(e.target.value);
+          if (error) setError(null);
+        }}
+        onBlur={commit}
+        onKeyDown={(e) => e.key === "Enter" && commit()}
+        aria-invalid={!!error}
+      />
+      {error && <span className="error" role="alert">{error}</span>}
+    </label>
   );
 }

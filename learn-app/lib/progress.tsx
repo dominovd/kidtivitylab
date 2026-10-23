@@ -1,14 +1,27 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import type { Age } from "./engine";
+import type { Age, SubjectId } from "./engine";
 import type { Lang } from "./i18n";
 import type { Answer } from "./assessment";
 import { SEED_ADVANCED, SEED_HIDDEN } from "./seed";
 import { PIDS, stampChanges } from "./merge";
 
 export type ProfileId = "kid6" | "kid11";
-export type Profile = { id: ProfileId; age: Age; name: string; avatar: string; advanced?: boolean; voice?: boolean; readAloud?: boolean; /** skill ids the parent turned off */ hidden?: string[] };
+export type Profile = {
+  id: ProfileId;
+  age: Age;
+  /** First name or nickname; "" means this slot has not been set up yet. */
+  name: string;
+  avatar: string;
+  /** Direction chosen at setup: a subject goes first on the map and in Today's picks. */
+  track?: SubjectId | "mix";
+  advanced?: boolean;
+  voice?: boolean;
+  readAloud?: boolean;
+  /** skill ids the parent turned off */
+  hidden?: string[];
+};
 export type SkillStat = { level: number; attempts: number; correct: number; bestStars: number; rounds: number; lastPlayed: string };
 export type Session = { d: string; skill: string; correct: number; total: number; feel?: "easy" | "ok" | "hard"; /** ms timestamp, identity across devices */ at?: number; /** coins earned, when not equal to correct (bonus rounds) */ coins?: number };
 
@@ -42,11 +55,8 @@ export function emptyProgress(): Progress {
     version: 1,
     updatedAt: 0,
     lang: "en",
-    // Both slots use the ages 5–8 track; two slots so siblings can keep separate progress.
-    profiles: [
-      { id: "kid6", age: 6, name: "Explorer", avatar: "🐣", advanced: SEED_ADVANCED.kid6, hidden: SEED_HIDDEN.kid6 },
-      { id: "kid11", age: 6, name: "Adventurer", avatar: "🦊", advanced: SEED_ADVANCED.kid11, hidden: SEED_HIDDEN.kid11 },
-    ],
+    // Two empty slots on the ages 5–8 track, so siblings can keep separate progress.
+    profiles: [blankProfile("kid6"), blankProfile("kid11")],
     stats: { kid6: {}, kid11: {} },
     days: { kid6: [], kid11: [] },
     coins: { kid6: 0, kid11: 0 },
@@ -56,6 +66,26 @@ export function emptyProgress(): Progress {
     seenHeroes: { kid6: [], kid11: [] },
     companion: { kid6: null, kid11: null },
     migrations: [],
+  };
+}
+
+export function blankProfile(id: ProfileId): Profile {
+  return { id, age: 6, name: "", avatar: id === "kid6" ? "🐣" : "🦊", advanced: SEED_ADVANCED[id], hidden: SEED_HIDDEN[id] };
+}
+
+/** Frees a slot: the profile and all of its progress. */
+export function removeLearner(p: Progress, pid: ProfileId): Progress {
+  return {
+    ...p,
+    profiles: p.profiles.map((x) => (x.id === pid ? blankProfile(pid) : x)),
+    stats: { ...p.stats, [pid]: {} },
+    days: { ...p.days, [pid]: [] },
+    coins: { ...p.coins, [pid]: 0 },
+    history: { ...p.history, [pid]: [] },
+    survey: { ...p.survey, [pid]: { answers: {}, savedAt: null } },
+    placement: { ...p.placement, [pid]: {} },
+    seenHeroes: { ...p.seenHeroes, [pid]: [] },
+    companion: { ...p.companion, [pid]: null },
   };
 }
 

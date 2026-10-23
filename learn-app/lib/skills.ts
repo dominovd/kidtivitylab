@@ -46,5 +46,28 @@ export const getSkill = (id: string) => SKILLS.find((s) => s.id === id);
 
 export const ROUND_SIZE: Record<Age, number> = { 6: 8, 11: 10 };
 
+export type TrackId = SubjectId | "mix";
+
+/** Directions a child can start with; the choice only reorders the map and Today's picks. */
+export const TRACKS: { id: TrackId; title: string; about: string; examples: string[]; recommended?: boolean }[] = [
+  {
+    id: "mix",
+    title: "A bit of everything",
+    about: "Math, reading, words and puzzles mixed together, with new picks every day. Best if you're not sure.",
+    examples: ["3 + 4", "c _ t", "🔴 red", "🧩"],
+    recommended: true,
+  },
+  { id: "math", title: "Math", about: "Counting, adding and taking away, comparing numbers, shapes.", examples: ["5 apples", "3 + 4", "7 > 2", "🔺"] },
+  { id: "lang", title: "Reading", about: "Letters and sounds, syllables, reading words and short sentences, little stories to retell.", examples: ["A is for 🍎", "cat", "c _ t", "📖"] },
+  { id: "english", title: "Words & sounds", about: "Picture words, listening games, colors, number words and the ABC. Lots of voice help.", examples: ["🔊 dog", "🔴 red", "seven", "A B C"] },
+  { id: "logic", title: "Logic & memory", about: "Patterns, odd one out, memory games, days of the week and seasons.", examples: ["🔴🔵🔴?", "odd one", "🧠", "📅"] },
+  {
+    id: "plus",
+    title: "Extra challenge",
+    about: "For kids who want more (about 1st–2nd grade): two-digit math, tens and ones, clocks, story problems, mini sudoku.",
+    examples: ["34 + 25", "🕒", "10, 20, 30", "🔲"],
+  },
+];
+
 /** How the content track is presented to visitors (internal age id 6). */
 export const AGE_BAND: Record<Age, string> = { 6: "ages 5–8", 11: "ages 5–8" };
