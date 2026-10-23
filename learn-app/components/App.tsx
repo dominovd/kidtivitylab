@@ -430,10 +430,10 @@ export default function App() {
     const stats = progress.stats[p.id];
     const focus = focusByKid[p.id];
     const surveyDone = !!progress.survey[p.id].savedAt;
-    // the advanced island goes first for a child on the stretch programme
+    // the extra-challenge island goes last: the 5–8 track starts with the core islands
     const shown = (sk: { id: string }) => !p.hidden?.includes(sk.id);
     const visibleSubjects = SUBJECTS.filter((s) => (!s.advanced || p.advanced) && skillsFor(p.age, s.id).some(shown)).sort(
-      (a, b) => Number(!!b.advanced) - Number(!!a.advanced),
+      (a, b) => Number(!!a.advanced) - Number(!!b.advanced),
     );
     const visible = new Set(visibleSubjects.map((s) => s.id));
     const untouched = (id: string) => !(stats[id]?.rounds ?? 0);
@@ -606,7 +606,7 @@ export default function App() {
       <footer className="app-footer">
         <a href="/learn/how-it-works/">How it works</a>
         <span aria-hidden="true">·</span>
-        <a href="/">Kidtivity Lab — activities for kids</a>
+        <a href="/">Kidtivity Lab: activities for kids</a>
       </footer>
     </main>
   );

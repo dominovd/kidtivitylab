@@ -26,6 +26,15 @@ export default defineConfig({
     }),
   ],
   trailingSlash: 'always',
+  // Local only: proxy /learn to the Next.js app running in production mode
+  // (cd learn-app && npm run build && npm run start -- -p 3000), same as on Vercel.
+  // For editing the app itself use `npm run dev` there and open localhost:3000/learn directly.
+  // In production Vercel handles /learn via the rewrite in vercel.json.
+  vite: {
+    server: {
+      proxy: { '/learn': 'http://localhost:3000' },
+    },
+  },
   build: {
     format: 'directory',
   },

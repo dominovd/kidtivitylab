@@ -182,7 +182,7 @@ export const englishSkills: Skill[] = [
     subject: "english",
     age: 6,
     icon: "🎨",
-    title: l("Кольори", "Цвета", "Colours"),
+    title: l("Кольори", "Цвета", "Colors"),
     gen: (level, lang) => {
       const type = level === 1 ? pick(["name", "find"]) : pick(["name", "find", "object", "object"]);
       if (type === "find") {
@@ -262,7 +262,7 @@ export const englishSkills: Skill[] = [
     subject: "english",
     age: 6,
     icon: "🔤",
-    title: l("Англійські букви", "Английские буквы", "English letters"),
+    title: l("Англійські букви", "Английские буквы", "ABC letters"),
     gen: (level, lang) => {
       const short = BASIC_WORDS.filter((w) => /^[a-z]+$/.test(w.en));
       if (level <= 2) {

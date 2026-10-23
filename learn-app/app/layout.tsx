@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kidtivitylab.com"),
-  title: "Kidtivity Learn — Free Learning Games for Kids 5–8",
+  title: "Kidtivity Learn: Free Learning Games for Kids 5–8",
   description:
     "Short practice rounds in math, reading, and logic for kids ages 5–8 (kindergarten to 2nd grade). Adaptive levels, collectible heroes, no account and no ads. Progress stays in your browser.",
   alternates: { canonical: "/learn/" },
