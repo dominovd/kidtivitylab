@@ -12,7 +12,10 @@ export default function HowItWorks() {
     <main className="app static-page">
       <header className="topbar">
         <a className="brand" href="/learn/">
-          <span>🌈</span> Kidtivity Learn
+          <img src="/learn/images/brand/logo-mark.svg" alt="" width={38} height={38} className="brand-logo" />
+          <span className="brand-name">
+            Kidtivity <em>Learn</em>
+          </span>
         </a>
       </header>
       <article className="card static-article">

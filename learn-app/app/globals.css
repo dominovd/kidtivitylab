@@ -87,7 +87,9 @@ h2 { font-size: 20px; }
 /* top bar */
 .topbar { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 16px; }
 .brand { border: none; background: none; font-size: 20px; font-weight: 900; padding: 0; display: flex; gap: 8px; align-items: center; }
-.brand span { font-size: 28px; }
+.brand-logo { width: 38px; height: 38px; flex: none; }
+.brand-name { font-size: 21px; font-weight: 900; letter-spacing: -0.01em; }
+.brand-name em { font-style: normal; color: #177e6e; }
 .topbar-right { display: flex; gap: 8px; align-items: center; }
 .lang { border: 2px solid var(--line); background: var(--surface); border-radius: 12px; padding: 8px; font-size: 15px; }
 

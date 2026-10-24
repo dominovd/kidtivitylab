@@ -137,7 +137,10 @@ export default function App() {
   const header = (
     <header className="topbar">
       <button className="brand" onClick={() => setScreen({ name: "home" })}>
-        <span>🌈</span> {t("appName", lang)}
+        <img src="/learn/images/brand/logo-mark.svg" alt="" width={38} height={38} className="brand-logo" />
+        <span className="brand-name">
+          Kidtivity <em>Learn</em>
+        </span>
       </button>
       <div className="topbar-right">
         <button className="icon-btn" onClick={toggleSound} aria-label={sound ? "Sound on" : "Sound off"}>

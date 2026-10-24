@@ -25,7 +25,7 @@ export default function Login() {
           else setError(true);
         }}
       >
-        <div className="result-icon">🌈</div>
+        <img src="/learn/images/brand/logo-mark.svg" alt="" width={72} height={72} style={{ margin: "0 auto" }} />
         <h1>Kidtivity Learn</h1>
         <input
           className="answer-input"
