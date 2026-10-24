@@ -79,11 +79,14 @@ export default function HowItWorks() {
         </p>
       </article>
       <footer className="app-footer">
-        <a href="/learn/">Kidtivity Learn</a>
-        <span aria-hidden="true">·</span>
-        <a href="/">Kidtivity Lab: activities for kids</a>
-        <span aria-hidden="true">·</span>
-        <a href="/about/">About</a>
+        <a className="footer-back" href="/learn/">
+          ← Back to lessons
+        </a>
+        <nav className="footer-links" aria-label="More">
+          <a href="/">Kidtivity Lab: activities for kids</a>
+          <span aria-hidden="true">·</span>
+          <a href="/about/">About</a>
+        </nav>
       </footer>
     </main>
   );

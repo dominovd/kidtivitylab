@@ -581,3 +581,31 @@ h2 { font-size: 20px; }
 .feel-btn .ico { margin-bottom: 2px; }
 .level-list .with-ico { gap: 8px; }
 .hero-cost .ico + .ico { margin-left: -2px; }
+
+/* ---------- footer on every screen ---------- */
+.app-footer { flex-direction: column; align-items: center; gap: 12px; margin: 36px 0 12px; padding-top: 18px; border-top: 2px dashed var(--line); }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 10px; }
+.app-footer a.footer-back { text-decoration: none; color: var(--ink); }
+.footer-back { border: 2px solid var(--line); background: var(--surface); border-radius: 999px; padding: 8px 18px; font-weight: 800; font-size: 15px; color: var(--ink); box-shadow: 0 3px 0 var(--line); }
+.footer-back:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--line); }
+
+/* ---------- phones: two skill cards per row, picture on top ---------- */
+@media (max-width: 520px) {
+  .island .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .island .skill {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "icon icon" "title title" "stars level";
+    justify-items: center;
+    text-align: center;
+    padding: 16px 10px 12px;
+    gap: 6px 4px;
+  }
+  .island .skill .skill-title { font-size: 15px; min-height: 2.4em; display: grid; place-items: center; }
+  .island .skill .stars { justify-self: start; font-size: 15px; }
+  .island .skill .level { justify-self: end; }
+  .island .skill .level i { width: 8px; height: 8px; }
+  .young .island .skill { padding: 16px 10px 12px; }
+  .young .island .skill-icon.skill-pic { width: 60px; height: 60px; }
+  .kid-bar { gap: 8px; font-size: 18px; }
+  .island-head { flex-wrap: wrap; gap: 8px; }
+}

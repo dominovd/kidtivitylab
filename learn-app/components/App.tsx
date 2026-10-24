@@ -147,6 +147,37 @@ export default function App() {
     </header>
   );
 
+  /** Bottom links on every screen except rounds: back to the lessons, the main site, how it works. */
+  const footer = (back: "lessons" | "home" | "top" | "none") => {
+    const pid = "pid" in screen ? screen.pid : undefined;
+    return (
+      <footer className="app-footer">
+        {back === "lessons" && pid && (
+          <button className="footer-back" onClick={() => setScreen({ name: "map", pid })}>
+            ← Back to lessons
+          </button>
+        )}
+        {back === "home" && (
+          <button className="footer-back" onClick={() => setScreen({ name: "home" })}>
+            ← Back to lessons
+          </button>
+        )}
+        {back === "top" && (
+          <button className="footer-back" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+            ↑ Back to top
+          </button>
+        )}
+        <nav className="footer-links" aria-label="More">
+          <a href="/">Kidtivity Lab: activities for kids</a>
+          <span aria-hidden="true">·</span>
+          <a href="/learn/how-it-works/">How the games work</a>
+          <span aria-hidden="true">·</span>
+          <a href="/about/">About</a>
+        </nav>
+      </footer>
+    );
+  };
+
   if (screen.name === "round") {
     const skill = getSkill(screen.skillId)!;
     const p = profile(screen.pid);
@@ -261,6 +292,7 @@ export default function App() {
             {t("toSkills", lang)} →
           </button>
         </section>
+        {footer("lessons")}
       </main>
     );
   }
@@ -357,6 +389,7 @@ export default function App() {
               </div>
             );
           })()}
+        {footer("lessons")}
       </main>
     );
   }
@@ -391,6 +424,7 @@ export default function App() {
       <main className="app">
         {header}
         <Parent lang={lang} initialPid={screen.pid} initialView={screen.view} onBack={() => setScreen({ name: "home" })} />
+        {footer("home")}
       </main>
     );
   }
@@ -451,6 +485,7 @@ export default function App() {
             );
           })}
         </div>
+        {footer("lessons")}
       </main>
     );
   }
@@ -609,6 +644,7 @@ export default function App() {
             </section>
           );
         })}
+        {footer("top")}
       </main>
     );
   }
@@ -665,11 +701,7 @@ export default function App() {
       <button className="parent-link" onClick={() => setScreen({ name: "parent" })}>
         <Ico name="parents" size={24} /> {t("parent", lang)}
       </button>
-      <footer className="app-footer">
-        <a href="/learn/how-it-works/">How it works</a>
-        <span aria-hidden="true">·</span>
-        <a href="/">Kidtivity Lab: activities for kids</a>
-      </footer>
+      {footer("none")}
     </main>
   );
 }

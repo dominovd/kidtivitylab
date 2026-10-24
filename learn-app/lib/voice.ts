@@ -10,11 +10,11 @@ import { numberKey, phraseKey, splitForSpeech } from "./voice-keys";
 
 const BASE = "/learn/audio/en/";
 /** Pause between stitched pieces of one line, and between lines. */
-const GAP_PIECE = 0.09;
-const GAP_LINE = 0.35;
+const GAP_PIECE = 0.15;
+const GAP_LINE = 0.5;
 /** Amplitude treated as silence when trimming clip edges. */
 const SILENCE = 0.012;
-const PAD = 0.025;
+const PAD = 0.04;
 
 let items: Record<string, string> | null = null;
 let loading: Promise<void> | null = null;
