@@ -145,7 +145,7 @@ export default function Round({ ask, size, label, lang, young, sound, voice = tr
         </button>
         <div className="dots" aria-label={`${t("question", lang)} ${index + 1} ${t("of", lang)} ${size}`}>
           {Array.from({ length: size }, (_, i) => (
-            <span key={i} className={i < index ? "done" : i === index ? "now" : ""} />
+            <span key={i} className={results[i] === true ? "right" : results[i] === false ? "wrong" : i === index ? "now" : ""} />
           ))}
         </div>
         <div className="coins"><Ico name="reward-coin" size={24} /> {correct}</div>

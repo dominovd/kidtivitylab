@@ -10,6 +10,7 @@
   --logic: #22b573;
   --good: #2ebd6b;
   --oops: #ffb020;
+  --wrong: #ef5b5b;
   --star: #ffc83d;
   --primary: #ff7a59;
   --shadow: 0 4px 0 rgba(43, 42, 51, 0.08);
@@ -30,6 +31,7 @@
     --logic: #4ade95;
     --good: #4ade80;
     --oops: #fbbf24;
+    --wrong: #f87171;
     --star: #ffd166;
     --primary: #ff8f73;
     --shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
@@ -140,7 +142,8 @@ h2 { font-size: 20px; }
 .round-top { display: flex; align-items: center; gap: 12px; }
 .dots { flex: 1; display: flex; gap: 6px; }
 .dots span { flex: 1; height: 10px; border-radius: 99px; background: var(--line); transition: background 0.2s; }
-.dots .done { background: var(--good); }
+.dots .right { background: var(--good); }
+.dots .wrong { background: var(--wrong); }
 .dots .now { background: var(--primary); }
 .coins { font-size: 18px; font-weight: 900; min-width: 56px; text-align: right; }
 .prompt-row { display: flex; gap: 12px; align-items: center; justify-content: space-between; }
