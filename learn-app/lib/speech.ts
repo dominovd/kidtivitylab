@@ -8,7 +8,7 @@
  * - repeated identical requests within a short window (React dev double effects) are ignored.
  */
 
-import { loadVoice, planLine, playLines, stopVoice } from "./voice";
+import { loadVoice, planLine, playLines, stopVoice, type Piece } from "./voice";
 import { spokenText } from "./voice-keys";
 
 type Part = { text: string; lang: string; rate?: number };
@@ -68,7 +68,7 @@ export function speakSeq(parts: Part[]) {
   const audio = getCtx();
   if (audio && plans.every(Boolean)) {
     if (supported()) window.speechSynthesis.cancel();
-    void playLines(audio, plans as string[][]).then((ok) => {
+    void playLines(audio, plans as Piece[][]).then((ok) => {
       if (!ok) speakBrowser(list);
     });
     return;

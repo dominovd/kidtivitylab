@@ -10,6 +10,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:0:word",
+  "text": "0",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:00:end",
   "text": "00.",
   "previous_text": "4 plus 6 equals"
@@ -18,6 +24,12 @@
   "key": "n:00:mid",
   "text": "00",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:00:word",
+  "text": "00",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:1:00:end",
@@ -30,6 +42,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:1:00:word",
+  "text": "1:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:1:15:end",
   "text": "1:15.",
   "previous_text": "The lesson ended at"
@@ -38,6 +56,12 @@
   "key": "n:1:15:mid",
   "text": "1:15",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:1:15:word",
+  "text": "1:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:1:30:end",
@@ -50,6 +74,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:1:30:word",
+  "text": "1:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:1:45:end",
   "text": "1:45.",
   "previous_text": "The lesson ended at"
@@ -58,6 +88,12 @@
   "key": "n:1:45:mid",
   "text": "1:45",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:1:45:word",
+  "text": "1:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:1:end",
@@ -70,6 +106,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:1:word",
+  "text": "1",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:10:00:end",
   "text": "10:00.",
   "previous_text": "The lesson ended at"
@@ -78,6 +120,12 @@
   "key": "n:10:00:mid",
   "text": "10:00",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:10:00:word",
+  "text": "10:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:10:15:end",
@@ -90,6 +138,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:10:15:word",
+  "text": "10:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:10:30:end",
   "text": "10:30.",
   "previous_text": "The lesson ended at"
@@ -98,6 +152,12 @@
   "key": "n:10:30:mid",
   "text": "10:30",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:10:30:word",
+  "text": "10:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:10:45:end",
@@ -110,6 +170,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:10:45:word",
+  "text": "10:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:10:end",
   "text": "10.",
   "previous_text": "4 plus 6 equals"
@@ -118,6 +184,12 @@
   "key": "n:10:mid",
   "text": "10",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:10:word",
+  "text": "10",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:100:end",
@@ -130,6 +202,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:100:word",
+  "text": "100",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:1000:end",
   "text": "1000.",
   "previous_text": "4 plus 6 equals"
@@ -138,6 +216,12 @@
   "key": "n:1000:mid",
   "text": "1000",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:1000:word",
+  "text": "1000",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:101:end",
@@ -150,6 +234,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:101:word",
+  "text": "101",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:102:end",
   "text": "102.",
   "previous_text": "4 plus 6 equals"
@@ -158,6 +248,12 @@
   "key": "n:102:mid",
   "text": "102",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:102:word",
+  "text": "102",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:103:end",
@@ -170,6 +266,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:103:word",
+  "text": "103",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:104:end",
   "text": "104.",
   "previous_text": "4 plus 6 equals"
@@ -178,6 +280,12 @@
   "key": "n:104:mid",
   "text": "104",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:104:word",
+  "text": "104",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:105:end",
@@ -190,6 +298,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:105:word",
+  "text": "105",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:106:end",
   "text": "106.",
   "previous_text": "4 plus 6 equals"
@@ -198,6 +312,12 @@
   "key": "n:106:mid",
   "text": "106",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:106:word",
+  "text": "106",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:107:end",
@@ -210,6 +330,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:107:word",
+  "text": "107",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:108:end",
   "text": "108.",
   "previous_text": "4 plus 6 equals"
@@ -218,6 +344,12 @@
   "key": "n:108:mid",
   "text": "108",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:108:word",
+  "text": "108",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:109:end",
@@ -230,6 +362,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:109:word",
+  "text": "109",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:11:00:end",
   "text": "11:00.",
   "previous_text": "The lesson ended at"
@@ -238,6 +376,12 @@
   "key": "n:11:00:mid",
   "text": "11:00",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:11:00:word",
+  "text": "11:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:11:15:end",
@@ -250,6 +394,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:11:15:word",
+  "text": "11:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:11:30:end",
   "text": "11:30.",
   "previous_text": "The lesson ended at"
@@ -258,6 +408,12 @@
   "key": "n:11:30:mid",
   "text": "11:30",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:11:30:word",
+  "text": "11:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:11:45:end",
@@ -270,6 +426,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:11:45:word",
+  "text": "11:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:11:end",
   "text": "11.",
   "previous_text": "4 plus 6 equals"
@@ -278,6 +440,12 @@
   "key": "n:11:mid",
   "text": "11",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:11:word",
+  "text": "11",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:110:end",
@@ -290,6 +458,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:110:word",
+  "text": "110",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:111:end",
   "text": "111.",
   "previous_text": "4 plus 6 equals"
@@ -298,6 +472,12 @@
   "key": "n:111:mid",
   "text": "111",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:111:word",
+  "text": "111",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:112:end",
@@ -310,6 +490,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:112:word",
+  "text": "112",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:113:end",
   "text": "113.",
   "previous_text": "4 plus 6 equals"
@@ -318,6 +504,12 @@
   "key": "n:113:mid",
   "text": "113",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:113:word",
+  "text": "113",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:114:end",
@@ -330,6 +522,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:114:word",
+  "text": "114",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:115:end",
   "text": "115.",
   "previous_text": "4 plus 6 equals"
@@ -338,6 +536,12 @@
   "key": "n:115:mid",
   "text": "115",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:115:word",
+  "text": "115",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:116:end",
@@ -350,6 +554,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:116:word",
+  "text": "116",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:117:end",
   "text": "117.",
   "previous_text": "4 plus 6 equals"
@@ -358,6 +568,12 @@
   "key": "n:117:mid",
   "text": "117",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:117:word",
+  "text": "117",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:118:end",
@@ -370,6 +586,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:118:word",
+  "text": "118",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:119:end",
   "text": "119.",
   "previous_text": "4 plus 6 equals"
@@ -378,6 +600,12 @@
   "key": "n:119:mid",
   "text": "119",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:119:word",
+  "text": "119",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:12:00:end",
@@ -390,6 +618,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:12:00:word",
+  "text": "12:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:12:15:end",
   "text": "12:15.",
   "previous_text": "The lesson ended at"
@@ -398,6 +632,12 @@
   "key": "n:12:15:mid",
   "text": "12:15",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:12:15:word",
+  "text": "12:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:12:30:end",
@@ -410,6 +650,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:12:30:word",
+  "text": "12:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:12:45:end",
   "text": "12:45.",
   "previous_text": "The lesson ended at"
@@ -418,6 +664,12 @@
   "key": "n:12:45:mid",
   "text": "12:45",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:12:45:word",
+  "text": "12:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:12:end",
@@ -430,6 +682,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:12:word",
+  "text": "12",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:120:end",
   "text": "120.",
   "previous_text": "4 plus 6 equals"
@@ -438,6 +696,12 @@
   "key": "n:120:mid",
   "text": "120",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:120:word",
+  "text": "120",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:125:end",
@@ -450,6 +714,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:125:word",
+  "text": "125",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:13:end",
   "text": "13.",
   "previous_text": "4 plus 6 equals"
@@ -458,6 +728,12 @@
   "key": "n:13:mid",
   "text": "13",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:13:word",
+  "text": "13",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:130:end",
@@ -470,6 +746,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:130:word",
+  "text": "130",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:135:end",
   "text": "135.",
   "previous_text": "4 plus 6 equals"
@@ -478,6 +760,12 @@
   "key": "n:135:mid",
   "text": "135",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:135:word",
+  "text": "135",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:14:end",
@@ -490,6 +778,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:14:word",
+  "text": "14",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:140:end",
   "text": "140.",
   "previous_text": "4 plus 6 equals"
@@ -498,6 +792,12 @@
   "key": "n:140:mid",
   "text": "140",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:140:word",
+  "text": "140",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:145:end",
@@ -510,6 +810,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:145:word",
+  "text": "145",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:15:end",
   "text": "15.",
   "previous_text": "4 plus 6 equals"
@@ -518,6 +824,12 @@
   "key": "n:15:mid",
   "text": "15",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:15:word",
+  "text": "15",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:150:end",
@@ -530,6 +842,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:150:word",
+  "text": "150",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:155:end",
   "text": "155.",
   "previous_text": "4 plus 6 equals"
@@ -538,6 +856,12 @@
   "key": "n:155:mid",
   "text": "155",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:155:word",
+  "text": "155",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:16:end",
@@ -550,6 +874,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:16:word",
+  "text": "16",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:160:end",
   "text": "160.",
   "previous_text": "4 plus 6 equals"
@@ -558,6 +888,12 @@
   "key": "n:160:mid",
   "text": "160",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:160:word",
+  "text": "160",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:165:end",
@@ -570,6 +906,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:165:word",
+  "text": "165",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:17:end",
   "text": "17.",
   "previous_text": "4 plus 6 equals"
@@ -578,6 +920,12 @@
   "key": "n:17:mid",
   "text": "17",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:17:word",
+  "text": "17",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:170:end",
@@ -590,6 +938,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:170:word",
+  "text": "170",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:175:end",
   "text": "175.",
   "previous_text": "4 plus 6 equals"
@@ -598,6 +952,12 @@
   "key": "n:175:mid",
   "text": "175",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:175:word",
+  "text": "175",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:18:end",
@@ -610,6 +970,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:18:word",
+  "text": "18",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:180:end",
   "text": "180.",
   "previous_text": "4 plus 6 equals"
@@ -618,6 +984,12 @@
   "key": "n:180:mid",
   "text": "180",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:180:word",
+  "text": "180",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:185:end",
@@ -630,6 +1002,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:185:word",
+  "text": "185",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:19:end",
   "text": "19.",
   "previous_text": "4 plus 6 equals"
@@ -638,6 +1016,12 @@
   "key": "n:19:mid",
   "text": "19",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:19:word",
+  "text": "19",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:190:end",
@@ -650,6 +1034,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:190:word",
+  "text": "190",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:195:end",
   "text": "195.",
   "previous_text": "4 plus 6 equals"
@@ -658,6 +1048,12 @@
   "key": "n:195:mid",
   "text": "195",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:195:word",
+  "text": "195",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:2:00:end",
@@ -670,6 +1066,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:2:00:word",
+  "text": "2:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:2:15:end",
   "text": "2:15.",
   "previous_text": "The lesson ended at"
@@ -678,6 +1080,12 @@
   "key": "n:2:15:mid",
   "text": "2:15",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:2:15:word",
+  "text": "2:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:2:30:end",
@@ -690,6 +1098,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:2:30:word",
+  "text": "2:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:2:45:end",
   "text": "2:45.",
   "previous_text": "The lesson ended at"
@@ -698,6 +1112,12 @@
   "key": "n:2:45:mid",
   "text": "2:45",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:2:45:word",
+  "text": "2:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:2:end",
@@ -710,6 +1130,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:2:word",
+  "text": "2",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:20:end",
   "text": "20.",
   "previous_text": "4 plus 6 equals"
@@ -718,6 +1144,12 @@
   "key": "n:20:mid",
   "text": "20",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:20:word",
+  "text": "20",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:200:end",
@@ -730,6 +1162,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:200:word",
+  "text": "200",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:205:end",
   "text": "205.",
   "previous_text": "4 plus 6 equals"
@@ -738,6 +1176,12 @@
   "key": "n:205:mid",
   "text": "205",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:205:word",
+  "text": "205",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:21:end",
@@ -750,6 +1194,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:21:word",
+  "text": "21",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:210:end",
   "text": "210.",
   "previous_text": "4 plus 6 equals"
@@ -758,6 +1208,12 @@
   "key": "n:210:mid",
   "text": "210",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:210:word",
+  "text": "210",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:215:end",
@@ -770,6 +1226,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:215:word",
+  "text": "215",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:22:end",
   "text": "22.",
   "previous_text": "4 plus 6 equals"
@@ -778,6 +1240,12 @@
   "key": "n:22:mid",
   "text": "22",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:22:word",
+  "text": "22",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:220:end",
@@ -790,6 +1258,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:220:word",
+  "text": "220",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:225:end",
   "text": "225.",
   "previous_text": "4 plus 6 equals"
@@ -798,6 +1272,12 @@
   "key": "n:225:mid",
   "text": "225",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:225:word",
+  "text": "225",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:23:end",
@@ -810,6 +1290,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:23:word",
+  "text": "23",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:230:end",
   "text": "230.",
   "previous_text": "4 plus 6 equals"
@@ -818,6 +1304,12 @@
   "key": "n:230:mid",
   "text": "230",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:230:word",
+  "text": "230",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:235:end",
@@ -830,6 +1322,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:235:word",
+  "text": "235",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:24:end",
   "text": "24.",
   "previous_text": "4 plus 6 equals"
@@ -838,6 +1336,12 @@
   "key": "n:24:mid",
   "text": "24",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:24:word",
+  "text": "24",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:240:end",
@@ -850,6 +1354,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:240:word",
+  "text": "240",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:245:end",
   "text": "245.",
   "previous_text": "4 plus 6 equals"
@@ -858,6 +1368,12 @@
   "key": "n:245:mid",
   "text": "245",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:245:word",
+  "text": "245",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:25:end",
@@ -870,6 +1386,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:25:word",
+  "text": "25",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:250:end",
   "text": "250.",
   "previous_text": "4 plus 6 equals"
@@ -878,6 +1400,12 @@
   "key": "n:250:mid",
   "text": "250",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:250:word",
+  "text": "250",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:255:end",
@@ -890,6 +1418,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:255:word",
+  "text": "255",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:26:end",
   "text": "26.",
   "previous_text": "4 plus 6 equals"
@@ -898,6 +1432,12 @@
   "key": "n:26:mid",
   "text": "26",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:26:word",
+  "text": "26",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:260:end",
@@ -910,6 +1450,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:260:word",
+  "text": "260",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:265:end",
   "text": "265.",
   "previous_text": "4 plus 6 equals"
@@ -918,6 +1464,12 @@
   "key": "n:265:mid",
   "text": "265",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:265:word",
+  "text": "265",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:27:end",
@@ -930,6 +1482,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:27:word",
+  "text": "27",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:270:end",
   "text": "270.",
   "previous_text": "4 plus 6 equals"
@@ -938,6 +1496,12 @@
   "key": "n:270:mid",
   "text": "270",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:270:word",
+  "text": "270",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:275:end",
@@ -950,6 +1514,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:275:word",
+  "text": "275",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:28:end",
   "text": "28.",
   "previous_text": "4 plus 6 equals"
@@ -958,6 +1528,12 @@
   "key": "n:28:mid",
   "text": "28",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:28:word",
+  "text": "28",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:280:end",
@@ -970,6 +1546,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:280:word",
+  "text": "280",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:285:end",
   "text": "285.",
   "previous_text": "4 plus 6 equals"
@@ -978,6 +1560,12 @@
   "key": "n:285:mid",
   "text": "285",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:285:word",
+  "text": "285",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:29:end",
@@ -990,6 +1578,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:29:word",
+  "text": "29",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:290:end",
   "text": "290.",
   "previous_text": "4 plus 6 equals"
@@ -998,6 +1592,12 @@
   "key": "n:290:mid",
   "text": "290",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:290:word",
+  "text": "290",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:295:end",
@@ -1010,6 +1610,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:295:word",
+  "text": "295",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:3:00:end",
   "text": "3:00.",
   "previous_text": "The lesson ended at"
@@ -1018,6 +1624,12 @@
   "key": "n:3:00:mid",
   "text": "3:00",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:3:00:word",
+  "text": "3:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:3:15:end",
@@ -1030,6 +1642,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:3:15:word",
+  "text": "3:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:3:30:end",
   "text": "3:30.",
   "previous_text": "The lesson ended at"
@@ -1038,6 +1656,12 @@
   "key": "n:3:30:mid",
   "text": "3:30",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:3:30:word",
+  "text": "3:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:3:45:end",
@@ -1050,6 +1674,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:3:45:word",
+  "text": "3:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:3:end",
   "text": "3.",
   "previous_text": "4 plus 6 equals"
@@ -1058,6 +1688,12 @@
   "key": "n:3:mid",
   "text": "3",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:3:word",
+  "text": "3",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:30:end",
@@ -1070,6 +1706,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:30:word",
+  "text": "30",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:300:end",
   "text": "300.",
   "previous_text": "4 plus 6 equals"
@@ -1078,6 +1720,12 @@
   "key": "n:300:mid",
   "text": "300",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:300:word",
+  "text": "300",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:305:end",
@@ -1090,6 +1738,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:305:word",
+  "text": "305",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:31:end",
   "text": "31.",
   "previous_text": "4 plus 6 equals"
@@ -1098,6 +1752,12 @@
   "key": "n:31:mid",
   "text": "31",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:31:word",
+  "text": "31",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:310:end",
@@ -1110,6 +1770,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:310:word",
+  "text": "310",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:315:end",
   "text": "315.",
   "previous_text": "4 plus 6 equals"
@@ -1118,6 +1784,12 @@
   "key": "n:315:mid",
   "text": "315",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:315:word",
+  "text": "315",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:32:end",
@@ -1130,6 +1802,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:32:word",
+  "text": "32",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:320:end",
   "text": "320.",
   "previous_text": "4 plus 6 equals"
@@ -1138,6 +1816,12 @@
   "key": "n:320:mid",
   "text": "320",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:320:word",
+  "text": "320",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:325:end",
@@ -1150,6 +1834,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:325:word",
+  "text": "325",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:33:end",
   "text": "33.",
   "previous_text": "4 plus 6 equals"
@@ -1158,6 +1848,12 @@
   "key": "n:33:mid",
   "text": "33",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:33:word",
+  "text": "33",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:330:end",
@@ -1170,6 +1866,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:330:word",
+  "text": "330",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:335:end",
   "text": "335.",
   "previous_text": "4 plus 6 equals"
@@ -1178,6 +1880,12 @@
   "key": "n:335:mid",
   "text": "335",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:335:word",
+  "text": "335",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:34:end",
@@ -1190,6 +1898,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:34:word",
+  "text": "34",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:340:end",
   "text": "340.",
   "previous_text": "4 plus 6 equals"
@@ -1198,6 +1912,12 @@
   "key": "n:340:mid",
   "text": "340",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:340:word",
+  "text": "340",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:345:end",
@@ -1210,6 +1930,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:345:word",
+  "text": "345",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:35:end",
   "text": "35.",
   "previous_text": "4 plus 6 equals"
@@ -1218,6 +1944,12 @@
   "key": "n:35:mid",
   "text": "35",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:35:word",
+  "text": "35",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:350:end",
@@ -1230,6 +1962,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:350:word",
+  "text": "350",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:355:end",
   "text": "355.",
   "previous_text": "4 plus 6 equals"
@@ -1238,6 +1976,12 @@
   "key": "n:355:mid",
   "text": "355",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:355:word",
+  "text": "355",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:36:end",
@@ -1250,6 +1994,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:36:word",
+  "text": "36",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:360:end",
   "text": "360.",
   "previous_text": "4 plus 6 equals"
@@ -1258,6 +2008,12 @@
   "key": "n:360:mid",
   "text": "360",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:360:word",
+  "text": "360",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:365:end",
@@ -1270,6 +2026,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:365:word",
+  "text": "365",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:37:end",
   "text": "37.",
   "previous_text": "4 plus 6 equals"
@@ -1278,6 +2040,12 @@
   "key": "n:37:mid",
   "text": "37",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:37:word",
+  "text": "37",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:370:end",
@@ -1290,6 +2058,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:370:word",
+  "text": "370",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:375:end",
   "text": "375.",
   "previous_text": "4 plus 6 equals"
@@ -1298,6 +2072,12 @@
   "key": "n:375:mid",
   "text": "375",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:375:word",
+  "text": "375",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:38:end",
@@ -1310,6 +2090,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:38:word",
+  "text": "38",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:380:end",
   "text": "380.",
   "previous_text": "4 plus 6 equals"
@@ -1318,6 +2104,12 @@
   "key": "n:380:mid",
   "text": "380",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:380:word",
+  "text": "380",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:385:end",
@@ -1330,6 +2122,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:385:word",
+  "text": "385",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:39:end",
   "text": "39.",
   "previous_text": "4 plus 6 equals"
@@ -1338,6 +2136,12 @@
   "key": "n:39:mid",
   "text": "39",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:39:word",
+  "text": "39",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:390:end",
@@ -1350,6 +2154,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:390:word",
+  "text": "390",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:395:end",
   "text": "395.",
   "previous_text": "4 plus 6 equals"
@@ -1358,6 +2168,12 @@
   "key": "n:395:mid",
   "text": "395",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:395:word",
+  "text": "395",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:4:00:end",
@@ -1370,6 +2186,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:4:00:word",
+  "text": "4:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:4:15:end",
   "text": "4:15.",
   "previous_text": "The lesson ended at"
@@ -1378,6 +2200,12 @@
   "key": "n:4:15:mid",
   "text": "4:15",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:4:15:word",
+  "text": "4:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:4:30:end",
@@ -1390,6 +2218,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:4:30:word",
+  "text": "4:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:4:45:end",
   "text": "4:45.",
   "previous_text": "The lesson ended at"
@@ -1398,6 +2232,12 @@
   "key": "n:4:45:mid",
   "text": "4:45",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:4:45:word",
+  "text": "4:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:4:end",
@@ -1410,6 +2250,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:4:word",
+  "text": "4",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:40:end",
   "text": "40.",
   "previous_text": "4 plus 6 equals"
@@ -1418,6 +2264,12 @@
   "key": "n:40:mid",
   "text": "40",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:40:word",
+  "text": "40",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:400:end",
@@ -1430,6 +2282,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:400:word",
+  "text": "400",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:405:end",
   "text": "405.",
   "previous_text": "4 plus 6 equals"
@@ -1438,6 +2296,12 @@
   "key": "n:405:mid",
   "text": "405",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:405:word",
+  "text": "405",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:41:end",
@@ -1450,6 +2314,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:41:word",
+  "text": "41",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:410:end",
   "text": "410.",
   "previous_text": "4 plus 6 equals"
@@ -1458,6 +2328,12 @@
   "key": "n:410:mid",
   "text": "410",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:410:word",
+  "text": "410",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:415:end",
@@ -1470,6 +2346,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:415:word",
+  "text": "415",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:42:end",
   "text": "42.",
   "previous_text": "4 plus 6 equals"
@@ -1478,6 +2360,12 @@
   "key": "n:42:mid",
   "text": "42",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:42:word",
+  "text": "42",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:420:end",
@@ -1490,6 +2378,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:420:word",
+  "text": "420",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:425:end",
   "text": "425.",
   "previous_text": "4 plus 6 equals"
@@ -1498,6 +2392,12 @@
   "key": "n:425:mid",
   "text": "425",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:425:word",
+  "text": "425",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:43:end",
@@ -1510,6 +2410,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:43:word",
+  "text": "43",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:430:end",
   "text": "430.",
   "previous_text": "4 plus 6 equals"
@@ -1518,6 +2424,12 @@
   "key": "n:430:mid",
   "text": "430",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:430:word",
+  "text": "430",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:435:end",
@@ -1530,6 +2442,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:435:word",
+  "text": "435",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:44:end",
   "text": "44.",
   "previous_text": "4 plus 6 equals"
@@ -1538,6 +2456,12 @@
   "key": "n:44:mid",
   "text": "44",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:44:word",
+  "text": "44",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:440:end",
@@ -1550,6 +2474,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:440:word",
+  "text": "440",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:445:end",
   "text": "445.",
   "previous_text": "4 plus 6 equals"
@@ -1558,6 +2488,12 @@
   "key": "n:445:mid",
   "text": "445",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:445:word",
+  "text": "445",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:45:end",
@@ -1570,6 +2506,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:45:word",
+  "text": "45",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:450:end",
   "text": "450.",
   "previous_text": "4 plus 6 equals"
@@ -1578,6 +2520,12 @@
   "key": "n:450:mid",
   "text": "450",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:450:word",
+  "text": "450",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:455:end",
@@ -1590,6 +2538,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:455:word",
+  "text": "455",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:46:end",
   "text": "46.",
   "previous_text": "4 plus 6 equals"
@@ -1598,6 +2552,12 @@
   "key": "n:46:mid",
   "text": "46",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:46:word",
+  "text": "46",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:460:end",
@@ -1610,6 +2570,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:460:word",
+  "text": "460",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:465:end",
   "text": "465.",
   "previous_text": "4 plus 6 equals"
@@ -1618,6 +2584,12 @@
   "key": "n:465:mid",
   "text": "465",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:465:word",
+  "text": "465",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:47:end",
@@ -1630,6 +2602,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:47:word",
+  "text": "47",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:470:end",
   "text": "470.",
   "previous_text": "4 plus 6 equals"
@@ -1638,6 +2616,12 @@
   "key": "n:470:mid",
   "text": "470",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:470:word",
+  "text": "470",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:475:end",
@@ -1650,6 +2634,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:475:word",
+  "text": "475",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:48:end",
   "text": "48.",
   "previous_text": "4 plus 6 equals"
@@ -1658,6 +2648,12 @@
   "key": "n:48:mid",
   "text": "48",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:48:word",
+  "text": "48",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:480:end",
@@ -1670,6 +2666,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:480:word",
+  "text": "480",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:485:end",
   "text": "485.",
   "previous_text": "4 plus 6 equals"
@@ -1678,6 +2680,12 @@
   "key": "n:485:mid",
   "text": "485",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:485:word",
+  "text": "485",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:49:end",
@@ -1690,6 +2698,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:49:word",
+  "text": "49",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:490:end",
   "text": "490.",
   "previous_text": "4 plus 6 equals"
@@ -1698,6 +2712,12 @@
   "key": "n:490:mid",
   "text": "490",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:490:word",
+  "text": "490",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:495:end",
@@ -1710,6 +2730,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:495:word",
+  "text": "495",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:5:00:end",
   "text": "5:00.",
   "previous_text": "The lesson ended at"
@@ -1718,6 +2744,12 @@
   "key": "n:5:00:mid",
   "text": "5:00",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:5:00:word",
+  "text": "5:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:5:15:end",
@@ -1730,6 +2762,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:5:15:word",
+  "text": "5:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:5:30:end",
   "text": "5:30.",
   "previous_text": "The lesson ended at"
@@ -1738,6 +2776,12 @@
   "key": "n:5:30:mid",
   "text": "5:30",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:5:30:word",
+  "text": "5:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:5:45:end",
@@ -1750,6 +2794,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:5:45:word",
+  "text": "5:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:5:end",
   "text": "5.",
   "previous_text": "4 plus 6 equals"
@@ -1758,6 +2808,12 @@
   "key": "n:5:mid",
   "text": "5",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:5:word",
+  "text": "5",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:50:end",
@@ -1770,6 +2826,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:50:word",
+  "text": "50",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:500:end",
   "text": "500.",
   "previous_text": "4 plus 6 equals"
@@ -1778,6 +2840,12 @@
   "key": "n:500:mid",
   "text": "500",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:500:word",
+  "text": "500",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:51:end",
@@ -1790,6 +2858,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:51:word",
+  "text": "51",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:510:end",
   "text": "510.",
   "previous_text": "4 plus 6 equals"
@@ -1798,6 +2872,12 @@
   "key": "n:510:mid",
   "text": "510",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:510:word",
+  "text": "510",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:52:end",
@@ -1810,6 +2890,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:52:word",
+  "text": "52",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:520:end",
   "text": "520.",
   "previous_text": "4 plus 6 equals"
@@ -1818,6 +2904,12 @@
   "key": "n:520:mid",
   "text": "520",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:520:word",
+  "text": "520",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:53:end",
@@ -1830,6 +2922,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:53:word",
+  "text": "53",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:530:end",
   "text": "530.",
   "previous_text": "4 plus 6 equals"
@@ -1838,6 +2936,12 @@
   "key": "n:530:mid",
   "text": "530",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:530:word",
+  "text": "530",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:54:end",
@@ -1850,6 +2954,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:54:word",
+  "text": "54",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:540:end",
   "text": "540.",
   "previous_text": "4 plus 6 equals"
@@ -1858,6 +2968,12 @@
   "key": "n:540:mid",
   "text": "540",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:540:word",
+  "text": "540",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:55:end",
@@ -1870,6 +2986,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:55:word",
+  "text": "55",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:550:end",
   "text": "550.",
   "previous_text": "4 plus 6 equals"
@@ -1878,6 +3000,12 @@
   "key": "n:550:mid",
   "text": "550",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:550:word",
+  "text": "550",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:56:end",
@@ -1890,6 +3018,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:56:word",
+  "text": "56",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:560:end",
   "text": "560.",
   "previous_text": "4 plus 6 equals"
@@ -1898,6 +3032,12 @@
   "key": "n:560:mid",
   "text": "560",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:560:word",
+  "text": "560",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:57:end",
@@ -1910,6 +3050,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:57:word",
+  "text": "57",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:570:end",
   "text": "570.",
   "previous_text": "4 plus 6 equals"
@@ -1918,6 +3064,12 @@
   "key": "n:570:mid",
   "text": "570",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:570:word",
+  "text": "570",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:58:end",
@@ -1930,6 +3082,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:58:word",
+  "text": "58",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:580:end",
   "text": "580.",
   "previous_text": "4 plus 6 equals"
@@ -1938,6 +3096,12 @@
   "key": "n:580:mid",
   "text": "580",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:580:word",
+  "text": "580",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:59:end",
@@ -1950,6 +3114,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:59:word",
+  "text": "59",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:590:end",
   "text": "590.",
   "previous_text": "4 plus 6 equals"
@@ -1958,6 +3128,12 @@
   "key": "n:590:mid",
   "text": "590",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:590:word",
+  "text": "590",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:6:00:end",
@@ -1970,6 +3146,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:6:00:word",
+  "text": "6:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:6:15:end",
   "text": "6:15.",
   "previous_text": "The lesson ended at"
@@ -1978,6 +3160,12 @@
   "key": "n:6:15:mid",
   "text": "6:15",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:6:15:word",
+  "text": "6:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:6:30:end",
@@ -1990,6 +3178,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:6:30:word",
+  "text": "6:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:6:45:end",
   "text": "6:45.",
   "previous_text": "The lesson ended at"
@@ -1998,6 +3192,12 @@
   "key": "n:6:45:mid",
   "text": "6:45",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:6:45:word",
+  "text": "6:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:6:end",
@@ -2010,6 +3210,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:6:word",
+  "text": "6",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:60:end",
   "text": "60.",
   "previous_text": "4 plus 6 equals"
@@ -2018,6 +3224,12 @@
   "key": "n:60:mid",
   "text": "60",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:60:word",
+  "text": "60",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:600:end",
@@ -2030,6 +3242,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:600:word",
+  "text": "600",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:61:end",
   "text": "61.",
   "previous_text": "4 plus 6 equals"
@@ -2038,6 +3256,12 @@
   "key": "n:61:mid",
   "text": "61",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:61:word",
+  "text": "61",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:610:end",
@@ -2050,6 +3274,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:610:word",
+  "text": "610",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:62:end",
   "text": "62.",
   "previous_text": "4 plus 6 equals"
@@ -2058,6 +3288,12 @@
   "key": "n:62:mid",
   "text": "62",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:62:word",
+  "text": "62",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:620:end",
@@ -2070,6 +3306,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:620:word",
+  "text": "620",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:63:end",
   "text": "63.",
   "previous_text": "4 plus 6 equals"
@@ -2078,6 +3320,12 @@
   "key": "n:63:mid",
   "text": "63",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:63:word",
+  "text": "63",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:630:end",
@@ -2090,6 +3338,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:630:word",
+  "text": "630",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:64:end",
   "text": "64.",
   "previous_text": "4 plus 6 equals"
@@ -2098,6 +3352,12 @@
   "key": "n:64:mid",
   "text": "64",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:64:word",
+  "text": "64",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:640:end",
@@ -2110,6 +3370,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:640:word",
+  "text": "640",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:65:end",
   "text": "65.",
   "previous_text": "4 plus 6 equals"
@@ -2118,6 +3384,12 @@
   "key": "n:65:mid",
   "text": "65",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:65:word",
+  "text": "65",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:650:end",
@@ -2130,6 +3402,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:650:word",
+  "text": "650",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:66:end",
   "text": "66.",
   "previous_text": "4 plus 6 equals"
@@ -2138,6 +3416,12 @@
   "key": "n:66:mid",
   "text": "66",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:66:word",
+  "text": "66",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:660:end",
@@ -2150,6 +3434,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:660:word",
+  "text": "660",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:67:end",
   "text": "67.",
   "previous_text": "4 plus 6 equals"
@@ -2158,6 +3448,12 @@
   "key": "n:67:mid",
   "text": "67",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:67:word",
+  "text": "67",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:670:end",
@@ -2170,6 +3466,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:670:word",
+  "text": "670",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:68:end",
   "text": "68.",
   "previous_text": "4 plus 6 equals"
@@ -2178,6 +3480,12 @@
   "key": "n:68:mid",
   "text": "68",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:68:word",
+  "text": "68",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:680:end",
@@ -2190,6 +3498,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:680:word",
+  "text": "680",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:69:end",
   "text": "69.",
   "previous_text": "4 plus 6 equals"
@@ -2198,6 +3512,12 @@
   "key": "n:69:mid",
   "text": "69",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:69:word",
+  "text": "69",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:690:end",
@@ -2210,6 +3530,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:690:word",
+  "text": "690",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:7:00:end",
   "text": "7:00.",
   "previous_text": "The lesson ended at"
@@ -2218,6 +3544,12 @@
   "key": "n:7:00:mid",
   "text": "7:00",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:7:00:word",
+  "text": "7:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:7:15:end",
@@ -2230,6 +3562,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:7:15:word",
+  "text": "7:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:7:30:end",
   "text": "7:30.",
   "previous_text": "The lesson ended at"
@@ -2238,6 +3576,12 @@
   "key": "n:7:30:mid",
   "text": "7:30",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:7:30:word",
+  "text": "7:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:7:45:end",
@@ -2250,6 +3594,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:7:45:word",
+  "text": "7:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:7:end",
   "text": "7.",
   "previous_text": "4 plus 6 equals"
@@ -2258,6 +3608,12 @@
   "key": "n:7:mid",
   "text": "7",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:7:word",
+  "text": "7",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:70:end",
@@ -2270,6 +3626,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:70:word",
+  "text": "70",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:700:end",
   "text": "700.",
   "previous_text": "4 plus 6 equals"
@@ -2278,6 +3640,12 @@
   "key": "n:700:mid",
   "text": "700",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:700:word",
+  "text": "700",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:71:end",
@@ -2290,6 +3658,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:71:word",
+  "text": "71",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:710:end",
   "text": "710.",
   "previous_text": "4 plus 6 equals"
@@ -2298,6 +3672,12 @@
   "key": "n:710:mid",
   "text": "710",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:710:word",
+  "text": "710",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:72:end",
@@ -2310,6 +3690,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:72:word",
+  "text": "72",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:720:end",
   "text": "720.",
   "previous_text": "4 plus 6 equals"
@@ -2318,6 +3704,12 @@
   "key": "n:720:mid",
   "text": "720",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:720:word",
+  "text": "720",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:73:end",
@@ -2330,6 +3722,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:73:word",
+  "text": "73",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:730:end",
   "text": "730.",
   "previous_text": "4 plus 6 equals"
@@ -2338,6 +3736,12 @@
   "key": "n:730:mid",
   "text": "730",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:730:word",
+  "text": "730",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:74:end",
@@ -2350,6 +3754,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:74:word",
+  "text": "74",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:740:end",
   "text": "740.",
   "previous_text": "4 plus 6 equals"
@@ -2358,6 +3768,12 @@
   "key": "n:740:mid",
   "text": "740",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:740:word",
+  "text": "740",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:75:end",
@@ -2370,6 +3786,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:75:word",
+  "text": "75",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:750:end",
   "text": "750.",
   "previous_text": "4 plus 6 equals"
@@ -2378,6 +3800,12 @@
   "key": "n:750:mid",
   "text": "750",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:750:word",
+  "text": "750",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:76:end",
@@ -2390,6 +3818,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:76:word",
+  "text": "76",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:760:end",
   "text": "760.",
   "previous_text": "4 plus 6 equals"
@@ -2398,6 +3832,12 @@
   "key": "n:760:mid",
   "text": "760",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:760:word",
+  "text": "760",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:77:end",
@@ -2410,6 +3850,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:77:word",
+  "text": "77",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:770:end",
   "text": "770.",
   "previous_text": "4 plus 6 equals"
@@ -2418,6 +3864,12 @@
   "key": "n:770:mid",
   "text": "770",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:770:word",
+  "text": "770",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:78:end",
@@ -2430,6 +3882,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:78:word",
+  "text": "78",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:780:end",
   "text": "780.",
   "previous_text": "4 plus 6 equals"
@@ -2438,6 +3896,12 @@
   "key": "n:780:mid",
   "text": "780",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:780:word",
+  "text": "780",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:79:end",
@@ -2450,6 +3914,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:79:word",
+  "text": "79",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:790:end",
   "text": "790.",
   "previous_text": "4 plus 6 equals"
@@ -2458,6 +3928,12 @@
   "key": "n:790:mid",
   "text": "790",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:790:word",
+  "text": "790",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:8:00:end",
@@ -2470,6 +3946,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:8:00:word",
+  "text": "8:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:8:15:end",
   "text": "8:15.",
   "previous_text": "The lesson ended at"
@@ -2478,6 +3960,12 @@
   "key": "n:8:15:mid",
   "text": "8:15",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:8:15:word",
+  "text": "8:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:8:30:end",
@@ -2490,6 +3978,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:8:30:word",
+  "text": "8:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:8:45:end",
   "text": "8:45.",
   "previous_text": "The lesson ended at"
@@ -2498,6 +3992,12 @@
   "key": "n:8:45:mid",
   "text": "8:45",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:8:45:word",
+  "text": "8:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:8:end",
@@ -2510,6 +4010,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:8:word",
+  "text": "8",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:80:end",
   "text": "80.",
   "previous_text": "4 plus 6 equals"
@@ -2518,6 +4024,12 @@
   "key": "n:80:mid",
   "text": "80",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:80:word",
+  "text": "80",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:800:end",
@@ -2530,6 +4042,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:800:word",
+  "text": "800",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:81:end",
   "text": "81.",
   "previous_text": "4 plus 6 equals"
@@ -2538,6 +4056,12 @@
   "key": "n:81:mid",
   "text": "81",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:81:word",
+  "text": "81",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:810:end",
@@ -2550,6 +4074,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:810:word",
+  "text": "810",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:82:end",
   "text": "82.",
   "previous_text": "4 plus 6 equals"
@@ -2558,6 +4088,12 @@
   "key": "n:82:mid",
   "text": "82",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:82:word",
+  "text": "82",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:820:end",
@@ -2570,6 +4106,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:820:word",
+  "text": "820",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:83:end",
   "text": "83.",
   "previous_text": "4 plus 6 equals"
@@ -2578,6 +4120,12 @@
   "key": "n:83:mid",
   "text": "83",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:83:word",
+  "text": "83",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:830:end",
@@ -2590,6 +4138,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:830:word",
+  "text": "830",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:84:end",
   "text": "84.",
   "previous_text": "4 plus 6 equals"
@@ -2598,6 +4152,12 @@
   "key": "n:84:mid",
   "text": "84",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:84:word",
+  "text": "84",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:840:end",
@@ -2610,6 +4170,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:840:word",
+  "text": "840",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:85:end",
   "text": "85.",
   "previous_text": "4 plus 6 equals"
@@ -2618,6 +4184,12 @@
   "key": "n:85:mid",
   "text": "85",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:85:word",
+  "text": "85",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:850:end",
@@ -2630,6 +4202,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:850:word",
+  "text": "850",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:86:end",
   "text": "86.",
   "previous_text": "4 plus 6 equals"
@@ -2638,6 +4216,12 @@
   "key": "n:86:mid",
   "text": "86",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:86:word",
+  "text": "86",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:860:end",
@@ -2650,6 +4234,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:860:word",
+  "text": "860",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:87:end",
   "text": "87.",
   "previous_text": "4 plus 6 equals"
@@ -2658,6 +4248,12 @@
   "key": "n:87:mid",
   "text": "87",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:87:word",
+  "text": "87",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:870:end",
@@ -2670,6 +4266,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:870:word",
+  "text": "870",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:88:end",
   "text": "88.",
   "previous_text": "4 plus 6 equals"
@@ -2678,6 +4280,12 @@
   "key": "n:88:mid",
   "text": "88",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:88:word",
+  "text": "88",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:880:end",
@@ -2690,6 +4298,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:880:word",
+  "text": "880",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:89:end",
   "text": "89.",
   "previous_text": "4 plus 6 equals"
@@ -2698,6 +4312,12 @@
   "key": "n:89:mid",
   "text": "89",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:89:word",
+  "text": "89",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:890:end",
@@ -2710,6 +4330,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:890:word",
+  "text": "890",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:9:00:end",
   "text": "9:00.",
   "previous_text": "The lesson ended at"
@@ -2718,6 +4344,12 @@
   "key": "n:9:00:mid",
   "text": "9:00",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:9:00:word",
+  "text": "9:00",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:9:15:end",
@@ -2730,6 +4362,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:9:15:word",
+  "text": "9:15",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:9:30:end",
   "text": "9:30.",
   "previous_text": "The lesson ended at"
@@ -2738,6 +4376,12 @@
   "key": "n:9:30:mid",
   "text": "9:30",
   "next_text": "and lasted 15 minutes."
+ },
+ {
+  "key": "n:9:30:word",
+  "text": "9:30",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
  },
  {
   "key": "n:9:45:end",
@@ -2750,6 +4394,12 @@
   "next_text": "and lasted 15 minutes."
  },
  {
+  "key": "n:9:45:word",
+  "text": "9:45",
+  "previous_text": "The lesson started at",
+  "next_text": "and lasted 30 minutes."
+ },
+ {
   "key": "n:9:end",
   "text": "9.",
   "previous_text": "4 plus 6 equals"
@@ -2758,6 +4408,12 @@
   "key": "n:9:mid",
   "text": "9",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:9:word",
+  "text": "9",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:90:end",
@@ -2770,6 +4426,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:90:word",
+  "text": "90",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:900:end",
   "text": "900.",
   "previous_text": "4 plus 6 equals"
@@ -2778,6 +4440,12 @@
   "key": "n:900:mid",
   "text": "900",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:900:word",
+  "text": "900",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:91:end",
@@ -2790,6 +4458,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:91:word",
+  "text": "91",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:910:end",
   "text": "910.",
   "previous_text": "4 plus 6 equals"
@@ -2798,6 +4472,12 @@
   "key": "n:910:mid",
   "text": "910",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:910:word",
+  "text": "910",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:92:end",
@@ -2810,6 +4490,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:92:word",
+  "text": "92",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:920:end",
   "text": "920.",
   "previous_text": "4 plus 6 equals"
@@ -2818,6 +4504,12 @@
   "key": "n:920:mid",
   "text": "920",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:920:word",
+  "text": "920",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:93:end",
@@ -2830,6 +4522,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:93:word",
+  "text": "93",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:930:end",
   "text": "930.",
   "previous_text": "4 plus 6 equals"
@@ -2838,6 +4536,12 @@
   "key": "n:930:mid",
   "text": "930",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:930:word",
+  "text": "930",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:94:end",
@@ -2850,6 +4554,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:94:word",
+  "text": "94",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:940:end",
   "text": "940.",
   "previous_text": "4 plus 6 equals"
@@ -2858,6 +4568,12 @@
   "key": "n:940:mid",
   "text": "940",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:940:word",
+  "text": "940",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:95:end",
@@ -2870,6 +4586,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:95:word",
+  "text": "95",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:950:end",
   "text": "950.",
   "previous_text": "4 plus 6 equals"
@@ -2878,6 +4600,12 @@
   "key": "n:950:mid",
   "text": "950",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:950:word",
+  "text": "950",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:96:end",
@@ -2890,6 +4618,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:96:word",
+  "text": "96",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:960:end",
   "text": "960.",
   "previous_text": "4 plus 6 equals"
@@ -2898,6 +4632,12 @@
   "key": "n:960:mid",
   "text": "960",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:960:word",
+  "text": "960",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:97:end",
@@ -2910,6 +4650,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:97:word",
+  "text": "97",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:970:end",
   "text": "970.",
   "previous_text": "4 plus 6 equals"
@@ -2918,6 +4664,12 @@
   "key": "n:970:mid",
   "text": "970",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:970:word",
+  "text": "970",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:98:end",
@@ -2930,6 +4682,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:98:word",
+  "text": "98",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:980:end",
   "text": "980.",
   "previous_text": "4 plus 6 equals"
@@ -2938,6 +4696,12 @@
   "key": "n:980:mid",
   "text": "980",
   "next_text": "plus 4 equals what?"
+ },
+ {
+  "key": "n:980:word",
+  "text": "980",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "n:99:end",
@@ -2950,6 +4714,12 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:99:word",
+  "text": "99",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
+ },
+ {
   "key": "n:990:end",
   "text": "990.",
   "previous_text": "4 plus 6 equals"
@@ -2960,49 +4730,15 @@
   "next_text": "plus 4 equals what?"
  },
  {
-  "key": "p:. How many more toy cars does Leo have?",
-  "text": ". How many more toy cars does Leo have?",
-  "previous_text": "Leo has 4 toy cars and Mia has 6"
- },
- {
-  "key": "p:. Is that a.m. or p.m.?",
-  "text": ". Is that a.m. or p.m.?",
-  "previous_text": "It is bedtime at 10:30"
- },
- {
-  "key": "p:. You buy a bookmark for",
-  "text": ". You buy a bookmark for",
-  "previous_text": "You have $ 4 6",
-  "next_text": "8 ¢. How much money is left?"
- },
- {
-  "key": "p:. You buy a pencil for",
-  "text": ". You buy a pencil for",
-  "previous_text": "You have $ 4 6",
-  "next_text": "8 ¢. How much money is left?"
- },
- {
-  "key": "p:. You buy a sticker for",
-  "text": ". You buy a sticker for",
-  "previous_text": "You have $ 4 6",
-  "next_text": "8 ¢. How much money is left?"
- },
- {
-  "key": "p:. You buy a toy car for",
-  "text": ". You buy a toy car for",
-  "previous_text": "You have $ 4 6",
-  "next_text": "8 ¢. How much money is left?"
- },
- {
-  "key": "p:. You buy an apple for",
-  "text": ". You buy an apple for",
-  "previous_text": "You have $ 4 6",
-  "next_text": "8 ¢. How much money is left?"
+  "key": "n:990:word",
+  "text": "990",
+  "previous_text": "There are",
+  "next_text": "apples in the basket."
  },
  {
   "key": "p:¢. How much money is left?",
   "text": "¢. How much money is left?",
-  "previous_text": "You have $ 4 6 . You buy a bookmark for 8"
+  "previous_text": "You have $ 4 6 You buy a bookmark for 8"
  },
  {
   "key": "p:¢. You buy a bookmark for",
@@ -3133,10 +4869,10 @@
   "text": "apple"
  },
  {
-  "key": "p:apples in the basket. Mom puts in",
-  "text": "apples in the basket. Mom puts in",
+  "key": "p:apples in the basket.",
+  "text": "apples in the basket.",
   "previous_text": "There are 4",
-  "next_text": "6 more. How many apples are in the basket now?"
+  "next_text": "Mom puts in 6 more. How many apples are in the basket now?"
  },
  {
   "key": "p:April: which season is it?",
@@ -3195,10 +4931,10 @@
   "text": "balloon"
  },
  {
-  "key": "p:balloons. Leo has",
-  "text": "balloons. Leo has",
+  "key": "p:balloons.",
+  "text": "balloons.",
   "previous_text": "Mia has 4",
-  "next_text": "6 more. How many balloons does Leo have?"
+  "next_text": "Leo has 6 more. How many balloons does Leo have?"
  },
  {
   "key": "p:banana",
@@ -3253,10 +4989,10 @@
   "text": "Bim the puppy lost his ball. He looked for it in the yard and in his doghouse. Then Bim saw the ball under a bush. He happily brought it to the boy."
  },
  {
-  "key": "p:birds were sitting on a branch. Then",
-  "text": "birds were sitting on a branch. Then",
+  "key": "p:birds were sitting on a branch.",
+  "text": "birds were sitting on a branch.",
   "previous_text": "4",
-  "next_text": "6 of them flew away. How many birds are left?"
+  "next_text": "Then 6 of them flew away. How many birds are left?"
  },
  {
   "key": "p:Bit into an apple",
@@ -3505,7 +5241,7 @@
  {
   "key": "p:dimes)",
   "text": "dimes)",
-  "previous_text": "How much money? ( 4"
+  "previous_text": "How much money? 4"
  },
  {
   "key": "p:dinosaur",
@@ -4056,6 +5792,11 @@
   "text": "How do you say this number?"
  },
  {
+  "key": "p:How many apples are in the basket now?",
+  "text": "How many apples are in the basket now?",
+  "previous_text": "There are 4 apples in the basket. Mom puts in 6 more."
+ },
+ {
   "key": "p:How many apples did Dad buy?",
   "text": "How many apples did Dad buy?"
  },
@@ -4066,6 +5807,16 @@
  {
   "key": "p:How many are there?",
   "text": "How many are there?"
+ },
+ {
+  "key": "p:How many balloons does Leo have?",
+  "text": "How many balloons does Leo have?",
+  "previous_text": "Mia has 4 balloons. Leo has 6 more."
+ },
+ {
+  "key": "p:How many birds are left?",
+  "text": "How many birds are left?",
+  "previous_text": "4 birds were sitting on a branch. Then 6 of them flew away."
  },
  {
   "key": "p:How many blue circles?",
@@ -4128,6 +5879,11 @@
   "key": "p:How many more to make",
   "text": "How many more to make",
   "next_text": "4"
+ },
+ {
+  "key": "p:How many more toy cars does Leo have?",
+  "text": "How many more toy cars does Leo have?",
+  "previous_text": "Leo has 4 toy cars and Mia has 6"
  },
  {
   "key": "p:How many ones are in",
@@ -4208,8 +5964,8 @@
   "text": "How much money is this?"
  },
  {
-  "key": "p:How much money? (",
-  "text": "How much money? (",
+  "key": "p:How much money?",
+  "text": "How much money?",
   "next_text": "4 dimes)"
  },
  {
@@ -4264,13 +6020,18 @@
   "previous_text": "4"
  },
  {
+  "key": "p:Is that a.m. or p.m.?",
+  "text": "Is that a.m. or p.m.?",
+  "previous_text": "It is bedtime at 10:30"
+ },
+ {
   "key": "p:it",
   "text": "it"
  },
  {
   "key": "p:It is bedtime at",
   "text": "It is bedtime at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:It started to rain",
@@ -4375,7 +6136,7 @@
  {
   "key": "p:Leo has",
   "text": "Leo has",
-  "next_text": "4 toy cars and Mia has 6 . How many more toy cars does Leo have?"
+  "next_text": "4 toy cars and Mia has 6 How many more toy cars does Leo have?"
  },
  {
   "key": "p:Leo lost his ball. He looked under the bed. The ball was in his toy box.",
@@ -4507,9 +6268,10 @@
   "next_text": "6"
  },
  {
-  "key": "p:minutes. When did it end?",
-  "text": "minutes. When did it end?",
-  "previous_text": "The cartoon started at 10:30 and lasted 4"
+  "key": "p:minutes.",
+  "text": "minutes.",
+  "previous_text": "The cartoon started at 10:30 and lasted 4",
+  "next_text": "When did it end?"
  },
  {
   "key": "p:Mom baked a cake",
@@ -4518,6 +6280,12 @@
  {
   "key": "p:Mom bought ice cream",
   "text": "Mom bought ice cream"
+ },
+ {
+  "key": "p:Mom puts in",
+  "text": "Mom puts in",
+  "previous_text": "There are 4 apples in the basket.",
+  "next_text": "6 more. How many apples are in the basket now?"
  },
  {
   "key": "p:Mom said, \"Go to bed!\"",
@@ -4656,14 +6424,10 @@
   "text": "mop"
  },
  {
-  "key": "p:more. How many apples are in the basket now?",
-  "text": "more. How many apples are in the basket now?",
-  "previous_text": "There are 4 apples in the basket. Mom puts in 6"
- },
- {
-  "key": "p:more. How many balloons does Leo have?",
-  "text": "more. How many balloons does Leo have?",
-  "previous_text": "Mia has 4 balloons. Leo has 6"
+  "key": "p:more.",
+  "text": "more.",
+  "previous_text": "Mia has 4 balloons. Leo has 6",
+  "next_text": "How many balloons does Leo have?"
  },
  {
   "key": "p:mouse",
@@ -4700,7 +6464,7 @@
  {
   "key": "p:nickels)",
   "text": "nickels)",
-  "previous_text": "How much money? ( 4"
+  "previous_text": "How much money? 4"
  },
  {
   "key": "p:night",
@@ -4748,9 +6512,10 @@
   "previous_text": "Is 4"
  },
  {
-  "key": "p:of them flew away. How many birds are left?",
-  "text": "of them flew away. How many birds are left?",
-  "previous_text": "4 birds were sitting on a branch. Then 6"
+  "key": "p:of them flew away.",
+  "text": "of them flew away.",
+  "previous_text": "4 birds were sitting on a branch. Then 6",
+  "next_text": "How many birds are left?"
  },
  {
   "key": "p:Olly planted a seed. She watered it every day. A week later a flower grew.",
@@ -4819,7 +6584,7 @@
  {
   "key": "p:pennies)",
   "text": "pennies)",
-  "previous_text": "How much money? ( 4"
+  "previous_text": "How much money? 4"
  },
  {
   "key": "p:penny",
@@ -5212,7 +6977,7 @@
  {
   "key": "p:Recess is at",
   "text": "Recess is at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:red",
@@ -5269,7 +7034,7 @@
  {
   "key": "p:School starts at",
   "text": "School starts at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:see",
@@ -5445,12 +7210,12 @@
  {
   "key": "p:The soccer game starts at",
   "text": "The soccer game starts at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:The sun comes up at",
   "text": "The sun comes up at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:The sun is very hot.",
@@ -5475,6 +7240,12 @@
  {
   "key": "p:then",
   "text": "then"
+ },
+ {
+  "key": "p:Then",
+  "text": "Then",
+  "previous_text": "4 birds were sitting on a branch.",
+  "next_text": "6 of them flew away. How many birds are left?"
  },
  {
   "key": "p:there",
@@ -5540,102 +7311,67 @@
   "text": "to"
  },
  {
+  "key": "p:Today is Friday.",
+  "text": "Today is Friday.",
+  "next_text": "What day was it 4 days ago?"
+ },
+ {
   "key": "p:Today is Friday. What day is the day after tomorrow?",
   "text": "Today is Friday. What day is the day after tomorrow?"
  },
  {
-  "key": "p:Today is Friday. What day was it",
-  "text": "Today is Friday. What day was it",
-  "next_text": "4 days ago?"
- },
- {
-  "key": "p:Today is Friday. What day will it be in",
-  "text": "Today is Friday. What day will it be in",
-  "next_text": "4 days?"
+  "key": "p:Today is Monday.",
+  "text": "Today is Monday.",
+  "next_text": "What day was it 4 days ago?"
  },
  {
   "key": "p:Today is Monday. What day is the day after tomorrow?",
   "text": "Today is Monday. What day is the day after tomorrow?"
  },
  {
-  "key": "p:Today is Monday. What day was it",
-  "text": "Today is Monday. What day was it",
-  "next_text": "4 days ago?"
- },
- {
-  "key": "p:Today is Monday. What day will it be in",
-  "text": "Today is Monday. What day will it be in",
-  "next_text": "4 days?"
+  "key": "p:Today is Saturday.",
+  "text": "Today is Saturday.",
+  "next_text": "What day was it 4 days ago?"
  },
  {
   "key": "p:Today is Saturday. What day is the day after tomorrow?",
   "text": "Today is Saturday. What day is the day after tomorrow?"
  },
  {
-  "key": "p:Today is Saturday. What day was it",
-  "text": "Today is Saturday. What day was it",
-  "next_text": "4 days ago?"
- },
- {
-  "key": "p:Today is Saturday. What day will it be in",
-  "text": "Today is Saturday. What day will it be in",
-  "next_text": "4 days?"
+  "key": "p:Today is Sunday.",
+  "text": "Today is Sunday.",
+  "next_text": "What day was it 4 days ago?"
  },
  {
   "key": "p:Today is Sunday. What day is the day after tomorrow?",
   "text": "Today is Sunday. What day is the day after tomorrow?"
  },
  {
-  "key": "p:Today is Sunday. What day was it",
-  "text": "Today is Sunday. What day was it",
-  "next_text": "4 days ago?"
- },
- {
-  "key": "p:Today is Sunday. What day will it be in",
-  "text": "Today is Sunday. What day will it be in",
-  "next_text": "4 days?"
+  "key": "p:Today is Thursday.",
+  "text": "Today is Thursday.",
+  "next_text": "What day was it 4 days ago?"
  },
  {
   "key": "p:Today is Thursday. What day is the day after tomorrow?",
   "text": "Today is Thursday. What day is the day after tomorrow?"
  },
  {
-  "key": "p:Today is Thursday. What day was it",
-  "text": "Today is Thursday. What day was it",
-  "next_text": "4 days ago?"
- },
- {
-  "key": "p:Today is Thursday. What day will it be in",
-  "text": "Today is Thursday. What day will it be in",
-  "next_text": "4 days?"
+  "key": "p:Today is Tuesday.",
+  "text": "Today is Tuesday.",
+  "next_text": "What day was it 4 days ago?"
  },
  {
   "key": "p:Today is Tuesday. What day is the day after tomorrow?",
   "text": "Today is Tuesday. What day is the day after tomorrow?"
  },
  {
-  "key": "p:Today is Tuesday. What day was it",
-  "text": "Today is Tuesday. What day was it",
-  "next_text": "4 days ago?"
- },
- {
-  "key": "p:Today is Tuesday. What day will it be in",
-  "text": "Today is Tuesday. What day will it be in",
-  "next_text": "4 days?"
+  "key": "p:Today is Wednesday.",
+  "text": "Today is Wednesday.",
+  "next_text": "What day was it 4 days ago?"
  },
  {
   "key": "p:Today is Wednesday. What day is the day after tomorrow?",
   "text": "Today is Wednesday. What day is the day after tomorrow?"
- },
- {
-  "key": "p:Today is Wednesday. What day was it",
-  "text": "Today is Wednesday. What day was it",
-  "next_text": "4 days ago?"
- },
- {
-  "key": "p:Today is Wednesday. What day will it be in",
-  "text": "Today is Wednesday. What day will it be in",
-  "next_text": "4 days?"
  },
  {
   "key": "p:tomato",
@@ -5677,7 +7413,7 @@
   "key": "p:toy cars and Mia has",
   "text": "toy cars and Mia has",
   "previous_text": "Leo has 4",
-  "next_text": "6 . How many more toy cars does Leo have?"
+  "next_text": "6 How many more toy cars does Leo have?"
  },
  {
   "key": "p:train",
@@ -5766,37 +7502,37 @@
  {
   "key": "p:We eat breakfast at",
   "text": "We eat breakfast at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:We eat dinner at",
   "text": "We eat dinner at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:We go to the park at",
   "text": "We go to the park at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:We have a snack after school at",
   "text": "We have a snack after school at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:We read a bedtime story at",
   "text": "We read a bedtime story at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:We take a bath at",
   "text": "We take a bath at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:We wake up at",
   "text": "We wake up at",
-  "next_text": "10:30 . Is that a.m. or p.m.?"
+  "next_text": "10:30 Is that a.m. or p.m.?"
  },
  {
   "key": "p:We went to the park.",
@@ -5901,6 +7637,18 @@
  {
   "key": "p:What comes next?",
   "text": "What comes next?"
+ },
+ {
+  "key": "p:What day was it",
+  "text": "What day was it",
+  "previous_text": "Today is Friday.",
+  "next_text": "4 days ago?"
+ },
+ {
+  "key": "p:What day will it be in",
+  "text": "What day will it be in",
+  "previous_text": "Today is Friday.",
+  "next_text": "4 days?"
  },
  {
   "key": "p:What did Ben build?",
@@ -6197,6 +7945,11 @@
  {
   "key": "p:when",
   "text": "when"
+ },
+ {
+  "key": "p:When did it end?",
+  "text": "When did it end?",
+  "previous_text": "The cartoon started at 10:30 and lasted 4 minutes."
  },
  {
   "key": "p:When did Olly make a snowman?",
@@ -6951,6 +8704,36 @@
   "text": "you"
  },
  {
+  "key": "p:You buy a bookmark for",
+  "text": "You buy a bookmark for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
+  "key": "p:You buy a pencil for",
+  "text": "You buy a pencil for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
+  "key": "p:You buy a sticker for",
+  "text": "You buy a sticker for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
+  "key": "p:You buy a toy car for",
+  "text": "You buy a toy car for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
+  "key": "p:You buy an apple for",
+  "text": "You buy an apple for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
   "key": "p:You have",
   "text": "You have",
   "next_text": "4 ¢. You buy a bookmark for 6 ¢. How much money is left?"
@@ -6958,7 +8741,7 @@
  {
   "key": "p:You have $",
   "text": "You have $",
-  "next_text": "4 6 . You buy a bookmark for 8 ¢. How much money is left?"
+  "next_text": "4 6 You buy a bookmark for 8 ¢. How much money is left?"
  },
  {
   "key": "p:You have a new friend: Biscuit!",

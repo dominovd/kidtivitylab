@@ -87,8 +87,11 @@ for (let n = 0; n <= 500; n += 5) numbers.add(String(n));
 for (let h = 1; h <= 12; h++) for (const m of ["00", "15", "30", "45"]) numbers.add(`${h}:${m}`);
 
 for (const n of numbers) {
-  put({ key: numberKey(n, "mid"), text: n, next_text: n.includes(":") ? "and lasted 15 minutes." : "plus 4 equals what?" });
-  put({ key: numberKey(n, "end"), text: `${n}.`, previous_text: n.includes(":") ? "The lesson ended at" : "4 plus 6 equals" });
+  const time = n.includes(":");
+  put({ key: numberKey(n, "mid"), text: n, next_text: time ? "and lasted 15 minutes." : "plus 4 equals what?" });
+  put({ key: numberKey(n, "end"), text: `${n}.`, previous_text: time ? "The lesson ended at" : "4 plus 6 equals" });
+  // inside an ordinary sentence: "There are | 4 | apples in the basket."
+  put({ key: numberKey(n, "word"), text: n, previous_text: time ? "The lesson started at" : "There are", next_text: time ? "and lasted 30 minutes." : "apples in the basket." });
 }
 
 const list = [...clips.values()].sort((a, b) => a.key.localeCompare(b.key));
