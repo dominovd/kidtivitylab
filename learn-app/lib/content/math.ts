@@ -50,10 +50,11 @@ export const mathSkills: Skill[] = [
     title: l("Додавання", "Сложение", "Addition"),
     gen: (level, lang) => {
       const max = sum6Max[level - 1];
-      const a = rand(0, max - 1);
+      // picture levels start from 1: an empty group is hard to show to a 5-year-old
+      const a = rand(level <= 2 ? 1 : 0, max - 1);
       const b = rand(1, max - a);
       const e = pick(OBJ);
-      const pictures = level <= 2 ? `\n${e.repeat(a) || "∅"} + ${e.repeat(b)}` : "";
+      const pictures = level <= 2 ? `\n${e.repeat(a)} + ${e.repeat(b)}` : "";
       return {
         kind: "choice",
         prompt: P.solve[lang],

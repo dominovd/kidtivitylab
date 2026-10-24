@@ -2955,12 +2955,25 @@
   "previous_text": "Leo has 4 toy cars and Mia has 6"
  },
  {
+  "key": "p:. Is that a.m. or p.m.?",
+  "text": ". Is that a.m. or p.m.?",
+  "previous_text": "It is bedtime at 10:30"
+ },
+ {
   "key": "p:a",
   "text": "a"
  },
  {
   "key": "p:A",
   "text": "A"
+ },
+ {
+  "key": "p:A flower grew",
+  "text": "A flower grew"
+ },
+ {
+  "key": "p:alligator",
+  "text": "alligator"
  },
  {
   "key": "p:Almost! Next time you'll get it",
@@ -3001,6 +3014,10 @@
   "text": "August: which season is it?"
  },
  {
+  "key": "p:avocado",
+  "text": "avocado"
+ },
+ {
   "key": "p:Awesome!",
   "text": "Awesome!"
  },
@@ -3039,6 +3056,14 @@
   "text": "bee"
  },
  {
+  "key": "p:Bim lost his ball",
+  "text": "Bim lost his ball"
+ },
+ {
+  "key": "p:Bim the puppy lost his ball. He looked for it in the yard and in his doghouse. Then Bim saw the ball under a bush. He happily brought it to the boy.",
+  "text": "Bim the puppy lost his ball. He looked for it in the yard and in his doghouse. Then Bim saw the ball under a bush. He happily brought it to the boy."
+ },
+ {
   "key": "p:birds were sitting on a branch. Then",
   "text": "birds were sitting on a branch. Then",
   "previous_text": "4",
@@ -3075,8 +3100,28 @@
   "text": "Brilliant!"
  },
  {
+  "key": "p:broccoli",
+  "text": "broccoli"
+ },
+ {
+  "key": "p:Brought the ball to the boy",
+  "text": "Brought the ball to the boy"
+ },
+ {
   "key": "p:brown",
   "text": "brown"
+ },
+ {
+  "key": "p:Built a snowman",
+  "text": "Built a snowman"
+ },
+ {
+  "key": "p:bunny",
+  "text": "bunny"
+ },
+ {
+  "key": "p:butterfly",
+  "text": "butterfly"
  },
  {
   "key": "p:c",
@@ -3091,12 +3136,20 @@
   "text": "car"
  },
  {
+  "key": "p:Carried the food home",
+  "text": "Carried the food home"
+ },
+ {
   "key": "p:carrot",
   "text": "carrot"
  },
  {
   "key": "p:cat",
   "text": "cat"
+ },
+ {
+  "key": "p:caterpillar",
+  "text": "caterpillar"
  },
  {
   "key": "p:cats have?",
@@ -3113,8 +3166,20 @@
   "previous_text": "How many legs do 4"
  },
  {
+  "key": "p:Collected mushrooms and apples",
+  "text": "Collected mushrooms and apples"
+ },
+ {
+  "key": "p:cookie",
+  "text": "cookie"
+ },
+ {
   "key": "p:cow",
   "text": "cow"
+ },
+ {
+  "key": "p:cupcake",
+  "text": "cupcake"
  },
  {
   "key": "p:d",
@@ -3123,6 +3188,10 @@
  {
   "key": "p:D",
   "text": "D"
+ },
+ {
+  "key": "p:Dad and Sam went to the river. They went fishing. Sam caught a big fish.",
+  "text": "Dad and Sam went to the river. They went fishing. Sam caught a big fish."
  },
  {
   "key": "p:days ago?",
@@ -3137,6 +3206,10 @@
  {
   "key": "p:December: which season is it?",
   "text": "December: which season is it?"
+ },
+ {
+  "key": "p:dinosaur",
+  "text": "dinosaur"
  },
  {
   "key": "p:dog",
@@ -3205,6 +3278,10 @@
  {
   "key": "p:February: which season is it?",
   "text": "February: which season is it?"
+ },
+ {
+  "key": "p:Fell asleep on the couch",
+  "text": "Fell asleep on the couch"
  },
  {
   "key": "p:fifteen",
@@ -3351,6 +3428,10 @@
   "text": "flower"
  },
  {
+  "key": "p:Found the yarn",
+  "text": "Found the yarn"
+ },
+ {
   "key": "p:four",
   "text": "four"
  },
@@ -3361,6 +3442,10 @@
  {
   "key": "p:fox",
   "text": "fox"
+ },
+ {
+  "key": "p:Friends came",
+  "text": "Friends came"
  },
  {
   "key": "p:frog",
@@ -3399,8 +3484,24 @@
   "text": "H"
  },
  {
+  "key": "p:Had oatmeal",
+  "text": "Had oatmeal"
+ },
+ {
+  "key": "p:hamburger",
+  "text": "hamburger"
+ },
+ {
+  "key": "p:helicopter",
+  "text": "helicopter"
+ },
+ {
   "key": "p:Hello! I can talk. Apple, banana, cat.",
   "text": "Hello! I can talk. Apple, banana, cat."
+ },
+ {
+  "key": "p:Hid under a leaf",
+  "text": "Hid under a leaf"
  },
  {
   "key": "p:horse",
@@ -3538,6 +3639,31 @@
   "text": "I"
  },
  {
+  "key": "p:In the morning Mia woke up and washed her face. Then she had oatmeal for breakfast. After breakfast Mia went to school. There she read an interesting book.",
+  "text": "In the morning Mia woke up and washed her face. Then she had oatmeal for breakfast. After breakfast Mia went to school. There she read an interesting book."
+ },
+ {
+  "key": "p:It is bedtime at",
+  "text": "It is bedtime at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
+  "key": "p:It started to rain",
+  "text": "It started to rain"
+ },
+ {
+  "key": "p:It started to snow",
+  "text": "It started to snow"
+ },
+ {
+  "key": "p:It started to snow. The children put on warm jackets. They built a big snowman.",
+  "text": "It started to snow. The children put on warm jackets. They built a big snowman."
+ },
+ {
+  "key": "p:It was Martha's birthday. Mom baked a cake with candles. Friends came and gave her a teddy bear. Martha made a wish and blew out the candles.",
+  "text": "It was Martha's birthday. Mom baked a cake with candles. Friends came and gave her a teddy bear. Martha made a wish and blew out the candles."
+ },
+ {
   "key": "p:j",
   "text": "j"
  },
@@ -3564,6 +3690,10 @@
  {
   "key": "p:K",
   "text": "K"
+ },
+ {
+  "key": "p:kangaroo",
+  "text": "kangaroo"
  },
  {
   "key": "p:Keep it up!",
@@ -3603,6 +3733,10 @@
   "text": "Look at the scales. How many are needed to balance?"
  },
  {
+  "key": "p:Looked in the yard",
+  "text": "Looked in the yard"
+ },
+ {
   "key": "p:m",
   "text": "m"
  },
@@ -3611,8 +3745,16 @@
   "text": "M"
  },
  {
+  "key": "p:macaroni",
+  "text": "macaroni"
+ },
+ {
   "key": "p:March: which season is it?",
   "text": "March: which season is it?"
+ },
+ {
+  "key": "p:Martha blew out the candles",
+  "text": "Martha blew out the candles"
  },
  {
   "key": "p:May: which season is it?",
@@ -3628,11 +3770,6 @@
   "text": "milk"
  },
  {
-  "key": "p:min. When did it end?",
-  "text": "minutes. When did it end?",
-  "previous_text": "The cartoon started at 10:30 and lasted 4"
- },
- {
   "key": "p:minus",
   "text": "minus",
   "previous_text": "4",
@@ -3643,6 +3780,19 @@
   "text": "minus box equals",
   "previous_text": "4",
   "next_text": "6"
+ },
+ {
+  "key": "p:minutes. When did it end?",
+  "text": "minutes. When did it end?",
+  "previous_text": "The cartoon started at 10:30 and lasted 4"
+ },
+ {
+  "key": "p:Mom baked a cake",
+  "text": "Mom baked a cake"
+ },
+ {
+  "key": "p:monkey",
+  "text": "monkey"
  },
  {
   "key": "p:months after April?",
@@ -3823,9 +3973,17 @@
   "text": "October: which season is it?"
  },
  {
+  "key": "p:octopus",
+  "text": "octopus"
+ },
+ {
   "key": "p:of them flew away. How many birds are left?",
   "text": "of them flew away. How many birds are left?",
   "previous_text": "4 birds were sitting on a branch. Then 6"
+ },
+ {
+  "key": "p:Olly planted a seed. She watered it every day. A week later a flower grew.",
+  "text": "Olly planted a seed. She watered it every day. A week later a flower grew."
  },
  {
   "key": "p:one",
@@ -3848,6 +4006,10 @@
   "text": "P"
  },
  {
+  "key": "p:panda",
+  "text": "panda"
+ },
+ {
   "key": "p:pear",
   "text": "pear"
  },
@@ -3864,8 +4026,24 @@
   "text": "pig"
  },
  {
+  "key": "p:pineapple",
+  "text": "pineapple"
+ },
+ {
   "key": "p:pink",
   "text": "pink"
+ },
+ {
+  "key": "p:pizza",
+  "text": "pizza"
+ },
+ {
+  "key": "p:Planted a seed",
+  "text": "Planted a seed"
+ },
+ {
+  "key": "p:Played with the yarn",
+  "text": "Played with the yarn"
  },
  {
   "key": "p:plus",
@@ -3880,8 +4058,16 @@
   "next_text": "6"
  },
  {
+  "key": "p:potato",
+  "text": "potato"
+ },
+ {
   "key": "p:purple",
   "text": "purple"
+ },
+ {
+  "key": "p:Put on jackets",
+  "text": "Put on jackets"
  },
  {
   "key": "p:Put the days in order",
@@ -3912,8 +4098,21 @@
   "text": "rabbit"
  },
  {
+  "key": "p:rainbow",
+  "text": "rainbow"
+ },
+ {
+  "key": "p:Read a book",
+  "text": "Read a book"
+ },
+ {
   "key": "p:Read the word and find the picture",
   "text": "Read the word and find the picture"
+ },
+ {
+  "key": "p:Recess is at",
+  "text": "Recess is at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
  },
  {
   "key": "p:red",
@@ -3922,6 +4121,14 @@
  {
   "key": "p:Retell the story: put the events in order",
   "text": "Retell the story: put the events in order"
+ },
+ {
+  "key": "p:robot",
+  "text": "robot"
+ },
+ {
+  "key": "p:rocket",
+  "text": "rocket"
  },
  {
   "key": "p:rooster",
@@ -3934,6 +4141,19 @@
  {
   "key": "p:S",
   "text": "S"
+ },
+ {
+  "key": "p:Sam caught a fish",
+  "text": "Sam caught a fish"
+ },
+ {
+  "key": "p:Saw the ball under a bush",
+  "text": "Saw the ball under a bush"
+ },
+ {
+  "key": "p:School starts at",
+  "text": "School starts at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
  },
  {
   "key": "p:September: which season is it?",
@@ -3960,8 +4180,16 @@
   "text": "snake"
  },
  {
+  "key": "p:spider",
+  "text": "spider"
+ },
+ {
   "key": "p:star",
   "text": "star"
+ },
+ {
+  "key": "p:strawberry",
+  "text": "strawberry"
  },
  {
   "key": "p:sun",
@@ -3978,6 +4206,14 @@
  {
   "key": "p:T",
   "text": "T"
+ },
+ {
+  "key": "p:teddy",
+  "text": "teddy"
+ },
+ {
+  "key": "p:television",
+  "text": "television"
  },
  {
   "key": "p:ten",
@@ -3997,13 +4233,8 @@
   "next_text": "10:30 and lasted 4 minutes. When did it end?"
  },
  {
-  "key": "p:The electronic clock shows afternoon time. What will the clock with hands show?",
-  "text": "The electronic clock shows afternoon time. What will the clock with hands show?"
- },
- {
-  "key": "p:The football match started at",
-  "text": "The football match started at",
-  "next_text": "10:30 and lasted 4 minutes. When did it end?"
+  "key": "p:The hedgehog was getting ready for winter. He collected mushrooms and apples in the forest. Suddenly it started to rain. The hedgehog hid under a big leaf. When the rain stopped, he carried his food home.",
+  "text": "The hedgehog was getting ready for winter. He collected mushrooms and apples in the forest. Suddenly it started to rain. The hedgehog hid under a big leaf. When the rain stopped, he carried his food home."
  },
  {
   "key": "p:The lesson started at",
@@ -4011,9 +4242,28 @@
   "next_text": "10:30 and lasted 4 minutes. When did it end?"
  },
  {
+  "key": "p:The soccer game started at",
+  "text": "The soccer game started at",
+  "next_text": "10:30 and lasted 4 minutes. When did it end?"
+ },
+ {
+  "key": "p:The soccer game starts at",
+  "text": "The soccer game starts at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
+  "key": "p:The sun comes up at",
+  "text": "The sun comes up at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
   "key": "p:There are",
   "text": "There are",
   "next_text": "4 apples in the basket. Mom puts in 6 more. How many apples are in the basket now?"
+ },
+ {
+  "key": "p:They gave a teddy bear",
+  "text": "They gave a teddy bear"
  },
  {
   "key": "p:thirteen",
@@ -4136,6 +4386,10 @@
   "next_text": "4 days?"
  },
  {
+  "key": "p:tomato",
+  "text": "tomato"
+ },
+ {
   "key": "p:Tomorrow is Friday. What day was yesterday?",
   "text": "Tomorrow is Friday. What day was yesterday?"
  },
@@ -4206,6 +4460,10 @@
   "text": "U"
  },
  {
+  "key": "p:umbrella",
+  "text": "umbrella"
+ },
+ {
   "key": "p:v",
   "text": "v"
  },
@@ -4222,12 +4480,63 @@
   "text": "W"
  },
  {
+  "key": "p:Watered it",
+  "text": "Watered it"
+ },
+ {
   "key": "p:watermelon",
   "text": "watermelon"
  },
  {
+  "key": "p:We eat breakfast at",
+  "text": "We eat breakfast at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
+  "key": "p:We eat dinner at",
+  "text": "We eat dinner at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
+  "key": "p:We go to the park at",
+  "text": "We go to the park at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
+  "key": "p:We have a snack after school at",
+  "text": "We have a snack after school at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
+  "key": "p:We read a bedtime story at",
+  "text": "We read a bedtime story at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
+  "key": "p:We take a bath at",
+  "text": "We take a bath at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
+  "key": "p:We wake up at",
+  "text": "We wake up at",
+  "next_text": "10:30 . Is that a.m. or p.m.?"
+ },
+ {
   "key": "p:Well done!",
   "text": "Well done!"
+ },
+ {
+  "key": "p:Went fishing",
+  "text": "Went fishing"
+ },
+ {
+  "key": "p:Went to school",
+  "text": "Went to school"
+ },
+ {
+  "key": "p:Went to the river",
+  "text": "Went to the river"
  },
  {
   "key": "p:what",
@@ -4628,6 +4937,10 @@
   "text": "Which word matches the picture?"
  },
  {
+  "key": "p:Whiskers the cat found a ball of yarn. He played with it for a long time. Then Whiskers fell asleep on the couch.",
+  "text": "Whiskers the cat found a ball of yarn. He played with it for a long time. Then Whiskers fell asleep on the couch."
+ },
+ {
   "key": "p:white",
   "text": "white"
  },
@@ -4642,6 +4955,10 @@
  {
   "key": "p:Who sleeps all winter?",
   "text": "Who sleeps all winter?"
+ },
+ {
+  "key": "p:Woke up and washed",
+  "text": "Woke up and washed"
  },
  {
   "key": "p:wolf",
@@ -4734,5 +5051,9 @@
  {
   "key": "p:Z",
   "text": "Z"
+ },
+ {
+  "key": "p:zebra",
+  "text": "zebra"
  }
 ]

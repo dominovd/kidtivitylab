@@ -200,8 +200,24 @@ const FRACTION_NAME: Record<string, Record<Lang, string>> = {
 const T = {
   toAnalog: l("Знайди годинник зі стрілками, який показує той самий час", "Найди часы со стрелками, которые показывают то же время", "Find the clock with hands that shows the same time"),
   h24: l("Електронний годинник показує денний час. Що покаже годинник зі стрілками?", "Электронные часы показывают дневное время. Что покажут часы со стрелками?", "The electronic clock shows afternoon time. What will the clock with hands show?"),
-  events: [l("Мультик", "Мультик", "The cartoon"), l("Урок", "Урок", "The lesson"), l("Футбольний матч", "Футбольный матч", "The football match")],
+  events: [l("Мультик", "Мультик", "The cartoon"), l("Урок", "Урок", "The lesson"), l("Футбольний матч", "Футбольный матч", "The soccer game")],
 };
+/** Everyday moments for a.m./p.m. questions: [sentence start, hour, minutes, is p.m.]. */
+const AMPM: [string, number, number, boolean][] = [
+  ["We wake up", 7, 0, false],
+  ["We eat breakfast", 7, 30, false],
+  ["School starts", 8, 0, false],
+  ["The sun comes up", 6, 30, false],
+  ["Recess is", 10, 30, false],
+  ["We have a snack after school", 3, 30, true],
+  ["We eat dinner", 6, 0, true],
+  ["We take a bath", 7, 0, true],
+  ["It is bedtime", 8, 0, true],
+  ["The soccer game starts", 4, 0, true],
+  ["We go to the park", 4, 30, true],
+  ["We read a bedtime story", 8, 30, true],
+];
+
 
 const G = {
   howManyOf: l("Скільки тут", "Сколько здесь", "How many"),
@@ -433,34 +449,35 @@ export const plusSkills: Skill[] = [
     icon: "🦘",
     title: l("Лічба стрибками", "Счёт прыжками", "Skip counting"),
     gen: (level, lang) => {
-      let seq: number[];
-      if (level === 5) {
-        // patterns: two alternating steps, a growing step, or doubling
-        const t = rand(0, 2);
-        if (t === 0) {
-          const [a, b] = [rand(2, 5), rand(1, 4)];
-          seq = [rand(1, 10)];
-          for (let i = 1; i < 6; i++) seq.push(seq[i - 1] + (i % 2 ? a : b));
-        } else if (t === 1) {
-          seq = [rand(1, 10)];
-          for (let i = 1; i < 6; i++) seq.push(seq[i - 1] + i);
-        } else {
-          const s0 = rand(1, 3);
-          seq = Array.from({ length: 6 }, (_, i) => s0 * 2 ** i);
-        }
+      // Common Core K–2: count by 10s, 5s, 2s, then 10s and 100s from any number, and backward
+      let step: number;
+      let start: number;
+      let down = false;
+      if (level === 1) {
+        step = 10;
+        start = 10 * rand(0, 4);
+      } else if (level === 2) {
+        step = 5;
+        start = 5 * rand(0, 4);
+      } else if (level === 3) {
+        step = 2;
+        start = 2 * rand(0, 10);
+      } else if (level === 4) {
+        step = 10;
+        start = rand(1, 9) + 10 * rand(0, 3); // 23, 33, 43…
+        down = Math.random() < 0.3;
       } else {
-        const step = level === 1 ? pick([2, 5, 10]) : level === 2 ? pick([3, 4]) : level === 3 ? rand(6, 9) : pick([11, 12, 15, 20, 25, 50]);
-        const down = level >= 2 && Math.random() < 0.35;
-        const start = level === 4 && step >= 20 ? step * rand(0, 2) : rand(0, level === 1 ? 20 : 30);
-        seq = Array.from({ length: 6 }, (_, i) => start + i * step);
-        if (down) seq = seq.reverse();
+        step = pick([100, 5, 10]);
+        start = step === 100 ? 100 * rand(0, 3) : step === 5 ? 5 * rand(0, 10) : rand(1, 9) + 10 * rand(0, 4);
+        down = Math.random() < 0.4;
       }
-      const hole = rand(level === 5 ? 3 : 1, 5);
+      let seq = Array.from({ length: 6 }, (_, i) => start + i * step);
+      if (down) seq = seq.reverse();
+      const hole = rand(1, 5);
       const ans = seq[hole];
       const shown = seq.map((x, i) => (i === hole ? "❓" : String(x))).join("  ");
       const prompt = hole === 5 ? P.skip[lang] : P.skipMid[lang];
       if (level >= 4) return { kind: "input", inputMode: "numeric", prompt, visual: shown, answer: String(ans) };
-      const step = Math.abs(seq[1] - seq[0]);
       return { kind: "choice", prompt, visual: shown, options: options(ans, [ans + step, ans - step, ans + 1, ans - 1, ans + 10].filter((x) => x >= 0)), answer: String(ans) };
     },
   },
@@ -476,7 +493,8 @@ export const plusSkills: Skill[] = [
       const m = pick(mins);
       const wrap = (x: number) => ((x + 11) % 12) + 1;
       const fmt = (hh: number, mm: number) => `${wrap(hh)}:${String(mm).padStart(2, "0")}`;
-      const lcd = (hh: number, mm: number) => `${String(hh).padStart(2, "0")}:${String(mm).padStart(2, "0")}`;
+      // US clocks show no leading zero for the hour (5:00, not 05:00)
+      const lcd = (hh: number, mm: number) => `${lang === "en" ? hh : String(hh).padStart(2, "0")}:${String(mm).padStart(2, "0")}`;
       // classic mistakes: hour one off, hands swapped, half an hour off
       const near = (hh: number, mm: number) => [fmt(hh + 1, mm), fmt(hh - 1, mm), fmt(hh, (mm + 30) % 60), fmt(mm / 5 || 12, (hh * 5) % 60)];
       const kind = level <= 3 ? pick(["read", "toAnalog"]) : level === 4 ? pick(["read", "toAnalog", "h24"]) : pick(["toAnalog", "h24", "later", "later"]);
@@ -484,6 +502,11 @@ export const plusSkills: Skill[] = [
         // electronic clock shown, pick the clock with hands
         const ans = fmt(h, m);
         return { kind: "choice", prompt: T.toAnalog[lang], digital: lcd(h, m), options: options(ans, near(h, m)), answer: ans, clockOptions: true };
+      }
+      if (kind === "h24" && lang === "en") {
+        // US: a.m. or p.m. from an everyday moment (Common Core 2.MD.7)
+        const [what, hh, mm, pm] = pick(AMPM);
+        return { kind: "choice", prompt: `${what} at ${hh}:${String(mm).padStart(2, "0")}. Is that a.m. or p.m.?`, clock: { h: hh, m: mm }, options: ["a.m.", "p.m."], answer: pm ? "p.m." : "a.m." };
       }
       if (kind === "h24") {
         // afternoon time on an electronic clock: 15:00 is 3 o'clock on the dial
@@ -497,7 +520,7 @@ export const plusSkills: Skill[] = [
         const endT = start + dur;
         const ans = fmt(Math.floor(endT / 60), endT % 60);
         const what = pick(T.events)[lang];
-        const prompt = { uk: `${what} почався о ${fmt(Math.floor(start / 60), start % 60)} і тривав ${dur} хв. О котрій він закінчився?`, ru: `${what} начался в ${fmt(Math.floor(start / 60), start % 60)} и длился ${dur} мин. Во сколько он закончился?`, en: `${what} started at ${fmt(Math.floor(start / 60), start % 60)} and lasted ${dur} min. When did it end?` }[lang];
+        const prompt = { uk: `${what} почався о ${fmt(Math.floor(start / 60), start % 60)} і тривав ${dur} хв. О котрій він закінчився?`, ru: `${what} начался в ${fmt(Math.floor(start / 60), start % 60)} и длился ${dur} мин. Во сколько он закончился?`, en: `${what} started at ${fmt(Math.floor(start / 60), start % 60)} and lasted ${dur} minutes. When did it end?` }[lang];
         const wrong = [start + dur + 15, start + dur - 15, start + dur + 60, start].map((x) => fmt(Math.floor(x / 60), ((x % 60) + 60) % 60));
         return { kind: "choice", prompt, clock: { h: wrap(Math.floor(start / 60)), m: start % 60 }, options: options(ans, wrong), answer: ans };
       }

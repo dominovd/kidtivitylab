@@ -9,6 +9,7 @@
  */
 
 import { loadVoice, planLine, playLines, stopVoice } from "./voice";
+import { spokenText } from "./voice-keys";
 
 type Part = { text: string; lang: string; rate?: number };
 
@@ -54,7 +55,7 @@ function utter({ text, lang, rate }: Part) {
 /** Speaks the parts in order, replacing whatever is being said now. */
 export function speakSeq(parts: Part[]) {
   if (typeof window === "undefined") return;
-  const list = parts.filter((p) => p.text && p.text.trim());
+  const list = parts.map((p) => ({ ...p, text: spokenText(p.text) })).filter((p) => p.text);
   if (!list.length) return;
   const key = list.map((p) => p.lang + p.text).join("|");
   const now = Date.now();

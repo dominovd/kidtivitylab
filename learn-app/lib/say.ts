@@ -25,7 +25,9 @@ export function verbalize(line: string, lang: Lang): string {
 /** What to read aloud for a task: the instruction, the expression in words, and the listening word. */
 export function taskSpeech(q: Question, lang: Lang, answered: boolean) {
   const ui = speechLang[lang];
-  const parts: { text: string; lang: string }[] = [{ text: q.prompt, lang: ui }];
+  const parts: { text: string; lang: string }[] = [];
+  if (q.readPassage && q.passage) parts.push({ text: q.passage, lang: ui });
+  parts.push({ text: q.prompt, lang: ui });
   const first = q.visual?.split("\n")[0] ?? "";
   const expr = verbalize(first, lang);
   if (expr) parts.push({ text: expr, lang: ui });

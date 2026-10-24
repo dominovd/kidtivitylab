@@ -34,11 +34,21 @@ const EN_SYLLABLES: Record<string, number> = {
 const syllables = (word: string, lang: Lang) =>
   lang === "en" ? EN_SYLLABLES[word] ?? 0 : (word.match(VOWELS[lang]) ?? []).length;
 
+/** Extra picture words for syllable counting, so 2-, 3- and 4-syllable answers are as common as 1. */
+const SYL_EXTRA: [string, string, number][] = [
+  ["🐒", "monkey", 2], ["🍕", "pizza", 2], ["🤖", "robot", 2], ["🚀", "rocket", 2], ["🍪", "cookie", 2], ["🦓", "zebra", 2],
+  ["🐼", "panda", 2], ["🕷️", "spider", 2], ["🧁", "cupcake", 2], ["🌈", "rainbow", 2], ["🐰", "bunny", 2], ["🧸", "teddy", 2],
+  ["🦕", "dinosaur", 3], ["🦋", "butterfly", 3], ["🍓", "strawberry", 3], ["🦘", "kangaroo", 3], ["🐙", "octopus", 3],
+  ["🍍", "pineapple", 3], ["🍅", "tomato", 3], ["🥔", "potato", 3], ["☂️", "umbrella", 3], ["🥦", "broccoli", 3], ["🍔", "hamburger", 3],
+  ["🐛", "caterpillar", 4], ["🚁", "helicopter", 4], ["🥑", "avocado", 4], ["🐊", "alligator", 4], ["📺", "television", 4], ["🥣", "macaroni", 4],
+];
+
 // ---------------- calendar (6) ----------------
 const DAYS = {
   uk: ["понеділок", "вівторок", "середа", "четвер", "п'ятниця", "субота", "неділя"],
   ru: ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"],
-  en: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+  // US calendars start the week on Sunday
+  en: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
 };
 const DAYS_GEN = {
   uk: ["понеділка", "вівторка", "середи", "четверга", "п'ятниці", "суботи", "неділі"],
@@ -246,17 +256,32 @@ export const extraSkills: Skill[] = [
     title: l("Склади", "Слоги", "Syllables"),
     gen: (level, lang) => {
       const maxSyl = [2, 3, 3, 4, 4][level - 1];
-      const pool = BASIC_WORDS.filter((w) => {
-        const n = syllables(w[lang], lang);
-        return n >= 1 && n <= maxSyl;
-      });
-      const w = pick(pool);
-      const n = syllables(w[lang], lang);
+      let w: { e: string; text: string };
+      let n: number;
+      if (lang === "en") {
+        // pick the syllable count first, so every answer is equally likely
+        const all = [
+          ...BASIC_WORDS.map((x) => ({ e: x.e, text: x.en, n: syllables(x.en, "en") })),
+          ...SYL_EXTRA.map(([e, text, k]) => ({ e, text, n: k })),
+        ];
+        const target = rand(1, maxSyl);
+        const c = pick(all.filter((x) => x.n === target));
+        w = c;
+        n = c.n;
+      } else {
+        const pool = BASIC_WORDS.filter((x) => {
+          const k = syllables(x[lang], lang);
+          return k >= 1 && k <= maxSyl;
+        });
+        const x = pick(pool);
+        w = { e: x.e, text: x[lang] };
+        n = syllables(x[lang], lang);
+      }
       return {
         kind: "choice",
         prompt: P.syllables[lang],
-        visual: `${w.e}\n${w[lang].toLocaleUpperCase()}`,
-        speak: { text: w[lang], lang: speechLang[lang], auto: true },
+        visual: `${w.e}\n${w.text.toLocaleUpperCase()}`,
+        speak: { text: w.text, lang: speechLang[lang], auto: true },
         options: ["1", "2", "3", "4"].slice(0, Math.max(3, maxSyl)),
         answer: String(n),
       };

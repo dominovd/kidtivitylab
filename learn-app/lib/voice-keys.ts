@@ -22,5 +22,12 @@ export function splitForSpeech(line: string): SpeechPart[] {
 export const phraseKey = (text: string) => `p:${norm(text)}`;
 export const numberKey = (n: string, variant: "mid" | "end") => `n:${n}:${variant}`;
 
+/** What actually gets spoken: emoji and pictographs removed ("🧶 Found the yarn" → "Found the yarn"). */
+export const spokenText = (text: string) =>
+  text
+    .replace(/[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{FE0F}\u{200D}\u{20E3}]/gu, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
 /** Spelled-out forms where the written text would be read badly. */
 export const sayAs = (text: string) => text.replace(/\bmin\b/g, "minutes");

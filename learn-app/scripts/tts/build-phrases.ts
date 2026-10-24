@@ -14,14 +14,14 @@ import { taskSpeech } from "../../lib/say";
 import { t } from "../../lib/i18n";
 import { HEROES } from "../../lib/heroes";
 import { praise, encourage } from "../../lib/praise";
-import { NUM_RE, splitForSpeech, numberKey, phraseKey, sayAs } from "../../lib/voice-keys";
+import { NUM_RE, splitForSpeech, numberKey, phraseKey, sayAs, spokenText } from "../../lib/voice-keys";
 
 type Clip = { key: string; text: string; previous_text?: string; next_text?: string };
 
 const SAMPLES = 4000;
 const spoken = new Set<string>();
 const add = (s?: string) => {
-  const v = s?.replace(/\s+/g, " ").trim();
+  const v = s ? spokenText(s) : "";
   if (v) spoken.add(v);
 };
 
@@ -33,6 +33,7 @@ for (const s of SKILLS.filter((x) => x.age === 6)) {
       for (const p of taskSpeech(q, "en", true)) add(p.text);
       add(q.answerSpeech?.text);
       if (q.optionSpeech) q.options?.forEach(add);
+      if (q.tokenSpeech) q.tokens?.forEach(add);
     }
 }
 

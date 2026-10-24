@@ -283,7 +283,15 @@ export default function Round({ ask, size, label, lang, young, sound, voice = tr
               </div>
               <div className="order-pool">
                 {q.tokens!.map((tok, i) => (
-                  <button key={i} className="token" disabled={order.includes(i) || phase === "feedback"} onClick={() => setOrder([...order, i])}>
+                  <button
+                    key={i}
+                    className="token"
+                    disabled={order.includes(i) || phase === "feedback"}
+                    onClick={() => {
+                      setOrder([...order, i]);
+                      if (sound && q.tokenSpeech) speakSeq([{ text: tok, lang: q.tokenSpeech }]);
+                    }}
+                  >
                     {tok}
                   </button>
                 ))}

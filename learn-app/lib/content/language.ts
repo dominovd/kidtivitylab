@@ -249,7 +249,7 @@ const SENTENCES: Record<Lang, Sentence[]> = {
   ],
   en: [
     { text: "Mary has a red balloon.", q: "What color is the balloon?", a: "🔴", w: ["🔵", "🟢", "🟡"] },
-    { text: "The cat is sleeping on the sofa and the dog is playing with a ball.", q: "Who is playing with the ball?", a: "🐶", w: ["🐱", "🐭", "🐰"] },
+    { text: "The cat is sleeping on the couch and the dog is playing with a ball.", q: "Who is playing with the ball?", a: "🐶", w: ["🐱", "🐭", "🐰"] },
     { text: "The bunny hid under the fir tree.", q: "Who hid?", a: "🐰", w: ["🦊", "🐻", "🐿️"] },
     { text: "There is a vase of flowers on the table.", q: "What is on the table?", a: "💐", w: ["📚", "🍞", "🧸"] },
     { text: "Grandma baked a tasty pie.", q: "What did Grandma bake?", a: "🥧", w: ["🍕", "🍞", "🍪"] },
@@ -463,9 +463,9 @@ const STORIES: Record<Lang, Story[]> = {
       events: ["🚿 Проснулась и умылась", "🥣 Завтракала кашей", "🏫 Пошла в школу", "📖 Читала книгу"] },
   ],
   en: [
-    { text: "Whiskers the cat found a ball of yarn. He played with it for a long time. Then Whiskers fell asleep on the sofa.",
+    { text: "Whiskers the cat found a ball of yarn. He played with it for a long time. Then Whiskers fell asleep on the couch.",
       qs: [{ q: "What did the cat find?", a: "🧶", w: ["⚽", "🦴", "🧸"] }, { q: "Where did Whiskers fall asleep?", a: "🛋️", w: ["🛏️", "🌳", "🚗"] }],
-      events: ["🧶 Found the yarn", "🐱 Played with the yarn", "😴 Fell asleep on the sofa"] },
+      events: ["🧶 Found the yarn", "🐱 Played with the yarn", "😴 Fell asleep on the couch"] },
     { text: "Olly planted a seed. She watered it every day. A week later a flower grew.",
       qs: [{ q: "What did Olly plant?", a: "🌱", w: ["🍎", "🥕", "🌳"] }, { q: "What grew?", a: "🌸", w: ["🍄", "🌳", "🍓"] }],
       events: ["🌱 Planted a seed", "💧 Watered it", "🌸 A flower grew"] },
@@ -481,12 +481,12 @@ const STORIES: Record<Lang, Story[]> = {
     { text: "It was Martha's birthday. Mom baked a cake with candles. Friends came and gave her a teddy bear. Martha made a wish and blew out the candles.",
       qs: [{ q: "What did Mom bake?", a: "🎂", w: ["🍕", "🍪", "🥞"] }, { q: "What did the friends give her?", a: "🧸", w: ["🚗", "⚽", "🎈"] }],
       events: ["🎂 Mom baked a cake", "👫 Friends came", "🎁 They gave a teddy bear", "🕯️ Martha blew out the candles"] },
-    { text: "Bim the puppy lost his ball. He looked for it in the garden and in his kennel. Then Bim saw the ball under a bush. He happily brought it to the boy.",
+    { text: "Bim the puppy lost his ball. He looked for it in the yard and in his doghouse. Then Bim saw the ball under a bush. He happily brought it to the boy.",
       qs: [{ q: "What did Bim lose?", a: "⚽", w: ["🦴", "🧸", "🥣"] }, { q: "Where was the ball?", a: "🌿", w: ["🏠", "🛏️", "🚗"] }],
-      events: ["😢 Bim lost his ball", "🔍 Looked in the garden", "🌿 Saw the ball under a bush", "🐶 Brought the ball to the boy"] },
-    { text: "In the morning Mia woke up and washed her face. Then she had porridge for breakfast. After breakfast Mia went to school. There she read an interesting book.",
+      events: ["😢 Bim lost his ball", "🔍 Looked in the yard", "🌿 Saw the ball under a bush", "🐶 Brought the ball to the boy"] },
+    { text: "In the morning Mia woke up and washed her face. Then she had oatmeal for breakfast. After breakfast Mia went to school. There she read an interesting book.",
       qs: [{ q: "What did Mia have for breakfast?", a: "🥣", w: ["🍕", "🍔", "🍰"] }, { q: "Where did Mia go?", a: "🏫", w: ["🏥", "🏪", "🏞️"] }],
-      events: ["🚿 Woke up and washed", "🥣 Had porridge", "🏫 Went to school", "📖 Read a book"] },
+      events: ["🚿 Woke up and washed", "🥣 Had oatmeal", "🏫 Went to school", "📖 Read a book"] },
   ],
 };
 const SP = {
@@ -600,15 +600,15 @@ export const langSkills: Skill[] = [
       if (kind === "retell") {
         let tokens = shuffle(st.events);
         while (tokens.join("|") === st.events.join("|")) tokens = shuffle(st.events);
-        return { kind: "order", prompt: SP.retell[lang], passage: st.text, tokens, answer: st.events.join(" ") };
+        return { kind: "order", prompt: SP.retell[lang], passage: st.text, tokens, answer: st.events.join(" "), readPassage: true, tokenSpeech: speechLang[lang] };
       }
       if (kind === "firstLast") {
         const first = Math.random() < 0.5;
         const right = first ? st.events[0] : st.events[st.events.length - 1];
-        return { kind: "choice", prompt: first ? SP.first[lang] : SP.last[lang], passage: st.text, options: shuffle(st.events), answer: right };
+        return { kind: "choice", prompt: first ? SP.first[lang] : SP.last[lang], passage: st.text, options: shuffle(st.events), answer: right, readPassage: true, optionSpeech: speechLang[lang] };
       }
       const q = pick(st.qs);
-      return { kind: "choice", prompt: q.q, passage: st.text, options: shuffle([q.a, ...q.w.slice(0, level <= 1 ? 2 : 3)]), answer: q.a, emojiOptions: true };
+      return { kind: "choice", prompt: q.q, passage: st.text, options: shuffle([q.a, ...q.w.slice(0, level <= 1 ? 2 : 3)]), answer: q.a, emojiOptions: true, readPassage: true };
     },
   },
 

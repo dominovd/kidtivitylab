@@ -26,6 +26,10 @@ export type Question = {
   answerSpeech?: { text: string; lang: string };
   /** Speech language for a 🔊 button on each option (young kids who cannot read English yet). */
   optionSpeech?: string;
+  /** Read the passage aloud before the question (listening tasks for kids who don't read yet). */
+  readPassage?: boolean;
+  /** Speech language for saying an "order" token aloud when it is tapped. */
+  tokenSpeech?: string;
   /** A circle or square cut into equal parts, some of them shaded. */
   fraction?: { parts: number; shaded: number; shape: "circle" | "square"; /** first shaded part */ start?: number };
   /** Electronic clock display, e.g. "08:30" or "15:00". */
