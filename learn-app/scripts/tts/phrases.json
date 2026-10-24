@@ -2952,7 +2952,7 @@
  {
   "key": "p:. How many more toy cars does Leo have?",
   "text": ". How many more toy cars does Leo have?",
-  "previous_text": "Leo has 7 toy cars and Mia has 4"
+  "previous_text": "Leo has 4 toy cars and Mia has 6"
  },
  {
   "key": "p:a",
@@ -2974,13 +2974,13 @@
   "key": "p:and",
   "text": "and",
   "previous_text": "4",
-  "next_text": "5"
+  "next_text": "6"
  },
  {
   "key": "p:and lasted",
   "text": "and lasted",
-  "previous_text": "The lesson started at 2:15",
-  "next_text": "45 minutes. When did it end?"
+  "previous_text": "The cartoon started at 10:30",
+  "next_text": "4 minutes. When did it end?"
  },
  {
   "key": "p:apple",
@@ -3023,8 +3023,8 @@
  {
   "key": "p:balloons. Leo has",
   "text": "balloons. Leo has",
-  "previous_text": "Mia has 3",
-  "next_text": "4 more. How many balloons does Leo have?"
+  "previous_text": "Mia has 4",
+  "next_text": "6 more. How many balloons does Leo have?"
  },
  {
   "key": "p:banana",
@@ -3042,7 +3042,7 @@
   "key": "p:birds were sitting on a branch. Then",
   "text": "birds were sitting on a branch. Then",
   "previous_text": "4",
-  "next_text": "3 of them flew away. How many birds are left?"
+  "next_text": "6 of them flew away. How many birds are left?"
  },
  {
   "key": "p:black",
@@ -3059,12 +3059,12 @@
  {
   "key": "p:box minus",
   "text": "box minus",
-  "next_text": "39 equals 13"
+  "next_text": "4 equals 6"
  },
  {
   "key": "p:box plus",
   "text": "box plus",
-  "next_text": "14 equals 40"
+  "next_text": "4 equals 6"
  },
  {
   "key": "p:bread",
@@ -3110,7 +3110,7 @@
  {
   "key": "p:chicks have?",
   "text": "chicks have?",
-  "previous_text": "How many legs do 2"
+  "previous_text": "How many legs do 4"
  },
  {
   "key": "p:cow",
@@ -3127,12 +3127,12 @@
  {
   "key": "p:days ago?",
   "text": "days ago?",
-  "previous_text": "Today is Tuesday. What day was it 3"
+  "previous_text": "Today is Friday. What day was it 4"
  },
  {
   "key": "p:days?",
   "text": "days?",
-  "previous_text": "Today is Thursday. What day will it be in 2"
+  "previous_text": "Today is Friday. What day will it be in 4"
  },
  {
   "key": "p:December: which season is it?",
@@ -3186,13 +3186,13 @@
  {
   "key": "p:equals",
   "text": "equals",
-  "previous_text": "box plus 14",
-  "next_text": "40"
+  "previous_text": "box minus 4",
+  "next_text": "6"
  },
  {
   "key": "p:equals what",
-  "text": "equals what",
-  "previous_text": "4 plus 1"
+  "text": "equals what?",
+  "previous_text": "4 minus 6"
  },
  {
   "key": "p:f",
@@ -3469,7 +3469,7 @@
  {
   "key": "p:How many legs do",
   "text": "How many legs do",
-  "next_text": "4 dogs have?"
+  "next_text": "4 cats have?"
  },
  {
   "key": "p:How many months are in a year?",
@@ -3478,7 +3478,7 @@
  {
   "key": "p:How many ones are in",
   "text": "How many ones are in",
-  "next_text": "22"
+  "next_text": "4"
  },
  {
   "key": "p:How many pears did Mom buy?",
@@ -3507,7 +3507,7 @@
  {
   "key": "p:How many tens are in",
   "text": "How many tens are in",
-  "next_text": "30"
+  "next_text": "4"
  },
  {
   "key": "p:How many triangles?",
@@ -3584,7 +3584,7 @@
  {
   "key": "p:Leo has",
   "text": "Leo has",
-  "next_text": "7 toy cars and Mia has 4 . How many more toy cars does Leo have?"
+  "next_text": "4 toy cars and Mia has 6 . How many more toy cars does Leo have?"
  },
  {
   "key": "p:Let's practice more at this level",
@@ -3621,7 +3621,7 @@
  {
   "key": "p:Mia has",
   "text": "Mia has",
-  "next_text": "3 balloons. Leo has 4 more. How many balloons does Leo have?"
+  "next_text": "4 balloons. Leo has 6 more. How many balloons does Leo have?"
  },
  {
   "key": "p:milk",
@@ -3630,139 +3630,139 @@
  {
   "key": "p:min. When did it end?",
   "text": "minutes. When did it end?",
-  "previous_text": "The lesson started at 2:15 and lasted 45"
+  "previous_text": "The cartoon started at 10:30 and lasted 4"
  },
  {
   "key": "p:minus",
   "text": "minus",
-  "previous_text": "5",
-  "next_text": "3 equals what"
+  "previous_text": "4",
+  "next_text": "6 equals what"
  },
  {
   "key": "p:minus box equals",
   "text": "minus box equals",
-  "previous_text": "8",
-  "next_text": "4"
+  "previous_text": "4",
+  "next_text": "6"
  },
  {
   "key": "p:months after April?",
   "text": "months after April?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after August?",
   "text": "months after August?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after December?",
   "text": "months after December?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after February?",
   "text": "months after February?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after January?",
   "text": "months after January?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after July?",
   "text": "months after July?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after June?",
   "text": "months after June?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after March?",
   "text": "months after March?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after May?",
   "text": "months after May?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after November?",
   "text": "months after November?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after October?",
   "text": "months after October?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months after September?",
   "text": "months after September?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before April?",
   "text": "months before April?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before August?",
   "text": "months before August?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before December?",
   "text": "months before December?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before February?",
   "text": "months before February?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before January?",
   "text": "months before January?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before July?",
   "text": "months before July?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before June?",
   "text": "months before June?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before March?",
   "text": "months before March?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before May?",
   "text": "months before May?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before November?",
   "text": "months before November?",
-  "previous_text": "Which month is 2"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before October?",
   "text": "months before October?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:months before September?",
   "text": "months before September?",
-  "previous_text": "Which month is 3"
+  "previous_text": "Which month is 4"
  },
  {
   "key": "p:moon",
@@ -3776,7 +3776,7 @@
  {
   "key": "p:more. How many balloons does Leo have?",
   "text": "more. How many balloons does Leo have?",
-  "previous_text": "Mia has 3 balloons. Leo has 4"
+  "previous_text": "Mia has 4 balloons. Leo has 6"
  },
  {
   "key": "p:mouse",
@@ -3825,7 +3825,7 @@
  {
   "key": "p:of them flew away. How many birds are left?",
   "text": "of them flew away. How many birds are left?",
-  "previous_text": "4 birds were sitting on a branch. Then 3"
+  "previous_text": "4 birds were sitting on a branch. Then 6"
  },
  {
   "key": "p:one",
@@ -3871,13 +3871,13 @@
   "key": "p:plus",
   "text": "plus",
   "previous_text": "4",
-  "next_text": "1 equals what"
+  "next_text": "6 equals what"
  },
  {
   "key": "p:plus box equals",
   "text": "plus box equals",
-  "previous_text": "9",
-  "next_text": "10"
+  "previous_text": "4",
+  "next_text": "6"
  },
  {
   "key": "p:purple",
@@ -3994,7 +3994,7 @@
  {
   "key": "p:The cartoon started at",
   "text": "The cartoon started at",
-  "next_text": "10:00 and lasted 30 minutes. When did it end?"
+  "next_text": "10:30 and lasted 4 minutes. When did it end?"
  },
  {
   "key": "p:The electronic clock shows afternoon time. What will the clock with hands show?",
@@ -4003,12 +4003,12 @@
  {
   "key": "p:The football match started at",
   "text": "The football match started at",
-  "next_text": "7:30 and lasted 15 minutes. When did it end?"
+  "next_text": "10:30 and lasted 4 minutes. When did it end?"
  },
  {
   "key": "p:The lesson started at",
   "text": "The lesson started at",
-  "next_text": "2:15 and lasted 45 minutes. When did it end?"
+  "next_text": "10:30 and lasted 4 minutes. When did it end?"
  },
  {
   "key": "p:There are",
@@ -4034,8 +4034,8 @@
  {
   "key": "p:times",
   "text": "times",
-  "previous_text": "2",
-  "next_text": "10 equals what"
+  "previous_text": "4",
+  "next_text": "6 equals what"
  },
  {
   "key": "p:Today is Friday. What day is the day after tomorrow?",
@@ -4044,12 +4044,12 @@
  {
   "key": "p:Today is Friday. What day was it",
   "text": "Today is Friday. What day was it",
-  "next_text": "3 days ago?"
+  "next_text": "4 days ago?"
  },
  {
   "key": "p:Today is Friday. What day will it be in",
   "text": "Today is Friday. What day will it be in",
-  "next_text": "3 days?"
+  "next_text": "4 days?"
  },
  {
   "key": "p:Today is Monday. What day is the day after tomorrow?",
@@ -4072,12 +4072,12 @@
  {
   "key": "p:Today is Saturday. What day was it",
   "text": "Today is Saturday. What day was it",
-  "next_text": "2 days ago?"
+  "next_text": "4 days ago?"
  },
  {
   "key": "p:Today is Saturday. What day will it be in",
   "text": "Today is Saturday. What day will it be in",
-  "next_text": "2 days?"
+  "next_text": "4 days?"
  },
  {
   "key": "p:Today is Sunday. What day is the day after tomorrow?",
@@ -4086,12 +4086,12 @@
  {
   "key": "p:Today is Sunday. What day was it",
   "text": "Today is Sunday. What day was it",
-  "next_text": "2 days ago?"
+  "next_text": "4 days ago?"
  },
  {
   "key": "p:Today is Sunday. What day will it be in",
   "text": "Today is Sunday. What day will it be in",
-  "next_text": "3 days?"
+  "next_text": "4 days?"
  },
  {
   "key": "p:Today is Thursday. What day is the day after tomorrow?",
@@ -4105,7 +4105,7 @@
  {
   "key": "p:Today is Thursday. What day will it be in",
   "text": "Today is Thursday. What day will it be in",
-  "next_text": "2 days?"
+  "next_text": "4 days?"
  },
  {
   "key": "p:Today is Tuesday. What day is the day after tomorrow?",
@@ -4114,7 +4114,7 @@
  {
   "key": "p:Today is Tuesday. What day was it",
   "text": "Today is Tuesday. What day was it",
-  "next_text": "3 days ago?"
+  "next_text": "4 days ago?"
  },
  {
   "key": "p:Today is Tuesday. What day will it be in",
@@ -4128,12 +4128,12 @@
  {
   "key": "p:Today is Wednesday. What day was it",
   "text": "Today is Wednesday. What day was it",
-  "next_text": "2 days ago?"
+  "next_text": "4 days ago?"
  },
  {
   "key": "p:Today is Wednesday. What day will it be in",
   "text": "Today is Wednesday. What day will it be in",
-  "next_text": "3 days?"
+  "next_text": "4 days?"
  },
  {
   "key": "p:Tomorrow is Friday. What day was yesterday?",
@@ -4166,8 +4166,8 @@
  {
   "key": "p:toy cars and Mia has",
   "text": "toy cars and Mia has",
-  "previous_text": "Leo has 7",
-  "next_text": "4 . How many more toy cars does Leo have?"
+  "previous_text": "Leo has 4",
+  "next_text": "6 . How many more toy cars does Leo have?"
  },
  {
   "key": "p:train",
@@ -4231,8 +4231,8 @@
  },
  {
   "key": "p:what",
-  "text": "what",
-  "previous_text": "6 7 8 9"
+  "text": "what?",
+  "previous_text": "4 6 8 3 5"
  },
  {
   "key": "p:What appeared in the sky?",
@@ -4581,7 +4581,7 @@
  {
   "key": "p:Which month is",
   "text": "Which month is",
-  "next_text": "2 months after April?"
+  "next_text": "4 months after April?"
  },
  {
   "key": "p:Which number comes next?",

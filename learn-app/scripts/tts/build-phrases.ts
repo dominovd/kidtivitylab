@@ -52,21 +52,30 @@ const put = (c: Clip) => {
 };
 
 const numbers = new Set<string>();
+// Lines with numbers are reduced to templates with fixed sample numbers, so the context
+// (and with it the clip file names) stays the same however the generators were sampled.
+const NUM_G = new RegExp(NUM_RE.source, "g");
+const SAMPLE = ["4", "6", "8", "3", "5", "7"];
+const templates = new Set<string>();
 for (const text of spoken) {
   if (!NUM_RE.test(text)) {
     put({ key: phraseKey(text), text: sayAs(text) });
     continue;
   }
+  text.match(NUM_G)!.forEach((n) => numbers.add(n));
+  let k = 0;
+  templates.add(text.replace(NUM_G, (n) => (n.includes(":") ? "10:30" : SAMPLE[k++ % SAMPLE.length])));
+}
+for (const text of [...templates].sort()) {
   // segments get the surrounding sentence as context
   const parts = splitForSpeech(text);
   parts.forEach((p, i) => {
-    if (p.kind === "num") {
-      numbers.add(p.value);
-      return;
-    }
+    if (p.kind === "num") return;
     const prev = parts.slice(0, i).map((x) => x.value).join(" ");
     const next = parts.slice(i + 1).map((x) => x.value).join(" ");
-    put({ key: phraseKey(p.value), text: sayAs(p.value), previous_text: sayAs(prev) || undefined, next_text: sayAs(next) || undefined });
+    // "... equals what" ends a spoken question: say it as one
+    const say = sayAs(p.value) + (i === parts.length - 1 && /\bwhat$/.test(p.value) ? "?" : "");
+    put({ key: phraseKey(p.value), text: say, previous_text: sayAs(prev) || undefined, next_text: sayAs(next) || undefined });
   });
 }
 
