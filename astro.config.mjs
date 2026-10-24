@@ -7,7 +7,7 @@ export default defineConfig({
   site: 'https://kidtivitylab.com',
   integrations: [
     sitemap({
-      // /learn is a separate Next.js app served through a Vercel rewrite (see vercel.json)
+      // /learn is the Next.js app in learn-app/, exported statically into dist/learn by the build
       customPages: [
         'https://kidtivitylab.com/learn/',
         'https://kidtivitylab.com/learn/how-it-works/',
@@ -26,15 +26,8 @@ export default defineConfig({
     }),
   ],
   trailingSlash: 'always',
-  // Local only: proxy /learn to the Next.js app running in production mode
-  // (cd learn-app && npm run build && npm run start -- -p 3000), same as on Vercel.
-  // For editing the app itself use `npm run dev` there and open localhost:3000/learn directly.
-  // In production Vercel handles /learn via the rewrite in vercel.json.
-  vite: {
-    server: {
-      proxy: { '/learn': 'http://localhost:3000' },
-    },
-  },
+  // The game (learn-app/) is not served by `astro dev`. Full local preview with the game:
+  // `npm run build && npm run preview` (localhost:4321/learn/). Editing the game: `cd learn-app && npm run dev`.
   build: {
     format: 'directory',
   },

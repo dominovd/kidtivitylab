@@ -9,3 +9,6 @@ _to_delete/
 _new-heroes/
 *.tar.gz
 _new-art/
+
+# learn-app static export
+learn-app/out/
