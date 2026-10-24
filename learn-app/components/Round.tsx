@@ -198,6 +198,11 @@ export default function Round({ ask, size, label, lang, young, sound, voice = tr
               <FractionPic {...q.fraction} />
             </div>
           )}
+          {q.coins && (
+            <div className="scene">
+              <Coins values={q.coins} />
+            </div>
+          )}
           {q.shape && (
             <div className="scene">
               <Shape id={q.shape} />
@@ -211,7 +216,7 @@ export default function Round({ ask, size, label, lang, young, sound, voice = tr
                   phase === "feedback" ? (norm(o) === norm(q.answer) ? "right" : o === picked ? "wrong" : "dim") : "";
                 const [oh, om] = q.clockOptions ? o.split(":").map(Number) : [0, 0];
                 const btn = (
-                  <button key={o} className={`opt ${state} ${q.clockOptions ? "clock-opt" : ""}`} disabled={phase === "feedback"} onClick={() => submit(o)} aria-label={o}>
+                  <button key={o} className={`opt ${state} ${q.clockOptions ? "clock-opt" : ""} ${o.length > 6 && !q.emojiOptions ? "long" : ""}`} disabled={phase === "feedback"} onClick={() => submit(o)} aria-label={o}>
                     {q.clockOptions ? <Clock h={oh} m={om} /> : o}
                   </button>
                 );
@@ -397,6 +402,38 @@ export function Clock({ h, m }: { h: number; m: number }) {
 }
 
 /** A circle cut into sectors or a square cut into strips, the first `shaded` parts filled. */
+/** US coins drawn to scale-ish: the dime is the smallest, the quarter the biggest. */
+const COIN_STYLE: Record<number, { r: number; fill: string; stroke: string; text: string }> = {
+  1: { r: 19, fill: "#d98a4b", stroke: "#a85d2a", text: "#5a2e10" },
+  5: { r: 21, fill: "#d9dde3", stroke: "#9aa3ad", text: "#3f4650" },
+  10: { r: 17, fill: "#e4e7eb", stroke: "#9aa3ad", text: "#3f4650" },
+  25: { r: 24, fill: "#cfd4da", stroke: "#8a939d", text: "#3f4650" },
+};
+export function Coins({ values }: { values: number[] }) {
+  const gap = 6;
+  let x = 0;
+  const placed = values.map((v) => {
+    const s = COIN_STYLE[v] ?? COIN_STYLE[1];
+    const cx = x + s.r;
+    x += s.r * 2 + gap;
+    return { v, s, cx };
+  });
+  const w = Math.max(1, x - gap);
+  return (
+    <svg className="coins-pic" viewBox={`0 0 ${w} 52`} width={Math.min(w * 1.6, 520)} role="img" aria-label={values.map((v) => `${v} cents`).join(", ")}>
+      {placed.map(({ v, s, cx }, i) => (
+        <g key={i}>
+          <circle cx={cx} cy={26} r={s.r} fill={s.fill} stroke={s.stroke} strokeWidth={2.5} />
+          <circle cx={cx} cy={26} r={s.r - 4} fill="none" stroke={s.stroke} strokeWidth={1} opacity={0.6} />
+          <text x={cx} y={30.5} textAnchor="middle" fontSize={s.r > 20 ? 13 : 11} fontWeight={800} fill={s.text}>
+            {v}¢
+          </text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
 export function FractionPic({ parts, shaded, shape, start = 0 }: { parts: number; shaded: number; shape: "circle" | "square"; start?: number }) {
   const pieces = Array.from({ length: parts }, (_, i) => {
     const on = (i - start + parts) % parts < shaded;

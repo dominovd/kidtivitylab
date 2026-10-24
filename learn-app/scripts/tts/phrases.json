@@ -10,6 +10,16 @@
   "next_text": "plus 4 equals what?"
  },
  {
+  "key": "n:00:end",
+  "text": "00.",
+  "previous_text": "4 plus 6 equals"
+ },
+ {
+  "key": "n:00:mid",
+  "text": "00",
+  "next_text": "plus 4 equals what?"
+ },
+ {
   "key": "n:1:00:end",
   "text": "1:00.",
   "previous_text": "The lesson ended at"
@@ -2960,16 +2970,133 @@
   "previous_text": "It is bedtime at 10:30"
  },
  {
+  "key": "p:. You buy a bookmark for",
+  "text": ". You buy a bookmark for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
+  "key": "p:. You buy a pencil for",
+  "text": ". You buy a pencil for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
+  "key": "p:. You buy a sticker for",
+  "text": ". You buy a sticker for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
+  "key": "p:. You buy a toy car for",
+  "text": ". You buy a toy car for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
+  "key": "p:. You buy an apple for",
+  "text": ". You buy an apple for",
+  "previous_text": "You have $ 4 6",
+  "next_text": "8 ¢. How much money is left?"
+ },
+ {
+  "key": "p:¢. How much money is left?",
+  "text": "¢. How much money is left?",
+  "previous_text": "You have $ 4 6 . You buy a bookmark for 8"
+ },
+ {
+  "key": "p:¢. You buy a bookmark for",
+  "text": "¢. You buy a bookmark for",
+  "previous_text": "You have 4",
+  "next_text": "6 ¢. How much money is left?"
+ },
+ {
+  "key": "p:¢. You buy a pencil for",
+  "text": "¢. You buy a pencil for",
+  "previous_text": "You have 4",
+  "next_text": "6 ¢. How much money is left?"
+ },
+ {
+  "key": "p:¢. You buy a sticker for",
+  "text": "¢. You buy a sticker for",
+  "previous_text": "You have 4",
+  "next_text": "6 ¢. How much money is left?"
+ },
+ {
+  "key": "p:¢. You buy a toy car for",
+  "text": "¢. You buy a toy car for",
+  "previous_text": "You have 4",
+  "next_text": "6 ¢. How much money is left?"
+ },
+ {
+  "key": "p:¢. You buy an apple for",
+  "text": "¢. You buy an apple for",
+  "previous_text": "You have 4",
+  "next_text": "6 ¢. How much money is left?"
+ },
+ {
   "key": "p:a",
   "text": "a"
  },
  {
-  "key": "p:A",
-  "text": "A"
+  "key": "p:A bird made a nest. She laid three eggs. Baby birds came out.",
+  "text": "A bird made a nest. She laid three eggs. Baby birds came out."
+ },
+ {
+  "key": "p:A dime is",
+  "text": "A dime is",
+  "next_text": "4 cents"
  },
  {
   "key": "p:A flower grew",
   "text": "A flower grew"
+ },
+ {
+  "key": "p:A little seed fell on the ground. Rain watered it. The sun warmed it. Soon a sunflower grew taller than the fence.",
+  "text": "A little seed fell on the ground. Rain watered it. The sun warmed it. Soon a sunflower grew taller than the fence."
+ },
+ {
+  "key": "p:A nickel is",
+  "text": "A nickel is",
+  "next_text": "4 cents"
+ },
+ {
+  "key": "p:A penny is",
+  "text": "A penny is",
+  "next_text": "4 cent"
+ },
+ {
+  "key": "p:A quarter is",
+  "text": "A quarter is",
+  "next_text": "4 cents"
+ },
+ {
+  "key": "p:A seed fell",
+  "text": "A seed fell"
+ },
+ {
+  "key": "p:A sunflower grew",
+  "text": "A sunflower grew"
+ },
+ {
+  "key": "p:A wave washed it away",
+  "text": "A wave washed it away"
+ },
+ {
+  "key": "p:Added cheese and a tomato",
+  "text": "Added cheese and a tomato"
+ },
+ {
+  "key": "p:after",
+  "text": "after"
+ },
+ {
+  "key": "p:again",
+  "text": "again"
+ },
+ {
+  "key": "p:all",
+  "text": "all"
  },
  {
   "key": "p:alligator",
@@ -2980,20 +3107,26 @@
   "text": "Almost! Next time you'll get it"
  },
  {
+  "key": "p:always",
+  "text": "always"
+ },
+ {
   "key": "p:Amazing!",
   "text": "Amazing!"
  },
  {
   "key": "p:and",
-  "text": "and",
-  "previous_text": "4",
-  "next_text": "6"
+  "text": "and"
  },
  {
   "key": "p:and lasted",
   "text": "and lasted",
   "previous_text": "The cartoon started at 10:30",
   "next_text": "4 minutes. When did it end?"
+ },
+ {
+  "key": "p:ant",
+  "text": "ant"
  },
  {
   "key": "p:apple",
@@ -3008,6 +3141,26 @@
  {
   "key": "p:April: which season is it?",
   "text": "April: which season is it?"
+ },
+ {
+  "key": "p:are",
+  "text": "are"
+ },
+ {
+  "key": "p:around",
+  "text": "around"
+ },
+ {
+  "key": "p:ask",
+  "text": "ask"
+ },
+ {
+  "key": "p:at",
+  "text": "at"
+ },
+ {
+  "key": "p:Ate it in the park",
+  "text": "Ate it in the park"
  },
  {
   "key": "p:August: which season is it?",
@@ -3026,8 +3179,12 @@
   "text": "b"
  },
  {
-  "key": "p:B",
-  "text": "B"
+  "key": "p:Baby birds came out",
+  "text": "Baby birds came out"
+ },
+ {
+  "key": "p:bag",
+  "text": "bag"
  },
  {
   "key": "p:ball",
@@ -3048,12 +3205,44 @@
   "text": "banana"
  },
  {
+  "key": "p:bat",
+  "text": "bat"
+ },
+ {
   "key": "p:bear",
   "text": "bear"
  },
  {
+  "key": "p:because",
+  "text": "because"
+ },
+ {
+  "key": "p:bed",
+  "text": "bed"
+ },
+ {
   "key": "p:bee",
   "text": "bee"
+ },
+ {
+  "key": "p:been",
+  "text": "been"
+ },
+ {
+  "key": "p:before",
+  "text": "before"
+ },
+ {
+  "key": "p:bell",
+  "text": "bell"
+ },
+ {
+  "key": "p:Ben built a tall tower. The cat jumped on it. The tower fell down.",
+  "text": "Ben built a tall tower. The cat jumped on it. The tower fell down."
+ },
+ {
+  "key": "p:big",
+  "text": "big"
  },
  {
   "key": "p:Bim lost his ball",
@@ -3070,6 +3259,10 @@
   "next_text": "6 of them flew away. How many birds are left?"
  },
  {
+  "key": "p:Bit into an apple",
+  "text": "Bit into an apple"
+ },
+ {
   "key": "p:black",
   "text": "black"
  },
@@ -3078,8 +3271,20 @@
   "text": "blue"
  },
  {
+  "key": "p:boat",
+  "text": "boat"
+ },
+ {
   "key": "p:book",
   "text": "book"
+ },
+ {
+  "key": "p:both",
+  "text": "both"
+ },
+ {
+  "key": "p:box",
+  "text": "box"
  },
  {
   "key": "p:box minus",
@@ -3112,24 +3317,68 @@
   "text": "brown"
  },
  {
+  "key": "p:bug",
+  "text": "bug"
+ },
+ {
+  "key": "p:Built a blanket fort",
+  "text": "Built a blanket fort"
+ },
+ {
+  "key": "p:Built a new one",
+  "text": "Built a new one"
+ },
+ {
+  "key": "p:Built a sandcastle",
+  "text": "Built a sandcastle"
+ },
+ {
   "key": "p:Built a snowman",
   "text": "Built a snowman"
+ },
+ {
+  "key": "p:Built a tower",
+  "text": "Built a tower"
  },
  {
   "key": "p:bunny",
   "text": "bunny"
  },
  {
+  "key": "p:bus",
+  "text": "bus"
+ },
+ {
+  "key": "p:but",
+  "text": "but"
+ },
+ {
   "key": "p:butterfly",
   "text": "butterfly"
+ },
+ {
+  "key": "p:buy",
+  "text": "buy"
  },
  {
   "key": "p:c",
   "text": "c"
  },
  {
-  "key": "p:C",
-  "text": "C"
+  "key": "p:cake",
+  "text": "cake"
+ },
+ {
+  "key": "p:call",
+  "text": "call"
+ },
+ {
+  "key": "p:can",
+  "text": "can"
+ },
+ {
+  "key": "p:Can you play with me?",
+  "text": "Can you play with me?"
  },
  {
   "key": "p:car",
@@ -3157,6 +3406,24 @@
   "previous_text": "How many legs do 4"
  },
  {
+  "key": "p:cent",
+  "text": "cent",
+  "previous_text": "A penny is 4"
+ },
+ {
+  "key": "p:cents",
+  "text": "cents",
+  "previous_text": "A dime is 4"
+ },
+ {
+  "key": "p:chain",
+  "text": "chain"
+ },
+ {
+  "key": "p:chair",
+  "text": "chair"
+ },
+ {
   "key": "p:cheese",
   "text": "cheese"
  },
@@ -3166,16 +3433,44 @@
   "previous_text": "How many legs do 4"
  },
  {
+  "key": "p:clock",
+  "text": "clock"
+ },
+ {
+  "key": "p:coat",
+  "text": "coat"
+ },
+ {
   "key": "p:Collected mushrooms and apples",
   "text": "Collected mushrooms and apples"
+ },
+ {
+  "key": "p:come",
+  "text": "come"
  },
  {
   "key": "p:cookie",
   "text": "cookie"
  },
  {
+  "key": "p:could",
+  "text": "could"
+ },
+ {
+  "key": "p:Could you help me?",
+  "text": "Could you help me?"
+ },
+ {
   "key": "p:cow",
   "text": "cow"
+ },
+ {
+  "key": "p:crab",
+  "text": "crab"
+ },
+ {
+  "key": "p:cup",
+  "text": "cup"
  },
  {
   "key": "p:cupcake",
@@ -3184,10 +3479,6 @@
  {
   "key": "p:d",
   "text": "d"
- },
- {
-  "key": "p:D",
-  "text": "D"
  },
  {
   "key": "p:Dad and Sam went to the river. They went fishing. Sam caught a big fish.",
@@ -3208,8 +3499,29 @@
   "text": "December: which season is it?"
  },
  {
+  "key": "p:dime",
+  "text": "dime"
+ },
+ {
+  "key": "p:dimes)",
+  "text": "dimes)",
+  "previous_text": "How much money? ( 4"
+ },
+ {
   "key": "p:dinosaur",
   "text": "dinosaur"
+ },
+ {
+  "key": "p:dish",
+  "text": "dish"
+ },
+ {
+  "key": "p:do",
+  "text": "do"
+ },
+ {
+  "key": "p:does",
+  "text": "does"
  },
  {
   "key": "p:dog",
@@ -3221,8 +3533,16 @@
   "previous_text": "How many legs do 4"
  },
  {
+  "key": "p:don't",
+  "text": "don't"
+ },
+ {
   "key": "p:Don't give up!",
   "text": "Don't give up!"
+ },
+ {
+  "key": "p:drum",
+  "text": "drum"
  },
  {
   "key": "p:duck",
@@ -3231,10 +3551,6 @@
  {
   "key": "p:e",
   "text": "e"
- },
- {
-  "key": "p:E",
-  "text": "E"
  },
  {
   "key": "p:Each picture appears once in every row and column. What goes in place of the question mark?",
@@ -3257,6 +3573,10 @@
   "text": "eleven"
  },
  {
+  "key": "p:Emma wanted to make a sandwich. She took two slices of bread. Then she added cheese and a tomato. Finally, she shared it with her brother.",
+  "text": "Emma wanted to make a sandwich. She took two slices of bread. Then she added cheese and a tomato. Finally, she shared it with her brother."
+ },
+ {
   "key": "p:equals",
   "text": "equals",
   "previous_text": "box minus 4",
@@ -3268,16 +3588,32 @@
   "previous_text": "4 minus 6"
  },
  {
+  "key": "p:every",
+  "text": "every"
+ },
+ {
+  "key": "p:eye",
+  "text": "eye"
+ },
+ {
   "key": "p:f",
   "text": "f"
  },
  {
-  "key": "p:F",
-  "text": "F"
+  "key": "p:fan",
+  "text": "fan"
  },
  {
   "key": "p:February: which season is it?",
   "text": "February: which season is it?"
+ },
+ {
+  "key": "p:Fed the goats",
+  "text": "Fed the goats"
+ },
+ {
+  "key": "p:Fell asleep on the bus",
+  "text": "Fell asleep on the bus"
  },
  {
   "key": "p:Fell asleep on the couch",
@@ -3286,6 +3622,110 @@
  {
   "key": "p:fifteen",
   "text": "fifteen"
+ },
+ {
+  "key": "p:Find the big letter: a",
+  "text": "Find the big letter: a"
+ },
+ {
+  "key": "p:Find the big letter: b",
+  "text": "Find the big letter: b"
+ },
+ {
+  "key": "p:Find the big letter: c",
+  "text": "Find the big letter: c"
+ },
+ {
+  "key": "p:Find the big letter: d",
+  "text": "Find the big letter: d"
+ },
+ {
+  "key": "p:Find the big letter: e",
+  "text": "Find the big letter: e"
+ },
+ {
+  "key": "p:Find the big letter: f",
+  "text": "Find the big letter: f"
+ },
+ {
+  "key": "p:Find the big letter: g",
+  "text": "Find the big letter: g"
+ },
+ {
+  "key": "p:Find the big letter: h",
+  "text": "Find the big letter: h"
+ },
+ {
+  "key": "p:Find the big letter: i",
+  "text": "Find the big letter: i"
+ },
+ {
+  "key": "p:Find the big letter: j",
+  "text": "Find the big letter: j"
+ },
+ {
+  "key": "p:Find the big letter: k",
+  "text": "Find the big letter: k"
+ },
+ {
+  "key": "p:Find the big letter: l",
+  "text": "Find the big letter: l"
+ },
+ {
+  "key": "p:Find the big letter: m",
+  "text": "Find the big letter: m"
+ },
+ {
+  "key": "p:Find the big letter: n",
+  "text": "Find the big letter: n"
+ },
+ {
+  "key": "p:Find the big letter: o",
+  "text": "Find the big letter: o"
+ },
+ {
+  "key": "p:Find the big letter: p",
+  "text": "Find the big letter: p"
+ },
+ {
+  "key": "p:Find the big letter: q",
+  "text": "Find the big letter: q"
+ },
+ {
+  "key": "p:Find the big letter: r",
+  "text": "Find the big letter: r"
+ },
+ {
+  "key": "p:Find the big letter: s",
+  "text": "Find the big letter: s"
+ },
+ {
+  "key": "p:Find the big letter: t",
+  "text": "Find the big letter: t"
+ },
+ {
+  "key": "p:Find the big letter: u",
+  "text": "Find the big letter: u"
+ },
+ {
+  "key": "p:Find the big letter: v",
+  "text": "Find the big letter: v"
+ },
+ {
+  "key": "p:Find the big letter: w",
+  "text": "Find the big letter: w"
+ },
+ {
+  "key": "p:Find the big letter: x",
+  "text": "Find the big letter: x"
+ },
+ {
+  "key": "p:Find the big letter: y",
+  "text": "Find the big letter: y"
+ },
+ {
+  "key": "p:Find the big letter: z",
+  "text": "Find the big letter: z"
  },
  {
   "key": "p:Find the clock with hands that shows the same time",
@@ -3416,6 +3856,10 @@
   "text": "Find this color"
  },
  {
+  "key": "p:first",
+  "text": "first"
+ },
+ {
   "key": "p:fish",
   "text": "fish"
  },
@@ -3426,6 +3870,22 @@
  {
   "key": "p:flower",
   "text": "flower"
+ },
+ {
+  "key": "p:for",
+  "text": "for"
+ },
+ {
+  "key": "p:found",
+  "text": "found"
+ },
+ {
+  "key": "p:Found a puppy",
+  "text": "Found a puppy"
+ },
+ {
+  "key": "p:Found it in the toy box",
+  "text": "Found it in the toy box"
  },
  {
   "key": "p:Found the yarn",
@@ -3452,16 +3912,48 @@
   "text": "frog"
  },
  {
+  "key": "p:from",
+  "text": "from"
+ },
+ {
   "key": "p:g",
   "text": "g"
  },
  {
-  "key": "p:G",
-  "text": "G"
+  "key": "p:Gave it water",
+  "text": "Gave it water"
+ },
+ {
+  "key": "p:get",
+  "text": "get"
  },
  {
   "key": "p:giraffe",
   "text": "giraffe"
+ },
+ {
+  "key": "p:go",
+  "text": "go"
+ },
+ {
+  "key": "p:goat",
+  "text": "goat"
+ },
+ {
+  "key": "p:goes",
+  "text": "goes"
+ },
+ {
+  "key": "p:going",
+  "text": "going"
+ },
+ {
+  "key": "p:Grandpa made a kite",
+  "text": "Grandpa made a kite"
+ },
+ {
+  "key": "p:Grandpa made a kite. We went up the hill. The kite flew up high.",
+  "text": "Grandpa made a kite. We went up the hill. The kite flew up high."
  },
  {
   "key": "p:grapes",
@@ -3480,8 +3972,8 @@
   "text": "h"
  },
  {
-  "key": "p:H",
-  "text": "H"
+  "key": "p:had",
+  "text": "had"
  },
  {
   "key": "p:Had oatmeal",
@@ -3492,6 +3984,26 @@
   "text": "hamburger"
  },
  {
+  "key": "p:has",
+  "text": "has"
+ },
+ {
+  "key": "p:hat",
+  "text": "hat"
+ },
+ {
+  "key": "p:have",
+  "text": "have"
+ },
+ {
+  "key": "p:he",
+  "text": "he"
+ },
+ {
+  "key": "p:He ran up the hill.",
+  "text": "He ran up the hill."
+ },
+ {
   "key": "p:helicopter",
   "text": "helicopter"
  },
@@ -3500,8 +4012,32 @@
   "text": "Hello! I can talk. Apple, banana, cat."
  },
  {
+  "key": "p:hen",
+  "text": "hen"
+ },
+ {
+  "key": "p:her",
+  "text": "her"
+ },
+ {
+  "key": "p:Her tooth was loose",
+  "text": "Her tooth was loose"
+ },
+ {
+  "key": "p:here",
+  "text": "here"
+ },
+ {
   "key": "p:Hid under a leaf",
   "text": "Hid under a leaf"
+ },
+ {
+  "key": "p:him",
+  "text": "him"
+ },
+ {
+  "key": "p:his",
+  "text": "his"
  },
  {
   "key": "p:horse",
@@ -3522,6 +4058,10 @@
  {
   "key": "p:How many apples did Dad buy?",
   "text": "How many apples did Dad buy?"
+ },
+ {
+  "key": "p:How many apples do I have?",
+  "text": "How many apples do I have?"
  },
  {
   "key": "p:How many are there?",
@@ -3552,6 +4092,10 @@
   "text": "How many days are in a week?"
  },
  {
+  "key": "p:How many eggs did she lay?",
+  "text": "How many eggs did she lay?"
+ },
+ {
   "key": "p:How many faces does it have?",
   "text": "How many faces does it have?"
  },
@@ -3577,6 +4121,15 @@
   "text": "How many months are in a year?"
  },
  {
+  "key": "p:How many more cents to make one dollar?",
+  "text": "How many more cents to make one dollar?"
+ },
+ {
+  "key": "p:How many more to make",
+  "text": "How many more to make",
+  "next_text": "4"
+ },
+ {
   "key": "p:How many ones are in",
   "text": "How many ones are in",
   "next_text": "4"
@@ -3584,6 +4137,10 @@
  {
   "key": "p:How many pears did Mom buy?",
   "text": "How many pears did Mom buy?"
+ },
+ {
+  "key": "p:How many pencils does Ana have now?",
+  "text": "How many pencils does Ana have now?"
  },
  {
   "key": "p:How many red circles?",
@@ -3623,8 +4180,37 @@
   "text": "How many yellow squares?"
  },
  {
+  "key": "p:How many? Pick the word.",
+  "text": "How many? Pick the word."
+ },
+ {
+  "key": "p:How much is a dime worth?",
+  "text": "How much is a dime worth?"
+ },
+ {
+  "key": "p:How much is a nickel worth?",
+  "text": "How much is a nickel worth?"
+ },
+ {
+  "key": "p:How much is a penny worth?",
+  "text": "How much is a penny worth?"
+ },
+ {
+  "key": "p:How much is a quarter worth?",
+  "text": "How much is a quarter worth?"
+ },
+ {
   "key": "p:How much is shaded?",
   "text": "How much is shaded?"
+ },
+ {
+  "key": "p:How much money is this?",
+  "text": "How much money is this?"
+ },
+ {
+  "key": "p:How much money? (",
+  "text": "How much money? (",
+  "next_text": "4 dimes)"
  },
  {
   "key": "p:How was it?",
@@ -3639,8 +4225,47 @@
   "text": "I"
  },
  {
+  "key": "p:I like your new bike.",
+  "text": "I like your new bike."
+ },
+ {
+  "key": "p:I see a big dog.",
+  "text": "I see a big dog."
+ },
+ {
+  "key": "p:I wash my hands before lunch.",
+  "text": "I wash my hands before lunch."
+ },
+ {
+  "key": "p:in",
+  "text": "in"
+ },
+ {
   "key": "p:In the morning Mia woke up and washed her face. Then she had oatmeal for breakfast. After breakfast Mia went to school. There she read an interesting book.",
   "text": "In the morning Mia woke up and washed her face. Then she had oatmeal for breakfast. After breakfast Mia went to school. There she read an interesting book."
+ },
+ {
+  "key": "p:is",
+  "text": "is"
+ },
+ {
+  "key": "p:Is",
+  "text": "Is",
+  "next_text": "4 odd or even?"
+ },
+ {
+  "key": "p:is even",
+  "text": "is even",
+  "previous_text": "4"
+ },
+ {
+  "key": "p:is odd",
+  "text": "is odd",
+  "previous_text": "4"
+ },
+ {
+  "key": "p:it",
+  "text": "it"
  },
  {
   "key": "p:It is bedtime at",
@@ -3660,20 +4285,36 @@
   "text": "It started to snow. The children put on warm jackets. They built a big snowman."
  },
  {
+  "key": "p:It was hot",
+  "text": "It was hot"
+ },
+ {
+  "key": "p:It was hot outside. Mom bought ice cream. We ate it in the park.",
+  "text": "It was hot outside. Mom bought ice cream. We ate it in the park."
+ },
+ {
   "key": "p:It was Martha's birthday. Mom baked a cake with candles. Friends came and gave her a teddy bear. Martha made a wish and blew out the candles.",
   "text": "It was Martha's birthday. Mom baked a cake with candles. Friends came and gave her a teddy bear. Martha made a wish and blew out the candles."
+ },
+ {
+  "key": "p:It was raining",
+  "text": "It was raining"
+ },
+ {
+  "key": "p:It was raining, so Jack could not play outside. He built a fort with blankets. His dog crawled inside too. They read a book together in the fort.",
+  "text": "It was raining, so Jack could not play outside. He built a fort with blankets. His dog crawled inside too. They read a book together in the fort."
  },
  {
   "key": "p:j",
   "text": "j"
  },
  {
-  "key": "p:J",
-  "text": "J"
- },
- {
   "key": "p:January: which season is it?",
   "text": "January: which season is it?"
+ },
+ {
+  "key": "p:jar",
+  "text": "jar"
  },
  {
   "key": "p:July: which season is it?",
@@ -3684,12 +4325,12 @@
   "text": "June: which season is it?"
  },
  {
-  "key": "p:k",
-  "text": "k"
+  "key": "p:just",
+  "text": "just"
  },
  {
-  "key": "p:K",
-  "text": "K"
+  "key": "p:k",
+  "text": "k"
  },
  {
   "key": "p:kangaroo",
@@ -3700,12 +4341,32 @@
   "text": "Keep it up!"
  },
  {
+  "key": "p:key",
+  "text": "key"
+ },
+ {
+  "key": "p:king",
+  "text": "king"
+ },
+ {
+  "key": "p:kite",
+  "text": "kite"
+ },
+ {
+  "key": "p:know",
+  "text": "know"
+ },
+ {
   "key": "p:l",
   "text": "l"
  },
  {
-  "key": "p:L",
-  "text": "L"
+  "key": "p:Laid three eggs",
+  "text": "Laid three eggs"
+ },
+ {
+  "key": "p:leaf",
+  "text": "leaf"
  },
  {
   "key": "p:lemon",
@@ -3717,16 +4378,52 @@
   "next_text": "4 toy cars and Mia has 6 . How many more toy cars does Leo have?"
  },
  {
+  "key": "p:Leo lost his ball. He looked under the bed. The ball was in his toy box.",
+  "text": "Leo lost his ball. He looked under the bed. The ball was in his toy box."
+ },
+ {
   "key": "p:Let's practice more at this level",
   "text": "Let's practice more at this level"
+ },
+ {
+  "key": "p:like",
+  "text": "like"
  },
  {
   "key": "p:lion",
   "text": "lion"
  },
  {
+  "key": "p:lip",
+  "text": "lip"
+ },
+ {
   "key": "p:Listen and find the picture",
   "text": "Listen and find the picture"
+ },
+ {
+  "key": "p:Listen and tap the word",
+  "text": "Listen and tap the word"
+ },
+ {
+  "key": "p:little",
+  "text": "little"
+ },
+ {
+  "key": "p:lock",
+  "text": "lock"
+ },
+ {
+  "key": "p:log",
+  "text": "log"
+ },
+ {
+  "key": "p:look",
+  "text": "look"
+ },
+ {
+  "key": "p:Look at the bird!",
+  "text": "Look at the bird!"
  },
  {
   "key": "p:Look at the scales. How many are needed to balance?",
@@ -3737,16 +4434,40 @@
   "text": "Looked in the yard"
  },
  {
+  "key": "p:Looked under the bed",
+  "text": "Looked under the bed"
+ },
+ {
+  "key": "p:Lost his ball",
+  "text": "Lost his ball"
+ },
+ {
+  "key": "p:Lucy found a little puppy. She gave it some water. The puppy wagged its tail.",
+  "text": "Lucy found a little puppy. She gave it some water. The puppy wagged its tail."
+ },
+ {
   "key": "p:m",
   "text": "m"
  },
  {
-  "key": "p:M",
-  "text": "M"
- },
- {
   "key": "p:macaroni",
   "text": "macaroni"
+ },
+ {
+  "key": "p:Made a nest",
+  "text": "Made a nest"
+ },
+ {
+  "key": "p:Make pairs. Is the number odd or even?",
+  "text": "Make pairs. Is the number odd or even?"
+ },
+ {
+  "key": "p:many",
+  "text": "many"
+ },
+ {
+  "key": "p:map",
+  "text": "map"
  },
  {
   "key": "p:March: which season is it?",
@@ -3759,6 +4480,10 @@
  {
   "key": "p:May: which season is it?",
   "text": "May: which season is it?"
+ },
+ {
+  "key": "p:me",
+  "text": "me"
  },
  {
   "key": "p:Mia has",
@@ -3789,6 +4514,14 @@
  {
   "key": "p:Mom baked a cake",
   "text": "Mom baked a cake"
+ },
+ {
+  "key": "p:Mom bought ice cream",
+  "text": "Mom bought ice cream"
+ },
+ {
+  "key": "p:Mom said, \"Go to bed!\"",
+  "text": "Mom said, \"Go to bed!\""
  },
  {
   "key": "p:monkey",
@@ -3919,6 +4652,10 @@
   "text": "moon"
  },
  {
+  "key": "p:mop",
+  "text": "mop"
+ },
+ {
   "key": "p:more. How many apples are in the basket now?",
   "text": "more. How many apples are in the basket now?",
   "previous_text": "There are 4 apples in the basket. Mom puts in 6"
@@ -3933,12 +4670,20 @@
   "text": "mouse"
  },
  {
+  "key": "p:mug",
+  "text": "mug"
+ },
+ {
+  "key": "p:my",
+  "text": "my"
+ },
+ {
   "key": "p:n",
   "text": "n"
  },
  {
-  "key": "p:N",
-  "text": "N"
+  "key": "p:net",
+  "text": "net"
  },
  {
   "key": "p:Next time will be a bit easier",
@@ -3949,6 +4694,19 @@
   "text": "Next time will be a bit harder"
  },
  {
+  "key": "p:nickel",
+  "text": "nickel"
+ },
+ {
+  "key": "p:nickels)",
+  "text": "nickels)",
+  "previous_text": "How much money? ( 4"
+ },
+ {
+  "key": "p:night",
+  "text": "night"
+ },
+ {
   "key": "p:nine",
   "text": "nine"
  },
@@ -3957,16 +4715,24 @@
   "text": "nineteen"
  },
  {
+  "key": "p:no",
+  "text": "no"
+ },
+ {
+  "key": "p:nose",
+  "text": "nose"
+ },
+ {
   "key": "p:November: which season is it?",
   "text": "November: which season is it?"
  },
  {
-  "key": "p:o",
-  "text": "o"
+  "key": "p:nut",
+  "text": "nut"
  },
  {
-  "key": "p:O",
-  "text": "O"
+  "key": "p:o",
+  "text": "o"
  },
  {
   "key": "p:October: which season is it?",
@@ -3975,6 +4741,11 @@
  {
   "key": "p:octopus",
   "text": "octopus"
+ },
+ {
+  "key": "p:odd or even?",
+  "text": "odd or even?",
+  "previous_text": "Is 4"
  },
  {
   "key": "p:of them flew away. How many birds are left?",
@@ -3986,12 +4757,28 @@
   "text": "Olly planted a seed. She watered it every day. A week later a flower grew."
  },
  {
+  "key": "p:on",
+  "text": "on"
+ },
+ {
+  "key": "p:On Saturday the family went to the beach. Noah built a sandcastle. A big wave washed it away. Noah laughed and built a new one.",
+  "text": "On Saturday the family went to the beach. Noah built a sandcastle. A big wave washed it away. Noah laughed and built a new one."
+ },
+ {
+  "key": "p:once",
+  "text": "once"
+ },
+ {
   "key": "p:one",
   "text": "one"
  },
  {
   "key": "p:orange",
   "text": "orange"
+ },
+ {
+  "key": "p:over",
+  "text": "over"
  },
  {
   "key": "p:owl",
@@ -4002,8 +4789,12 @@
   "text": "p"
  },
  {
-  "key": "p:P",
-  "text": "P"
+  "key": "p:pail",
+  "text": "pail"
+ },
+ {
+  "key": "p:pan",
+  "text": "pan"
  },
  {
   "key": "p:panda",
@@ -4014,6 +4805,10 @@
   "text": "pear"
  },
  {
+  "key": "p:pen",
+  "text": "pen"
+ },
+ {
   "key": "p:pencil",
   "text": "pencil"
  },
@@ -4022,8 +4817,25 @@
   "text": "penguin"
  },
  {
+  "key": "p:pennies)",
+  "text": "pennies)",
+  "previous_text": "How much money? ( 4"
+ },
+ {
+  "key": "p:penny",
+  "text": "penny"
+ },
+ {
+  "key": "p:pie",
+  "text": "pie"
+ },
+ {
   "key": "p:pig",
   "text": "pig"
+ },
+ {
+  "key": "p:pin",
+  "text": "pin"
  },
  {
   "key": "p:pineapple",
@@ -4042,8 +4854,16 @@
   "text": "Planted a seed"
  },
  {
+  "key": "p:play",
+  "text": "play"
+ },
+ {
   "key": "p:Played with the yarn",
   "text": "Played with the yarn"
+ },
+ {
+  "key": "p:Please write your name here.",
+  "text": "Please write your name here."
  },
  {
   "key": "p:plus",
@@ -4062,8 +4882,20 @@
   "text": "potato"
  },
  {
+  "key": "p:pull",
+  "text": "pull"
+ },
+ {
   "key": "p:purple",
   "text": "purple"
+ },
+ {
+  "key": "p:put",
+  "text": "put"
+ },
+ {
+  "key": "p:Put it under the pillow",
+  "text": "Put it under the pillow"
  },
  {
   "key": "p:Put on jackets",
@@ -4078,36 +4910,304 @@
   "text": "Put the months in order"
  },
  {
+  "key": "p:Put the toys under the bed.",
+  "text": "Put the toys under the bed."
+ },
+ {
   "key": "p:q",
   "text": "q"
  },
  {
-  "key": "p:Q",
-  "text": "Q"
+  "key": "p:quarter",
+  "text": "quarter"
  },
  {
   "key": "p:r",
   "text": "r"
  },
  {
-  "key": "p:R",
-  "text": "R"
- },
- {
   "key": "p:rabbit",
   "text": "rabbit"
+ },
+ {
+  "key": "p:rain",
+  "text": "rain"
+ },
+ {
+  "key": "p:Rain watered it",
+  "text": "Rain watered it"
  },
  {
   "key": "p:rainbow",
   "text": "rainbow"
  },
  {
+  "key": "p:ran",
+  "text": "ran"
+ },
+ {
+  "key": "p:rat",
+  "text": "rat"
+ },
+ {
   "key": "p:Read a book",
   "text": "Read a book"
  },
  {
+  "key": "p:Read a book together",
+  "text": "Read a book together"
+ },
+ {
   "key": "p:Read the word and find the picture",
   "text": "Read the word and find the picture"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with balloon?",
+  "text": "Read the words. Which one rhymes with balloon?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with bat?",
+  "text": "Read the words. Which one rhymes with bat?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with bear?",
+  "text": "Read the words. Which one rhymes with bear?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with bed?",
+  "text": "Read the words. Which one rhymes with bed?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with bee?",
+  "text": "Read the words. Which one rhymes with bee?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with bell?",
+  "text": "Read the words. Which one rhymes with bell?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with boat?",
+  "text": "Read the words. Which one rhymes with boat?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with box?",
+  "text": "Read the words. Which one rhymes with box?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with bug?",
+  "text": "Read the words. Which one rhymes with bug?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with cake?",
+  "text": "Read the words. Which one rhymes with cake?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with car?",
+  "text": "Read the words. Which one rhymes with car?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with cat?",
+  "text": "Read the words. Which one rhymes with cat?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with chain?",
+  "text": "Read the words. Which one rhymes with chain?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with chair?",
+  "text": "Read the words. Which one rhymes with chair?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with clock?",
+  "text": "Read the words. Which one rhymes with clock?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with coat?",
+  "text": "Read the words. Which one rhymes with coat?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with dish?",
+  "text": "Read the words. Which one rhymes with dish?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with dog?",
+  "text": "Read the words. Which one rhymes with dog?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with eye?",
+  "text": "Read the words. Which one rhymes with eye?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with fan?",
+  "text": "Read the words. Which one rhymes with fan?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with fish?",
+  "text": "Read the words. Which one rhymes with fish?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with fox?",
+  "text": "Read the words. Which one rhymes with fox?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with frog?",
+  "text": "Read the words. Which one rhymes with frog?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with goat?",
+  "text": "Read the words. Which one rhymes with goat?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with hat?",
+  "text": "Read the words. Which one rhymes with hat?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with hen?",
+  "text": "Read the words. Which one rhymes with hen?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with house?",
+  "text": "Read the words. Which one rhymes with house?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with jar?",
+  "text": "Read the words. Which one rhymes with jar?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with key?",
+  "text": "Read the words. Which one rhymes with key?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with king?",
+  "text": "Read the words. Which one rhymes with king?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with kite?",
+  "text": "Read the words. Which one rhymes with kite?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with lock?",
+  "text": "Read the words. Which one rhymes with lock?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with log?",
+  "text": "Read the words. Which one rhymes with log?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with moon?",
+  "text": "Read the words. Which one rhymes with moon?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with mouse?",
+  "text": "Read the words. Which one rhymes with mouse?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with mug?",
+  "text": "Read the words. Which one rhymes with mug?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with night?",
+  "text": "Read the words. Which one rhymes with night?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with nose?",
+  "text": "Read the words. Which one rhymes with nose?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with one?",
+  "text": "Read the words. Which one rhymes with one?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with pail?",
+  "text": "Read the words. Which one rhymes with pail?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with pan?",
+  "text": "Read the words. Which one rhymes with pan?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with pear?",
+  "text": "Read the words. Which one rhymes with pear?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with pen?",
+  "text": "Read the words. Which one rhymes with pen?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with pie?",
+  "text": "Read the words. Which one rhymes with pie?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with rain?",
+  "text": "Read the words. Which one rhymes with rain?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with ring?",
+  "text": "Read the words. Which one rhymes with ring?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with rock?",
+  "text": "Read the words. Which one rhymes with rock?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with rose?",
+  "text": "Read the words. Which one rhymes with rose?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with shell?",
+  "text": "Read the words. Which one rhymes with shell?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with sled?",
+  "text": "Read the words. Which one rhymes with sled?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with snail?",
+  "text": "Read the words. Which one rhymes with snail?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with snake?",
+  "text": "Read the words. Which one rhymes with snake?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with socks?",
+  "text": "Read the words. Which one rhymes with socks?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with spoon?",
+  "text": "Read the words. Which one rhymes with spoon?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with star?",
+  "text": "Read the words. Which one rhymes with star?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with sun?",
+  "text": "Read the words. Which one rhymes with sun?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with ten?",
+  "text": "Read the words. Which one rhymes with ten?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with tie?",
+  "text": "Read the words. Which one rhymes with tie?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with train?",
+  "text": "Read the words. Which one rhymes with train?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with tree?",
+  "text": "Read the words. Which one rhymes with tree?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with van?",
+  "text": "Read the words. Which one rhymes with van?"
+ },
+ {
+  "key": "p:Read the words. Which one rhymes with whale?",
+  "text": "Read the words. Which one rhymes with whale?"
  },
  {
   "key": "p:Recess is at",
@@ -4123,24 +5223,40 @@
   "text": "Retell the story: put the events in order"
  },
  {
+  "key": "p:ring",
+  "text": "ring"
+ },
+ {
   "key": "p:robot",
   "text": "robot"
+ },
+ {
+  "key": "p:rock",
+  "text": "rock"
  },
  {
   "key": "p:rocket",
   "text": "rocket"
  },
  {
+  "key": "p:Rode on a tractor",
+  "text": "Rode on a tractor"
+ },
+ {
   "key": "p:rooster",
   "text": "rooster"
+ },
+ {
+  "key": "p:rose",
+  "text": "rose"
  },
  {
   "key": "p:s",
   "text": "s"
  },
  {
-  "key": "p:S",
-  "text": "S"
+  "key": "p:said",
+  "text": "said"
  },
  {
   "key": "p:Sam caught a fish",
@@ -4156,6 +5272,10 @@
   "next_text": "10:30 . Is that a.m. or p.m.?"
  },
  {
+  "key": "p:see",
+  "text": "see"
+ },
+ {
   "key": "p:September: which season is it?",
   "text": "September: which season is it?"
  },
@@ -4168,6 +5288,26 @@
   "text": "seventeen"
  },
  {
+  "key": "p:Shared it with her brother",
+  "text": "Shared it with her brother"
+ },
+ {
+  "key": "p:she",
+  "text": "she"
+ },
+ {
+  "key": "p:She has a red ball.",
+  "text": "She has a red ball."
+ },
+ {
+  "key": "p:shell",
+  "text": "shell"
+ },
+ {
+  "key": "p:ship",
+  "text": "ship"
+ },
+ {
   "key": "p:six",
   "text": "six"
  },
@@ -4176,12 +5316,36 @@
   "text": "sixteen"
  },
  {
+  "key": "p:sled",
+  "text": "sled"
+ },
+ {
+  "key": "p:sleep",
+  "text": "sleep"
+ },
+ {
+  "key": "p:snail",
+  "text": "snail"
+ },
+ {
   "key": "p:snake",
   "text": "snake"
  },
  {
+  "key": "p:socks",
+  "text": "socks"
+ },
+ {
+  "key": "p:some",
+  "text": "some"
+ },
+ {
   "key": "p:spider",
   "text": "spider"
+ },
+ {
+  "key": "p:spoon",
+  "text": "spoon"
  },
  {
   "key": "p:star",
@@ -4204,10 +5368,6 @@
   "text": "t"
  },
  {
-  "key": "p:T",
-  "text": "T"
- },
- {
   "key": "p:teddy",
   "text": "teddy"
  },
@@ -4224,8 +5384,16 @@
   "text": "Thanks! I'll remember."
  },
  {
+  "key": "p:that",
+  "text": "that"
+ },
+ {
   "key": "p:That's OK, we're learning!",
   "text": "That's OK, we're learning!"
+ },
+ {
+  "key": "p:the",
+  "text": "the"
  },
  {
   "key": "p:The cartoon started at",
@@ -4233,13 +5401,41 @@
   "next_text": "10:30 and lasted 4 minutes. When did it end?"
  },
  {
+  "key": "p:The cat is in the box.",
+  "text": "The cat is in the box."
+ },
+ {
+  "key": "p:The cat jumped on it",
+  "text": "The cat jumped on it"
+ },
+ {
+  "key": "p:The class went to a farm. They fed the goats. Then they rode on a tractor. On the bus home, everyone fell asleep.",
+  "text": "The class went to a farm. They fed the goats. Then they rode on a tractor. On the bus home, everyone fell asleep."
+ },
+ {
+  "key": "p:The dog crawled in",
+  "text": "The dog crawled in"
+ },
+ {
+  "key": "p:The dog found his bone.",
+  "text": "The dog found his bone."
+ },
+ {
   "key": "p:The hedgehog was getting ready for winter. He collected mushrooms and apples in the forest. Suddenly it started to rain. The hedgehog hid under a big leaf. When the rain stopped, he carried his food home.",
   "text": "The hedgehog was getting ready for winter. He collected mushrooms and apples in the forest. Suddenly it started to rain. The hedgehog hid under a big leaf. When the rain stopped, he carried his food home."
+ },
+ {
+  "key": "p:The kite flew high",
+  "text": "The kite flew high"
  },
  {
   "key": "p:The lesson started at",
   "text": "The lesson started at",
   "next_text": "10:30 and lasted 4 minutes. When did it end?"
+ },
+ {
+  "key": "p:The puppy wagged its tail",
+  "text": "The puppy wagged its tail"
  },
  {
   "key": "p:The soccer game started at",
@@ -4257,9 +5453,49 @@
   "next_text": "10:30 . Is that a.m. or p.m.?"
  },
  {
+  "key": "p:The sun is very hot.",
+  "text": "The sun is very hot."
+ },
+ {
+  "key": "p:The sun warmed it",
+  "text": "The sun warmed it"
+ },
+ {
+  "key": "p:The tooth came out",
+  "text": "The tooth came out"
+ },
+ {
+  "key": "p:The tower fell down",
+  "text": "The tower fell down"
+ },
+ {
+  "key": "p:their",
+  "text": "their"
+ },
+ {
+  "key": "p:then",
+  "text": "then"
+ },
+ {
+  "key": "p:there",
+  "text": "there"
+ },
+ {
   "key": "p:There are",
   "text": "There are",
   "next_text": "4 apples in the basket. Mom puts in 6 more. How many apples are in the basket now?"
+ },
+ {
+  "key": "p:these",
+  "text": "these"
+ },
+ {
+  "key": "p:they",
+  "text": "they"
+ },
+ {
+  "key": "p:They are happy today.",
+  "text": "They are happy today."
  },
  {
   "key": "p:They gave a teddy bear",
@@ -4270,12 +5506,24 @@
   "text": "thirteen"
  },
  {
+  "key": "p:this",
+  "text": "this"
+ },
+ {
+  "key": "p:those",
+  "text": "those"
+ },
+ {
   "key": "p:three",
   "text": "three"
  },
  {
   "key": "p:Three in a row! You're on fire!",
   "text": "Three in a row! You're on fire!"
+ },
+ {
+  "key": "p:tie",
+  "text": "tie"
  },
  {
   "key": "p:tiger",
@@ -4286,6 +5534,10 @@
   "text": "times",
   "previous_text": "4",
   "next_text": "6 equals what"
+ },
+ {
+  "key": "p:to",
+  "text": "to"
  },
  {
   "key": "p:Today is Friday. What day is the day after tomorrow?",
@@ -4418,6 +5670,10 @@
   "text": "Tomorrow is Wednesday. What day was yesterday?"
  },
  {
+  "key": "p:Took two slices of bread",
+  "text": "Took two slices of bread"
+ },
+ {
   "key": "p:toy cars and Mia has",
   "text": "toy cars and Mia has",
   "previous_text": "Leo has 4",
@@ -4456,28 +5712,36 @@
   "text": "u"
  },
  {
-  "key": "p:U",
-  "text": "U"
- },
- {
   "key": "p:umbrella",
   "text": "umbrella"
+ },
+ {
+  "key": "p:up",
+  "text": "up"
  },
  {
   "key": "p:v",
   "text": "v"
  },
  {
-  "key": "p:V",
-  "text": "V"
+  "key": "p:van",
+  "text": "van"
+ },
+ {
+  "key": "p:very",
+  "text": "very"
  },
  {
   "key": "p:w",
   "text": "w"
  },
  {
-  "key": "p:W",
-  "text": "W"
+  "key": "p:Wanted to make a sandwich",
+  "text": "Wanted to make a sandwich"
+ },
+ {
+  "key": "p:was",
+  "text": "was"
  },
  {
   "key": "p:Watered it",
@@ -4486,6 +5750,18 @@
  {
   "key": "p:watermelon",
   "text": "watermelon"
+ },
+ {
+  "key": "p:we",
+  "text": "we"
+ },
+ {
+  "key": "p:We always eat lunch at noon.",
+  "text": "We always eat lunch at noon."
+ },
+ {
+  "key": "p:We are friends.",
+  "text": "We are friends."
  },
  {
   "key": "p:We eat breakfast at",
@@ -4523,6 +5799,14 @@
   "next_text": "10:30 . Is that a.m. or p.m.?"
  },
  {
+  "key": "p:We went to the park.",
+  "text": "We went to the park."
+ },
+ {
+  "key": "p:web",
+  "text": "web"
+ },
+ {
   "key": "p:Well done!",
   "text": "Well done!"
  },
@@ -4535,25 +5819,56 @@
   "text": "Went to school"
  },
  {
+  "key": "p:Went to the beach",
+  "text": "Went to the beach"
+ },
+ {
+  "key": "p:Went to the farm",
+  "text": "Went to the farm"
+ },
+ {
   "key": "p:Went to the river",
   "text": "Went to the river"
  },
  {
-  "key": "p:what",
-  "text": "what?",
-  "previous_text": "4 6 8 3 5"
+  "key": "p:Went up the hill",
+  "text": "Went up the hill"
  },
  {
-  "key": "p:What appeared in the sky?",
-  "text": "What appeared in the sky?"
+  "key": "p:were",
+  "text": "were"
+ },
+ {
+  "key": "p:whale",
+  "text": "whale"
+ },
+ {
+  "key": "p:what",
+  "text": "what"
+ },
+ {
+  "key": "p:What animal did we see?",
+  "text": "What animal did we see?"
  },
  {
   "key": "p:What are the children building?",
   "text": "What are the children building?"
  },
  {
-  "key": "p:What are the children in?",
-  "text": "What are the children in?"
+  "key": "p:What came out in the evening?",
+  "text": "What came out in the evening?"
+ },
+ {
+  "key": "p:What can I do?",
+  "text": "What can I do?"
+ },
+ {
+  "key": "p:What can I see?",
+  "text": "What can I see?"
+ },
+ {
+  "key": "p:What can Sam ride?",
+  "text": "What can Sam ride?"
  },
  {
   "key": "p:What color is it?",
@@ -4564,8 +5879,20 @@
   "text": "What color is the balloon?"
  },
  {
+  "key": "p:What color is the bed?",
+  "text": "What color is the bed?"
+ },
+ {
+  "key": "p:What color is the bus?",
+  "text": "What color is the bus?"
+ },
+ {
   "key": "p:What color is the chick?",
   "text": "What color is the chick?"
+ },
+ {
+  "key": "p:What color is the frog?",
+  "text": "What color is the frog?"
  },
  {
   "key": "p:What color is this?",
@@ -4576,12 +5903,48 @@
   "text": "What comes next?"
  },
  {
+  "key": "p:What did Ben build?",
+  "text": "What did Ben build?"
+ },
+ {
+  "key": "p:What did Ben do?",
+  "text": "What did Ben do?"
+ },
+ {
   "key": "p:What did Bim lose?",
   "text": "What did Bim lose?"
  },
  {
-  "key": "p:What did Grandma bake?",
-  "text": "What did Grandma bake?"
+  "key": "p:What did Dad make?",
+  "text": "What did Dad make?"
+ },
+ {
+  "key": "p:What did Emma make?",
+  "text": "What did Emma make?"
+ },
+ {
+  "key": "p:What did Grandpa make?",
+  "text": "What did Grandpa make?"
+ },
+ {
+  "key": "p:What did Jack build?",
+  "text": "What did Jack build?"
+ },
+ {
+  "key": "p:What did Leo lose?",
+  "text": "What did Leo lose?"
+ },
+ {
+  "key": "p:What did Lucy find?",
+  "text": "What did Lucy find?"
+ },
+ {
+  "key": "p:What did Lucy give the puppy?",
+  "text": "What did Lucy give the puppy?"
+ },
+ {
+  "key": "p:What did Max lose?",
+  "text": "What did Max lose?"
  },
  {
   "key": "p:What did Mia have for breakfast?",
@@ -4592,12 +5955,24 @@
   "text": "What did Mom bake?"
  },
  {
+  "key": "p:What did Mom buy?",
+  "text": "What did Mom buy?"
+ },
+ {
+  "key": "p:What did Mom give the baby?",
+  "text": "What did Mom give the baby?"
+ },
+ {
   "key": "p:What did Olly plant?",
   "text": "What did Olly plant?"
  },
  {
   "key": "p:What did Sam catch?",
   "text": "What did Sam catch?"
+ },
+ {
+  "key": "p:What did the bird make?",
+  "text": "What did the bird make?"
  },
  {
   "key": "p:What did the cat find?",
@@ -4608,12 +5983,72 @@
   "text": "What did the children build?"
  },
  {
+  "key": "p:What did the children take?",
+  "text": "What did the children take?"
+ },
+ {
+  "key": "p:What did the class feed?",
+  "text": "What did the class feed?"
+ },
+ {
   "key": "p:What did the friends give her?",
   "text": "What did the friends give her?"
  },
  {
   "key": "p:What did the hedgehog collect?",
   "text": "What did the hedgehog collect?"
+ },
+ {
+  "key": "p:What did they eat?",
+  "text": "What did they eat?"
+ },
+ {
+  "key": "p:What did they ride on?",
+  "text": "What did they ride on?"
+ },
+ {
+  "key": "p:What did Tom put on?",
+  "text": "What did Tom put on?"
+ },
+ {
+  "key": "p:What did we do first?",
+  "text": "What did we do first?"
+ },
+ {
+  "key": "p:What did Zoe bite into?",
+  "text": "What did Zoe bite into?"
+ },
+ {
+  "key": "p:What do I have?",
+  "text": "What do I have?"
+ },
+ {
+  "key": "p:What do I like?",
+  "text": "What do I like?"
+ },
+ {
+  "key": "p:What do I play?",
+  "text": "What do I play?"
+ },
+ {
+  "key": "p:What do I see?",
+  "text": "What do I see?"
+ },
+ {
+  "key": "p:What do I wear in the rain?",
+  "text": "What do I wear in the rain?"
+ },
+ {
+  "key": "p:What do we have?",
+  "text": "What do we have?"
+ },
+ {
+  "key": "p:What do we like to do?",
+  "text": "What do we like to do?"
+ },
+ {
+  "key": "p:What do we play with?",
+  "text": "What do we play with?"
  },
  {
   "key": "p:What do we see in fall?",
@@ -4632,16 +6067,48 @@
   "text": "What do we see in winter?"
  },
  {
+  "key": "p:What do we wear in the snow?",
+  "text": "What do we wear in the snow?"
+ },
+ {
+  "key": "p:What does Dad have?",
+  "text": "What does Dad have?"
+ },
+ {
+  "key": "p:What does Grandma bake?",
+  "text": "What does Grandma bake?"
+ },
+ {
+  "key": "p:What does Mom have?",
+  "text": "What does Mom have?"
+ },
+ {
+  "key": "p:What does the cat drink?",
+  "text": "What does the cat drink?"
+ },
+ {
+  "key": "p:What does the cow eat?",
+  "text": "What does the cow eat?"
+ },
+ {
   "key": "p:What does the kitten drink?",
   "text": "What does the kitten drink?"
+ },
+ {
+  "key": "p:What fruit did Lily pack?",
+  "text": "What fruit did Lily pack?"
  },
  {
   "key": "p:What goes with it in the same way?",
   "text": "What goes with it in the same way?"
  },
  {
-  "key": "p:What grew in the clearing?",
-  "text": "What grew in the clearing?"
+  "key": "p:What grew from the seed?",
+  "text": "What grew from the seed?"
+ },
+ {
+  "key": "p:What grew in the forest?",
+  "text": "What grew in the forest?"
  },
  {
   "key": "p:What grew?",
@@ -4656,8 +6123,20 @@
   "text": "What happened while he was collecting food?"
  },
  {
+  "key": "p:What is big?",
+  "text": "What is big?"
+ },
+ {
   "key": "p:What is flying in the sky?",
   "text": "What is flying in the sky?"
+ },
+ {
+  "key": "p:What is hot?",
+  "text": "What is hot?"
+ },
+ {
+  "key": "p:What is on the sea?",
+  "text": "What is on the sea?"
  },
  {
   "key": "p:What is on the table?",
@@ -4672,8 +6151,16 @@
   "text": "What is the answer?"
  },
  {
+  "key": "p:What is the bug on?",
+  "text": "What is the bug on?"
+ },
+ {
   "key": "p:What is the girl eating?",
   "text": "What is the girl eating?"
+ },
+ {
+  "key": "p:What is the weather like now?",
+  "text": "What is the weather like now?"
  },
  {
   "key": "p:What is the weather like?",
@@ -4684,16 +6171,44 @@
   "text": "What is this shape called?"
  },
  {
+  "key": "p:What is up in the sky?",
+  "text": "What is up in the sky?"
+ },
+ {
+  "key": "p:What season is it?",
+  "text": "What season is it?"
+ },
+ {
   "key": "p:What time is it?",
   "text": "What time is it?"
+ },
+ {
+  "key": "p:What warmed the seed?",
+  "text": "What warmed the seed?"
  },
  {
   "key": "p:What was the weather like?",
   "text": "What was the weather like?"
  },
  {
+  "key": "p:What washed the castle away?",
+  "text": "What washed the castle away?"
+ },
+ {
+  "key": "p:when",
+  "text": "when"
+ },
+ {
   "key": "p:When did Olly make a snowman?",
   "text": "When did Olly make a snowman?"
+ },
+ {
+  "key": "p:When does the owl hunt?",
+  "text": "When does the owl hunt?"
+ },
+ {
+  "key": "p:where",
+  "text": "where"
  },
  {
   "key": "p:Where did Dad and Sam go?",
@@ -4704,16 +6219,61 @@
   "text": "Where did Mia go?"
  },
  {
+  "key": "p:Where did she put the tooth?",
+  "text": "Where did she put the tooth?"
+ },
+ {
   "key": "p:Where did the bird sit?",
   "text": "Where did the bird sit?"
+ },
+ {
+  "key": "p:Where did the family go?",
+  "text": "Where did the family go?"
+ },
+ {
+  "key": "p:Where did the mouse run?",
+  "text": "Where did the mouse run?"
+ },
+ {
+  "key": "p:Where did we eat it?",
+  "text": "Where did we eat it?"
+ },
+ {
+  "key": "p:Where did we go fishing?",
+  "text": "Where did we go fishing?"
+ },
+ {
+  "key": "p:Where did we go?",
+  "text": "Where did we go?"
  },
  {
   "key": "p:Where did Whiskers fall asleep?",
   "text": "Where did Whiskers fall asleep?"
  },
  {
+  "key": "p:Where do we go?",
+  "text": "Where do we go?"
+ },
+ {
+  "key": "p:Where is my hat?",
+  "text": "Where is my hat?"
+ },
+ {
+  "key": "p:Where is the bird?",
+  "text": "Where is the bird?"
+ },
+ {
   "key": "p:Where was the ball?",
   "text": "Where was the ball?"
+ },
+ {
+  "key": "p:which",
+  "text": "which"
+ },
+ {
+  "key": "p:Which coin is worth",
+  "text": "Which coin is worth",
+  "next_text": "4"
  },
  {
   "key": "p:Which day comes after Friday?",
@@ -4782,6 +6342,58 @@
  {
   "key": "p:Which is the last month of the year?",
   "text": "Which is the last month of the year?"
+ },
+ {
+  "key": "p:Which is worth more: a dime or a nickel?",
+  "text": "Which is worth more: a dime or a nickel?"
+ },
+ {
+  "key": "p:Which is worth more: a dime or a penny?",
+  "text": "Which is worth more: a dime or a penny?"
+ },
+ {
+  "key": "p:Which is worth more: a dime or a quarter?",
+  "text": "Which is worth more: a dime or a quarter?"
+ },
+ {
+  "key": "p:Which is worth more: a nickel or a dime?",
+  "text": "Which is worth more: a nickel or a dime?"
+ },
+ {
+  "key": "p:Which is worth more: a nickel or a penny?",
+  "text": "Which is worth more: a nickel or a penny?"
+ },
+ {
+  "key": "p:Which is worth more: a nickel or a quarter?",
+  "text": "Which is worth more: a nickel or a quarter?"
+ },
+ {
+  "key": "p:Which is worth more: a penny or a dime?",
+  "text": "Which is worth more: a penny or a dime?"
+ },
+ {
+  "key": "p:Which is worth more: a penny or a nickel?",
+  "text": "Which is worth more: a penny or a nickel?"
+ },
+ {
+  "key": "p:Which is worth more: a penny or a quarter?",
+  "text": "Which is worth more: a penny or a quarter?"
+ },
+ {
+  "key": "p:Which is worth more: a quarter or a dime?",
+  "text": "Which is worth more: a quarter or a dime?"
+ },
+ {
+  "key": "p:Which is worth more: a quarter or a nickel?",
+  "text": "Which is worth more: a quarter or a nickel?"
+ },
+ {
+  "key": "p:Which is worth more: a quarter or a penny?",
+  "text": "Which is worth more: a quarter or a penny?"
+ },
+ {
+  "key": "p:Which letter does the word end with?",
+  "text": "Which letter does the word end with?"
  },
  {
   "key": "p:Which letter does the word start with?",
@@ -4897,6 +6509,10 @@
   "text": "Which number comes next?"
  },
  {
+  "key": "p:Which number is even?",
+  "text": "Which number is even?"
+ },
+ {
   "key": "p:Which number is hiding in the box?",
   "text": "Which number is hiding in the box?"
  },
@@ -4905,16 +6521,281 @@
   "text": "Which number is missing?"
  },
  {
+  "key": "p:Which number is odd?",
+  "text": "Which number is odd?"
+ },
+ {
   "key": "p:Which number is this?",
   "text": "Which number is this?"
+ },
+ {
+  "key": "p:Which number makes",
+  "text": "Which number makes",
+  "next_text": "4"
+ },
+ {
+  "key": "p:Which one does NOT rhyme?",
+  "text": "Which one does NOT rhyme?"
  },
  {
   "key": "p:Which one doesn't belong?",
   "text": "Which one doesn't belong?"
  },
  {
+  "key": "p:Which one rhymes with balloon?",
+  "text": "Which one rhymes with balloon?"
+ },
+ {
+  "key": "p:Which one rhymes with bat?",
+  "text": "Which one rhymes with bat?"
+ },
+ {
+  "key": "p:Which one rhymes with bear?",
+  "text": "Which one rhymes with bear?"
+ },
+ {
+  "key": "p:Which one rhymes with bed?",
+  "text": "Which one rhymes with bed?"
+ },
+ {
+  "key": "p:Which one rhymes with bee?",
+  "text": "Which one rhymes with bee?"
+ },
+ {
+  "key": "p:Which one rhymes with bell?",
+  "text": "Which one rhymes with bell?"
+ },
+ {
+  "key": "p:Which one rhymes with boat?",
+  "text": "Which one rhymes with boat?"
+ },
+ {
+  "key": "p:Which one rhymes with box?",
+  "text": "Which one rhymes with box?"
+ },
+ {
+  "key": "p:Which one rhymes with bug?",
+  "text": "Which one rhymes with bug?"
+ },
+ {
+  "key": "p:Which one rhymes with cake?",
+  "text": "Which one rhymes with cake?"
+ },
+ {
+  "key": "p:Which one rhymes with car?",
+  "text": "Which one rhymes with car?"
+ },
+ {
+  "key": "p:Which one rhymes with cat?",
+  "text": "Which one rhymes with cat?"
+ },
+ {
+  "key": "p:Which one rhymes with chain?",
+  "text": "Which one rhymes with chain?"
+ },
+ {
+  "key": "p:Which one rhymes with chair?",
+  "text": "Which one rhymes with chair?"
+ },
+ {
+  "key": "p:Which one rhymes with clock?",
+  "text": "Which one rhymes with clock?"
+ },
+ {
+  "key": "p:Which one rhymes with coat?",
+  "text": "Which one rhymes with coat?"
+ },
+ {
+  "key": "p:Which one rhymes with dish?",
+  "text": "Which one rhymes with dish?"
+ },
+ {
+  "key": "p:Which one rhymes with dog?",
+  "text": "Which one rhymes with dog?"
+ },
+ {
+  "key": "p:Which one rhymes with eye?",
+  "text": "Which one rhymes with eye?"
+ },
+ {
+  "key": "p:Which one rhymes with fan?",
+  "text": "Which one rhymes with fan?"
+ },
+ {
+  "key": "p:Which one rhymes with fish?",
+  "text": "Which one rhymes with fish?"
+ },
+ {
+  "key": "p:Which one rhymes with fox?",
+  "text": "Which one rhymes with fox?"
+ },
+ {
+  "key": "p:Which one rhymes with frog?",
+  "text": "Which one rhymes with frog?"
+ },
+ {
+  "key": "p:Which one rhymes with goat?",
+  "text": "Which one rhymes with goat?"
+ },
+ {
+  "key": "p:Which one rhymes with hat?",
+  "text": "Which one rhymes with hat?"
+ },
+ {
+  "key": "p:Which one rhymes with hen?",
+  "text": "Which one rhymes with hen?"
+ },
+ {
+  "key": "p:Which one rhymes with house?",
+  "text": "Which one rhymes with house?"
+ },
+ {
+  "key": "p:Which one rhymes with jar?",
+  "text": "Which one rhymes with jar?"
+ },
+ {
+  "key": "p:Which one rhymes with key?",
+  "text": "Which one rhymes with key?"
+ },
+ {
+  "key": "p:Which one rhymes with king?",
+  "text": "Which one rhymes with king?"
+ },
+ {
+  "key": "p:Which one rhymes with kite?",
+  "text": "Which one rhymes with kite?"
+ },
+ {
+  "key": "p:Which one rhymes with lock?",
+  "text": "Which one rhymes with lock?"
+ },
+ {
+  "key": "p:Which one rhymes with log?",
+  "text": "Which one rhymes with log?"
+ },
+ {
+  "key": "p:Which one rhymes with moon?",
+  "text": "Which one rhymes with moon?"
+ },
+ {
+  "key": "p:Which one rhymes with mouse?",
+  "text": "Which one rhymes with mouse?"
+ },
+ {
+  "key": "p:Which one rhymes with mug?",
+  "text": "Which one rhymes with mug?"
+ },
+ {
+  "key": "p:Which one rhymes with night?",
+  "text": "Which one rhymes with night?"
+ },
+ {
+  "key": "p:Which one rhymes with nose?",
+  "text": "Which one rhymes with nose?"
+ },
+ {
+  "key": "p:Which one rhymes with one?",
+  "text": "Which one rhymes with one?"
+ },
+ {
+  "key": "p:Which one rhymes with pail?",
+  "text": "Which one rhymes with pail?"
+ },
+ {
+  "key": "p:Which one rhymes with pan?",
+  "text": "Which one rhymes with pan?"
+ },
+ {
+  "key": "p:Which one rhymes with pear?",
+  "text": "Which one rhymes with pear?"
+ },
+ {
+  "key": "p:Which one rhymes with pen?",
+  "text": "Which one rhymes with pen?"
+ },
+ {
+  "key": "p:Which one rhymes with pie?",
+  "text": "Which one rhymes with pie?"
+ },
+ {
+  "key": "p:Which one rhymes with rain?",
+  "text": "Which one rhymes with rain?"
+ },
+ {
+  "key": "p:Which one rhymes with ring?",
+  "text": "Which one rhymes with ring?"
+ },
+ {
+  "key": "p:Which one rhymes with rock?",
+  "text": "Which one rhymes with rock?"
+ },
+ {
+  "key": "p:Which one rhymes with rose?",
+  "text": "Which one rhymes with rose?"
+ },
+ {
+  "key": "p:Which one rhymes with shell?",
+  "text": "Which one rhymes with shell?"
+ },
+ {
+  "key": "p:Which one rhymes with sled?",
+  "text": "Which one rhymes with sled?"
+ },
+ {
+  "key": "p:Which one rhymes with snail?",
+  "text": "Which one rhymes with snail?"
+ },
+ {
+  "key": "p:Which one rhymes with snake?",
+  "text": "Which one rhymes with snake?"
+ },
+ {
+  "key": "p:Which one rhymes with socks?",
+  "text": "Which one rhymes with socks?"
+ },
+ {
+  "key": "p:Which one rhymes with spoon?",
+  "text": "Which one rhymes with spoon?"
+ },
+ {
+  "key": "p:Which one rhymes with star?",
+  "text": "Which one rhymes with star?"
+ },
+ {
+  "key": "p:Which one rhymes with sun?",
+  "text": "Which one rhymes with sun?"
+ },
+ {
+  "key": "p:Which one rhymes with ten?",
+  "text": "Which one rhymes with ten?"
+ },
+ {
+  "key": "p:Which one rhymes with tie?",
+  "text": "Which one rhymes with tie?"
+ },
+ {
+  "key": "p:Which one rhymes with train?",
+  "text": "Which one rhymes with train?"
+ },
+ {
+  "key": "p:Which one rhymes with tree?",
+  "text": "Which one rhymes with tree?"
+ },
+ {
+  "key": "p:Which one rhymes with van?",
+  "text": "Which one rhymes with van?"
+ },
+ {
+  "key": "p:Which one rhymes with whale?",
+  "text": "Which one rhymes with whale?"
+ },
+ {
   "key": "p:Which one was in the picture?",
   "text": "Which one was in the picture?"
+ },
+ {
+  "key": "p:Which pair is the same letter?",
+  "text": "Which pair is the same letter?"
  },
  {
   "key": "p:Which season is this?",
@@ -4933,8 +6814,17 @@
   "text": "Which solid does it look like?"
  },
  {
-  "key": "p:Which word matches the picture?",
-  "text": "Which word matches the picture?"
+  "key": "p:Which sound is in the middle?",
+  "text": "Which sound is in the middle?"
+ },
+ {
+  "key": "p:Which two numbers make",
+  "text": "Which two numbers make",
+  "next_text": "4"
+ },
+ {
+  "key": "p:Which word fits?",
+  "text": "Which word fits?"
  },
  {
   "key": "p:Whiskers the cat found a ball of yarn. He played with it for a long time. Then Whiskers fell asleep on the couch.",
@@ -4945,16 +6835,76 @@
   "text": "white"
  },
  {
-  "key": "p:Who hid?",
-  "text": "Who hid?"
+  "key": "p:Who can run?",
+  "text": "Who can run?"
+ },
+ {
+  "key": "p:Who can swim?",
+  "text": "Who can swim?"
+ },
+ {
+  "key": "p:Who crawled inside the fort?",
+  "text": "Who crawled inside the fort?"
+ },
+ {
+  "key": "p:Who did she share it with?",
+  "text": "Who did she share it with?"
+ },
+ {
+  "key": "p:Who do we look at?",
+  "text": "Who do we look at?"
+ },
+ {
+  "key": "p:Who gives milk?",
+  "text": "Who gives milk?"
+ },
+ {
+  "key": "p:Who hid under the tree?",
+  "text": "Who hid under the tree?"
+ },
+ {
+  "key": "p:Who is on the box?",
+  "text": "Who is on the box?"
+ },
+ {
+  "key": "p:Who is pink?",
+  "text": "Who is pink?"
  },
  {
   "key": "p:Who is playing with the ball?",
   "text": "Who is playing with the ball?"
  },
  {
+  "key": "p:Who is slow?",
+  "text": "Who is slow?"
+ },
+ {
+  "key": "p:Who jumped on the tower?",
+  "text": "Who jumped on the tower?"
+ },
+ {
   "key": "p:Who sleeps all winter?",
   "text": "Who sleeps all winter?"
+ },
+ {
+  "key": "p:Who swims in the pond?",
+  "text": "Who swims in the pond?"
+ },
+ {
+  "key": "p:why",
+  "text": "why"
+ },
+ {
+  "key": "p:Why do birds fly?",
+  "text": "Why do birds fly?"
+ },
+ {
+  "key": "p:will",
+  "text": "will"
+ },
+ {
+  "key": "p:with",
+  "text": "with"
  },
  {
   "key": "p:Woke up and washed",
@@ -4969,28 +6919,46 @@
   "text": "Wonderful!"
  },
  {
+  "key": "p:would",
+  "text": "would"
+ },
+ {
   "key": "p:Wow, what a streak!",
   "text": "Wow, what a streak!"
+ },
+ {
+  "key": "p:write",
+  "text": "write"
  },
  {
   "key": "p:x",
   "text": "x"
  },
  {
-  "key": "p:X",
-  "text": "X"
- },
- {
   "key": "p:y",
   "text": "y"
  },
  {
-  "key": "p:Y",
-  "text": "Y"
- },
- {
   "key": "p:yellow",
   "text": "yellow"
+ },
+ {
+  "key": "p:yes",
+  "text": "yes"
+ },
+ {
+  "key": "p:you",
+  "text": "you"
+ },
+ {
+  "key": "p:You have",
+  "text": "You have",
+  "next_text": "4 ¢. You buy a bookmark for 6 ¢. How much money is left?"
+ },
+ {
+  "key": "p:You have $",
+  "text": "You have $",
+  "next_text": "4 6 . You buy a bookmark for 8 ¢. How much money is left?"
  },
  {
   "key": "p:You have a new friend: Biscuit!",
@@ -5045,15 +7013,19 @@
   "text": "You'll get it!"
  },
  {
+  "key": "p:your",
+  "text": "your"
+ },
+ {
   "key": "p:z",
   "text": "z"
  },
  {
-  "key": "p:Z",
-  "text": "Z"
- },
- {
   "key": "p:zebra",
   "text": "zebra"
+ },
+ {
+  "key": "p:Zoe's tooth was loose. She bit into a crunchy apple. Out came the tooth! That night she put it under her pillow.",
+  "text": "Zoe's tooth was loose. She bit into a crunchy apple. Out came the tooth! That night she put it under her pillow."
  }
 ]

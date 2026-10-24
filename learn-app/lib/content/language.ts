@@ -489,6 +489,138 @@ const STORIES: Record<Lang, Story[]> = {
       events: ["🚿 Woke up and washed", "🥣 Had oatmeal", "🏫 Went to school", "📖 Read a book"] },
   ],
 };
+// ---------- English reading content, graded for ages 5–8 ----------
+type S = Sentence;
+const s = (text: string, q: string, a: string, w: string[]): S => ({ text, q, a, w });
+/** Sentences by level: L1 3–4 words, L2 5–6, L3 7–8, L4 9–11, L5 two clauses or two sentences. */
+const EN_SENTENCES: S[][] = [
+  [
+    s("The cat is big.", "What is big?", "🐱", ["🐶", "🐭", "🐰"]),
+    s("I see a red bus.", "What do I see?", "🚌", ["🚗", "🚲", "🚂"]),
+    s("The dog can run.", "Who can run?", "🐶", ["🐟", "🐢", "🐌"]),
+    s("The fish can swim.", "Who can swim?", "🐟", ["🐦", "🐶", "🐄"]),
+    s("I like my hat.", "What do I like?", "🎩", ["👟", "🧤", "🧣"]),
+    s("The sun is hot.", "What is hot?", "☀️", ["🌙", "⭐", "☁️"]),
+    s("Mom has a cup.", "What does Mom have?", "☕", ["🥄", "🧸", "🎈"]),
+    s("The frog is green.", "What color is the frog?", "🟢", ["🔴", "🔵", "🟡"]),
+    s("I can see a bee.", "What can I see?", "🐝", ["🐞", "🦋", "🐛"]),
+    s("The pig is pink.", "Who is pink?", "🐷", ["🐮", "🐴", "🐑"]),
+    s("We have a box.", "What do we have?", "📦", ["🧸", "⚽", "🪁"]),
+    s("Dad has a car.", "What does Dad have?", "🚗", ["🚲", "⛵", "✈️"]),
+    s("The moon is up.", "What is up in the sky?", "🌙", ["☀️", "🌈", "⚡"]),
+    s("I see a cow.", "What do I see?", "🐮", ["🐷", "🐴", "🐑"]),
+    s("The bed is red.", "What color is the bed?", "🔴", ["🔵", "🟢", "🟡"]),
+    s("A hen is on the box.", "Who is on the box?", "🐔", ["🦆", "🐱", "🐸"]),
+    s("The cake is big.", "What is big?", "🎂", ["🍪", "🍎", "🍞"]),
+    s("I have a kite.", "What do I have?", "🪁", ["🎈", "🧸", "⚽"]),
+    s("The ship is on the sea.", "What is on the sea?", "🚢", ["🚗", "🚂", "✈️"]),
+    s("Look at the duck.", "Who do we look at?", "🦆", ["🐔", "🐦", "🐟"]),
+    s("The bus is red.", "What color is the bus?", "🔴", ["🔵", "🟢", "🟡"]),
+    s("We like to sing.", "What do we like to do?", "🎤", ["⚽", "🚲", "🏊"]),
+    s("The bug is on a leaf.", "What is the bug on?", "🍃", ["🌸", "🪨", "🍎"]),
+    s("Go to bed.", "Where do we go?", "🛏️", ["🛁", "🚗", "🏫"]),
+    s("I can jump.", "What can I do?", "🤸", ["🏊", "🚲", "🎤"]),
+  ],
+  [
+    s("The bird sits in the tree.", "Where is the bird?", "🌳", ["🏠", "🚗", "🌊"]),
+    s("My cat likes to drink milk.", "What does the cat drink?", "🥛", ["🧃", "☕", "🍵"]),
+    s("We play ball in the park.", "What do we play with?", "⚽", ["🧸", "🪁", "🎲"]),
+    s("The duck swims in the pond.", "Who swims in the pond?", "🦆", ["🐔", "🐶", "🐱"]),
+    s("I have two red apples.", "How many apples do I have?", "2️⃣", ["1️⃣", "3️⃣", "4️⃣"]),
+    s("The bus is big and yellow.", "What color is the bus?", "🟡", ["🔴", "🔵", "🟢"]),
+    s("Sam can ride a bike.", "What can Sam ride?", "🚲", ["🚗", "🐴", "🛴"]),
+    s("A snail is very slow.", "Who is slow?", "🐌", ["🐇", "🐆", "🐎"]),
+    s("Grandma bakes a cherry pie.", "What does Grandma bake?", "🥧", ["🍞", "🍪", "🎂"]),
+    s("It is cold and it snows.", "What is the weather like?", "❄️", ["☀️", "🌧️", "🌈"]),
+    s("The cow eats green grass.", "What does the cow eat?", "🌿", ["🥕", "🍎", "🦴"]),
+    s("I wear boots in the rain.", "What do I wear in the rain?", "👢", ["👟", "🩴", "🧦"]),
+  ],
+  [
+    s("The girl is eating a big ice cream.", "What is the girl eating?", "🍦", ["🍕", "🍎", "🥕"]),
+    s("A plane is flying high in the sky.", "What is flying in the sky?", "✈️", ["🚂", "🚗", "⛵"]),
+    s("The kitten drinks milk from a little bowl.", "What does the kitten drink?", "🥛", ["🧃", "☕", "🍵"]),
+    s("Mom bought two pears and one banana.", "How many pears did Mom buy?", "2️⃣", ["1️⃣", "3️⃣", "4️⃣"]),
+    s("The children are building a sand castle.", "What are the children building?", "🏰", ["🏠", "⛺", "🚀"]),
+    s("In the evening the moon came out.", "What came out in the evening?", "🌙", ["☀️", "🌈", "⛅"]),
+    s("Peter is playing the drum very loudly.", "What is Peter playing?", "🥁", ["🎸", "🎹", "🎺"]),
+    s("The yellow chick is hiding in the grass.", "What color is the chick?", "🟡", ["🔴", "🔵", "🟢"]),
+    s("The bear sleeps in its den all winter.", "Who sleeps all winter?", "🐻", ["🐰", "🦊", "🐿️"]),
+    s("We wear hats and mittens in the snow.", "What do we wear in the snow?", "🧤", ["🩳", "👙", "🕶️"]),
+    s("A little mouse ran under the bed.", "Where did the mouse run?", "🛏️", ["🚗", "🌳", "🛁"]),
+    s("Dad made pancakes for breakfast today.", "What did Dad make?", "🥞", ["🍕", "🍔", "🍝"]),
+  ],
+  [
+    s("Mary has a red balloon and a blue kite.", "What color is the balloon?", "🔴", ["🔵", "🟢", "🟡"]),
+    s("Mushrooms and flowers grew in the forest after the rain.", "What grew in the forest?", "🍄", ["🥕", "🍎", "🌵"]),
+    s("The bunny hid under the big tree in our yard.", "Who hid under the tree?", "🐰", ["🦊", "🐻", "🐿️"]),
+    s("Dad bought three apples and a banana at the store.", "How many apples did Dad buy?", "3️⃣", ["1️⃣", "2️⃣", "4️⃣"]),
+    s("In winter Olly made a snowman with a carrot nose.", "When did Olly make a snowman?", "❄️", ["🌷", "☀️", "🍂"]),
+    s("A little bird sat on the roof of our house.", "Where did the bird sit?", "🏠", ["🌳", "🚗", "⛵"]),
+    s("The sun went away and it started to rain.", "What is the weather like now?", "🌧️", ["☀️", "❄️", "🌈"]),
+    s("The children took a boat across the lake.", "What did the children take?", "⛵", ["🚗", "🚲", "✈️"]),
+    s("There is a vase of flowers on the kitchen table.", "What is on the table?", "💐", ["📚", "🍞", "🧸"]),
+    s("My brother plays the guitar and I play the piano.", "What do I play?", "🎹", ["🎸", "🥁", "🎺"]),
+    s("We went to the zoo and saw a tall giraffe.", "What animal did we see?", "🦒", ["🐘", "🦁", "🐒"]),
+    s("Lily packed a sandwich and an apple for lunch.", "What fruit did Lily pack?", "🍎", ["🍌", "🍐", "🍇"]),
+  ],
+  [
+    s("The cat is sleeping on the couch, and the dog is playing with a ball.", "Who is playing with the ball?", "🐶", ["🐱", "🐭", "🐰"]),
+    s("Ben wanted to go swimming, but it was raining. So he stayed home and read a book.", "What did Ben do?", "📖", ["🏊", "⚽", "🚲"]),
+    s("Ana has three pencils. She gave one to her friend.", "How many pencils does Ana have now?", "2️⃣", ["1️⃣", "3️⃣", "4️⃣"]),
+    s("First we planted the seeds. Then we watered them every day.", "What did we do first?", "🌱", ["💧", "🌸", "🍎"]),
+    s("The owl sleeps during the day and hunts at night.", "When does the owl hunt?", "🌙", ["☀️", "🌅", "🌈"]),
+    s("Tom put on his rain boots before he walked to school.", "What did Tom put on?", "👢", ["👟", "🩴", "🧦"]),
+    s("It was Mia's birthday. Her friends brought gifts, and they all ate cake.", "What did they eat?", "🎂", ["🍕", "🍦", "🍩"]),
+    s("The leaves turned red and orange and fell from the trees.", "What season is it?", "🍂", ["❄️", "🌷", "☀️"]),
+    s("Max lost his blue mitten in the snow, so his hand got cold.", "What did Max lose?", "🧤", ["🧣", "🧢", "👢"]),
+    s("Grandpa took us fishing at the lake, and I caught a small fish.", "Where did we go fishing?", "🏞️", ["🏖️", "🏫", "🏪"]),
+    s("The farmer milks the cow in the morning and feeds the chickens.", "Who gives milk?", "🐮", ["🐔", "🐷", "🐴"]),
+    s("The baby was hungry, so Mom gave her a warm bottle.", "What did Mom give the baby?", "🍼", ["🧸", "🍪", "🧦"]),
+  ],
+];
+
+type St = Story & { long: boolean };
+const st = (long: boolean, text: string, qs: { q: string; a: string; w: string[] }[], events: string[]): St => ({ long, text, qs, events });
+/** Extra English stories: short ones (3 sentences, 3 events) and longer ones (4 sentences, 4 events). */
+const EN_STORIES_MORE: St[] = [
+  st(false, "Lucy found a little puppy. She gave it some water. The puppy wagged its tail.",
+    [{ q: "What did Lucy find?", a: "🐶", w: ["🐱", "🐰", "🐦"] }, { q: "What did Lucy give the puppy?", a: "💧", w: ["🍕", "🍎", "🧸"] }],
+    ["🐶 Found a puppy", "💧 Gave it water", "🐕 The puppy wagged its tail"]),
+  st(false, "Ben built a tall tower. The cat jumped on it. The tower fell down.",
+    [{ q: "What did Ben build?", a: "🧱", w: ["🚗", "⛵", "🪁"] }, { q: "Who jumped on the tower?", a: "🐱", w: ["🐶", "🐰", "🐭"] }],
+    ["🧱 Built a tower", "🐱 The cat jumped on it", "💥 The tower fell down"]),
+  st(false, "It was hot outside. Mom bought ice cream. We ate it in the park.",
+    [{ q: "What did Mom buy?", a: "🍦", w: ["🍕", "🍩", "🍪"] }, { q: "Where did we eat it?", a: "🏞️", w: ["🏫", "🏠", "🚗"] }],
+    ["☀️ It was hot", "🍦 Mom bought ice cream", "🏞️ Ate it in the park"]),
+  st(false, "Leo lost his ball. He looked under the bed. The ball was in his toy box.",
+    [{ q: "What did Leo lose?", a: "⚽", w: ["🧸", "🚗", "🪁"] }, { q: "Where was the ball?", a: "📦", w: ["🛏️", "🌳", "🚗"] }],
+    ["😢 Lost his ball", "🛏️ Looked under the bed", "📦 Found it in the toy box"]),
+  st(false, "A bird made a nest. She laid three eggs. Baby birds came out.",
+    [{ q: "What did the bird make?", a: "🪺", w: ["🏠", "📦", "🧺"] }, { q: "How many eggs did she lay?", a: "3️⃣", w: ["1️⃣", "2️⃣", "4️⃣"] }],
+    ["🪺 Made a nest", "🥚 Laid three eggs", "🐣 Baby birds came out"]),
+  st(false, "Grandpa made a kite. We went up the hill. The kite flew up high.",
+    [{ q: "What did Grandpa make?", a: "🪁", w: ["🎈", "✈️", "🚀"] }, { q: "Where did we go?", a: "⛰️", w: ["🏖️", "🏫", "🏪"] }],
+    ["🪁 Grandpa made a kite", "⛰️ Went up the hill", "☁️ The kite flew high"]),
+  st(true, "Emma wanted to make a sandwich. She took two slices of bread. Then she added cheese and a tomato. Finally, she shared it with her brother.",
+    [{ q: "What did Emma make?", a: "🥪", w: ["🍕", "🍔", "🥗"] }, { q: "Who did she share it with?", a: "👦", w: ["👵", "🐶", "👩"] }],
+    ["🥪 Wanted to make a sandwich", "🍞 Took two slices of bread", "🧀 Added cheese and a tomato", "👦 Shared it with her brother"]),
+  st(true, "On Saturday the family went to the beach. Noah built a sandcastle. A big wave washed it away. Noah laughed and built a new one.",
+    [{ q: "Where did the family go?", a: "🏖️", w: ["🏞️", "🏫", "🏪"] }, { q: "What washed the castle away?", a: "🌊", w: ["💨", "🐕", "🌧️"] }],
+    ["🏖️ Went to the beach", "🏰 Built a sandcastle", "🌊 A wave washed it away", "😄 Built a new one"]),
+  st(true, "A little seed fell on the ground. Rain watered it. The sun warmed it. Soon a sunflower grew taller than the fence.",
+    [{ q: "What grew from the seed?", a: "🌻", w: ["🌹", "🌳", "🌵"] }, { q: "What warmed the seed?", a: "☀️", w: ["🌙", "🔥", "⭐"] }],
+    ["🌰 A seed fell", "🌧️ Rain watered it", "☀️ The sun warmed it", "🌻 A sunflower grew"]),
+  st(true, "Zoe's tooth was loose. She bit into a crunchy apple. Out came the tooth! That night she put it under her pillow.",
+    [{ q: "What did Zoe bite into?", a: "🍎", w: ["🍌", "🥕", "🍪"] }, { q: "Where did she put the tooth?", a: "🛏️", w: ["👟", "📦", "🎒"] }],
+    ["🦷 Her tooth was loose", "🍎 Bit into an apple", "😮 The tooth came out", "🛏️ Put it under the pillow"]),
+  st(true, "The class went to a farm. They fed the goats. Then they rode on a tractor. On the bus home, everyone fell asleep.",
+    [{ q: "What did the class feed?", a: "🐐", w: ["🐶", "🐟", "🐦"] }, { q: "What did they ride on?", a: "🚜", w: ["🐴", "🚲", "🚂"] }],
+    ["🚌 Went to the farm", "🐐 Fed the goats", "🚜 Rode on a tractor", "😴 Fell asleep on the bus"]),
+  st(true, "It was raining, so Jack could not play outside. He built a fort with blankets. His dog crawled inside too. They read a book together in the fort.",
+    [{ q: "What did Jack build?", a: "⛺", w: ["🏰", "🏠", "🚀"] }, { q: "Who crawled inside the fort?", a: "🐶", w: ["🐱", "👧", "🐰"] }],
+    ["🌧️ It was raining", "⛺ Built a blanket fort", "🐶 The dog crawled in", "📖 Read a book together"]),
+];
+
 const SP = {
   retell: l("Перекажи історію: розклади події по порядку", "Перескажи историю: разложи события по порядку", "Retell the story: put the events in order"),
   first: l("Що сталося спочатку?", "Что случилось сначала?", "What happened first?"),
@@ -579,6 +711,12 @@ export const langSkills: Skill[] = [
     icon: "📜",
     title: l("Читаємо речення", "Читаем предложения", "Reading sentences"),
     gen: (level, lang) => {
+      if (lang === "en") {
+        // this level's sentences plus the previous level's, in normal sentence case
+        const pool = [...EN_SENTENCES[level - 1], ...(level > 1 ? EN_SENTENCES[level - 2] : [])];
+        const x = pick(pool);
+        return { kind: "choice", prompt: x.q, passage: x.text, options: shuffle([x.a, ...x.w.slice(0, level <= 1 ? 2 : 3)]), answer: x.a, emojiOptions: true };
+      }
       const pool = [...SENTENCES[lang], ...SENTENCES_MORE[lang]];
       const s = pick(pool);
       return { kind: "choice", prompt: s.q, passage: level <= 1 ? up(s.text) : s.text, options: shuffle([s.a, ...s.w.slice(0, level <= 1 ? 2 : 3)]), answer: s.a, emojiOptions: true };
@@ -593,8 +731,11 @@ export const langSkills: Skill[] = [
     title: l("Історії з переказом", "Истории с пересказом", "Stories and retelling"),
     gen: (level, lang) => {
       // levels 1-2: three-sentence stories; 3+: longer ones too
-      const all = STORIES[lang];
-      const pool = level <= 2 ? all.slice(0, 4) : level >= 4 ? all.slice(4) : all;
+      const all: St[] =
+        lang === "en"
+          ? [...STORIES.en.map((x, i) => ({ ...x, long: i >= 4 })), ...EN_STORIES_MORE]
+          : STORIES[lang].map((x, i) => ({ ...x, long: i >= 4 }));
+      const pool = level <= 2 ? all.filter((x) => !x.long) : level >= 4 ? all.filter((x) => x.long) : all;
       const st = pick(pool);
       const kind = level === 1 ? pick(["q", "q", "firstLast"]) : pick(["q", "firstLast", "retell", "retell"]);
       if (kind === "retell") {

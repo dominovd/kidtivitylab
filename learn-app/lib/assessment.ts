@@ -32,6 +32,7 @@ export const MILESTONES: Milestone[] = [
   m("m6_compare", 6, "math", "expected", l("Порівнює числа: більше, менше, дорівнює", "Сравнивает числа: больше, меньше, равно", "Compares numbers: more, less, equal"), { compare: 2 }),
   m("m6_count20", 6, "math", "expected", l("Лічить до 20 і називає сусідні числа", "Считает до 20 и называет соседние числа", "Counts to 20 and names neighboring numbers"), { count: 4, sequence6: 3 }),
   m("m6_add10", 6, "math", "expected", l("Додає і віднімає в межах 10", "Складывает и вычитает в пределах 10", "Adds and subtracts within 10"), { add6: 3, sub6: 3 }),
+  m("m6_make10", 6, "math", "expected", l("Make 10", "Make 10", "Knows which number makes 10 (7 + 3)"), { make10: 3 }),
   m("m6_shapes", 6, "math", "expected", l("Розпізнає круг, квадрат, трикутник, прямокутник", "Узнаёт круг, квадрат, треугольник, прямоугольник", "Recognizes circle, square, triangle, rectangle"), { shapes6: 2 }),
   m("m6_add20", 6, "math", "next", l("Додає і віднімає в межах 20", "Складывает и вычитает в пределах 20", "Adds and subtracts within 20"), { add6: 5, sub6: 5, compare: 4 }),
   // 1st–2nd grade range of the 5–8 band (Common Core 1.NBT/2.NBT/2.OA), practiced on the Extra challenge island
@@ -39,6 +40,8 @@ export const MILESTONES: Milestone[] = [
   m("m6_clock", 6, "plus", "expected", l("Time to the hour and half-hour", "Time to the hour and half-hour", "Tells time to the hour and half-hour"), { clock6: 3 }),
   m("m6_skip", 6, "plus", "next", l("Skip-counting", "Skip-counting", "Skip-counts by 2s, 5s and 10s"), { skipCount6: 3 }),
   m("m6_add100", 6, "plus", "next", l("Two-digit addition and subtraction", "Two-digit addition and subtraction", "Adds and subtracts two-digit numbers within 100"), { add2d: 3, sub2d: 3, add100: 2 }),
+  m("m6_oddEven", 6, "plus", "next", l("Odd and even", "Odd and even", "Tells odd from even numbers"), { oddEven6: 3 }),
+  m("m6_money", 6, "plus", "next", l("Money", "Money", "Counts coins: pennies, nickels, dimes, quarters"), { money6: 4 }),
   m("m6_problems", 6, "plus", "next", l("One-step word problems", "One-step word problems", "Solves one-step word problems on their own"), { problems6: 3 }),
 
   m("m6_letters", 6, "lang", "expected", l("Знає більшість літер", "Знает большинство букв", "Knows most letters"), { firstLetter: 2, missingLetter: 1 }),
@@ -49,10 +52,14 @@ export const MILESTONES: Milestone[] = [
   m("m6_sentences", 6, "lang", "next", l("Reads simple sentences", "Reads simple sentences", "Reads and understands a simple sentence"), { readSentence6: 4 }),
   m("m6_stories", 6, "lang", "next", l("Retells a short story", "Retells a short story", "Reads a short story and retells what happened in order"), { stories6: 3 }),
 
-  m("m6_enWords", 6, "english", "expected", l("Знає 10–20 англійських слів", "Знает 10–20 английских слов", "Matches simple written words to pictures"), { enWords6: 2, enListen6: 2 }),
+  m("m6_enRhyme", 6, "english", "expected", l("Rhymes", "Rhymes", "Hears which words rhyme (cat, hat)"), { enRhyme6: 2 }),
+  m("m6_enSight", 6, "english", "expected", l("Sight words", "Sight words", "Reads first sight words: the, and, see, you"), { enSight6: 2 }),
+  m("m6_enEnd", 6, "english", "expected", l("Last sound", "Last sound", "Hears the last sound in a short word"), { enEnd6: 2 }),
+  m("m6_enLetters", 6, "english", "expected", l("Letters", "Letters", "Matches big and small letters"), { enLetters6: 3 }),
   m("m6_enColors", 6, "english", "expected", l("Називає кольори англійською", "Называет цвета по-английски", "Reads the color words (red, blue, green…)"), { enColors6: 3 }),
   m("m6_enNumbers", 6, "english", "expected", l("Лічить англійською до 10", "Считает по-английски до 10", "Reads the number words up to ten"), { enNumbers6: 3 }),
-  m("m6_enListen", 6, "english", "next", l("Розуміє на слух 40+ слів", "Понимает на слух 40+ слов", "Picks the right picture for a spoken word"), { enListen6: 4, enWords6: 4 }),
+  m("m6_enMiddle", 6, "english", "next", l("Middle sound", "Middle sound", "Hears the middle vowel in words like cat, pig, sun"), { enEnd6: 5 }),
+  m("m6_enSight2", 6, "english", "next", l("More sight words", "More sight words", "Reads 1st–2nd grade sight words (because, there, where)"), { enSight6: 4 }),
 
   m("m6_patterns", 6, "logic", "expected", l("Продовжує візерунок з 2–3 елементів", "Продолжает узор из 2–3 элементов", "Continues a pattern of 2–3 items"), { patterns6: 3 }),
   m("m6_classify", 6, "logic", "expected", l("Знаходить зайве і пояснює чому", "Находит лишнее и объясняет почему", "Finds the odd one out and says why"), { oddOne6: 3 }),

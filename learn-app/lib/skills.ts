@@ -6,6 +6,8 @@ import { englishSkills } from "./content/english";
 import { logicSkills } from "./content/logic";
 import { extraSkills } from "./content/extra";
 import { plusSkills } from "./content/plus";
+import { phonicsSkills } from "./content/phonics";
+import { k2Skills } from "./content/k2";
 
 export const SUBJECTS: { id: SubjectId; title: L; short: L; icon: string; img: "math-blocks" | "reading-book" | "words-abc" | "logic-puzzle" | "idea-lightbulb"; color: string; advanced?: boolean }[] = [
   { id: "math", title: l("Математика", "Математика", "Math"), short: l("Математика", "Математика", "Math"), icon: "🔢", img: "math-blocks", color: "var(--math)" },
@@ -23,19 +25,19 @@ export const SUBJECTS: { id: SubjectId; title: L; short: L; icon: string; img: "
   },
 ];
 
-const ALL: Skill[] = [...mathSkills, ...langSkills, ...englishSkills, ...logicSkills, ...extraSkills, ...plusSkills];
+const ALL: Skill[] = [...mathSkills, ...langSkills, ...englishSkills, ...logicSkills, ...extraSkills, ...plusSkills, ...phonicsSkills, ...k2Skills];
 
 /** Display order inside each island, following the school programme. */
 const ORDER = [
-  "count", "compare", "sequence6", "add6", "sub6", "shapes6",
+  "count", "compare", "sequence6", "add6", "sub6", "make10", "shapes6",
   "firstLetter", "syllables6", "readWord", "missingLetter", "readSentence6", "stories6",
-  "enWords6", "enListen6", "enColors6", "enNumbers6", "enLetters6",
+  "enListen6", "enRhyme6", "enEnd6", "enSight6", "enLetters6", "enColors6", "enNumbers6",
   "patterns6", "oddOne6", "memory6", "calendar6",
   "mental", "mult", "div", "orderOps11", "equations", "fractions", "decimals11", "percent11", "units11", "problems",
   "spelling", "partsOfSpeech11", "antonyms", "reading",
   "enVocab11", "enGrammar11", "enSentence11",
   "numSeq11", "digitSpan11", "whoFaster11", "oddNumber11",
-  "add2d", "sub2d", "geo6", "add100", "tensOnes", "missingNum6", "groups6", "skipCount6", "clock6", "problems6", "sudoku6", "balance6", "analogies6",
+  "add2d", "sub2d", "add100", "tensOnes", "missingNum6", "oddEven6", "skipCount6", "groups6", "money6", "clock6", "problems6", "geo6", "sudoku6", "balance6", "analogies6",
 ];
 export const SKILLS: Skill[] = [...ALL].sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
 
@@ -59,7 +61,7 @@ export const TRACKS: { id: TrackId; title: string; about: string; examples: stri
   },
   { id: "math", title: "Math", about: "Counting, adding and taking away, comparing numbers, shapes.", examples: ["5 apples", "3 + 4", "7 > 2", "🔺"] },
   { id: "lang", title: "Reading", about: "Letters and sounds, syllables, reading words and short sentences, little stories to retell.", examples: ["A is for 🍎", "cat", "c _ t", "📖"] },
-  { id: "english", title: "Words & sounds", about: "Picture words, listening games, colors, number words and the ABC. Lots of voice help.", examples: ["🔊 dog", "🔴 red", "seven", "A B C"] },
+  { id: "english", title: "Words & sounds", about: "Rhyming words, sight words, first, last and middle sounds, big and small letters, color and number words. Lots of voice help.", examples: ["cat ↔ hat", "the", "c _ t", "A a"] },
   { id: "logic", title: "Logic & memory", about: "Patterns, odd one out, memory games, days of the week and seasons.", examples: ["🔴🔵🔴?", "odd one", "🧠", "📅"] },
   {
     id: "plus",

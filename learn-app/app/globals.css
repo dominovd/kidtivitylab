@@ -612,3 +612,8 @@ h2 { font-size: 20px; }
   .kid-bar { gap: 8px; font-size: 18px; }
   .island-head { flex-wrap: wrap; gap: 8px; }
 }
+
+/* long word options (quarter, because, always): smaller type, no mid-word breaks */
+.opt.long { font-size: clamp(18px, 5.2vw, 26px); word-break: normal; overflow-wrap: normal; hyphens: none; }
+.opt-wrap .opt.long { padding-left: 10px; }
+.coins-pic { max-width: 100%; height: auto; }

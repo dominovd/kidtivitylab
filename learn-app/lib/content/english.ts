@@ -139,25 +139,6 @@ const SENTENCES = [
 export const englishSkills: Skill[] = [
   // ---------- 6 years ----------
   {
-    id: "enWords6",
-    subject: "english",
-    age: 6,
-    icon: "🍎",
-    title: l("Перші слова", "Первые слова", "First words"),
-    gen: (level, lang) => {
-      const word = pick(BASIC_WORDS);
-      return {
-        kind: "choice",
-        prompt: P.whichWord[lang],
-        visual: word.e,
-        options: options(word.en, BASIC_WORDS.map((w) => w.en), level <= 2 ? 3 : 4),
-        answer: word.en,
-        answerSpeech: { text: word.en, lang: EN },
-        optionSpeech: EN,
-      };
-    },
-  },
-  {
     id: "enListen6",
     subject: "english",
     age: 6,
@@ -231,8 +212,22 @@ export const englishSkills: Skill[] = [
     icon: "🔟",
     title: l("Числа англійською", "Числа по-английски", "Numbers"),
     gen: (level, lang) => {
-      const max = [6, 10, 12, 15, 20][level - 1];
+      const max = [10, 10, 12, 15, 20][level - 1];
       const n = Math.floor(Math.random() * max) + 1;
+      if (level <= 2 && Math.random() < 0.4) {
+        // count the pictures, then pick the number word
+        const e = pick(["🍎", "⭐", "🐟", "🎈", "🌸", "🐞", "🍓", "🐥"]);
+        const shown = Array.from({ length: n }, (_, i) => e + (i % 5 === 4 && i !== n - 1 ? "\n" : "")).join("");
+        return {
+          kind: "choice",
+          prompt: "How many? Pick the word.",
+          visual: shown,
+          options: options(NUMBERS[n], NUMBERS.slice(1, max + 1), 3),
+          answer: NUMBERS[n],
+          answerSpeech: { text: NUMBERS[n], lang: EN },
+          optionSpeech: EN,
+        };
+      }
       if (Math.random() < 0.5) {
         // the other way round: hear and read the word, pick the digit
         return {
@@ -262,51 +257,39 @@ export const englishSkills: Skill[] = [
     subject: "english",
     age: 6,
     icon: "🔤",
-    title: l("Англійські букви", "Английские буквы", "ABC letters"),
-    gen: (level, lang) => {
-      const short = BASIC_WORDS.filter((w) => /^[a-z]+$/.test(w.en));
-      if (level <= 2) {
-        // hear the English word, pick its first letter (capital, then small)
-        const w = pick(short);
-        const first = w.en[0];
-        const show = (c: string) => (level === 1 ? c.toUpperCase() : c);
-        return {
-          kind: "choice",
-          prompt: P.enFirst[lang],
-          visual: `${w.e}\n${w.en}`,
-          speak: { text: w.en, lang: EN, auto: true },
-          options: options(show(first), ABC.map(show), level === 1 ? 3 : 4),
-          answer: show(first),
-          answerSpeech: { text: w.en, lang: EN },
-          optionSpeech: EN,
-        };
+    title: l("Англійські букви", "Английские буквы", "Big and small letters"),
+    gen: (level) => {
+      // RF.K.1d: recognize and name all upper- and lowercase letters
+      const easy = ABC.filter((c) => !"bdpqmnuwhy".includes(c));
+      const tricky = "bdpqmnuwghijltfry".split("");
+      const twins = (c: string) => LOWER_TWINS[c] ?? tricky.filter((x) => x !== c);
+      if (level === 5) {
+        // which pair is the same letter?
+        const c = pick(tricky);
+        const pairs = [`${c.toUpperCase()} ${c}`, ...shuffle(twins(c)).slice(0, 3).map((t) => `${c.toUpperCase()} ${t}`)];
+        return { kind: "choice", prompt: "Which pair is the same letter?", options: shuffle(pairs), answer: pairs[0], answerSpeech: { text: c, lang: EN } };
       }
-      if (level === 3) {
-        // capital to small, with the look-alike letters as traps
-        const c = Math.random() < 0.5 ? pick(Object.keys(LOWER_TWINS)) : pick(ABC);
-        const traps = LOWER_TWINS[c] ?? ABC;
+      const toBig = level === 1 || ((level === 3 || level === 4) && Math.random() < 0.5);
+      const c = level === 4 ? pick(tricky) : pick(level <= 2 ? easy : ABC);
+      const traps = level === 4 ? twins(c) : (level <= 2 ? easy : ABC).filter((x) => x !== c);
+      const n = level <= 2 ? 3 : 4;
+      if (toBig) {
         return {
           kind: "choice",
-          prompt: `${P.enLower[lang]}: ${c.toUpperCase()}`,
-          visual: c.toUpperCase(),
+          prompt: `Find the big letter: ${c}`,
+          visual: c,
           speak: { text: c, lang: EN, auto: true },
-          options: options(c, traps, 4),
-          answer: c,
-          optionSpeech: EN,
+          options: options(c.toUpperCase(), traps.map((x) => x.toUpperCase()), n),
+          answer: c.toUpperCase(),
         };
       }
-      // a missing letter in a short (L4) or longer (L5) English word
-      const pool = short.filter((w) => (level === 4 ? w.en.length <= 4 : w.en.length >= 5));
-      const w = pick(pool);
-      const pos = rand(level === 4 ? 1 : 0, w.en.length - 1);
-      const letter = w.en[pos];
       return {
         kind: "choice",
-        prompt: P.enMissing[lang],
-        visual: `${w.e}\n${w.en.slice(0, pos)}_${w.en.slice(pos + 1)}`,
-        options: options(letter, ABC, 4),
-        answer: letter,
-        answerSpeech: { text: w.en, lang: EN },
+        prompt: `Find the small letter: ${c.toUpperCase()}`,
+        visual: c.toUpperCase(),
+        speak: { text: c, lang: EN, auto: true },
+        options: options(c, traps, n),
+        answer: c,
       };
     },
   },

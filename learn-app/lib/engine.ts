@@ -26,6 +26,8 @@ export type Question = {
   answerSpeech?: { text: string; lang: string };
   /** Speech language for a 🔊 button on each option (young kids who cannot read English yet). */
   optionSpeech?: string;
+  /** US coins to draw, in cents (1, 5, 10, 25). */
+  coins?: number[];
   /** Read the passage aloud before the question (listening tasks for kids who don't read yet). */
   readPassage?: boolean;
   /** Speech language for saying an "order" token aloud when it is tapped. */
