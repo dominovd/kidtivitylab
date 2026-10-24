@@ -24,6 +24,18 @@ npm run preview   # serve the build locally
 
 Push to GitHub → import the repo in Vercel → framework preset "Astro" is detected automatically. No env vars needed. Set the production domain to kidtivitylab.com.
 
+`npm run build` builds the site and then the Kidtivity Learn game (`learn-app/`, Next.js static export) into `dist/learn` (see `scripts/build-learn.mjs`). One Vercel project serves both.
+
+## Ads: never on /learn/
+
+When ads are added to the site, **`/learn/` (Kidtivity Learn) must stay ad-free**:
+
+- The game is played by kids themselves (ages 5–8), so it is child-directed under COPPA: no ad or tracking scripts there at all, including "auto ads" and analytics that set identifiers.
+- Our own copy promises it: `/learn/how-it-works/` and the start screen say "no ads".
+- Add ad code only to the Astro layout (`src/layouts/Base.astro`), never to `learn-app/`. Ad scripts in the Astro layout don't reach `/learn/`, because the game has its own layout.
+- In the ad network's dashboard (e.g. AdSense site settings / auto ads), exclude the `/learn/` path and keep it excluded.
+- The parent-facing site still needs a child-audience review before ads: no personalized ads aimed at kids, follow the network's family/children policy.
+
 ## Adding an activity
 
 Create `src/content/activities/<slug>.md`. Frontmatter is validated by the schema in `src/content.config.ts` (ages in **months**; activities for under-3s that use materials **must** have a `safety_note` — the build fails otherwise). The Markdown body is the numbered step list.
@@ -41,6 +53,7 @@ Activity images live in `public/images/activities/` and are referenced from fron
 - [ ] Point the email form at ConvertKit/MailerLite
 - [ ] Real privacy policy; GA4 + Search Console
 - [ ] OG image generation per page; seasonal pages 2–3 months before peaks
+- [ ] Ads (if any): exclude `/learn/` everywhere — see "Ads: never on /learn/" above
 
 ## Project docs
 

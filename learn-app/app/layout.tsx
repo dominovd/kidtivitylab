@@ -15,6 +15,8 @@ export const viewport: Viewport = {
   themeColor: "#FFF8EE",
 };
 
+// NO ADS OR TRACKING HERE. This app is used by kids aged 5–8 (child-directed under COPPA) and its pages
+// promise "no ads". Site ads belong only in the Astro layout (src/layouts/Base.astro); see README "Ads".
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
