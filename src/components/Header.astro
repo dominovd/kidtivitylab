@@ -5,6 +5,7 @@ const nav = [
   { href: '/situations/rainy-day/', label: 'Situations' },
   { href: '/learn/', label: 'Learning Games', badge: 'New', highlight: true },
   { href: '/printables/', label: 'Printables' },
+  { href: '/blog/', label: 'Blog' },
   { href: '/about/', label: 'About' },
 ];
 ---
@@ -84,7 +85,7 @@ const nav = [
   .nav-list a { white-space: nowrap; }
   .logo { white-space: nowrap; flex-shrink: 0; }
   .nav-list a:not(.btn):hover { color: var(--accent); }
-  @media (max-width: 1240px) {
+  @media (max-width: 1400px) {
     .nav-list { gap: 1.1rem; }
   }
   .nav-list a.nav-highlight {
@@ -124,8 +125,8 @@ const nav = [
     min-height: var(--tap);
     cursor: pointer;
   }
-  /* the menu (with the Learning Games pill) needs ~1150px in one row; below that it folds */
-  @media (max-width: 1160px) {
+  /* the menu (Learning Games pill + Blog) needs ~1300px in one row; below that it folds */
+  @media (max-width: 1300px) {
     .menu-btn { display: inline-flex; align-items: center; justify-content: center; }
     .nav-list {
       display: none;
