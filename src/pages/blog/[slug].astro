@@ -92,7 +92,7 @@ const articleSchema = {
         <section class="sources">
           <h2>Sources</h2>
           <ol>
-            {d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a></li>)}
+            {d.sources.map((s) => <li>{s.title} <span class="source-host">({new URL(s.url).hostname.replace(/^www\./, '')})</span></li>)}
           </ol>
         </section>
       )}
@@ -156,6 +156,7 @@ const articleSchema = {
   .related h2, .sources h2 { font-size: 1.5rem; }
   .sources ol { padding-left: 1.2rem; font-size: 0.95rem; }
   .sources li + li { margin-top: 0.35rem; }
+  .source-host { color: var(--text-soft); }
   .author-box {
     margin-top: 2.5rem;
     padding: 1.25rem 1.4rem;
