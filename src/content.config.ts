@@ -79,4 +79,30 @@ const activities = defineCollection({
     ),
 });
 
-export const collections = { activities };
+
+/**
+ * Blog posts: src/content/blog/<slug>.md, images in public/images/blog/<slug>/,
+ * printables in public/downloads/. `draft: true` posts are not built at all.
+ * Files starting with "_" are ignored (templates).
+ */
+const blog = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/blog' }),
+  schema: z.object({
+    title: z.string().max(70), // <title>, aim for <= 60
+    h1: z.string(),
+    description: z.string().max(170), // aim for 140-155
+    lede: z.string(), // 1-2 sentences under the H1
+    published: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+    author: z.string().default('Denis'),
+    reviewed_by: z.object({ name: z.string(), credentials: z.string(), url: z.string().url().optional() }).optional(),
+    draft: z.boolean().default(true),
+    hero: z.string().optional(), // /images/blog/<slug>/<file>.webp (1600x900)
+    hero_alt: z.string().optional(),
+    printable: z.object({ file: z.string(), label: z.string() }).optional(), // /downloads/<file>.pdf
+    related_activities: z.array(z.string()).default([]), // activity slugs
+    sources: z.array(z.object({ title: z.string(), url: z.string().url() })).default([]),
+  }),
+});
+
+export const collections = { activities, blog };

@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import EditorialPage from '../../components/EditorialPage.astro';
+import { publishedPosts, lastDate, formatDate } from '../../lib/blog';
+
+const posts = await publishedPosts();
+---
+
+<Base
+  title="Parenting Blog: Skills, Learning and Everyday Life | Kidtivity Lab"
+  description="Practical, research-backed guides for parents of kids 3 to 10: life skills, learning at home, online safety and money habits."
+  robots={posts.length ? undefined : 'noindex,follow'}
+>
+  <EditorialPage
+    eyebrow="Kidtivity Lab blog"
+    title="Guides for real-life parenting"
+    lede="Short, practical reads on the skills kids build at home, with the research behind them and things you can try today."
+    currentLabel="Blog"
+    wide
+  >
+    {posts.length === 0 && <p>New guides are on the way. Meanwhile, find an activity for today in the <a href="/">activity finder</a>.</p>}
+    <div class="post-grid">
+      {posts.map((p) => (
+        <article class="post-card">
+          <a href={`/blog/${p.id}/`}>
+            {p.data.hero && <img src={p.data.hero} alt={p.data.hero_alt ?? ''} width="800" height="450" loading="lazy" />}
+            <div class="post-card-body">
+              <h2>{p.data.h1}</h2>
+              <p>{p.data.description}</p>
+              <p class="post-date">{formatDate(lastDate(p))}</p>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  </EditorialPage>
+</Base>
+
+<style>
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+  .post-card {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+  .post-card a { display: block; color: inherit; text-decoration: none; }
+  .post-card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+  .post-card-body { padding: 1.1rem 1.25rem 1.25rem; }
+  .post-card h2 { margin: 0 0 0.5rem; font-size: 1.25rem; line-height: 1.25; }
+  .post-card p { margin: 0 0 0.6rem; color: var(--text-soft); font-size: 0.95rem; line-height: 1.55; }
+  .post-card .post-date { margin: 0; font-size: 0.82rem; font-weight: 700; }
+  .post-card a:hover h2 { color: var(--primary); }
+</style>

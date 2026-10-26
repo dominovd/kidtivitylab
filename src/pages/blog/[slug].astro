@@ -1,0 +1,168 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ActivityCard from '../../components/ActivityCard.astro';
+import { render } from 'astro:content';
+import { publishedPosts, lastDate, formatDate } from '../../lib/blog';
+import { allActivities, toActivity } from '../../lib/activities';
+
+export async function getStaticPaths() {
+  const posts = await publishedPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const d = post.data;
+const { Content } = await render(post);
+
+const activities = (await allActivities()).map(toActivity);
+const related = d.related_activities.map((slug) => {
+  const a = activities.find((x) => x.id === slug);
+  if (!a) throw new Error(`blog/${post.id}: related activity "${slug}" not found`);
+  return a;
+});
+
+const url = new URL(`/blog/${post.id}/`, Astro.site).toString();
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: d.h1,
+  description: d.description,
+  mainEntityOfPage: url,
+  datePublished: d.published,
+  dateModified: lastDate(post),
+  ...(d.hero ? { image: new URL(d.hero, Astro.site).toString() } : {}),
+  author: { '@type': 'Person', name: d.author, url: new URL('/about/', Astro.site).toString() },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Kidtivity Lab',
+    logo: { '@type': 'ImageObject', url: new URL('/favicon.svg', Astro.site).toString() },
+  },
+};
+---
+
+<Base title={d.title} description={d.description} schema={[articleSchema]} ogImage={d.hero}>
+  <div class="container post-shell">
+    <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: d.h1 }]} />
+
+    <article>
+      <header class="post-head">
+        <h1>{d.h1}</h1>
+        <p class="lede">{d.lede}</p>
+        <p class="byline">
+          By <a href="/about/">{d.author}</a>, parent and founder of Kidtivity Lab
+          {d.reviewed_by && (
+            <>
+              {' · '}Reviewed by{' '}
+              {d.reviewed_by.url ? <a href={d.reviewed_by.url} rel="noopener">{d.reviewed_by.name}</a> : d.reviewed_by.name}
+              , {d.reviewed_by.credentials}
+            </>
+          )}
+          <br />
+          <span>Published {formatDate(d.published)}{d.updated && d.updated !== d.published && <> · Updated {formatDate(d.updated)}</>}</span>
+        </p>
+      </header>
+
+      {d.hero && (
+        <img class="post-hero" src={d.hero} alt={d.hero_alt ?? ''} width="1600" height="900" fetchpriority="high" />
+      )}
+
+      <div class="post-body">
+        <Content />
+      </div>
+
+      {d.printable && (
+        <aside class="printable">
+          <p class="printable-kicker">Free printable</p>
+          <p class="printable-title">{d.printable.label}</p>
+          <a class="btn btn-primary" href={d.printable.file} download>Download PDF</a>
+        </aside>
+      )}
+
+      {related.length > 0 && (
+        <section class="related">
+          <h2>Activities to try</h2>
+          <div class="card-grid">
+            {related.map((a) => <ActivityCard activity={a} />)}
+          </div>
+        </section>
+      )}
+
+      {d.sources.length > 0 && (
+        <section class="sources">
+          <h2>Sources</h2>
+          <ol>
+            {d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a></li>)}
+          </ol>
+        </section>
+      )}
+
+      <aside class="author-box">
+        <p class="author-name">About the author</p>
+        <p>
+          {d.author} is a parent and the founder of Kidtivity Lab. He builds simple, screen-light activities
+          and learning games for kids, tested at home first. <a href="/about/">More about us</a>.
+        </p>
+      </aside>
+    </article>
+  </div>
+</Base>
+
+<style>
+  .post-shell { max-width: 780px; padding-bottom: 3rem; }
+  .post-head { margin: 0.5rem 0 1.5rem; }
+  h1 {
+    margin-bottom: 0.75rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+  }
+  .lede { margin: 0 0 1rem; color: var(--text-soft); font-size: clamp(1.05rem, 2vw, 1.2rem); line-height: 1.6; }
+  .byline { margin: 0; font-size: 0.9rem; font-weight: 700; color: var(--text-soft); line-height: 1.6; }
+  .byline span { font-weight: 600; }
+  .post-hero { display: block; width: 100%; height: auto; margin: 0 0 2rem; border-radius: 20px; }
+
+  .post-body { font-size: 1.06rem; line-height: 1.75; }
+  .post-body :global(h2) { margin: 2.4rem 0 0.7rem; font-size: clamp(1.45rem, 3vw, 1.9rem); line-height: 1.2; }
+  .post-body :global(h3) { margin: 1.8rem 0 0.5rem; font-size: 1.25rem; }
+  .post-body :global(p), .post-body :global(ul), .post-body :global(ol) { margin: 0 0 1.1rem; }
+  .post-body :global(li + li) { margin-top: 0.4rem; }
+  .post-body :global(img) { display: block; max-width: 100%; height: auto; margin: 1.5rem auto; border-radius: 16px; }
+  .post-body :global(blockquote) {
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 14px 14px 0;
+    background: var(--accent-soft);
+  }
+  .post-body :global(blockquote p:last-child) { margin-bottom: 0; }
+  .post-body :global(table) { width: 100%; margin: 1.5rem 0; border-collapse: collapse; font-size: 0.95rem; }
+  .post-body :global(th), .post-body :global(td) { padding: 0.6rem 0.7rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+  .post-body :global(th) { background: var(--primary-soft); }
+  @media (max-width: 640px) {
+    .post-body :global(table) { display: block; overflow-x: auto; }
+  }
+
+  .printable {
+    margin: 2rem 0;
+    padding: 1.4rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--warn-bg);
+  }
+  .printable-kicker { margin: 0 0 0.3rem; font: 800 0.78rem/1 var(--font-head); letter-spacing: 0.1em; text-transform: uppercase; }
+  .printable-title { margin: 0 0 0.9rem; font-size: 1.15rem; font-weight: 800; }
+  .related, .sources { margin-top: 2.5rem; }
+  .related h2, .sources h2 { font-size: 1.5rem; }
+  .sources ol { padding-left: 1.2rem; font-size: 0.95rem; }
+  .sources li + li { margin-top: 0.35rem; }
+  .author-box {
+    margin-top: 2.5rem;
+    padding: 1.25rem 1.4rem;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--surface);
+  }
+  .author-name { margin: 0 0 0.4rem; font-weight: 800; }
+  .author-box p:last-child { margin: 0; }
+</style>

@@ -1,5 +1,18 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/blog/preschool-adaptive-skills-checklist-2024",
+      "destination": "/blog/preschool-adaptive-skills-checklist/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/preschool-adaptive-skills-checklist-2024/",
+      "destination": "/blog/preschool-adaptive-skills-checklist/",
+      "statusCode": 301
+    }
+  ]
 }

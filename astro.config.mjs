@@ -1,6 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { readdirSync, readFileSync } from 'node:fs';
+
+// /blog/ goes into the sitemap only once at least one post is published (draft: false).
+const blogDir = new URL('./src/content/blog/', import.meta.url);
+const hasPublishedPosts = readdirSync(blogDir)
+  .filter((f) => f.endsWith('.md') && !f.startsWith('_'))
+  .some((f) => /^draft:\s*false\s*$/m.test(readFileSync(new URL(f, blogDir), 'utf8')));
 
 // https://astro.build/config
 export default defineConfig({
@@ -21,6 +28,7 @@ export default defineConfig({
         if (/\/age\/[^/]+\/[^/]+\/$/.test(path)) return false;
         // Printables: noindex until the first real PDF pack exists.
         if (path === '/printables/') return false;
+        if (path === '/blog/' && !hasPublishedPosts) return false;
         return true;
       },
     }),
