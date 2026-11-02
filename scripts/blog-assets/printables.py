@@ -1,4 +1,4 @@
-"""Build the four US Letter blog worksheets. Requires reportlab."""
+"""Build the five US Letter blog worksheets. Requires reportlab."""
 from pathlib import Path
 from io import BytesIO
 import argparse
@@ -217,4 +217,44 @@ text(c,36,137,'After buying: Was it worth the wait? What was hard? What is next?
 rule(c,112);rule(c,87)
 text(c,36,65,'Coins are choking hazards. Keep away from under-3s and children who mouth objects.',8.5,color=GRAY)
 c.showPage();c.save()
-print('Updated', args.only or 'four US Letter PDFs (checklist: 2 pages; others: 1 page)', 'in', OUT)
+c=base('screen-play-weekly-plan.pdf','Our weekly screen and play plan',
+       'Ages 3-10 | Plan the essentials first. Choose screen windows that fit around them.')
+text(c,36,612,'Week of: ____________________  Family: ______________________________',10.5)
+text(c,36,590,'Sleep routine: bedtime __________  wake time __________  (adjust by child)',10)
+text(c,36,571,'Protect school, sleep, and meals first. In each box, write an activity or a time window.',9)
+# Seven writable day columns and five rows. This is a plan, not a minutes quota.
+left, top, label_width = 36, 550, 108
+column_width = (540-label_width)/7
+row_height, header_height = 48, 30
+c.setFillColor(GREEN);c.rect(left,top-header_height,540,header_height,fill=1,stroke=0)
+text(c,left+7,top-20,'Plan together',9.5,True)
+for i, day in enumerate(['Mon','Tue','Wed','Thu','Fri','Sat','Sun']):
+    text(c,left+label_width+i*column_width+17,top-20,day,9.5,True)
+row_labels=['Play with others','Move outside','Screen together','Screen solo','Screen-free meal']
+for i,label in enumerate(row_labels):
+    y=top-header_height-i*row_height
+    lines(c,left+7,y-19,label,label_width-14,10,13)
+    rule(c,y-row_height)
+for i in range(8):
+    x=left+label_width+i*column_width
+    c.setStrokeColor(HexColor('#cbd7cf'));c.line(x,top,x,top-header_height-5*row_height)
+for x in [left,left+540]: c.line(x,top,x,top-header_height-5*row_height)
+rule(c,top)
+text(c,36,257,'Our family rules',11,True)
+text(c,36,235,'Where devices rest / charge: ______________________________________________',10)
+text(c,36,214,'How we stop (warning + ending): __________________________________________',10)
+text(c,36,193,'What adults will do too: __________________________________________________',10)
+text(c,36,166,'Easy swaps to keep nearby',11,True)
+swaps=[
+ ('Rainy day: Freeze Dance','Friends arrive: Pass the Parcel'),
+ ('After preschool: Follow the Leader','Dinner prep: Story Chain'),
+ ('Siblings: Shadow Puppet Theater','Long drive: A traveling story'),
+ ('Waiting room: Quiet animal guessing','Before bed: Blanket-fort reading'),
+]
+for i,(a,b) in enumerate(swaps):
+    text(c,36,146-i*16,a,8.8)
+    text(c,310,146-i*16,b,8.8)
+text(c,36,68,'Review date: __________  One change to try: __________________________________',9.5)
+c.showPage();c.save()
+
+print('Updated', args.only or 'five US Letter PDFs (checklist: 2 pages; others: 1 page)', 'in', OUT)

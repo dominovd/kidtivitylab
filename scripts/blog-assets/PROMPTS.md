@@ -1,6 +1,12 @@
 # Built-in imagegen prompts
 
-Mode: built-in imagegen, five independent generations. No reference images or API fallback. WebP exports were resized with Sharp; no semantic image edits were made.
+## screen-social-play-hero (article 5)
+
+Use case: illustration-story. One wide 16:9 editorial hero for Kidtivity Lab, warm flat children's book art, cream background, sage green, muted coral, ochre, rounded shapes and subtle paper texture. Two new child characters ages five and seven build a blanket fort in a cozy US living room: a Black girl with short natural curly hair kneeling to hold a blanket corner, and an East Asian boy with straight black hair standing to drape the other end over a low sofa. Children actively collaborating, faces happy and intent. No parent present, no hand-on-cheek pose. Fort uses low stable furniture, light blankets, open entrance, no cords near children. In distant background a tablet with a black screen rests on a high shelf charging, cable safely tucked away. No text, no rainbow, no brands, no recognizable game, no photorealism.
+
+Output: `public/images/blog/balancing-screen-time-and-social-play-for-kids/screen-social-play-hero.webp` and `screen-social-play-hero-800.webp`. Generated with the built-in imagegen tool; resized and exported with Sharp. The article-specific rebuild command is `node scripts/blog-assets/screen-social-play.mjs [original-hero.png]`.
+
+Mode: built-in imagegen, independent generations. No reference images or API fallback. WebP exports were resized with Sharp; no semantic image edits were made.
 
 ## adaptive-skills-hero
 
