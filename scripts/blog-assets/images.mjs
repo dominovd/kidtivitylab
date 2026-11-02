@@ -24,8 +24,29 @@ ages.forEach(([age,items],i)=>{const x=55+i*325;s+=rect(x,260,300,895,i===1?'#f7
 s+=text(60,1200,'Source: CDC milestones, ages 3, 4, and 5.',25);s+=text(60,1240,'Discuss missed milestones or concerns with your pediatrician.',23);
 await save(0,'adaptive-skills-by-age',1080,1350,s);
 // A simple garment diagram is more precise than generated instructional text.
-s=frame(1200,800,'Build from the last jacket step','Adult connects the zipper first; hand over more as the child is ready.');
-[['Adult helps','Arms in. Zipper connected.'],['Child finishes','Pull the zipper up.'],['More practice','Child connects and pulls.'],['Whole routine','Try more steps, with help.']].forEach(([h,b],i)=>{let x=45+i*290;s+=rect(x,265,270,425,i%2?sage:'#f7e8cc');s+=`<path d="M${x+80} 320 l40 -20 h30 l40 20 35 70 -35 20 -20 -40 v135 h-110 v-135 l-20 40 -35 -20z" fill="${i<2?coral:'#83a08d'}"/><path d="M${x+135} 310v185" stroke="${cream}" stroke-width="8"/><circle cx="${x+135}" cy="${i===0?478:340}" r="10" fill="${gold}"/>`;s+=text(x+18,554,h,27,700);s+=wrap(x+18,600,b,19,25);});
+// --- jacket steps: backward chaining, the child's part grows from the last step ---
+const adultFill='#e7e2d6', adultText='#6f7d77';
+s=frame(1200,800,'Start with the last step','');
+// legend
+s+=rect(60,182,34,34,coral,8)+text(106,209,'Your child does it',25)+rect(360,182,34,34,adultFill,8)+text(406,209,'You help',25);
+const steps=['Left arm in','Right arm in','Connect zipper','Pull zipper up'];
+const cards=[['Start here','Child pulls the zipper up.'],['Next','Child connects and pulls.'],['Then','Child adds one arm.'],['Goal','Child does it all.']];
+cards.forEach(([h,b],i)=>{
+  const x=45+i*285, y=240;
+  s+=rect(x,y,255,480,i%2?sage:'#f7e8cc');
+  const cx=x+127, top=y+28;
+  // long-sleeve zip jacket
+  s+=`<path d="M${cx-25} ${top} L${cx-52} ${top+12} L${cx-82} ${top+105} L${cx-62} ${top+111} L${cx-44} ${top+52} V${top+118} H${cx+44} V${top+52} L${cx+62} ${top+111} L${cx+82} ${top+105} L${cx+52} ${top+12} L${cx+25} ${top} Q${cx} ${top+18} ${cx-25} ${top} Z" fill="${coral}"/>`;
+  s+=`<path d="M${cx} ${top+14}V${top+116}" stroke="${cream}" stroke-width="6"/><circle cx="${cx}" cy="${top+24}" r="9" fill="${gold}"/>`;
+  s+=text(x+20,y+188,h,27,700);
+  s+=wrap(x+20,y+226,b,19,23);
+  const childFrom=3-i; // index of the first step the child does
+  steps.forEach((st,j)=>{
+    const yy=y+284+j*46, child=j>=childFrom;
+    s+=rect(x+16,yy,223,38,child?coral:adultFill,10);
+    s+=text(x+30,yy+26,`${j+1}. ${st}`,20,700,child?cream:adultText);
+  });
+});
 await save(0,'adaptive-skills-jacket-steps',1200,800,s);
 s=frame(1080,1080,'Our morning, one step at a time','Arrange these reminders to fit your family.');
 ['Bathroom','Brush teeth','Get dressed','Eat breakfast','Shoes on'].forEach((v,i)=>{let y=255+i*140;s+=rect(65,y,950,115,i%2?'#f7e8cc':sage);s+=`<circle cx="130" cy="${y+58}" r="34" fill="${coral}"/>`;s+=text(120,y+70,String(i+1),32,700,cream)+text(200,y+74,v,38,700);});

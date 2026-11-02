@@ -98,7 +98,7 @@ For a routine with several steps, do the early parts and let your child finish s
 
 Once that feels familiar, hand over an earlier part. This approach is often called backward chaining, but you can think of it as building from a successful ending. Say, “I'll start it, and you pull,” rather than asking for the whole job at once.
 
-![Four jacket diagrams show how adults can hand over dressing steps](/images/blog/preschool-adaptive-skills-checklist/adaptive-skills-jacket-steps.webp)
+![Four cards show a child taking over jacket steps, starting with pulling up the zipper](/images/blog/preschool-adaptive-skills-checklist/adaptive-skills-jacket-steps.webp)
 
 ### Put the routine where your child can see it
 
