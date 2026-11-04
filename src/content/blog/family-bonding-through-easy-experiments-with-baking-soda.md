@@ -3,8 +3,8 @@ title: "8 Easy Baking Soda Experiments for Family Fun"
 h1: "Easy Baking Soda Experiments to Do Together as a Family"
 description: "Eight fizzy baking soda experiments for kids 3 to 10 and their grown-ups, with a role for everyone, a simple science why, and easy safety tips."
 lede: "One fizzing reaction, four family jobs, and eight easy experiments that work from preschool through big kid. Everyone gets a part, and nobody just watches."
-published: "2026-11-15"
-draft: true
+published: "2026-11-04"
+draft: false
 hero: "/images/blog/family-bonding-through-easy-experiments-with-baking-soda/baking-soda-hero.webp"
 hero_alt: "Family wearing safety goggles pours colored vinegar and records a fizzy experiment."
 printable:

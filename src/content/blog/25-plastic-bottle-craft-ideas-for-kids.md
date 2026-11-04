@@ -3,7 +3,7 @@ title: "25 Plastic Bottle Crafts for Kids (Ages 2 to 10)"
 h1: "25 Plastic Bottle Craft Ideas for Kids"
 description: "Twenty-five plastic bottle crafts for kids 2 to 10, sorted by age, with time, supplies and who does the cutting. Easy recycled projects for home or class."
 lede: "Start with no-cut bottle crafts for little kids, then move to projects where you cut and they build. Every idea lists age, time, and who handles the blade."
-published: "2026-11-15"
+published: "2026-11-06"
 draft: true
 hero: "/images/blog/25-plastic-bottle-craft-ideas-for-kids/bottle-crafts-hero.webp"
 hero_alt: "Child paints a plastic bottle beside finished recycled crafts and a parent."

@@ -3,7 +3,7 @@ title: "10 Creative Movement Activities for Kids (Ages 3 to 10)"
 h1: "10 Creative Movement Activities for Kids"
 description: "Ten simple-setup movement games for kids 3 to 10, from Freeze Dance to Animal Yoga, with ages, space needed and ways to calm things down after."
 lede: "Ten simple-setup movement games for ages 3 to 10, with the space and materials each one needs, plus a calm finish so the energy comes back down."
-published: "2026-11-15"
+published: "2026-11-05"
 draft: true
 hero: "/images/blog/10-creative-movement-activities-for-kids/movement-hero.webp"
 hero_alt: "Three children balance, freeze in a silly pose, and jump indoors."

@@ -3,7 +3,7 @@ title: "12 Outdoor Science Activities for Preschoolers (Ages 3-5)"
 h1: "12 Outdoor Science Activities for Preschoolers"
 description: "Twelve simple outdoor science activities for preschoolers: shadows, puddles, bugs, leaves and seeds. Easy setup, real observation, safety tips included."
 lede: "Twelve outdoor science activities for preschoolers, from shadow tracing to worm walks, with simple setups, real observation, and safety tips for ages 3 to 5."
-published: "2026-11-15"
+published: "2026-11-05"
 draft: true
 hero: "/images/blog/outdoor-science-activities-for-preschoolers-nature-exploration/outdoor-science-hero.webp"
 hero_alt: "Children examine a leaf and trace a toy shadow beside an adult."

@@ -3,7 +3,7 @@ title: "12 Fun Learning Games for 4-Year-Olds (No Worksheets)"
 h1: "12 Fun Learning Games for 4-Year-Olds (No Worksheets)"
 description: "Twelve playful learning games for 4-year-olds that practice colors, stories, counting and big feelings, plus the CDC age-4 milestones behind them."
 lede: "Twelve no-worksheet games that turn colors, stories, counting, and big feelings into ten minutes of play, plus the CDC age-4 milestones behind them."
-published: "2026-11-15"
+published: "2026-11-06"
 draft: true
 hero: "/images/blog/innovative-fun-learning-games-for-4-year-olds/learning-games-4-hero.webp"
 hero_alt: "Four year old and dad exchange toy groceries in a pretend store."

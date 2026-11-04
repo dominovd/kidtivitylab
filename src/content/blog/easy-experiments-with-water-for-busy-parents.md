@@ -3,8 +3,8 @@ title: "15 Easy Water Experiments for Kids (Busy Parent Edition)"
 h1: "15 Easy Water Experiments for Busy Parents"
 description: "Fifteen quick water experiments for kids 2 to 8 using cups, food coloring and paper towels. Each sets up in 2 minutes and comes with a simple why."
 lede: "A bowl of water and a few kitchen things are enough for a real experiment before dinner. Predict first, test, then talk about what happened."
-published: "2026-11-15"
-draft: true
+published: "2026-11-04"
+draft: false
 hero: "/images/blog/easy-experiments-with-water-for-busy-parents/water-experiments-hero.webp"
 hero_alt: "Child watches colored water travel between cups while a parent supervises."
 printable:
