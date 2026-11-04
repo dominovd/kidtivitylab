@@ -48,7 +48,7 @@ At this age the doing is the point. Keep sessions short, expect spills, and let 
 
 **Ages:** 2-4 · **Time:** 10 min · **You need:** a bowl of water, an apple, a spoon, a sponge, a key
 
-Set the bowl on a tray and hand over one object at a time. Ask, "Will it float or sink?" before each drop, then let your child place it in. Keep a towel handy for the enthusiastic entries.
+Set the bowl on a tray and hand over one object at a time. Ask, "Will it float or sink?" before each drop, then let your child place it in. Keep a towel handy for the enthusiastic entries. For a longer version with a prediction chart, see [Sink or Float](/activities/sink-or-float/).
 
 Why it works: things that are heavy for their size, like a metal spoon, sink. An apple has pockets of air inside, so it floats even though it feels heavy.
 
