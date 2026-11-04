@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Fine motor grip", "Hand-eye coordination", "Pretend play", "Sensory exploration"]
 safety_note: "Pipe cleaner ends can scratch, so an adult twists them inward on every fish. Keep the water shallow and stay close for children under 3. Pom-poms are small: add them only for kids who no longer put things in their mouth."
 tips: "Make the first two fish while your child watches. Many 4 and 5-year-olds then want to bend their own, which adds a craft step to the game."
+image: "/images/activities/pipe-cleaner-fishing.webp"
+image_alt: "A preschooler lifts a pipe cleaner fish out of a pan of water with kitchen tongs"
 setup_minutes: 5
 cleanup_minutes: 3
 mess_level: medium

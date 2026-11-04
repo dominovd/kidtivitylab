@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Counting", "Spatial reasoning", "Patience and impulse control", "Taking turns"]
 safety_note: "Before you start, agree on out-of-bounds places: no hiding in cars, dryers, chests, coolers, closets that latch, or anywhere near water or the street."
 tips: "Young children often 'hide' in plain sight or giggle the moment you get close. Play along: search loudly in the wrong places first so the hider gets to enjoy being hidden."
+image: "/images/activities/hide-and-seek.webp"
+image_alt: "A boy counts against the wall while two kids hide behind a curtain and an armchair"
 setup_minutes: 2
 cleanup_minutes: 0
 mess_level: low

@@ -13,6 +13,8 @@ situations: [indoor, outdoor, rainy-day, birthday-party]
 seasons: []
 skills_developed: ["Gross motor control", "Pretend play", "Listening", "Body awareness"]
 tips: "Mix big, fast walks with slow, quiet ones. Ending on a slow prompt like 'walk like you're carrying a full bowl of soup' brings the energy back down before dinner."
+image: "/images/activities/walk-this-way.webp"
+image_alt: "A dad and three kids walk down a garden path in silly ways, tiptoeing and stomping"
 setup_minutes: 0
 cleanup_minutes: 0
 mess_level: low

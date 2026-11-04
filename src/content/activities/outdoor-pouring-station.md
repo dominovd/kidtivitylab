@@ -14,6 +14,8 @@ seasons: [spring, summer]
 skills_developed: ["Pouring and scooping", "Hand-eye coordination", "Cause and effect", "Independent play"]
 safety_note: "Children can drown in just a few inches of water. An adult stays within arm's reach the whole time, the tub holds only a shallow layer, and all water is tipped out when play ends. On hot days, add a hat and sunscreen and set the tub in the shade."
 tips: "Show the pour once, slowly, then hand over the ladle. Most kids copy you after two or three tries and then take over the show. Fewer cups on the grass means less to gather later."
+image: "/images/activities/outdoor-pouring-station.webp"
+image_alt: "A toddler pours water from a ladle into a cup beside a shallow tub in the backyard"
 setup_minutes: 5
 cleanup_minutes: 5
 mess_level: medium

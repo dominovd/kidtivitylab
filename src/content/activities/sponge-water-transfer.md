@@ -14,6 +14,8 @@ seasons: []
 skills_developed: ["Hand strength", "Squeezing and releasing", "Cause and effect", "Focused attention"]
 safety_note: "Use shallow water only. For children under 3, stay within arm's reach the whole time and empty the water right after play. Take the sponge away if your child bites or chews it, since pieces are a choking risk."
 tips: "Cut the sponge in half so a small hand can wrap around it. A big sponge is harder to squeeze than it looks."
+image: "/images/activities/sponge-water-transfer.webp"
+image_alt: "A toddler squeezes a yellow sponge over a bowl of water while a parent watches"
 setup_minutes: 2
 cleanup_minutes: 3
 mess_level: medium

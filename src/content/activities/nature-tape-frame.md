@@ -14,6 +14,8 @@ seasons: [spring, summer, fall]
 skills_developed: ["Fine motor", "Nature observation", "Sorting and naming", "Creative design"]
 safety_note: "Rule one: look first, ask before picking. Skip mushrooms, berries and any plant you can't identify. Don't pick in parks or gardens where picking isn't allowed. Wash hands afterwards. An adult cuts the cardboard."
 tips: "Tape the frame to a clipboard or a stiff book cover so it doesn't flop while small hands press things down. Ask your child to name each find before it goes on: 'That's a maple leaf, that one's a dandelion.'"
+image: "/images/activities/nature-tape-frame.webp"
+image_alt: "A girl adds a yellow leaf to a cardboard frame covered in pressed leaves and petals"
 setup_minutes: 5
 cleanup_minutes: 5
 mess_level: low

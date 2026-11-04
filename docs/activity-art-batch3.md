@@ -3,6 +3,11 @@
 6 images, 900×600 WebP, file name = slug, folder `public/images/activities/`.
 After the files are in place, Claude adds `image` and `image_alt` to each activity.
 
+## Delivery status
+
+Completed 2026-11-04: all six illustrations generated with the built-in ImageGen tool using the base prompt and scenes below, and saved in `public/images/activities/`.
+Verified: each file is WebP, 900×600 pixels; scenes visually reviewed. Activity frontmatter is ready for Claude to update as described above.
+
 ## Base prompt (same look as the existing activity images)
 
 Warm storybook illustration in soft colored pencil and watercolor, detailed but gentle, natural daylight, cozy US home or backyard, diverse kids with friendly round faces, muted greens, warm yellows and terracotta. Landscape 3:2. No text, no logos, no brand names, no rainbows, no screens.
