@@ -2,7 +2,7 @@
 
 Общие требования: `docs/briefs/README.md`. Черновик: `src/content/blog/easy-experiments-with-water-for-busy-parents.md`.
 
-Интент: родитель ребёнка 2–8 лет хочет быстрый опыт из того, что есть на кухне, на 10–15 минут. Обещание статьи: каждый опыт готовится за 2 минуты и убирается за 5.
+Интент: родитель ребёнка 2–8 лет хочет быстрый опыт из того, что есть на кухне, на 10–15 минут. Обещание статьи: каждый опыт готовится за 2 минуты и убирается за 5. Результат не всегда мгновенный: Walking Water занимает от 30 минут, Celery Drink до ночи; так и писать.
 
 | Поле | Значение |
 | --- | --- |
@@ -18,7 +18,7 @@
 1. **Вступление и Quick answer.** Сцена: 10 минут до ужина, ребёнок тянется к планшету. Ответ: миска воды и пара вещей из кухни, сначала предсказание «what do you think will happen?», потом проверка.
 2. **Water safety first.** Короткий блок перед списком (факты ниже): взрослый рядом всё время, воды мало, всё выливаем сразу после опыта. Тёплая вода только из-под крана, без кипятка. Пищевой краситель пачкает одежду и столешницы.
 3. **15 опытов.** Сгруппировать по возрасту. У каждого: возраст, время, материалы, «как», «why it happens» одним-двумя предложениями простыми словами.
-    - **Ages 2–4:** Sink or Float (фрукты, ложка, губка, ключ); [Sponge Water Transfer](/activities/sponge-water-transfer/); [Outdoor Pouring Station](/activities/outdoor-pouring-station/); [Pipe Cleaner Fishing](/activities/pipe-cleaner-fishing/) (наблюдение: проволочки намокают и тонут); [Water Painting](/activities/water-painting/) (вода испаряется на солнце); Ice Melt Race (кубики льда на солнце и в тени).
+    - **Ages 2–4:** Sink or Float (фрукты, ложка, губка, ключ); [Sponge Water Transfer](/activities/sponge-water-transfer/); [Outdoor Pouring Station](/activities/outdoor-pouring-station/); [Pipe Cleaner Fishing](/activities/pipe-cleaner-fishing/) (наблюдение: большинство проволочек для поделок, намокнув, опускаются на дно; проверить свои заранее); [Water Painting](/activities/water-painting/) (вода испаряется на солнце); Ice Melt Race (кубики льда на солнце и в тени).
     - **Ages 4–6:** Walking Water (бумажные полотенца между стаканами с красителем); Celery Drink (сельдерей в цветной воде, ждать ночь); Color Mixing With Droppers (пипетка или ложка, 3 основных цвета); What Soaks It Up? (губка, фольга, бумага, ткань); [Rainbow Ice Rescue](/activities/rainbow-ice-rescue/) с солью (соль ускоряет таяние).
     - **Ages 6–8:** Pepper and Soap (перец на воде разбегается от капли мыла); Floating Paper Clip (поверхностное натяжение, положить с помощью кусочка салфетки); Oil and Water (масло, вода, краситель, щепотка соли: капли «лавы»); Water Xylophone (стаканы с разным уровнем воды и ложка).
 4. **How to turn it into real science.** Три шага на любом опыте: predict, test, talk. Фразы для ребёнка. Карточка PDF «My water experiment»: что взяли, что думаю, что получилось, рисунок.

@@ -7,7 +7,7 @@ lede: "TODO: 1-2 sentences under the H1"
 published: "2026-11-15"
 draft: true
 hero: "/images/blog/family-bonding-through-easy-experiments-with-baking-soda/baking-soda-hero.webp"
-hero_alt: "TODO: what the picture shows, 8-15 words"
+hero_alt: "Family wearing safety goggles pours colored vinegar and records a fizzy experiment."
 printable:
   file: "/downloads/baking-soda-family-roles.pdf"
   label: "Family science roles and lab log"

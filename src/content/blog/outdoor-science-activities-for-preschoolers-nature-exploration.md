@@ -7,7 +7,7 @@ lede: "TODO: 1-2 sentences under the H1"
 published: "2026-11-15"
 draft: true
 hero: "/images/blog/outdoor-science-activities-for-preschoolers-nature-exploration/outdoor-science-hero.webp"
-hero_alt: "TODO: what the picture shows, 8-15 words"
+hero_alt: "Children examine a leaf and trace a toy shadow beside an adult."
 printable:
   file: "/downloads/nature-notebook.pdf"
   label: "My nature notebook"

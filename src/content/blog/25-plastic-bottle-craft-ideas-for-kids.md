@@ -7,7 +7,7 @@ lede: "TODO: 1-2 sentences under the H1"
 published: "2026-11-15"
 draft: true
 hero: "/images/blog/25-plastic-bottle-craft-ideas-for-kids/bottle-crafts-hero.webp"
-hero_alt: "TODO: what the picture shows, 8-15 words"
+hero_alt: "Child paints a plastic bottle beside finished recycled crafts and a parent."
 printable:
   file: "/downloads/bottle-craft-picker.pdf"
   label: "Plastic bottle craft picker"

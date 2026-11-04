@@ -2,12 +2,12 @@
 # DRAFT: brief in docs/briefs/innovative-fun-learning-games-for-4-year-olds.md (shared rules: docs/briefs/README.md). Set draft: false to publish.
 title: "12 Fun Learning Games for 4-Year-Olds (No Worksheets)"
 h1: "12 Fun Learning Games for 4-Year-Olds (No Worksheets)"
-description: "Twelve playful learning games for 4-year-olds that build colors, counting, stories and big feelings. Each one ties to a real age-4 milestone."
+description: "Twelve playful learning games for 4-year-olds that practice colors, stories, counting and big feelings, plus the CDC age-4 milestones behind them."
 lede: "TODO: 1-2 sentences under the H1"
 published: "2026-11-15"
 draft: true
 hero: "/images/blog/innovative-fun-learning-games-for-4-year-olds/learning-games-4-hero.webp"
-hero_alt: "TODO: what the picture shows, 8-15 words"
+hero_alt: "Four year old and dad exchange toy groceries in a pretend store."
 printable:
   file: "/downloads/learning-games-4-list.pdf"
   label: "12 learning games for 4-year-olds"

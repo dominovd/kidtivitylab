@@ -2,14 +2,14 @@
 
 Общие требования: `docs/briefs/README.md`. Черновик: `src/content/blog/10-creative-movement-activities-for-kids.md`.
 
-Интент: родитель ребёнка 3–10 лет ищет, как дать выход энергии дома или во дворе без инвентаря. Все 10 игр уже есть на сайте, поэтому статья работает как подборка-хаб и даёт 10 внутренних ссылок.
+Интент: родитель ребёнка 3–10 лет ищет, как дать выход энергии дома или во дворе почти без инвентаря (Shape Jump, Musical Cushions, Balloon Keep-Up и Chalk Obstacle Course требуют простых материалов: скотч, подушки, шарик, мел; в тексте так и писать, не обещать «no equipment»). Все 10 игр уже есть на сайте, поэтому статья работает как подборка-хаб и даёт 10 внутренних ссылок.
 
 | Поле | Значение |
 | --- | --- |
 | URL | /blog/10-creative-movement-activities-for-kids/ |
 | H1 | 10 Creative Movement Activities for Kids |
 | Title | 10 Creative Movement Activities for Kids (Ages 3 to 10) |
-| Description | Ten no-equipment movement games for kids 3 to 10, from Freeze Dance to Animal Yoga, with ages, space needed and ways to calm things down after. |
+| Description | Ten simple-setup movement games for kids 3 to 10, from Freeze Dance to Animal Yoga, with ages, space needed and ways to calm things down after. |
 | Ключи | creative movement activities for kids; movement games for kids; indoor movement activities; gross motor activities for preschoolers; active games for kids at home |
 | Объём | 1 600–2 000 слов |
 

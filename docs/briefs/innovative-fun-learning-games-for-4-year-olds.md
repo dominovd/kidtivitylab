@@ -2,14 +2,14 @@
 
 Общие требования: `docs/briefs/README.md`. Черновик: `src/content/blog/innovative-fun-learning-games-for-4-year-olds.md`.
 
-Интент: родитель 4-летки ищет развивающие игры без рабочих тетрадей. Наша рамка: каждая игра привязана к одной вехе развития CDC для 4 лет, так статья становится полезнее обычной подборки.
+Интент: родитель 4-летки ищет развивающие игры без рабочих тетрадей. Наша рамка: рядом с играми короткий блок вех CDC для 4 лет. Не каждая игра соответствует вехе (счёт и сортировка — практика, счёт до 10 веха уже 5 лет), поэтому в тексте писать «practice», а не «milestone».
 
 | Поле | Значение |
 | --- | --- |
 | URL | /blog/innovative-fun-learning-games-for-4-year-olds/ |
 | H1 | 12 Fun Learning Games for 4-Year-Olds (No Worksheets) |
 | Title | 12 Fun Learning Games for 4-Year-Olds (No Worksheets) |
-| Description | Twelve playful learning games for 4-year-olds that build colors, counting, stories and big feelings. Each one ties to a real age-4 milestone. |
+| Description | Twelve playful learning games for 4-year-olds that practice colors, stories, counting and big feelings, plus the CDC age-4 milestones behind them. |
 | Ключи | learning games for 4 year olds; educational games for 4 year olds; activities for 4 year olds at home; preschool learning games; fun games for 4 year olds |
 | Объём | 1 800–2 200 слов + печатный список «12 games» |
 

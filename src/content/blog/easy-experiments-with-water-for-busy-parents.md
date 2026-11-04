@@ -7,7 +7,7 @@ lede: "TODO: 1-2 sentences under the H1"
 published: "2026-11-15"
 draft: true
 hero: "/images/blog/easy-experiments-with-water-for-busy-parents/water-experiments-hero.webp"
-hero_alt: "TODO: what the picture shows, 8-15 words"
+hero_alt: "Child watches colored water travel between cups while a parent supervises."
 printable:
   file: "/downloads/water-experiment-card.pdf"
   label: "Predict-and-check water experiment card"
