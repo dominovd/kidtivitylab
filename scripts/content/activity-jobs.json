@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "sponge-water-transfer",
+    "title_hint": "Sponge Water Transfer",
+    "age_months": [18, 48],
+    "place": ["home", "table", "outdoors"],
+    "time_minutes": "10",
+    "materials": "household",
+    "goals": ["motor", "calm"],
+    "involvement": "independent",
+    "situations": ["indoor", "quiet-time", "rainy-day", "outdoor"],
+    "seasons": [],
+    "safety_points": "Shallow water only, adult within arm's reach for under-3s, empty water right after play. Take the sponge away if the child bites or chews it (pieces are a choking risk).",
+    "source_video": {"youtube_id": "MMtr1kXrdGk", "title": "Easy TODDLER ACTIVITIES to Entertain a 2-3 Year Old at Home", "channel": "The Purple Alphabet", "upload_date": "2023-02-18", "start_seconds": 1103},
+    "source_excerpt": "since we are talking about toddlers I also wanted to mention a different way that this particular activity can be done, especially with that toddler age, and that is with sponges. This is actually my water transfer busy bag that I've had forever and even my younger kid likes to play with it. You would just push a sponge in here with some water and you soak up the water and then squeeze it into the other container and it's a water transfer. You can also use that other tool (a bulb syringe / baster) to soak up water and do water transfer with that."
+  },
+  {
+    "slug": "outdoor-pouring-station",
+    "title_hint": "Outdoor Pouring Station",
+    "age_months": [12, 60],
+    "place": ["outdoors"],
+    "time_minutes": "30",
+    "materials": "household",
+    "goals": ["motor", "stem"],
+    "involvement": "independent",
+    "situations": ["outdoor"],
+    "seasons": ["spring", "summer"],
+    "safety_points": "Children can drown in a few inches of water: adult stays within arm's reach the whole time, use shallow containers, tip out all water when done. Sun protection on hot days.",
+    "source_video": {"youtube_id": "BcDuq8-YiwM", "title": "40 Easy DIY Toddler Activities for Busy Parents", "channel": "Lily b Coco", "upload_date": "2022-06-15", "start_seconds": 697},
+    "source_excerpt": "outdoor pouring activity is fairly simple you're just going to take a whole bunch of containers fill it up with water bring a ladle some bowls some cups and take them outside have your little one just pouring it. Kiddos love playing in water so if you can give them a safe space to do so. She's taking the ladle and she's pouring it out, just pouring it in. Especially first time with the activity help them out, demonstrate the activity, do it with them; after the second or third time she does it on her own."
+  },
+  {
+    "slug": "pipe-cleaner-fishing",
+    "title_hint": "Pipe Cleaner Fishing",
+    "age_months": [24, 60],
+    "place": ["home", "table"],
+    "time_minutes": "10",
+    "materials": "craft",
+    "goals": ["motor", "creative"],
+    "involvement": "independent",
+    "situations": ["indoor", "rainy-day", "quiet-time"],
+    "seasons": [],
+    "safety_points": "An adult twists the pipe cleaner ends inward because cut ends can scratch. Keep water shallow and stay close for under-3s. Pom-poms (optional extra) are small: only for kids past mouthing.",
+    "source_video": {"youtube_id": "BcDuq8-YiwM", "title": "40 Easy DIY Toddler Activities for Busy Parents", "channel": "Lily b Coco", "upload_date": "2022-06-15", "start_seconds": 671},
+    "source_excerpt": "the pipe cleaner fish activity: take some pipe cleaners, twist them into a little fishy and then drop them into a pan of water and then have them fish them out. They can do it by hand so they're playing with the water and it's a sensory play, or with utensils like a fish spatula or tongs. You can also include some pom-poms. Great for sensory and motor skills."
+  },
+  {
+    "slug": "nature-tape-frame",
+    "title_hint": "Nature Tape Frame",
+    "age_months": [24, 96],
+    "place": ["outdoors"],
+    "time_minutes": "30",
+    "materials": "household",
+    "goals": ["creative", "stem"],
+    "involvement": "together",
+    "situations": ["outdoor"],
+    "seasons": ["spring", "summer", "fall"],
+    "safety_points": "Rule: look first, ask before picking. Skip mushrooms, berries and any plant you can't identify; don't pick in parks or gardens where picking isn't allowed; wash hands afterwards. Adult cuts the cardboard.",
+    "source_video": {"youtube_id": "BcDuq8-YiwM", "title": "40 Easy DIY Toddler Activities for Busy Parents", "channel": "Lily b Coco", "upload_date": "2022-06-15", "start_seconds": 849},
+    "source_excerpt": "Flower card: take some cardboard, poke some holes in it (bigger holes for younger ages, smaller for older), you can do a little vase and pick dandelions or plants and put them in. Go explore a park, get some leaves, picnic blanket, sit out together; you can name the plants and leaves. Similar with that you can do a little tape frame: cut out a frame out of cardboard, put tape on it and then ask them to pick dandelions or leaves or sticks and go exploring outside, pick them up, put them on. You get a little art at the very end; memories of making these little natural craft pieces."
+  }
+]

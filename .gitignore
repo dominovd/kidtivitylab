@@ -12,3 +12,5 @@ _new-art/
 
 # learn-app static export
 learn-app/out/
+.env.*
+content-drafts/
