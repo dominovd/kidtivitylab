@@ -5,6 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ActivityCard from '../components/ActivityCard.astro';
 import EmailCapture from '../components/EmailCapture.astro';
 import type { Activity } from '../lib/taxonomy';
+import type { ListingEditorial } from '../lib/editorial';
 
 interface Crumb {
   label: string;
@@ -48,6 +49,9 @@ interface Props {
   faqHeading?: string;
   faqKicker?: string;
   indexable?: boolean;
+  milestones?: ListingEditorial['milestones'];
+  skillGroups?: ListingEditorial['skillGroups'];
+  moreLinks?: ListingEditorial['moreLinks'];
 }
 
 const {
@@ -71,7 +75,28 @@ const {
   faqHeading = 'Frequently asked questions',
   faqKicker = 'Helpful answers',
   indexable = true,
+  milestones,
+  skillGroups = [],
+  moreLinks = [],
 } = Astro.props;
+const byId = new Map(activities.map((a) => [a.id, a]));
+// Each activity appears once, under its primary (first-listed) goal.
+const groups = skillGroups
+  .map((g) => ({ ...g, items: activities.filter((a) => a.goals[0] === g.goal) }))
+  .filter((g) => g.items.length > 0);
+const grouped = new Set(groups.flatMap((g) => g.items.map((a) => a.id)));
+const ungrouped = groups.length ? activities.filter((a) => !grouped.has(a.id)) : [];
+const faqSchema = faqs.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    }
+  : null;
 const featuredActivities = quickPicks
   .map((pick) => ({ ...pick, activity: activities.find((a) => a.id === pick.activityId) }))
   .filter((pick) => pick.activity);
@@ -93,7 +118,7 @@ const itemListSchema = {
 <Base
   title={metaTitle}
   description={description}
-  schema={[itemListSchema]}
+  schema={faqSchema ? [itemListSchema, faqSchema] : [itemListSchema]}
   robots={indexable ? undefined : 'noindex,follow'}
 >
   <div class="container">
@@ -127,16 +152,79 @@ const itemListSchema = {
       </section>
     )}
 
+    {milestones && (
+      <section class="milestones section" aria-labelledby="milestones-heading">
+        <div class="section-heading">
+          <p class="listing-kicker">{milestones.kicker ?? 'Development'}</p>
+          <h2 id="milestones-heading">{milestones.heading}</h2>
+          <p>
+            {milestones.intro}{' '}
+            Source: <a href={milestones.source.url} rel="noopener">{milestones.source.label}</a>.
+          </p>
+        </div>
+        <div class="milestone-table" role="table" aria-label={milestones.heading}>
+          <div class="mt-row mt-head" role="row">
+            <span role="columnheader">Area</span>
+            <span role="columnheader">Milestone</span>
+            <span role="columnheader">Practice it with</span>
+          </div>
+          {milestones.items.map((m) => (
+            <div class="mt-row" role="row">
+              <span role="cell" class="mt-area">{m.area}</span>
+              <span role="cell">{m.milestone}</span>
+              <span role="cell" class="mt-links">
+                {m.activityIds
+                  .map((id) => byId.get(id))
+                  .filter(Boolean)
+                  .map((a) => <a href={`/activities/${a!.id}/`}>{a!.title}</a>)}
+                {m.extra && <a href={m.extra.href}>{m.extra.label}</a>}
+              </span>
+            </div>
+          ))}
+        </div>
+        {milestones.note && <p class="mt-note">{milestones.note}</p>}
+      </section>
+    )}
+
     <section class="section" aria-labelledby="all-activities-heading">
       <div class="section-heading list-heading">
         <p class="listing-kicker">Browse the collection</p>
         <h2 id="all-activities-heading">{allActivitiesHeading ?? `All ${title.toLowerCase()}`}</h2>
       </div>
-      <div class="card-grid">
-        {activities.map((a) => (
-          <ActivityCard activity={a} />
-        ))}
-      </div>
+      {groups.length > 0 ? (
+        <>
+          <nav class="skill-nav no-print" aria-label="Jump to a skill">
+            <ul>
+              {groups.map((g) => (
+                <li><a href={`#skill-${g.goal}`}>{g.heading} <span>{g.items.length}</span></a></li>
+              ))}
+            </ul>
+          </nav>
+          {groups.map((g) => (
+            <div class="skill-group" id={`skill-${g.goal}`}>
+              <h3>{g.heading}</h3>
+              <p>{g.text}</p>
+              <div class="card-grid">
+                {g.items.map((a) => <ActivityCard activity={a} />)}
+              </div>
+            </div>
+          ))}
+          {ungrouped.length > 0 && (
+            <div class="skill-group">
+              <h3>More ideas</h3>
+              <div class="card-grid">
+                {ungrouped.map((a) => <ActivityCard activity={a} />)}
+              </div>
+            </div>
+          )}
+        </>
+      ) : (
+        <div class="card-grid">
+          {activities.map((a) => (
+            <ActivityCard activity={a} />
+          ))}
+        </div>
+      )}
     </section>
 
     {(guideHeading || guideTips.length > 0) && (
@@ -174,6 +262,17 @@ const itemListSchema = {
             </details>
           ))}
         </div>
+      </section>
+    )}
+
+    {moreLinks.length > 0 && (
+      <section class="more-links section" aria-labelledby="more-links-heading">
+        <h2 id="more-links-heading">More for this age</h2>
+        <ul>
+          {moreLinks.map((l) => (
+            <li><a href={l.href}>{l.label}</a><span>{l.text}</span></li>
+          ))}
+        </ul>
       </section>
     )}
 
@@ -278,6 +377,50 @@ const itemListSchema = {
   }
   .faq-list summary { cursor: pointer; font-family: var(--font-head); font-weight: 800; }
   .faq-list p { margin: 0.7rem 0 0; color: var(--text-soft); }
+  .milestone-table {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .mt-row {
+    display: grid;
+    grid-template-columns: 150px 1.3fr 1.2fr;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.95rem;
+  }
+  .mt-head {
+    border-top: 0;
+    background: var(--accent-soft);
+    font: 800 0.8rem/1.2 var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .mt-area { font-weight: 700; color: var(--text-soft); }
+  .mt-links { display: flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; }
+  .mt-links a { font-weight: 600; }
+  .mt-note { margin-top: 0.8rem; color: var(--text-soft); font-size: 0.9rem; max-width: 760px; }
+  .skill-nav ul { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .skill-nav a {
+    display: inline-block;
+    padding: 0.4em 0.9em;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .skill-nav a span { color: var(--text-soft); font-weight: 500; margin-left: 0.2em; }
+  .skill-group { margin-bottom: 2.25rem; scroll-margin-top: 90px; }
+  .skill-group h3 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+  .skill-group > p { color: var(--text-soft); margin: 0 0 1rem; max-width: 700px; }
+  .more-links ul { list-style: none; padding: 0; display: grid; gap: 0.6rem; }
+  .more-links li { display: flex; flex-wrap: wrap; gap: 0.25rem 0.6rem; align-items: baseline; }
+  .more-links a { font-weight: 700; }
+  .more-links span { color: var(--text-soft); }
   .related ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
   .related a {
     display: inline-block;
@@ -292,6 +435,8 @@ const itemListSchema = {
   @media (max-width: 800px) {
     .pick-grid { grid-template-columns: 1fr; }
     .category-guide { grid-template-columns: 1fr; gap: 1rem; }
+    .mt-row { grid-template-columns: 1fr; gap: 0.3rem; }
+    .mt-head { display: none; }
   }
   @media (max-width: 620px) {
     .faq-list { grid-template-columns: 1fr; }

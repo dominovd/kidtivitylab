@@ -34,7 +34,10 @@ for (const n of [AGE_GROUPS[idx - 1], AGE_GROUPS[idx + 1]].filter(Boolean)) {
 }
 
 const metaTitle = `${activities.length} Activities for ${group.title} — Kidtivity Lab`;
-const description = `Easy, practical activities and games for ${group.title.toLowerCase()}: quick to set up, fun to play, and matched to what your child can do right now.`;
+const defaultDescription = `Easy, practical activities and games for ${group.title.toLowerCase()}: quick to set up, fun to play, and matched to what your child can do right now.`;
+const description = editorial.metaDescription
+  ? editorial.metaDescription.replace('{count}', String(activities.length))
+  : defaultDescription;
 ---
 
 <ListingPage
@@ -57,4 +60,7 @@ const description = `Easy, practical activities and games for ${group.title.toLo
   faqs={editorial.faqs}
   faqHeading={editorial.faqHeading}
   faqKicker={editorial.faqKicker}
+  milestones={editorial.milestones}
+  skillGroups={editorial.skillGroups}
+  moreLinks={editorial.moreLinks}
 />

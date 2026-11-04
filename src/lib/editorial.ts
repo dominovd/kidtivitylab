@@ -11,6 +11,21 @@ export interface ListingEditorial {
   faqs?: { question: string; answer: string }[];
   faqHeading?: string;
   faqKicker?: string;
+  /** Overrides the template meta description. `{count}` is replaced with the activity count. */
+  metaDescription?: string;
+  /** Developmental milestones mapped to activities that practice them. */
+  milestones?: {
+    kicker?: string;
+    heading: string;
+    intro: string;
+    source: { label: string; url: string };
+    note?: string;
+    items: { area: string; milestone: string; activityIds: string[]; extra?: { label: string; href: string } }[];
+  };
+  /** Groups the full activity list by each activity's primary (first) goal. */
+  skillGroups?: { goal: string; heading: string; text: string }[];
+  /** Hand-picked links to tools and articles for this page, rendered with a one-line reason. */
+  moreLinks?: { label: string; href: string; text: string }[];
 }
 
 export const SITUATION_EDITORIAL: Record<string, ListingEditorial> = {
@@ -206,7 +221,43 @@ export const AGE_EDITORIAL: Record<string, ListingEditorial> = {
     ],
   },
   '5-year-olds': {
-    intro: 'Five-year-olds can remember more rules, explain their choices, and stay with a shared project longer. They also love changing a game once they understand it.',
+    intro: 'Five-year-olds can remember more rules, explain their choices, and stay with a shared project longer. Many are in their kindergarten year, so the best activities mix big movement, real conversation, counting, letters, and pretend play without feeling like homework.',
+    metaDescription: '{count} games and activities for 5-year-olds, grouped by skill: active games, fine motor, language and early literacy, math and science, pretend play, and self-control. Matched to CDC milestones for age 5.',
+    quickPicksHeading: 'Three good places to start',
+    quickPicksIntro: 'One game with rules, one for words and stories, and one for thinking things through.',
+    quickPicks: [
+      { label: 'For practicing rules', activityId: 'four-corners', reason: 'Simple rules, quick rounds, and counting out loud. Children can take over as the caller once they know the game.' },
+      { label: 'For language', activityId: 'story-chain', reason: 'Each player adds one sentence, so the child practices sequencing events and listening before speaking.' },
+      { label: 'For problem-solving', activityId: 'picture-clue-treasure-hunt', reason: 'Picture clues let pre-readers follow a chain of steps on their own, which holds attention longer than a single task.' },
+    ],
+    milestones: {
+      kicker: 'Development at five',
+      heading: 'What five-year-olds are working on',
+      intro: 'These are milestones from the CDC checklist for age 5, next to activities on this site that practice each skill through play.',
+      source: { label: 'CDC: Important milestones by 5 years', url: 'https://www.cdc.gov/ncbddd/actearly/milestones/milestones-5yr.html' },
+      note: 'CDC milestones describe what most children (75% or more) can do by this age. If your child is not doing several of them, or loses skills they had, talk to your pediatrician.',
+      items: [
+        { area: 'Social and emotional', milestone: 'Follows rules and takes turns in games with other children', activityIds: ['homemade-board-game', 'four-corners', 'musical-cushions'] },
+        { area: 'Social and emotional', milestone: 'Sings, dances, or acts for you', activityIds: ['charades-for-kids', 'freeze-dance', 'shadow-puppet-theater'] },
+        { area: 'Social and emotional', milestone: 'Does simple chores, like matching socks or clearing the table', activityIds: ['sock-match-sort', 'corn-husking-station'] },
+        { area: 'Language', milestone: 'Tells a story with at least two events and answers simple questions about a story', activityIds: ['story-chain', 'teddy-bear-checkup', 'blanket-fort-reading-den'] },
+        { area: 'Language', milestone: 'Keeps a conversation going for more than three back-and-forth exchanges and recognizes simple rhymes', activityIds: ['rhyme-match-basket', 'rhyme-or-not-hop', 'five-things'], extra: { label: 'Rhyming games in Kidtivity Learn', href: '/learn/' } },
+        { area: 'Thinking', milestone: 'Counts to 10 and names some numbers between 1 and 5', activityIds: ['roll-and-build-tower', 'hopscotch-number-hop', 'hide-and-seek'] },
+        { area: 'Thinking', milestone: 'Names some letters and writes some letters of their name', activityIds: ['name-puzzle', 'salt-tray-writing', 'license-plate-alphabet'] },
+        { area: 'Thinking', milestone: 'Pays attention for 5 to 10 minutes during activities like story time or crafts (screen time does not count)', activityIds: ['picture-memory-match', 'hot-and-cold', 'guess-the-sound'] },
+        { area: 'Movement', milestone: 'Hops on one foot', activityIds: ['hopscotch-number-hop', 'rhyme-or-not-hop', 'sidewalk-chalk-obstacle-course'] },
+        { area: 'Movement', milestone: 'Buttons some buttons', activityIds: ['button-snake', 'dress-up-relay', 'play-dough-spiders'] },
+      ],
+    },
+    allActivitiesHeading: 'All activities for 5 year olds, by skill',
+    skillGroups: [
+      { goal: 'energy', heading: 'Active games for gross motor skills', text: 'Running, hopping, balancing, and freezing on cue. Good for a restless afternoon and for practicing stop-and-go self-control.' },
+      { goal: 'motor', heading: 'Fine motor and hand strength', text: 'Pinching, squeezing, pouring, and hammering build the hand control children use for buttons, scissors, and pencils.' },
+      { goal: 'speech', heading: 'Language, listening, and early literacy', text: 'Guessing games, letters, describing, and storytelling. Most need no materials and work in the car or at the table.' },
+      { goal: 'stem', heading: 'Early math, logic, and science', text: 'Counting real things, sorting, following clues, and watching what happens when you change one thing.' },
+      { goal: 'creative', heading: 'Pretend play, art, and music', text: 'Open-ended play where the child decides the story, the picture, or the rhythm.' },
+      { goal: 'calm', heading: 'Calm-down and self-control', text: 'Quiet games for before bed, after a party, or when feelings run high.' },
+    ],
     guideKicker: 'Ready for another layer',
     guideHeading: 'Add challenge without turning play into a lesson',
     guideTips: [
@@ -216,8 +267,17 @@ export const AGE_EDITORIAL: Record<string, ListingEditorial> = {
     ],
     faqHeading: 'Choosing activities at age five',
     faqs: [
-      { question: 'What makes an activity challenging enough?', answer: 'Look for one stretch—longer focus, a new rule, finer control, or more planning—while keeping the materials and basic goal familiar.' },
-      { question: 'How can play support school readiness?', answer: 'Turn-taking, listening, hand strength, storytelling, classification, and coping with mistakes all support classroom participation without recreating school at home.' },
+      { question: 'What makes an activity challenging enough?', answer: 'Look for one stretch, such as longer focus, a new rule, finer control, or more planning, while keeping the materials and basic goal familiar.' },
+      { question: 'How can play support kindergarten readiness?', answer: 'Turn-taking, listening, hand strength, storytelling, counting real objects, rhyming, and coping with mistakes all support classroom participation. Self-care matters too: buttons, zippers, opening a lunchbox, and asking for help.' },
+      { question: 'How long can a 5-year-old focus on one activity?', answer: 'The CDC lists paying attention for 5 to 10 minutes during activities like story time or crafts as a milestone by age 5. Games with a clear goal and quick rounds often hold attention longer, so plan short rounds and stop while it is still fun.' },
+      { question: 'How much active play does a five-year-old need?', answer: 'The U.S. Physical Activity Guidelines say children ages 3 through 5 should be physically active throughout the day, with a variety of active play. From age 6, the guideline becomes 60 minutes or more of moderate-to-vigorous activity daily.' },
+      { question: 'How much screen time is okay at age five?', answer: 'The CDC suggests no more than 1 hour of screen time a day at this age, with screens kept out of meals and the bedroom. Games like charades, I Spy, or Hot and Cold are easy swaps.' },
+      { question: 'What chores can a 5-year-old do?', answer: 'Matching socks, clearing their own plate, watering plants, feeding a pet, sorting laundry by color, and helping with simple food prep like husking corn or washing vegetables.' },
+    ],
+    moreLinks: [
+      { label: 'Kidtivity Learn', href: '/learn/', text: 'Math, phonics, and rhyming games for ages 5 to 8. No ads, progress stays in the browser.' },
+      { label: 'Preschool adaptive skills checklist', href: '/blog/preschool-adaptive-skills-checklist/', text: 'Self-care skills like dressing and cleanup, with a printable checklist.' },
+      { label: 'Balancing screen time and social play', href: '/blog/balancing-screen-time-and-social-play-for-kids/', text: 'How to set screen limits and plan more play with other kids.' },
     ],
   },
   '6-7-year-olds': {
